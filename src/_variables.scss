@@ -1,0 +1,13 @@
+$rem-base: 10px;
+
+$font-size: 1.4rem;
+
+$container-padding: 15px;
+$scrollbar-width: 17px;
+
+$container-min-width: 320px - $scrollbar-width;
+$container-max-width: 768px;
+$container-side-width: 256px - $scrollbar-width;
+$container-breakpoint-width: $container-max-width + $container-side-width;
+
+$color-light-gray: #f6f6f6;
