@@ -1,0 +1,8 @@
+.article {
+  a {
+    text-decoration: none;
+    &:hover, &:active {
+      text-decoration: underline;
+    }
+  }
+}

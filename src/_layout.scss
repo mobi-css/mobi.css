@@ -1,0 +1,42 @@
+@import 'variables';
+
+body {
+  background: $color-light-gray;
+}
+
+.container {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  min-height: 100%;
+  margin: 0 auto;
+  outline: $container-padding solid white;
+  padding: $container-padding;
+  background: white;
+}
+.container-side {
+  display: none;
+  box-sizing: border-box;
+  width: $container-side-width;
+  padding: $container-padding;
+}
+
+@media (min-width: $container-breakpoint-width) {
+  body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .container {
+    flex: 1 auto;
+    margin: 0;
+    outline: 0;
+    padding: $container-padding 2 * $container-padding;
+  }
+  .container-side {
+    display: block;
+  }
+}

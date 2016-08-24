@@ -1,13 +1,35 @@
+@charset "utf-8";
+
+// fonts
 $rem-base: 10px;
 
-$font-size: 1.4rem;
+$font-size: 1.6rem;
+$font-size-h1: 3.0rem;
+$font-size-h2: 2.4rem;
+$font-size-h3: 2.0rem;
+$font-size-h4: 1.8rem;
+$font-size-h5: 1.8rem;
+$font-size-h6: 1.8rem;
 
+$line-height: 1.4;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans GB",
+  "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// layouts
 $container-padding: 15px;
 $scrollbar-width: 17px;
 
 $container-min-width: 320px - $scrollbar-width;
-$container-max-width: 768px;
-$container-side-width: 256px - $scrollbar-width;
-$container-breakpoint-width: $container-max-width + $container-side-width;
+$container-max-width: 768px - $scrollbar-width;
+$container-side-width: 256px;
+$container-breakpoint-width: 1024px;
 
+$section-margin: $container-padding 0 0 0;
+
+// colors
+$color-text-black: #333;
+$color-text-gray: #999;
+$color-text-link: #0275d8;
 $color-light-gray: #f6f6f6;
