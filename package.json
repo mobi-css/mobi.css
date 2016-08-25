@@ -1,0 +1,31 @@
+{
+  "name": "mobi.css",
+  "version": "0.0.0",
+  "description": "Mobi.css is a css library that focus on mobile",
+  "main": "dist/mobi.css",
+  "scripts": {
+    "build": "node ./bin/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcatliu/mobi.css.git"
+  },
+  "keywords": [
+    "css",
+    "mobile",
+    "design"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcatliu/mobi.css/issues"
+  },
+  "homepage": "https://github.com/xcatliu/mobi.css#readme",
+  "devDependencies": {
+    "ejs": "^2.5.1",
+    "highlight.js": "^9.6.0",
+    "marked": "^0.3.6"
+  },
+  "dependencies": {}
+}

@@ -21,8 +21,12 @@ body, button, input, select, textarea {
   font-family: $font-family;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   margin: $section-margin;
+}
+
+p, pre, blockquote, img {
+  margin: $paragraph-margin;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,4 +46,29 @@ a {
   &:hover, &:active {
     text-decoration: underline;
   }
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: $font-family-code;
+  font-size: 85%;
+  padding: 0.2rem 0.4rem;
+  background: $color-code-background;
+}
+
+pre {
+  background: $color-code-background;
+  padding: 1rem;
+  code {
+    padding: 0;
+  }
+}
+
+blockquote {
+  color: $color-text-blockquote;
+  padding-left: $container-padding-width;
+  border-left: 0.5rem solid $color-border;
 }

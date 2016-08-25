@@ -8,19 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="../dist/mobi.css">
+    <link rel="stylesheet" href="github.css">
   </head>
   <body>
     <!--[if lt IE 9]>
       <p style="text-align: center!important; margin: 0 0 0.5em!important; background-color: #d9534f!important; color: #fff!important; padding: 0.5em 1em!important;">You are using an <strong>outdated</strong> browser. Please <a style="color: #fff!important; text-decoration: underline!important;" href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container-side">
-      <h1>Mobi.css Side</h1>
-    </div>
     <div class="container">
       <article class="article">
-        <h1>Mobi.css Documentation</h1>
-        <p>Mobi.css is a css library that focus on mobile.</p>
+        <h1>Mobi.css</h1>
+        <blockquote><p>Mobi.css is a css library that focus on mobile.</p></blockquote>
+        <h2 id="layout">Layout</h2>
+<p>Mobi.css provides two kinds of containers, <code>container</code> and <code>container-side</code>.</p>
+<h3 id="-container-"><code>container</code></h3>
+<p>A <code>container</code> contains all of your content, one page should have only one <code>container</code>, usually is the child of <code>body</code>.</p>
+<p>In a mobile device (with width less than 768px), <code>container</code> will fill entire width of screen.</p>
+<p>Otherwise, <code>container</code> will have a static width and aligned to center of the screen. So it won&#39;t break your design for mobile, just like you are viewing mobile pages in desktop.</p>
+<p><img src="layout.jpg" alt="layout"></p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Mobi.css<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre><h3 id="-container-side-"><code>container-side</code></h3>
+<p><code>container-side</code> is designed for additional messages which are not valuable or useful in mobile, such as <em>Scan the QR code to view in mobile</em> or <em>Go to top</em>.</p>
+<p>So <code>container-side</code> <strong>will never be seen</strong> in a mobile device.</p>
+<p>Otherwise, <code>container-side</code> will land beside the <code>container</code>, left or right depends on you.</p>
+<p>Of course, you should use only one <code>container-side</code>, and use it before or after a <code>container</code>.</p>
+<p><img src="layout-with-side.jpg" alt="layout-with-side"></p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Mobi.css<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-side"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Scan the QR code to view in mobile<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/qrcode.png"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre>
       </article>
+    </div>
+    <div class="container-side">
+      <p>Scan to view it on mobile</p>
+      <img alt="qrcode" src="qrcode.png"/>
     </div>
   </body>
 </html>

@@ -11,25 +11,33 @@ $font-size-h4: 1.8rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
 
-$line-height: 1.4;
+$line-height: 1.5;
 
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans GB",
   "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-code: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 // layouts
-$container-padding: 15px;
+$container-padding-width: 15px;
 $scrollbar-width: 17px;
+
+$container-padding: 0 $container-padding-width 2 * $container-padding-width;
+$container-side-padding:  0 2 * $container-padding-width 2 * $container-padding-width;
 
 $container-min-width: 320px - $scrollbar-width;
 $container-max-width: 768px - $scrollbar-width;
 $container-side-width: 256px;
 $container-breakpoint-width: 1024px;
 
-$section-margin: $container-padding 0 0 0;
+$section-margin: 2 * $container-padding-width 0 0 0;
+$paragraph-margin: $container-padding-width 0 0 0;
 
 // colors
 $color-text-black: #333;
-$color-text-gray: #999;
+$color-text-blockquote: #777;
 $color-text-link: #0275d8;
-$color-light-gray: #f6f6f6;
+
+$color-body-background: #f6f6f6;
+$color-border: #ddd;
+$color-code-background: #f6f6f6;

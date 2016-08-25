@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-  background: $color-light-gray;
+  background: $color-body-background;
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
   max-width: $container-max-width;
   min-height: 100%;
   margin: 0 auto;
-  outline: $container-padding solid white;
+  outline: $container-padding-width solid white;
   padding: $container-padding;
   background: white;
 }
@@ -20,7 +20,7 @@ body {
   display: none;
   box-sizing: border-box;
   width: $container-side-width;
-  padding: $container-padding;
+  padding: $container-side-padding;
 }
 
 @media (min-width: $container-breakpoint-width) {
@@ -34,7 +34,8 @@ body {
     flex: 1 auto;
     margin: 0;
     outline: 0;
-    padding: $container-padding 2 * $container-padding;
+    padding-left: 2 * $container-padding-width;
+    padding-right: 2 * $container-padding-width;
   }
   .container-side {
     display: block;
