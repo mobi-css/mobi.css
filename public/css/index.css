@@ -10,3 +10,25 @@
 .site-principle svg path {
   fill: #333;
 }
+
+.site-example {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.site-example + pre {
+  margin-top: 0;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+
+.site-row-example {
+  padding: 15px 30px;
+}
+
+.site-row-example .col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #e7f6e0;
+  border: 1px solid #c8eab9;
+}

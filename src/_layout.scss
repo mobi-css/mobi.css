@@ -26,9 +26,8 @@ body {
 @media (min-width: $container-breakpoint-width) {
   body {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
   }
   .container {
     flex: 1 auto;
@@ -42,17 +41,24 @@ body {
   }
 }
 
+.section {
+  margin: $section-margin;
+}
+
+.paragraph {
+  margin: $paragraph-margin;
+}
+
 .row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin: $section-margin;
   margin-left: -$container-padding-width;
   margin-right: -$container-padding-width;
 }
 
 .col {
-  flex: 1 auto;
+  flex: 1 0 0;
+  max-width: 100%;
   padding: 0 $container-padding-width;
 }
