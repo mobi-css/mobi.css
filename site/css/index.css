@@ -1,0 +1,12 @@
+.site-principle {
+  text-align: center;
+}
+
+.site-principle svg {
+  width: 70px;
+  height: 80px;
+}
+
+.site-principle svg path {
+  fill: #333;
+}

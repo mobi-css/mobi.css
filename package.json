@@ -4,7 +4,8 @@
   "description": "Mobi.css is a css library that focus on mobile",
   "main": "dist/mobi.css",
   "scripts": {
-    "build": "node ./bin/build.js",
+    "start": "gulp",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +24,16 @@
   },
   "homepage": "https://github.com/xcatliu/mobi.css#readme",
   "devDependencies": {
+    "ecstatic": "^2.1.0",
     "ejs": "^2.5.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
     "highlight.js": "^9.6.0",
-    "marked": "^0.3.6"
+    "marked": "^0.3.6",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2"
   },
   "dependencies": {}
 }

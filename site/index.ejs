@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <link rel="stylesheet" href="../dist/mobi.css">
-    <link rel="stylesheet" href="github.css">
+    <link rel="stylesheet" href="css/mobi.css">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <!--[if lt IE 9]>
@@ -16,14 +17,25 @@
     <![endif]-->
     <div class="container">
       <article class="article">
-        <h1>Mobi.css</h1>
+        <h1>Mobi.csss</h1>
         <blockquote><p>Mobi.css is a css library that focus on mobile.</p></blockquote>
+        <div class="row">
+          <div class="col">
+            <div class="site-principle"><%- include('img/device-mobile.svg') %></div>
+          </div>
+          <div class="col">
+            <div class="site-principle"><%- include('img/zap.svg') %></div>
+          </div>
+          <div class="col">
+            <div class="site-principle"><%- include('img/circuit-board.svg') %></div>
+          </div>
+        </div>
         <%- docs %>
       </article>
     </div>
     <div class="container-side">
       <p>Scan to view it on mobile</p>
-      <img alt="qrcode" src="qrcode.png"/>
+      <p><img alt="qrcode" src="img/qrcode.png"/></p>
     </div>
   </body>
 </html>

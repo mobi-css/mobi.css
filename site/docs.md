@@ -10,7 +10,7 @@ In a mobile device (with width less than 768px), `container` will fill entire wi
 
 Otherwise, `container` will have a static width and aligned to center of the screen. So it won't break your design for mobile, just like you are viewing mobile pages in desktop.
 
-![layout](layout.jpg)
+![layout](img/layout.jpg)
 
 ```html
 <body>
@@ -30,7 +30,7 @@ Otherwise, `container-side` will land beside the `container`, left or right depe
 
 Of course, you should use only one `container-side`, and use it before or after a `container`.
 
-![layout-with-side](layout-with-side.jpg)
+![layout-with-side](img/layout-with-side.jpg)
 
 ```html
 <body>
