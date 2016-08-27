@@ -6,7 +6,6 @@ body {
 
 .container {
   overflow: hidden;
-  box-sizing: border-box;
   width: 100%;
   min-width: $container-min-width;
   max-width: $container-max-width;
@@ -18,7 +17,6 @@ body {
 }
 .container-side {
   display: none;
-  box-sizing: border-box;
   width: $container-side-width;
   padding: $container-side-padding;
 }
@@ -30,7 +28,7 @@ body {
     justify-content: center;
   }
   .container {
-    flex: 1 auto;
+    flex-grow: 1;
     margin: 0;
     outline: 0;
     padding-left: 2 * $container-padding-width;
@@ -41,14 +39,6 @@ body {
   }
 }
 
-.section {
-  margin: $section-margin;
-}
-
-.paragraph {
-  margin: $paragraph-margin;
-}
-
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -57,8 +47,35 @@ body {
   margin-right: -$container-padding-width;
 }
 
-.col {
-  flex: 1 0 0;
-  max-width: 100%;
+.col, .col-half, .col-third, .col-quarter, .col-remain {
   padding: 0 $container-padding-width;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-half {
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-third {
+  flex-shrink: 0;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.col-quarter {
+  flex-shrink: 0;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-remain {
+  flex-grow: 1;
+  max-width: 100%;
 }

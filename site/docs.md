@@ -50,34 +50,84 @@ Of course, you should use only one `container-side`, and use it before or after 
 
 ### Grid System
 
-Mobile doesn't need such a complicated 12# grid system, Mobi.css provides only two classes for grid, `row` and `col`.
+Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpler but flexible grid system.
 
-A `row` contain several `col`s, in most cases, `row`'s width is divided equally between `col`s.
+First of all, you can create a `row` which contain several `col`s, in this cases, `row`'s width is divided equally between `col`s.
 
 <div class="paragraph site-example site-row-example">
   <div class="row">
-    <div class="col">
-      <p class="no-margin-top">Light</p>
-    </div>
-    <div class="col">
-      <p class="no-margin-top">Pluginable</p>
-    </div>
-    <div class="col">
-      <p class="no-margin-top">Focus on Mobile</p>
-    </div>
+    <div class="col">Light</div>
+    <div class="col">Flexible</div>
+    <div class="col">Focus on Mobile</div>
+  </div>
+  <div class="row">
+    <div class="col">青龙</div>
+    <div class="col">白虎</div>
+    <div class="col">朱雀</div>
+    <div class="col">玄武</div>
   </div>
 </div>
 
 ```html
 <div class="row">
-  <div class="col">
-    <p class="no-margin-top">Light</p>
+  <div class="col">Light</div>
+  <div class="col">Flexible</div>
+  <div class="col">Focus on Mobile</div>
+</div>
+<div class="row">
+  <div class="col">青龙</div>
+  <div class="col">白虎</div>
+  <div class="col">朱雀</div>
+  <div class="col">玄武</div>
+</div>
+```
+
+Secondly, you can use `rol-half`, `rol-third`, `rol-quarter` or `rol-remain` to achieve a maximum 4# grid.
+
+<div class="paragraph site-example site-row-example">
+  <div class="row">
+    <div class="col-half">.col-half</div>
+    <div class="col-remain">.col-remain</div>
   </div>
-  <div class="col">
-    <p class="no-margin-top">Pluginable</p>
+  <div class="row">
+    <div class="col-third">.col-third</div>
+    <div class="col-remain">.col-remain</div>
   </div>
-  <div class="col">
-    <p class="no-margin-top">Focus on Mobile</p>
+  <div class="row">
+    <div class="col-quarter">.col-quarter</div>
+    <div class="col-remain">.col-remain</div>
   </div>
+  <div class="row">
+    <div class="col-remain">.col-remain</div>
+    <div class="col-third">.col-third</div>
+  </div>
+  <div class="row">
+    <div class="col-quarter">.col-quarter</div>
+    <div class="col-half">.col-half</div>
+    <div class="col-quarter">.col-quarter</div>
+  </div>
+</div>
+
+```html
+<div class="row">
+  <div class="col-half">.col-half</div>
+  <div class="col-remain">.col-remain</div>
+</div>
+<div class="row">
+  <div class="col-third">.col-third</div>
+  <div class="col-remain">.col-remain</div>
+</div>
+<div class="row">
+  <div class="col-quarter">.col-quarter</div>
+  <div class="col-remain">.col-remain</div>
+</div>
+<div class="row">
+  <div class="col-remain">.col-remain</div>
+  <div class="col-third">.col-third</div>
+</div>
+<div class="row">
+  <div class="col-quarter">.col-quarter</div>
+  <div class="col-half">.col-half</div>
+  <div class="col-remain">.col-remain</div>
 </div>
 ```

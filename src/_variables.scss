@@ -25,10 +25,10 @@ $scrollbar-width: 17px;
 $container-padding: 0 $container-padding-width 2 * $container-padding-width;
 $container-side-padding:  0 2 * $container-padding-width 2 * $container-padding-width;
 
-$container-min-width: 320px - $scrollbar-width;
-$container-max-width: 768px - $scrollbar-width;
+$container-min-width: 320px;
+$container-max-width: 768px;
 $container-side-width: 256px;
-$container-breakpoint-width: 1024px;
+$container-breakpoint-width: 1024px + $scrollbar-width;
 
 $section-margin: 2 * $container-padding-width 0 0 0;
 $paragraph-margin: $container-padding-width 0 0 0;

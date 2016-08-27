@@ -26,7 +26,11 @@
   padding: 15px 30px;
 }
 
-.site-row-example .col {
+.site-row-example .col,
+.site-row-example .col-half,
+.site-row-example .col-third,
+.site-row-example .col-quarter,
+.site-row-example .col-remain {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #e7f6e0;
