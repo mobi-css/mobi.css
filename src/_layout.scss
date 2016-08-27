@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-  background: $color-body-background;
+  background-color: $color-body-background;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   outline: $container-padding-width solid white;
   padding: $container-padding;
-  background: white;
+  background-color: white;
 }
 .container-side {
   display: none;

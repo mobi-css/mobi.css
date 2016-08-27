@@ -1,14 +1,11 @@
-.site-principle {
-  text-align: center;
+.site-principles .fa {
+  color: #333;
+  font-size: 6rem;
 }
 
-.site-principle svg {
-  width: 70px;
-  height: 80px;
-}
-
-.site-principle svg path {
-  fill: #333;
+/* fa-mobile is a little smaller than others, so use scale to enlarge it. */
+.site-principles .fa-mobile {
+  transform: scale(1.35);
 }
 
 .site-example {
@@ -33,6 +30,6 @@
 .site-row-example .col-remain {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #e7f6e0;
-  border: 1px solid #c8eab9;
+  background-color: #dff0d8;
+  border: 1px solid #d0e9c6;
 }

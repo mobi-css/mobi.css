@@ -13,13 +13,36 @@ $font-size-h6: 1.8rem;
 
 $line-height: 1.5;
 
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans GB",
-  "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif,
+$font-family:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Linux
+  "Oxygen", // KDE
+  "Ubuntu",
+  "Cantarell", // GNOME
+  // Firefox OS [R.I.P.]
+  "Fira Sans",
+  // Older Android
+  "Droid Sans",
+  // Chinese font for OSX and iOS
+  "Hiragino Sans GB",
+  // Chinese font for Windows
+  "Microsoft Yahei", "微软雅黑",
+  // Basic web fallback
+  Arial, Helvetica, STHeiti, sans-serif,
+  // Emoji
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 $font-family-code: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 // layouts
-$container-padding-width: 15px;
+$container-padding-width: 16px;
 $scrollbar-width: 17px;
 
 $container-padding: 0 $container-padding-width 2 * $container-padding-width;
@@ -36,8 +59,9 @@ $paragraph-margin: $container-padding-width 0 0 0;
 // colors
 $color-text-black: #333;
 $color-text-blockquote: #777;
-$color-text-link: #0275d8;
+$color-text-link: #07d;
 
-$color-body-background: #f6f6f6;
 $color-border: #ddd;
+$color-body-background: #f6f6f6;
 $color-code-background: #f6f6f6;
+$color-th-background: #f6f6f6;

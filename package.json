@@ -1,7 +1,7 @@
 {
   "name": "mobi.css",
   "version": "0.0.0",
-  "description": "Mobi.css is a light, flexible css library that focus on mobile.",
+  "description": "Mobi.css is a lightweight, flexible css library that focus on mobile.",
   "main": "dist/mobi.css",
   "scripts": {
     "start": "gulp",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/xcatliu/mobi.css/issues"
   },
-  "homepage": "https://github.com/xcatliu/mobi.css#readme",
+  "homepage": "http://getmobicss.com",
   "devDependencies": {
     "ecstatic": "^2.1.0",
     "ejs": "^2.5.1",

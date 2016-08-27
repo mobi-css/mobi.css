@@ -1,8 +1,6 @@
 @import 'variables';
 
-* {
-  box-sizing: border-box;
-}
+*,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -32,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: $section-margin;
 }
 
-p, pre, blockquote {
+p, pre, blockquote, table {
   margin: $paragraph-margin;
 }
 
@@ -63,11 +61,11 @@ code {
   font-family: $font-family-code;
   font-size: 85%;
   padding: 0.2rem 0.4rem;
-  background: $color-code-background;
+  background-color: $color-code-background;
 }
 
 pre {
-  background: $color-code-background;
+  background-color: $color-code-background;
   padding: 1rem;
   code {
     padding: 0;
@@ -78,4 +76,23 @@ blockquote {
   color: $color-text-blockquote;
   padding-left: $container-padding-width;
   border-left: 0.5rem solid $color-border;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 100%;
+  border: 0;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 0;
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid $color-border;
+}
+
+th {
+  background-color: $color-th-background;
 }

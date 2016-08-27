@@ -75,12 +75,12 @@ gulp.task('build:index', (done) => {
 });
 
 gulp.task('build:static', ['build:static:mobi'], () => gulp.src([
-  `${SITE_DIR}/css/*`,
-  `${SITE_DIR}/img/*`,
+  `${SITE_DIR}/css/**/*`,
+  `${SITE_DIR}/img/**/*`,
 ], { base: SITE_DIR })
   .pipe(gulp.dest(PUBLIC_DIR)));
 
-gulp.task('build:static:mobi', () => gulp.src(`${DIST_DIR}/**/*`)
+gulp.task('build:static:mobi', () => gulp.src(`${DIST_DIR}/*`)
   .pipe(gulp.dest(`${PUBLIC_DIR}/css`)));
 
 function setupMarked() {
