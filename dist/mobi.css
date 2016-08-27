@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   margin-top: 32px; }
 
@@ -67,7 +67,7 @@ a {
 
 strong,
 b {
-  font-weight: 500; }
+  font-weight: 600; }
 
 img {
   max-width: 100%; }
@@ -104,7 +104,7 @@ td {
 
 th {
   background-color: #f6f6f6;
-  font-weight: 500; }
+  font-weight: 600; }
 
 body {
   background-color: #f6f6f6; }
