@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <link rel="stylesheet" href="css/mobi.css">
+    <link rel="stylesheet" href="css/mobi.min.css">
     <link rel="stylesheet" href="css/github.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
@@ -37,9 +37,9 @@
 <h2 id="layout">Layout</h2>
 <p>Mobi.css provides two kinds of containers, <code>container</code> and <code>container-side</code>, as well as a simple but flexible grid system.</p>
 <h3 id="-container-"><code>container</code></h3>
-<p>A <code>container</code> contains all of your content, one page should have only one <code>container</code>. In most cases, <code>container</code> is the child of <code>body</code>.</p>
+<p>A <code>container</code> contains all of your contents, one page should have only one <code>container</code>. In most cases, <code>container</code> is the child of <code>body</code>.</p>
 <p>On a mobile device (with width less than 768px), <code>container</code> will fill entire width of screen.</p>
-<p>Otherwise, <code>container</code> will have a static width and aligned to the center of the screen. So it won&#39;t break your design for mobile, Looks like you are viewing mobile pages on desktop.</p>
+<p>Otherwise, <code>container</code> will have a fixed width and aligned to the center of the screen. So it won&#39;t break your design for mobile. Looks like you are viewing mobile pages on desktop.</p>
 <div class="paragraph site-example">
   <img alt="layout" src="img/layout.jpg"/>
 </div>
@@ -49,7 +49,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Mobi.css<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre><h3 id="-container-side-"><code>container-side</code></h3>
-<p><code>container-side</code> is designed for additional messages which are not valuable or useful on mobile, such as <em>Scan to view on mobile</em> or <em>Go to top</em>.</p>
+<p><code>container-side</code> is designed for additional messages which are not valuable or useful for mobile, such as <em>Scan to view on mobile</em> or <em>Go to top</em>.</p>
 <p>So <code>container-side</code> <strong>will never be seen</strong> on a mobile device.</p>
 <p>Otherwise, <code>container-side</code> will land beside the <code>container</code>, left or right depends on you.</p>
 <p>Of course, you should use only one <code>container-side</code>, and use it before or after a <code>container</code>.</p>
@@ -137,9 +137,26 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-quarter"</span>&gt;</span>.col-quarter<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-half"</span>&gt;</span>.col-half<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-remain"</span>&gt;</span>.col-remain<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="margin-top-only">Margin Top Only</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="use-flexbox-for-layout">Use Flexbox for Layout</h3>
+<p>You should know Mobi.css using flexbox for layout, and so should you! <a href="http://caniuse.com/#feat=flexbox">Now it&#39;s safely to use flexbox in all mobile browsers</a>.</p>
+<p>Here is am example for how you can use flexbox for a typical fixed-fluid-fixed layout.</p>
+<div class="paragraph site-example site-row-example">
+  <div class="row">
+    <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" aria-hidden="true" style="font-size:56px"></i></div>
+    <div class="col-remain">Hi, xcatliu, do you know what is Mobi.css?</div>
+    <div class="col-custom" style="flex-basis:120px"></div>
+  </div>
+  <div class="row paragraph">
+    <div class="col-custom" style="flex-basis:120px"></div>
+    <div class="col-remain text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+    <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  </div>
+</div>
+
+
+<h3 id="margin-top-only">Margin Top Only</h3>
 <p>Nearly all margins in Mobi.css have a <code>0</code> value for <code>margin-bottom</code>. Instead, Mobi.css use <code>margin-top</code> to make contents flow clearly.</p>
-<p>That do make sense, since it&#39;s each section&#39;s responsibility to determine how long should it margin to top.</p>
+<p>That do make sense, since it&#39;s each section&#39;s responsibility to determine the length it should margin to top.</p>
 <p>For example, <code>h1</code> ~ <code>h6</code> have a length of <code>32px</code> margin to top, in the meantime, <code>p</code>, <code>ul</code>, <code>form</code> have a length of <code>16px</code> margin to top.</p>
 <p>Mobi.css also provides three classes for easily manually override the length to margin to top, they are <code>section</code>, <code>paragraph</code> and <code>no-margin-top</code>, the length of <code>margin-top</code> are <code>32px</code>, <code>16px</code> and <code>0</code>.</p>
 <div class="paragraph site-example">
@@ -152,10 +169,10 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>.section<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"paragraph"</span>&gt;</span>.paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h2 id="typography">Typography</h2>
 <p>Mobi.css is designed for content based website. It has a pure but pleasant experience for reading.</p>
-<p>Most of styles for Typography are reset and do not need any classnames.</p>
+<p>Most of styles for typography are reset and do not need any classnames.</p>
 <p>This site itself is a real example. You guys are smart, so for this part it&#39;s not necessary to write examples anymore.</p>
 <h2 id="tables">Tables</h2>
-<p>Although it&#39;s not a good idea to show a table to your customers, sometimes we do need it.</p>
+<p>Although tables is not widely used in mobild, sometimes you may need it.</p>
 <p>However, tables always renders out of screen, especially in small mobiles. So you should probably need a <code>scrollable</code> area to place your table.</p>
 <div class="paragraph site-example">
   <div class="scrollable">
@@ -197,7 +214,7 @@
           <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
         </tr>
         <tr>
-          <td><s>Ratchet</s></td>
+          <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
           <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
         </tr>
       </tbody>
@@ -244,7 +261,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/twbs/bootstrap/tree/v4-dev"</span>&gt;</span>Bootstrap v4 GitHub<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>Ratchet<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://goratchet.com/"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>Ratchet<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"5"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/twbs/ratchet/issues/792"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>This project is dying.<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>

@@ -20,11 +20,11 @@ Mobi.css provides two kinds of containers, `container` and `container-side`, as 
 
 ### `container`
 
-A `container` contains all of your content, one page should have only one `container`. In most cases, `container` is the child of `body`.
+A `container` contains all of your contents, one page should have only one `container`. In most cases, `container` is the child of `body`.
 
 On a mobile device (with width less than 768px), `container` will fill entire width of screen.
 
-Otherwise, `container` will have a static width and aligned to the center of the screen. So it won't break your design for mobile, Looks like you are viewing mobile pages on desktop.
+Otherwise, `container` will have a fixed width and aligned to the center of the screen. So it won't break your design for mobile. Looks like you are viewing mobile pages on desktop.
 
 <div class="paragraph site-example">
   <img alt="layout" src="img/layout.jpg"/>
@@ -40,7 +40,7 @@ Otherwise, `container` will have a static width and aligned to the center of the
 
 ### `container-side`
 
-`container-side` is designed for additional messages which are not valuable or useful on mobile, such as *Scan to view on mobile* or *Go to top*.
+`container-side` is designed for additional messages which are not valuable or useful for mobile, such as *Scan to view on mobile* or *Go to top*.
 
 So `container-side` **will never be seen** on a mobile device.
 
@@ -148,11 +148,31 @@ Secondly, you can use `rol-half`, `rol-third`, `rol-quarter` or `rol-remain` to 
 </div>
 ```
 
+### Use Flexbox for Layout
+
+You should know Mobi.css using flexbox for layout, and so should you! [Now it's safely to use flexbox in all mobile browsers](http://caniuse.com/#feat=flexbox).
+
+Here is am example for how you can use flexbox for a typical fixed-fluid-fixed layout.
+
+<div class="paragraph site-example site-row-example">
+  <div class="row">
+    <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" aria-hidden="true" style="font-size:56px"></i></div>
+    <div class="col-remain">Hi, xcatliu, do you know what is Mobi.css?</div>
+    <div class="col-custom" style="flex-basis:120px"></div>
+  </div>
+  <div class="row paragraph">
+    <div class="col-custom" style="flex-basis:120px"></div>
+    <div class="col-remain text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+    <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  </div>
+</div>
+
+
 ### Margin Top Only
 
 Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. Instead, Mobi.css use `margin-top` to make contents flow clearly.
 
-That do make sense, since it's each section's responsibility to determine how long should it margin to top.
+That do make sense, since it's each section's responsibility to determine the length it should margin to top.
 
 For example, `h1` ~ `h6` have a length of `32px` margin to top, in the meantime, `p`, `ul`, `form` have a length of `16px` margin to top.
 
@@ -174,13 +194,13 @@ Mobi.css also provides three classes for easily manually override the length to 
 
 Mobi.css is designed for content based website. It has a pure but pleasant experience for reading.
 
-Most of styles for Typography are reset and do not need any classnames.
+Most of styles for typography are reset and do not need any classnames.
 
 This site itself is a real example. You guys are smart, so for this part it's not necessary to write examples anymore.
 
 ## Tables
 
-Although it's not a good idea to show a table to your customers, sometimes we do need it.
+Although tables is not widely used in mobild, sometimes you may need it.
 
 However, tables always renders out of screen, especially in small mobiles. So you should probably need a `scrollable` area to place your table.
 
@@ -224,7 +244,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
           <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
         </tr>
         <tr>
-          <td><s>Ratchet</s></td>
+          <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
           <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
         </tr>
       </tbody>
@@ -272,7 +292,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
         <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
       </tr>
       <tr>
-        <td><s>Ratchet</s></td>
+        <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
         <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
       </tr>
     </tbody>

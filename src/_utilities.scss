@@ -1,9 +1,9 @@
 .section {
-  margin: $section-margin;
+  margin-top: $section-margin-top;
 }
 
 .paragraph {
-  margin: $paragraph-margin;
+  margin-top: $paragraph-margin-top;
 }
 
 .no-margin-top {
@@ -14,7 +14,11 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .scrollable {
-  width: 100%;
   overflow: auto;
+  width: 100%;
 }

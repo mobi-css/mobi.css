@@ -5,28 +5,30 @@ body {
 }
 
 .container {
-  overflow: hidden;
-  width: 100%;
-  min-width: $container-min-width;
+  background-color: $color-white;
+  margin: 0 auto;
   max-width: $container-max-width;
   min-height: 100%;
-  margin: 0 auto;
-  outline: $container-padding-width solid white;
+  min-width: $container-min-width;
+  outline: $container-padding-width solid  $color-white;
+  overflow: hidden;
   padding: $container-padding;
-  background-color: white;
+  width: 100%;
 }
+
 .container-side {
   display: none;
-  width: $container-side-width;
   padding: $container-side-padding;
+  width: $container-side-width;
 }
 
 @media (min-width: $container-breakpoint-width) {
   body {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
   }
+
   .container {
     flex-grow: 1;
     margin: 0;
@@ -34,6 +36,7 @@ body {
     padding-left: 2 * $container-padding-width;
     padding-right: 2 * $container-padding-width;
   }
+
   .container-side {
     display: block;
   }
@@ -41,41 +44,50 @@ body {
 
 .row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   margin-left: -$container-padding-width;
   margin-right: -$container-padding-width;
 }
 
-.col, .col-half, .col-third, .col-quarter, .col-remain {
+.col,
+.col-half,
+.col-third,
+.col-quarter,
+.col-remain,
+.col-custom {
   padding: 0 $container-padding-width;
 }
 
 .col {
-  flex-grow: 1;
   flex-basis: 0;
+  flex-grow: 1;
   max-width: 100%;
 }
 
 .col-half {
-  flex-shrink: 0;
   flex-basis: 50%;
+  flex-shrink: 0;
   max-width: 50%;
 }
 
 .col-third {
-  flex-shrink: 0;
   flex-basis: 33.33%;
+  flex-shrink: 0;
   max-width: 33.33%;
 }
 
 .col-quarter {
-  flex-shrink: 0;
   flex-basis: 25%;
+  flex-shrink: 0;
   max-width: 25%;
 }
 
 .col-remain {
   flex-grow: 1;
   max-width: 100%;
+}
+
+.col-custom {
+  flex-shrink: 0;
 }

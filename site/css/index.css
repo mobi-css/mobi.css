@@ -9,7 +9,7 @@
 }
 
 .site-example {
-  padding: 15px;
+  padding: 16px;
   border: 1px solid #ddd;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .site-row-example {
-  padding: 15px 30px;
+  padding: 16px 32px;
 }
 
 .site-row-example .col,
@@ -28,8 +28,8 @@
 .site-row-example .col-third,
 .site-row-example .col-quarter,
 .site-row-example .col-remain {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #dff0d8;
   border: 1px solid #d0e9c6;
 }

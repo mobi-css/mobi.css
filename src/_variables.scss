@@ -1,17 +1,19 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 // fonts
 $rem-base: 10px;
 
 $font-size: 1.6rem;
-$font-size-h1: 3.0rem;
+$font-size-h1: 3rem;
 $font-size-h2: 2.4rem;
-$font-size-h3: 2.0rem;
+$font-size-h3: 2rem;
 $font-size-h4: 1.8rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
 
 $line-height: 1.5;
+
+$font-weight-bold: 500;
 
 $font-family:
   // Safari for OS X and iOS (San Francisco)
@@ -19,27 +21,27 @@ $font-family:
   // Chrome for OS X (San Francisco)
   BlinkMacSystemFont,
   // Windows
-  "Segoe UI",
+  'Segoe UI',
   // Android
-  "Roboto",
+  'Roboto',
   // Linux
-  "Oxygen", // KDE
-  "Ubuntu",
-  "Cantarell", // GNOME
+  'Oxygen', // KDE
+  'Ubuntu',
+  'Cantarell', // GNOME
   // Firefox OS [R.I.P.]
-  "Fira Sans",
+  'Fira Sans',
   // Older Android
-  "Droid Sans",
+  'Droid Sans',
   // Chinese font for OSX and iOS
-  "Hiragino Sans GB",
+  'Hiragino Sans GB',
   // Chinese font for Windows
-  "Microsoft Yahei", "微软雅黑",
+  'Microsoft Yahei', '微软雅黑',
   // Basic web fallback
   Arial, Helvetica, STHeiti, sans-serif,
   // Emoji
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-$font-family-code: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
 // layouts
 $container-padding-width: 16px;
@@ -53,10 +55,11 @@ $container-max-width: 768px;
 $container-side-width: 256px;
 $container-breakpoint-width: 1024px + $scrollbar-width;
 
-$section-margin: 2 * $container-padding-width 0 0 0;
-$paragraph-margin: $container-padding-width 0 0 0;
+$section-margin-top: 2 * $container-padding-width;
+$paragraph-margin-top: $container-padding-width;
 
 // colors
+$color-white: #fff;
 $color-text-black: #333;
 $color-text-blockquote: #777;
 $color-text-link: #07d;

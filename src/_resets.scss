@@ -1,15 +1,16 @@
 @import 'variables';
 
+// border-box make width equals to border + padding + content
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 html {
@@ -17,25 +18,37 @@ html {
 }
 
 body {
-  font-size: $font-size;
   color: $color-text-black;
+  font-size: $font-size;
   line-height: $line-height;
 }
 
-body, button, input, select, textarea {
+// some form elements don't inherit body's font-family
+body,
+button,
+input,
+select,
+textarea {
   font-family: $font-family;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: $section-margin;
+p,
+pre,
+blockquote,
+table {
+  margin: 0;
+  margin-top: $paragraph-margin-top;
 }
 
-p, pre, blockquote, table {
-  margin: $paragraph-margin;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  margin: 0;
+  margin-top: $section-margin-top;
 }
 
 h1 { font-size: $font-size-h1; }
@@ -48,51 +61,61 @@ h6 { font-size: $font-size-h6; }
 a {
   color: $color-text-link;
   text-decoration: none;
-  &:hover, &:active {
+
+  &:hover,
+  &:active {
     text-decoration: underline;
   }
 }
 
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+// Always show fullwidth images
 img {
   max-width: 100%;
 }
 
 code {
+  background-color: $color-code-background;
   font-family: $font-family-code;
   font-size: 85%;
-  padding: 0.2rem 0.4rem;
-  background-color: $color-code-background;
+  padding: .2rem .4rem;
 }
 
 pre {
   background-color: $color-code-background;
   padding: 1rem;
+
   code {
     padding: 0;
   }
 }
 
 blockquote {
+  border-left: .5rem solid $color-border;
   color: $color-text-blockquote;
   padding-left: $container-padding-width;
-  border-left: 0.5rem solid $color-border;
 }
 
 table {
+  border: 0;
   border-collapse: collapse;
   border-spacing: 0;
   min-width: 100%;
-  border: 0;
 }
 
-th, td {
-  padding: 0.5rem;
+th,
+td {
   border: 0;
-  font-weight: normal;
-  text-align: left;
   border-bottom: 1px solid $color-border;
+  padding: .5rem;
+  text-align: left;
 }
 
 th {
   background-color: $color-th-background;
+  font-weight: $font-weight-bold;
 }
