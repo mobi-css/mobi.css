@@ -77,6 +77,7 @@ gulp.task('build:index', (done) => {
 gulp.task('build:static', ['build:static:mobi'], () => gulp.src([
   `${SITE_DIR}/css/**/*`,
   `${SITE_DIR}/img/**/*`,
+  `${SITE_DIR}/CNAME`,
 ], { base: SITE_DIR })
   .pipe(gulp.dest(PUBLIC_DIR)));
 
