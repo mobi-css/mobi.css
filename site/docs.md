@@ -254,7 +254,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
         <td><a href="http://mobicss.xcatliu.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
-        <td>?</td>
+        <td>2.8kb</td>
         <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
         <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
       </tr>
@@ -301,7 +301,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
         <td><a href="http://mobicss.xcatliu.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
-        <td>?</td>
+        <td>2.8kb</td>
         <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
         <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
       </tr>
