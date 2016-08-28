@@ -3,15 +3,17 @@
 // fonts
 $rem-base: 10px;
 
-$font-size: 1.6rem;
+$font-size: 1.8rem;
 $font-size-h1: 3rem;
 $font-size-h2: 2.4rem;
 $font-size-h3: 2rem;
 $font-size-h4: 1.8rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
+$font-size-pre: 1.4rem;
 
 $line-height: 1.5;
+$line-height-pre: 1.2;
 
 $font-weight-bold: 600;
 
@@ -24,6 +26,7 @@ $font-family:
   'Segoe UI',
   // Android
   'Roboto',
+  /* Forget those environments
   // Linux
   'Oxygen', // KDE
   'Ubuntu',
@@ -32,6 +35,7 @@ $font-family:
   'Fira Sans',
   // Older Android
   'Droid Sans',
+  */
   // Chinese font for OSX and iOS
   'Hiragino Sans GB',
   // Chinese font for Windows
@@ -44,10 +48,10 @@ $font-family:
 $font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
 // layouts
-$container-padding-width: 16px;
+$container-padding-width: 15px;
 $scrollbar-width: 17px;
 
-$container-padding: 0 $container-padding-width 2 * $container-padding-width;
+$container-padding: 0 $container-padding-width $container-padding-width;
 $container-side-padding:  0 2 * $container-padding-width 2 * $container-padding-width;
 
 $container-min-width: 320px;
@@ -58,13 +62,43 @@ $container-breakpoint-width: 1024px + $scrollbar-width;
 $section-margin-top: 2 * $container-padding-width;
 $paragraph-margin-top: $container-padding-width;
 
+$padding-input: 5px 10px;
+
+$border-radius: 3px;
+
 // colors
 $color-white: #fff;
+
 $color-text-black: #333;
 $color-text-blockquote: #777;
-$color-text-link: #07d;
+$color-text-link: hsl(210, 100%, 50%);
+$color-text-red: hsl(0, 100%, 40%);
+$color-text-black-disabled: #bbb;
+$color-text-red-disabled: hsl(0, 100%, 80%);
 
 $color-border: #ddd;
-$color-body-background: #f6f6f6;
-$color-code-background: #f6f6f6;
-$color-th-background: #f6f6f6;
+$color-background-body: #f3f3f3;
+$color-background-code: rgba(0, 0, 0, .05);
+$color-background-th: rgba(0, 0, 0, .05);
+$color-background-pre: rgba(0, 0, 0, .05);
+
+$color-border-input-focus: hsl(210, 100%, 60%);
+$color-background-active: rgba(0, 0, 0, .1);
+
+$color-background-button: #f3f3f3;
+
+$color-background-green: hsla(120, 50%, 50%, .15);
+$color-border-green: hsla(120, 50%, 50%, .2);
+$color-background-red: hsla(0, 60%, 50%, .15);
+$color-border-red: hsla(0, 60%, 50%, .2);
+$color-background-yellow: hsla(50, 80%, 50%, .2);
+$color-border-yellow: hsla(50, 80%, 50%, .25);
+
+
+$color-background-dark-green: hsl(120, 50%, 50%);
+$color-border-dark-green: hsl(120, 50%, 50%);
+$color-background-dark-green-disabled: hsl(120, 50%, 80%);
+$color-border-dark-green-disabled: hsl(120, 50%, 80%);
+
+// Background image of down arrow
+$background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');

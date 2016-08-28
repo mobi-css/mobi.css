@@ -1,16 +1,11 @@
 @import 'variables';
 
-body {
-  background-color: $color-body-background;
-}
-
 .container {
   background-color: $color-white;
   margin: 0 auto;
   max-width: $container-max-width;
-  min-height: 100%;
   min-width: $container-min-width;
-  outline: $container-padding-width solid  $color-white;
+  outline: $container-padding-width solid $color-white;
   overflow: hidden;
   padding: $container-padding;
   width: 100%;
@@ -54,9 +49,16 @@ body {
 .col-half,
 .col-third,
 .col-quarter,
-.col-remain,
 .col-custom {
-  padding: 0 $container-padding-width;
+  padding: 0 $container-padding-width / 2;
+
+  &:first-child {
+    padding-left: $container-padding-width;
+  }
+
+  &:last-child {
+    padding-right: $container-padding-width;
+  }
 }
 
 .col {
@@ -81,11 +83,6 @@ body {
   flex-basis: 25%;
   flex-shrink: 0;
   max-width: 25%;
-}
-
-.col-remain {
-  flex-grow: 1;
-  max-width: 100%;
 }
 
 .col-custom {

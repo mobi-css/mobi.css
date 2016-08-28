@@ -1,43 +1,30 @@
-@import 'variables';
-
-// border-box make width equals to border + padding + content
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-size: $rem-base;
+  text-size-adjust: 100%;
 }
 
 body {
+  background-color: $color-background-body;
   color: $color-text-black;
+  font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
-}
-
-// some form elements don't inherit body's font-family
-body,
-button,
-input,
-select,
-textarea {
-  font-family: $font-family;
+  margin: 0;
 }
 
 p,
-pre,
 blockquote,
-table {
-  margin: 0;
-  margin-top: $paragraph-margin-top;
+table,
+hr,
+ul,
+ol {
+  margin: $paragraph-margin-top 0 0;
 }
 
 h1,
@@ -47,8 +34,7 @@ h4,
 h5,
 h6 {
   font-weight: $font-weight-bold;
-  margin: 0;
-  margin-top: $section-margin-top;
+  margin: $section-margin-top 0 0;
 }
 
 h1 { font-size: $font-size-h1; }
@@ -64,32 +50,40 @@ a {
 
   &:hover,
   &:active {
-    text-decoration: underline;
+    background-color: $color-background-active;
+    outline: 2px solid $color-background-active;
   }
 }
 
-strong,
-b {
+b,
+strong {
   font-weight: $font-weight-bold;
 }
 
-// Always show fullwidth images
 img {
   max-width: 100%;
 }
 
 code {
-  background-color: $color-code-background;
+  background-color: $color-background-code;
   font-family: $font-family-code;
   font-size: 85%;
-  padding: .2rem .4rem;
+  padding: 2px;
 }
 
 pre {
-  background-color: $color-code-background;
-  padding: 1rem;
+  background-color: $color-background-pre;
+  font-size: $font-size-pre;
+  line-height: $line-height-pre;
+  margin-left: -$container-padding-width;
+  margin-right: -$container-padding-width;
+  max-height: 300px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: $container-padding-width;
 
   code {
+    background-color: transparent;
     padding: 0;
   }
 }
@@ -104,7 +98,7 @@ table {
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
-  min-width: 100%;
+  width: 100%;
 }
 
 th,
@@ -116,6 +110,133 @@ td {
 }
 
 th {
-  background-color: $color-th-background;
+  background-color: $color-background-th;
   font-weight: $font-weight-bold;
+}
+
+form {
+  margin: 0;
+
+  label {
+    cursor: pointer;
+    display: block;
+    margin: $paragraph-margin-top 0 0;
+  }
+}
+
+a,
+button,
+input,
+select,
+textarea,
+label {
+  outline: 0;
+  -webkit-tap-highlight-color: $color-background-active;
+  touch-action: manipulation;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit],
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+select,
+textarea,
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration,
+input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+button,
+select,
+textarea,
+input:not([type=checkbox]):not([type=radio]) {
+  display: block;
+  line-height: $line-height;
+  margin: $paragraph-margin-top 0 0;
+  width: 100%;
+}
+
+button,
+select,
+textarea,
+[type=button],
+[type=date],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=range],
+[type=search],
+[type=submit],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week] {
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  color: $color-text-black;
+  font-family: $font-family;
+  font-size: $font-size;
+  padding: $padding-input;
+
+  &:focus {
+    border-color: $color-border-input-focus;
+  }
+}
+
+button,
+[type=button],
+[type=submit],
+[type=reset] {
+  background-color: $color-background-button;
+  cursor: pointer;
+}
+
+select {
+  background-image: $background-image-angle-down;
+  background-position: right 5px top 11px;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-right: 30px;
+}
+
+[disabled] {
+  background-color: $color-background-button;
+  color: $color-text-black-disabled;
+  cursor: not-allowed;
+
+  &::-webkit-input-placeholder {
+    color: $color-text-black-disabled;
+  }
+}
+
+ul,
+ol {
+  padding-left: 2 * $container-padding-width;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $color-border;
 }

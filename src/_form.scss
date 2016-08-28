@@ -1,0 +1,18 @@
+.btn-primary {
+  background-color: $color-background-dark-green;
+  border-color: $color-border-dark-green;
+  color: $color-white;
+
+  &[disabled] {
+    background-color: $color-background-dark-green-disabled;
+    border-color: $color-border-dark-green-disabled;
+  }
+}
+
+.btn-danger {
+  color: $color-text-red;
+
+  &[disabled] {
+    color: $color-text-red-disabled;
+  }
+}
