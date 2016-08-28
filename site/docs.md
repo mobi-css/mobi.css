@@ -24,6 +24,26 @@
   </div>
 </div>
 
+## Download
+
+You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
+
+Or use npm to install:
+
+```shell
+npm install --save mobi.css
+```
+
+Then include `./node-modules/mobi.css/dist/mobi.min.css` to your page.
+
+You can also build Mobi.css to your project if you are using sass.
+
+```scss
+@import 'mobi.css/src/mobi';
+```
+
+Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+
 ## Table of Content
 
 - [Layout](#layout)
