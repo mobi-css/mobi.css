@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/xcatliu/mobi.css/issues"
   },
-  "homepage": "http://getmobicss.com",
+  "homepage": "http://mobicss.xcatliu.com",
   "devDependencies": {
     "ecstatic": "^2.1.0",
     "ejs": "^2.5.1",
