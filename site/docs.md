@@ -24,6 +24,12 @@
   </div>
 </div>
 
+## Introduction
+
+- Only 2.8kb after gzip, less than Skeleton, Pure.css and Bootstrap v4, etc.
+- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://mobicss.xcatliu.com/).
+- Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
+
 ## Download
 
 You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
@@ -33,8 +39,6 @@ Or use npm to install:
 ```shell
 npm install --save mobi.css
 ```
-
-Then include `./node-modules/mobi.css/dist/mobi.min.css` to your page.
 
 You can also build Mobi.css to your project if you are using sass.
 
