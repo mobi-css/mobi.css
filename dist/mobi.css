@@ -218,10 +218,10 @@ select {
 
 [disabled] {
   background-color: #f3f3f3;
-  color: #bbb;
+  color: #777;
   cursor: not-allowed; }
   [disabled]::-webkit-input-placeholder {
-    color: #bbb; }
+    color: #777; }
 
 ul,
 ol {
@@ -311,16 +311,16 @@ hr {
 
 .btn-primary {
   background-color: #40bf40;
-  border-color: #40bf40;
+  border: 0;
   color: #fff; }
   .btn-primary[disabled] {
-    background-color: #b3e6b3;
-    border-color: #b3e6b3; }
+    background-color: #8cd98c;
+    border: 0; }
 
 .btn-danger {
   color: #cc0000; }
   .btn-danger[disabled] {
-    color: #ff9999; }
+    color: #ff3333; }
 
 .mt-30 {
   margin-top: 30px; }

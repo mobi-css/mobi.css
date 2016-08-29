@@ -1,11 +1,11 @@
 .btn-primary {
   background-color: $color-background-dark-green;
-  border-color: $color-border-dark-green;
+  border: 0;
   color: $color-white;
 
   &[disabled] {
     background-color: $color-background-dark-green-disabled;
-    border-color: $color-border-dark-green-disabled;
+    border: 0;
   }
 }
 

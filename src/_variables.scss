@@ -70,8 +70,8 @@ $color-text-black: #333;
 $color-text-blockquote: #777;
 $color-text-link: hsl(210, 100%, 50%);
 $color-text-red: hsl(0, 100%, 40%);
-$color-text-black-disabled: #bbb;
-$color-text-red-disabled: hsl(0, 100%, 80%);
+$color-text-black-disabled: #777;
+$color-text-red-disabled: hsl(0, 100%, 60%);
 
 $color-border: #ddd;
 $color-background-body: #f3f3f3;
@@ -93,9 +93,7 @@ $color-border-yellow: hsla(60, 80%, 50%, .3);
 
 
 $color-background-dark-green: hsl(120, 50%, 50%);
-$color-border-dark-green: hsl(120, 50%, 50%);
-$color-background-dark-green-disabled: hsl(120, 50%, 80%);
-$color-border-dark-green-disabled: hsl(120, 50%, 80%);
+$color-background-dark-green-disabled: hsl(120, 50%, 70%);
 
 // Background image of down arrow
 $background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');
