@@ -24,7 +24,7 @@ table,
 hr,
 ul,
 ol {
-  margin: $paragraph-margin-top 0 0;
+  margin: $container-padding-width 0 0;
 }
 
 h1,
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-weight: $font-weight-bold;
-  margin: $section-margin-top 0 0;
+  margin: 2 * $container-padding-width 0 0;
 }
 
 h1 { font-size: $font-size-h1; }
@@ -120,7 +120,7 @@ form {
   label {
     cursor: pointer;
     display: block;
-    margin: $paragraph-margin-top 0 0;
+    margin: $container-padding-width 0 0;
   }
 }
 
@@ -170,7 +170,7 @@ textarea,
 input:not([type=checkbox]):not([type=radio]) {
   display: block;
   line-height: $line-height;
-  margin: $paragraph-margin-top 0 0;
+  margin: $container-padding-width 0 0;
   width: 100%;
 }
 

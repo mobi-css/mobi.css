@@ -10,7 +10,7 @@ $font-size-h3: 2rem;
 $font-size-h4: 1.8rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
-$font-size-pre: 1.4rem;
+$font-size-pre: 1.5rem;
 
 $line-height: 1.5;
 $line-height-pre: 1.2;
@@ -58,9 +58,6 @@ $container-min-width: 320px;
 $container-max-width: 768px;
 $container-side-width: 256px;
 $container-breakpoint-width: 1024px + $scrollbar-width;
-
-$section-margin-top: 2 * $container-padding-width;
-$paragraph-margin-top: $container-padding-width;
 
 $padding-input: 5px 10px;
 

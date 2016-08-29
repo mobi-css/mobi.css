@@ -1,4 +1,4 @@
-<h1 class="row paragraph" id="mobi-css">
+<h1 class="row mt-15" id="mobi-css">
   <div class="col-custom middle" style="padding-right:0">
     <img width="32px" src="img/mobi-logo-512.png" alt="mobi-logo-32"/>
   </div>
@@ -12,7 +12,7 @@
 
 > Mobi.css is a lightweight, flexible css library that focus on mobile.
 
-<div class="row section">
+<div class="row mt-30">
   <div class="col text-center">
     <i class="fa fa-leaf" style="font-size: 6rem;"></i>
   </div>
@@ -106,7 +106,7 @@ Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpl
 
 First of all, you can create a `row` which contain several `col`s, in this case, `row`'s width is divided equally between `col`s.
 
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col alert-success">Lightweight</div>
   <div class="col alert-success">Flexible</div>
   <div class="col alert-success">Focus on Mobile</div>
@@ -119,7 +119,7 @@ First of all, you can create a `row` which contain several `col`s, in this case,
 </div>
 
 ```html
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col alert-success">Lightweight</div>
   <div class="col alert-success">Flexible</div>
   <div class="col alert-success">Focus on Mobile</div>
@@ -132,51 +132,51 @@ First of all, you can create a `row` which contain several `col`s, in this case,
 </div>
 ```
 
-Secondly, you can use `col-half`, `col-third` and `col-quarter` to achieve a maximum 4# grid.
+Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4# grid.
 
-<div class="row paragraph">
-  <div class="col-half alert-success">.col-half</div>
+<div class="row mt-15">
+  <div class="col-1-2 alert-success">.col-1-2</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-third alert-success">.col-third</div>
+  <div class="col-1-3 alert-success">.col-1-3</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-quarter alert-success">.col-quarter</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
   <div class="col alert-success">.col</div>
-  <div class="col-third alert-success">.col-third</div>
+  <div class="col-1-3 alert-success">.col-1-3</div>
 </div>
 <div class="row">
-  <div class="col-quarter alert-success">.col-quarter</div>
-  <div class="col-half alert-success">.col-half</div>
-  <div class="col-quarter alert-success">.col-quarter</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
+  <div class="col-1-2 alert-success">.col-1-2</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
 </div>
 
 ```html
-<div class="row paragraph">
-  <div class="col-half alert-success">.col-half</div>
+<div class="row mt-15">
+  <div class="col-1-2 alert-success">.col-1-2</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-third alert-success">.col-third</div>
+  <div class="col-1-3 alert-success">.col-1-3</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-quarter alert-success">.col-quarter</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
   <div class="col alert-success">.col</div>
 </div>
 <div class="row">
   <div class="col alert-success">.col</div>
-  <div class="col-third alert-success">.col-third</div>
+  <div class="col-1-3 alert-success">.col-1-3</div>
 </div>
 <div class="row">
-  <div class="col-quarter alert-success">.col-quarter</div>
-  <div class="col-half alert-success">.col-half</div>
-  <div class="col-quarter alert-success">.col-quarter</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
+  <div class="col-1-2 alert-success">.col-1-2</div>
+  <div class="col-1-4 alert-success">.col-1-4</div>
 </div>
 ```
 
@@ -186,24 +186,24 @@ You probably know Mobi.css use flexbox for layout, and so should you! [Now it's 
 
 Here is an example for how you can use `col-custom` and flexbox for a typical fixed-fluid layout.
 
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" style="font-size:56px"></i></div>
   <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
   <div class="col-custom" style="flex-basis:30px"></div>
 </div>
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col-custom" style="flex-basis:30px"></div>
   <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
   <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" style="font-size:56px"></i></div>
   <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
   <div class="col-custom" style="flex-basis:30px"></div>
 </div>
-<div class="row paragraph">
+<div class="row mt-15">
   <div class="col-custom" style="flex-basis:30px"></div>
   <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
   <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
@@ -218,16 +218,16 @@ That do make sense, since it's each section's responsibility to determine the le
 
 For example, `h1` ~ `h6` have a length of `30px` margin to top, in the meantime, `p`, `ul`, `input` have a length of `15px` margin to top.
 
-Mobi.css also provides three classes for easily manually override the length to margin to top, they are `section`, `paragraph` and `clear-margin-top`, the length of `margin-top` are `30px`, `15px` and `0`.
+Mobi.css also provides three classes for easily manually override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`, the length of `margin-top` are `30px`, `15px` and `0`.
 
-<section class="paragraph alert-success">section.paragraph</section>
-<p class="clear-margin-top alert-success">p.clear-margin-top</p>
-<section class="section alert-success">section.section</section>
+<section class="mt-15 alert-success">section.mt-15</section>
+<p class="mt-0 alert-success">p.mt-0</p>
+<section class="mt-30 alert-success">section.mt-30</section>
 
 ```html
-<section class="paragraph alert-success">section.paragraph</section>
-<p class="clear-margin-top alert-success">p.clear-margin-top</p>
-<section class="section alert-success">section.section</section>
+<section class="mt-15 alert-success">section.mt-15</section>
+<p class="mt-0 alert-success">p.mt-0</p>
+<section class="mt-30 alert-success">section.mt-30</section>
 ```
 
 ## Typography
@@ -490,7 +490,7 @@ Mobi.css also provides some useful utilities, like layout utilities, align utili
 
 ### Layout utilities
 
-As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `section`, `paragraph` and `clear-margin-top`.
+As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`.
 
 For more information, please read [Margin Top Only](#margin-top-only) section.
 
@@ -500,19 +500,19 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 
 #### Align Inline Contents
 
-<div class="text-left alert-success paragraph">Mobi.css is awesome!</div>
+<div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center alert-success">Awesome!</div>
 <div class="text-right alert-success">Some!</div>
 
 ```html
-<div class="text-left alert-success paragraph">Mobi.css is awesome!</div>
+<div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center alert-success">Awesome!</div>
 <div class="text-right alert-success">Some!</div>
 ```
 
 #### Align Block Contents
 
-<div class="left alert-success paragraph">
+<div class="left alert-success mt-15">
   <div class="alert-success">Mobi.css</div>
 </div>
 <div class="center alert-success">
@@ -535,7 +535,7 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 </div>
 
 ```html
-<div class="left alert-success paragraph">
+<div class="left alert-success mt-15">
   <div class="alert-success">Mobi.css</div>
 </div>
 <div class="center alert-success">
@@ -566,7 +566,7 @@ Mobi.css optimize `scrollable` to make it smoothly to scroll.
 
 #### Scroll Horizontal
 
-<div class="paragraph scrollable">
+<div class="mt-15 scrollable">
   <div style="width:1024px">
     <i class="fa fa-adjust" style="font-size:6rem"></i>
     <i class="fa fa-anchor" style="font-size:6rem"></i>
@@ -587,7 +587,7 @@ Mobi.css optimize `scrollable` to make it smoothly to scroll.
 </div>
 
 ```html
-<div class="paragraph scrollable">
+<div class="mt-15 scrollable">
   <div style="width:1024px">
     <i class="fa fa-adjust" style="font-size:6rem"></i>
     <i class="fa fa-anchor" style="font-size:6rem"></i>
@@ -612,7 +612,7 @@ Mobi.css optimize `scrollable` to make it smoothly to scroll.
 
 This is pretty easy, just set the `max-width` of `scrollable`.
 
-<div class="paragraph scrollable" style="max-height:300px">
+<div class="mt-15 scrollable" style="max-height:300px">
   <h2>狂人日记</h2>
   <h3>一</h3>
   <p>今天晚上，很好的月光。</p>
@@ -626,7 +626,7 @@ This is pretty easy, just set the `max-width` of `scrollable`.
 </div>
 
 ```html
-<div class="paragraph scrollable" style="max-height:300px">
+<div class="mt-15 scrollable" style="max-height:300px">
   <h2>狂人日记</h2>
   <h3>一</h3>
   <p>今天晚上，很好的月光。</p>
@@ -653,7 +653,6 @@ One more thing, they can nesting each other!
 
 The indexes of all available classes.
 
-- [`alert`](#alerts)
 - [`alert-danger`](#alerts)
 - [`alert-success`](#alerts)
 - [`alert-warning`](#alerts)
@@ -661,21 +660,21 @@ The indexes of all available classes.
 - [`btn-danger`](#complicate-forms)
 - [`btn-primary`](#complicate-forms)
 - [`center`](#align-block-contents)
-- [`clear-margin-top`](#margin-top-only)
 - [`col`](#grid-system)
 - [`col-custom`](#use-flexbox-for-layout)
-- [`col-half`](#grid-system)
-- [`col-quarter`](#grid-system)
-- [`col-third`](#grid-system)
+- [`col-1-2`](#grid-system)
+- [`col-1-4`](#grid-system)
+- [`col-1-3`](#grid-system)
 - [`container`](#-container)
 - [`container-side`](#-container-side)
 - [`left`](#align-block-contents)
 - [`middle`](#align-block-contents)
-- [`paragraph`](#margin-top-only)
+- [`mt-0`](#margin-top-only)
+- [`mt-15`](#margin-top-only)
+- [`mt-30`](#margin-top-only)
 - [`right`](#align-block-contents)
 - [`row`](#grid-system)
 - [`scrollable`](#-scrollable-)
-- [`section`](#margin-top-only)
 - [`text-center`](#align-inline-contents)
 - [`text-left`](#align-inline-contents)
 - [`text-right`](#align-inline-contents)

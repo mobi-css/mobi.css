@@ -1,12 +1,12 @@
-.section {
-  margin-top: $section-margin-top;
+.mt-30 {
+  margin-top: 2 * $container-padding-width;
 }
 
-.paragraph {
-  margin-top: $paragraph-margin-top;
+.mt-15 {
+  margin-top: $container-padding-width;
 }
 
-.clear-margin-top {
+.mt-0 {
   margin-top: 0;
 }
 
