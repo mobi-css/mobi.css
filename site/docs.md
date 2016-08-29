@@ -186,7 +186,7 @@ Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4#
 
 ### Use Flexbox for Layout
 
-You probably know Mobi.css use flexbox for layout, and so should you! [Now it's safely to use flexbox in all mobile browsers](http://caniuse.com/#feat=flexbox).
+You probably know Mobi.css can use flexbox for layout, and so should you! [Now it's safe to use flexbox on all mobile browsers](http://caniuse.com/#feat=flexbox).
 
 Here is an example for how you can use `col-custom` and flexbox for a typical fixed-fluid layout.
 
