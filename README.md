@@ -22,7 +22,7 @@
 - [Utilities](http://mobicss.xcatliu.com/#utilities)
 - [Indexes](http://mobicss.xcatliu.com/#indexes)
 
-Please checkout the [Homepage] for more documents.
+Please checkout the [Homepage](http://mobicss.xcatliu.com/) for more documents.
 
 ## Downloads
 
