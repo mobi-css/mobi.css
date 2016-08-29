@@ -25,9 +25,12 @@
   },
   "homepage": "http://mobicss.xcatliu.com",
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "ecstatic": "^2.1.0",
     "ejs": "^2.5.1",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",

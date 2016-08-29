@@ -11,6 +11,25 @@ const rimraf = require('rimraf');
 const runSequence = require('run-sequence');
 const ecstatic = require('ecstatic');
 const http = require('http');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
+const postcssConfig = [ autoprefixer({ browsers: [
+  'last 5 iOS versions',
+  'last 5 Android versions',
+  'last 5 ExplorerMobile versions',
+  'last 5 ChromeAndroid versions',
+  'last 5 FirefoxAndroid versions',
+  'last 5 OperaMobile versions',
+  'last 5 OperaMini versions',
+  'last 5 Samsung versions',
+  'last 5 UCAndroid versions',
+
+  'last 3 Chrome versions',
+  'last 3 Firefox versions',
+  'last 3 Safari versions',
+] }) ];
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
@@ -33,8 +52,8 @@ gulp.task('build', (done) => {
 
 gulp.task('build:mobi', [
   'clean:dist',
-  'build:mobi:compressed',
   'build:mobi:sourcemaps',
+  'build:mobi:compressed',
 ]);
 
 gulp.task('build:site', [
@@ -47,14 +66,15 @@ gulp.task('clean:dist', () => rimraf.sync(`${DIST_DIR}/**/*`));
 
 gulp.task('clean:public', () => rimraf.sync(`${PUBLIC_DIR}/**/*`));
 
-gulp.task('build:mobi:compressed', () => gulp.src(`${SRC_DIR}/mobi.scss`)
-  .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+gulp.task('build:mobi:compressed', ['build:mobi:sourcemaps'], () => gulp.src(`${DIST_DIR}/mobi.css`)
+  .pipe(cleanCSS())
   .pipe(rename('mobi.min.css'))
   .pipe(gulp.dest(DIST_DIR)));
 
 gulp.task('build:mobi:sourcemaps', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
+  .pipe(postcss(postcssConfig))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
