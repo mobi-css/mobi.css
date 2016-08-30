@@ -50,8 +50,7 @@ a {
 
   &:hover,
   &:active {
-    background-color: $color-background-active;
-    outline: 2px solid $color-background-active;
+    text-decoration: underline;
   }
 }
 

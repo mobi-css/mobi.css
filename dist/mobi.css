@@ -58,8 +58,7 @@ a {
   color: #0080ff;
   text-decoration: none; }
   a:hover, a:active {
-    background-color: rgba(0, 0, 0, 0.1);
-    outline: 2px solid rgba(0, 0, 0, 0.1); }
+    text-decoration: underline; }
 
 b,
 strong {
