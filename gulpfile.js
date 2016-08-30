@@ -1,3 +1,5 @@
+/* eslint no-use-before-define:0 */
+
 const gulp = require('gulp');
 const fs = require('fs');
 const path = require('path');
@@ -16,7 +18,7 @@ const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const mkdirp = require('mkdirp');
 
-const postcssConfig = [ autoprefixer({ browsers: [
+const postcssConfig = [autoprefixer({ browsers: [
   'last 5 iOS versions',
   'last 5 Android versions',
   'last 5 ExplorerMobile versions',
@@ -30,7 +32,7 @@ const postcssConfig = [ autoprefixer({ browsers: [
   'last 3 Chrome versions',
   'last 3 Firefox versions',
   'last 3 Safari versions',
-] }) ];
+] })];
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
