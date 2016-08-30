@@ -36,6 +36,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "highlight.js": "^9.6.0",
     "marked": "^0.3.6",
+    "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4",
     "run-sequence": "^1.2.2"
   },

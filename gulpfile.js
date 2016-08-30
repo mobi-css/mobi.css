@@ -14,6 +14,7 @@ const http = require('http');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const mkdirp = require('mkdirp');
 
 const postcssConfig = [ autoprefixer({ browsers: [
   'last 5 iOS versions',
@@ -62,9 +63,15 @@ gulp.task('build:site', [
   'build:static',
 ]);
 
-gulp.task('clean:dist', () => rimraf.sync(`${DIST_DIR}/**/*`));
+gulp.task('clean:dist', () => {
+  rimraf.sync(DIST_DIR);
+  mkdirp.sync(DIST_DIR);
+});
 
-gulp.task('clean:public', () => rimraf.sync(`${PUBLIC_DIR}/**/*`));
+gulp.task('clean:public', () => {
+  rimraf.sync(PUBLIC_DIR);
+  mkdirp.sync(PUBLIC_DIR);
+});
 
 gulp.task('build:mobi:compressed', ['build:mobi:sourcemaps'], () => gulp.src(`${DIST_DIR}/mobi.css`)
   .pipe(cleanCSS())
