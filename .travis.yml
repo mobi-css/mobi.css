@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- 6
+sudo: false
+branches:
+  only:
+  - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_dd46bd640876_key -iv $encrypted_dd46bd640876_iv
+  -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+- git config --global user.name 'xcatliu'
+- git config --global user.email 'xcatliu@gmail.com'
+- gem install scss_lint
+script:
+- bash ./bin/deploy.sh
