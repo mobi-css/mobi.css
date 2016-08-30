@@ -1,7 +1,7 @@
 {
   "name": "mobi.css",
   "version": "0.2.0",
-  "description": "Mobi.css is a lightweight, flexible css library that focus on mobile.",
+  "description": "A lightweight, flexible css library that focus on mobile.",
   "main": "dist/mobi.css",
   "scripts": {
     "start": "gulp",
