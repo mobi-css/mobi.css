@@ -2,12 +2,14 @@
 
 > Mobi.css is a lightweight, flexible css library that focus on mobile.
 
+[![Build Status](https://travis-ci.org/xcatliu/mobi.css.svg?branch=master)](https://travis-ci.org/xcatliu/mobi.css)
+
 - Homepage: http://getmobicss.com/
 
 ## Introduction
 
 - Only 2.8kb after gzip, less than Skeleton, Pure.css and Bootstrap v4, etc.
-- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
+- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage].
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
 ## Documentation
@@ -20,7 +22,7 @@
 - [Utilities](http://getmobicss.com/#utilities)
 - [Indexes](http://getmobicss.com/#indexes)
 
-Please checkout the [Homepage](http://getmobicss.com/) for more details.
+Please checkout the [Homepage] for more details.
 
 ## Downloads
 
@@ -46,7 +48,14 @@ Inspired by the logo of CSS 3.
 
 ![Mobi.css Logo](site/img/mobi-logo-512.png)
 
-## Contribution
+## Contributing
+
+Before contributing, please ensure you have `sass` and `scss-lint` installed. You can install them by running this:
+
+```shell
+gem install sass
+gem install scss-lint
+```
 
 ### Getting Started
 
@@ -63,8 +72,15 @@ Open http://localhost:8000/
 npm test
 ```
 
-Be sure you have `scss-lint` installed. You can use `gem install scss-lint` to install it.
+### Travis CI
 
-### License
+We use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as our continuous integration system.
+
+- The [Homepage] will be generated automatically when new commits are pushed to master branch
+- Pull request cannot be merged when Travis CI not pass
+
+## License
 
 MIT
+
+[Homepage]: http://getmobicss.com
