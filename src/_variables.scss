@@ -1,18 +1,32 @@
 @charset 'utf-8';
 
-// fonts
+// All variables need to be named as ${rule}-${element}-${modifier}
+
+// Fonts
+// 1rem = 10px
 $rem-base: 10px;
 
 $font-size: 1.8rem;
+
+// h4, h5, h6 is not very useful, so we set them to the same size of normal
+// font-size, but with $font-weight-bold
 $font-size-h1: 3rem;
 $font-size-h2: 2.4rem;
 $font-size-h3: 2rem;
 $font-size-h4: 1.8rem;
 $font-size-h5: 1.8rem;
 $font-size-h6: 1.8rem;
+
+// Mobile device always have a small length of width, so we should keep pre as
+// small as it can, 1.4rem is to small and looks strange in Windows Chrome if
+// there are some Chinese words in pre.
 $font-size-pre: 1.5rem;
 
+$font-size-code: 85%;
+
 $line-height: 1.5;
+
+// line-height need to be set to pre, not code
 $line-height-pre: 1.2;
 
 $font-weight-bold: 600;
@@ -45,55 +59,59 @@ $font-family:
   // Emoji
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
+// TODO Chinese font-family for pre code
+// https://github.com/xcatliu/mobi.css/issues/8
 $font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
 // layouts
-$container-padding-width: 15px;
-$scrollbar-width: 17px;
+$width-gap: 15px;
+$width-scrollbar: 17px;
 
-$container-padding: 0 $container-padding-width $container-padding-width;
-$container-side-padding:  0 2 * $container-padding-width 2 * $container-padding-width;
+$padding-container: 0 $width-gap $width-gap;
+$padding-container-desktop: 0 2 * $width-gap $width-gap;
 
-$container-min-width: 320px;
-$container-max-width: 768px;
-$container-side-width: 256px;
-$container-breakpoint-width: 1024px + $scrollbar-width;
+$padding-container-side:  0 2 * $width-gap $width-gap;
+
+$min-width-container: 320px;
+$max-width-container: 768px;
+$side-width-container: 256px;
+// So won't have scroll-x on device which width is 1025px
+$width-container-breakpoint: 1024px + $width-scrollbar;
 
 $padding-input: 5px 10px;
 
 $border-radius: 3px;
 
-// colors
+$max-height-pre: 300px;
+
+// Colors
 $color-white: #fff;
 
 $color-text-black: #333;
-$color-text-blockquote: #777;
-$color-text-link: hsl(210, 100%, 50%);
+// hsl is easy to modify
 $color-text-red: hsl(0, 100%, 40%);
-$color-text-black-disabled: #777;
-$color-text-red-disabled: hsl(0, 100%, 60%);
+$color-text-link: hsl(210, 100%, 50%);
+$color-text-blockquote: #777;
 
-$color-border: #ddd;
 $color-background-body: #f3f3f3;
+// Use rgba so it can nesting
 $color-background-code: rgba(0, 0, 0, .05);
 $color-background-th: rgba(0, 0, 0, .05);
 $color-background-pre: rgba(0, 0, 0, .05);
-
-$color-border-input-focus: hsl(210, 100%, 60%);
 $color-background-active: rgba(0, 0, 0, .1);
 
-$color-background-button: #f3f3f3;
+$color-background-btn: #f3f3f3;
+$color-background-btn-primary: hsl(120, 50%, 50%);
+$color-text-btn-danger: $color-text-red;
 
-$color-background-green: hsla(120, 50%, 50%, .15);
-$color-border-green: hsla(120, 50%, 50%, .2);
-$color-background-red: hsla(0, 80%, 50%, .15);
-$color-border-red: hsla(0, 80%, 50%, .2);
-$color-background-yellow: hsla(60, 80%, 50%, .2);
-$color-border-yellow: hsla(60, 80%, 50%, .3);
+// For disabled input, button, textarea
+$color-text-disabled: #777;
+$color-background-btn-primary-disabled: hsl(120, 50%, 70%);
+$color-text-btn-danger-disabled: hsl(0, 100%, 60%);
 
-
-$color-background-dark-green: hsl(120, 50%, 50%);
-$color-background-dark-green-disabled: hsl(120, 50%, 70%);
+$color-border: #ddd;
+$color-border-input-focus: hsl(210, 100%, 60%);
 
 // Background image of down arrow
+// Converted from https://github.com/encharm/Font-Awesome-SVG-PNG
 $background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');

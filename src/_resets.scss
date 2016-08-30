@@ -24,7 +24,7 @@ table,
 hr,
 ul,
 ol {
-  margin: $container-padding-width 0 0;
+  margin: $width-gap 0 0;
 }
 
 h1,
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-weight: $font-weight-bold;
-  margin: 2 * $container-padding-width 0 0;
+  margin: 2 * $width-gap 0 0;
 }
 
 h1 { font-size: $font-size-h1; }
@@ -67,7 +67,7 @@ img {
 code {
   background-color: $color-background-code;
   font-family: $font-family-code;
-  font-size: 85%;
+  font-size: $font-size-code;
   padding: 2px;
 }
 
@@ -75,12 +75,12 @@ pre {
   background-color: $color-background-pre;
   font-size: $font-size-pre;
   line-height: $line-height-pre;
-  margin-left: -$container-padding-width;
-  margin-right: -$container-padding-width;
-  max-height: 300px;
+  margin-left: -$width-gap;
+  margin-right: -$width-gap;
+  max-height: $max-height-pre;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  padding: $container-padding-width;
+  padding: $width-gap;
 
   code {
     background-color: transparent;
@@ -89,9 +89,9 @@ pre {
 }
 
 blockquote {
-  border-left: .5rem solid $color-border;
+  border-left: 5px solid $color-border;
   color: $color-text-blockquote;
-  padding-left: $container-padding-width;
+  padding-left: $width-gap;
 }
 
 table {
@@ -105,7 +105,7 @@ th,
 td {
   border: 0;
   border-bottom: 1px solid $color-border;
-  padding: .5rem;
+  padding: 5px;
   text-align: left;
 }
 
@@ -120,7 +120,7 @@ form {
   label {
     cursor: pointer;
     display: block;
-    margin: $container-padding-width 0 0;
+    margin: $width-gap 0 0;
   }
 }
 
@@ -170,7 +170,7 @@ textarea,
 input:not([type=checkbox]):not([type=radio]) {
   display: block;
   line-height: $line-height;
-  margin: $container-padding-width 0 0;
+  margin: $width-gap 0 0;
   width: 100%;
 }
 
@@ -209,7 +209,7 @@ button,
 [type=button],
 [type=submit],
 [type=reset] {
-  background-color: $color-background-button;
+  background-color: $color-background-btn;
   cursor: pointer;
 }
 
@@ -222,18 +222,18 @@ select {
 }
 
 [disabled] {
-  background-color: $color-background-button;
-  color: $color-text-black-disabled;
+  background-color: $color-background-btn;
+  color: $color-text-disabled;
   cursor: not-allowed;
 
   &::-webkit-input-placeholder {
-    color: $color-text-black-disabled;
+    color: $color-text-disabled;
   }
 }
 
 ul,
 ol {
-  padding-left: 2 * $container-padding-width;
+  padding-left: 2 * $width-gap;
 }
 
 hr {

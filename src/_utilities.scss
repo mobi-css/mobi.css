@@ -1,9 +1,9 @@
 .mt-30 {
-  margin-top: 2 * $container-padding-width;
+  margin-top: 2 * $width-gap;
 }
 
 .mt-15 {
-  margin-top: $container-padding-width;
+  margin-top: $width-gap;
 }
 
 .mt-0 {
@@ -22,56 +22,41 @@
   text-align: right;
 }
 
-.left {
+.left,
+.center,
+.right,
+.top,
+.middle,
+.bottom {
   display: flex;
+}
+
+.left {
   justify-content: flex-start;
 }
 
 .center {
-  display: flex;
   justify-content: center;
 }
 
 .right {
-  display: flex;
   justify-content: flex-end;
 }
 
 .top {
   align-items: flex-start;
-  display: flex;
 }
 
 .middle {
   align-items: center;
-  display: flex;
 }
 
 .bottom {
   align-items: flex-end;
-  display: flex;
 }
 
-.scrollable {
+.scroll-view {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-}
-
-.alert-success {
-  background-color: $color-background-green;
-  border: 1px solid $color-border-green;
-  padding: $container-padding-width;
-}
-
-.alert-danger {
-  background-color: $color-background-red;
-  border: 1px solid $color-border-red;
-  padding: $container-padding-width;
-}
-
-.alert-warning {
-  background-color: $color-background-yellow;
-  border: 1px solid $color-border-yellow;
-  padding: $container-padding-width;
 }

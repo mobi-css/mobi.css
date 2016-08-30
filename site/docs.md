@@ -246,9 +246,9 @@ This site itself is a real example. You guys are smart, so for this part it's no
 
 Although tables is not widely used in mobile, sometimes you may need it.
 
-However, tables always renders out of screen, especially in small mobiles. So you should probably need a `scrollable` area to place your table.
+However, tables always renders out of screen, especially in small mobiles. So you should probably need a `scroll-view` area to place your table.
 
-<div class="scrollable">
+<div class="scroll-view">
   <table>
     <thead>
       <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
@@ -295,7 +295,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
 </div>
 
 ```html
-<div class="scrollable">
+<div class="scroll-view">
   <table>
     <thead>
       <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
@@ -490,7 +490,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 ## Utilities
 
-Mobi.css also provides some useful utilities, like layout utilities, align utilities, `scrollable`, Alerts, etc.
+Mobi.css also provides some useful utilities, like layout utilities, align utilities, `scroll-view`, etc.
 
 ### Layout utilities
 
@@ -562,15 +562,15 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 </div>
 ```
 
-### `scrollable`
+### `scroll-view`
 
-Mobile devices usually have small width, so it's very useful to use a `scrollable` class.
+Mobile devices usually have small width, so it's very useful to use a `scroll-view` class.
 
-Mobi.css optimize `scrollable` to make it smoothly to scroll.
+Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
 #### Scroll Horizontal
 
-<div class="mt-15 scrollable">
+<div class="mt-15 scroll-view">
   <div style="width:1024px">
     <i class="fa fa-adjust" style="font-size:6rem"></i>
     <i class="fa fa-anchor" style="font-size:6rem"></i>
@@ -591,7 +591,7 @@ Mobi.css optimize `scrollable` to make it smoothly to scroll.
 </div>
 
 ```html
-<div class="mt-15 scrollable">
+<div class="mt-15 scroll-view">
   <div style="width:1024px">
     <i class="fa fa-adjust" style="font-size:6rem"></i>
     <i class="fa fa-anchor" style="font-size:6rem"></i>
@@ -614,9 +614,9 @@ Mobi.css optimize `scrollable` to make it smoothly to scroll.
 
 #### Scroll Vertical
 
-This is pretty easy, just set the `max-width` of `scrollable`.
+This is pretty easy, just set the `max-width` of `scroll-view`.
 
-<div class="mt-15 scrollable" style="max-height:300px">
+<div class="mt-15 scroll-view" style="max-height:300px">
   <h2>狂人日记</h2>
   <h3>一</h3>
   <p>今天晚上，很好的月光。</p>
@@ -625,12 +625,12 @@ This is pretty easy, just set the `max-width` of `scrollable`.
   <h3>二</h3>
   <p>今天全没月光，我知道不妙。早上小心出门，赵贵翁的眼色便怪：似乎怕我，似乎想害我。还有七八个人，交头接耳的议论我，张着嘴，对我笑了一笑；我便从头直冷到脚根，晓得他们布置，都已妥当了。</p>
   <p>我可不怕，仍旧走我的路。前面一伙小孩子，也在那里议论我；眼色也同赵贵翁一样，脸色也铁青。我想我同小孩子有什么仇，他也这样。忍不住大声说，“你告诉我！”他们可就跑了。</p>
-  <p>我想：我同赵贵翁有什么仇，同路上的人又有什么仇；只有廿年以前，把古久先生的陈年流水簿子⑶，踹了一脚，古久先生很不高兴。赵贵翁虽然不认识他，一定也听到风声，代抱不平；约定路上的人，同我作冤对。但是小孩子呢？那时候，他们还没有出世，何以今天也睁着怪眼睛，似乎怕我，似乎想害我。这真教我怕，教我纳罕而且伤心。</p>
+  <p>我想：我同赵贵翁有什么仇，同路上的人又有什么仇；只有廿年以前，把古久先生的陈年流水簿子，踹了一脚，古久先生很不高兴。赵贵翁虽然不认识他，一定也听到风声，代抱不平；约定路上的人，同我作冤对。但是小孩子呢？那时候，他们还没有出世，何以今天也睁着怪眼睛，似乎怕我，似乎想害我。这真教我怕，教我纳罕而且伤心。</p>
   <p>我明白了。这是他们娘老子教的！</p>
 </div>
 
 ```html
-<div class="mt-15 scrollable" style="max-height:300px">
+<div class="mt-15 scroll-view" style="max-height:300px">
   <h2>狂人日记</h2>
   <h3>一</h3>
   <p>今天晚上，很好的月光。</p>
@@ -644,22 +644,10 @@ This is pretty easy, just set the `max-width` of `scrollable`.
 </div>
 ```
 
-### Alerts
-
-As you see, many examples in this page use `alert-seccess` to show the background and border of a box. There are another two alerts, `alert-danger` and `alert-warning`.
-
-<p class="alert-danger">Mobi.css is amazing!</p>
-<p class="alert-warning">Mobi.css is amazing!</p>
-
-One more thing, they can nesting each other!
-
 ## Indexes
 
 The indexes of all available classes.
 
-- [`alert-danger`](#alerts)
-- [`alert-success`](#alerts)
-- [`alert-warning`](#alerts)
 - [`bottom`](#align-block-contents)
 - [`btn-danger`](#complicate-forms)
 - [`btn-primary`](#complicate-forms)
@@ -678,7 +666,7 @@ The indexes of all available classes.
 - [`mt-30`](#margin-top-only)
 - [`right`](#align-block-contents)
 - [`row`](#grid-system)
-- [`scrollable`](#-scrollable-)
+- [`scroll-view`](#-scroll-view-)
 - [`text-center`](#align-inline-contents)
 - [`text-left`](#align-inline-contents)
 - [`text-right`](#align-inline-contents)

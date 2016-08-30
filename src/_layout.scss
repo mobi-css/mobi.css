@@ -3,21 +3,21 @@
 .container {
   background-color: $color-white;
   margin: 0 auto;
-  max-width: $container-max-width;
-  min-width: $container-min-width;
-  outline: $container-padding-width solid $color-white;
+  max-width: $max-width-container;
+  min-width: $min-width-container;
+  outline: $width-gap solid $color-white;
   overflow: hidden;
-  padding: $container-padding;
+  padding: $padding-container;
   width: 100%;
 }
 
 .container-side {
   display: none;
-  padding: $container-side-padding;
-  width: $container-side-width;
+  padding: $padding-container-side;
+  width: $side-width-container;
 }
 
-@media (min-width: $container-breakpoint-width) {
+@media (min-width: $width-container-breakpoint) {
   body {
     display: flex;
     flex-flow: row nowrap;
@@ -28,8 +28,7 @@
     flex-grow: 1;
     margin: 0;
     outline: 0;
-    padding-left: 2 * $container-padding-width;
-    padding-right: 2 * $container-padding-width;
+    padding: $padding-container-desktop;
   }
 
   .container-side {
@@ -41,8 +40,8 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin-left: -$container-padding-width;
-  margin-right: -$container-padding-width;
+  margin-left: -$width-gap;
+  margin-right: -$width-gap;
 }
 
 .col,
@@ -50,14 +49,14 @@
 .col-1-3,
 .col-1-4,
 .col-custom {
-  padding: 0 $container-padding-width / 2;
+  padding: 0 $width-gap / 2;
 
   &:first-child {
-    padding-left: $container-padding-width;
+    padding-left: $width-gap;
   }
 
   &:last-child {
-    padding-right: $container-padding-width;
+    padding-right: $width-gap;
   }
 }
 
@@ -67,24 +66,24 @@
   max-width: 100%;
 }
 
+.col-1-2,
+.col-1-3,
+.col-1-4,
+.col-custom {
+  flex-shrink: 0;
+}
+
 .col-1-2 {
   flex-basis: 50%;
-  flex-shrink: 0;
   max-width: 50%;
 }
 
 .col-1-3 {
   flex-basis: 33.33%;
-  flex-shrink: 0;
   max-width: 33.33%;
 }
 
 .col-1-4 {
   flex-basis: 25%;
-  flex-shrink: 0;
   max-width: 25%;
-}
-
-.col-custom {
-  flex-shrink: 0;
 }
