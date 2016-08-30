@@ -419,11 +419,11 @@ If you want to have multiple inputs in one row, you should use grid system.
 ```html
 <form action="#complicate-forms">
   <div class="row">
-    <label class="col-custom text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
+    <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col-custom text-right" style="flex-basis:90px">Gender: </label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Gender: </label>
     <div class="col"><label>
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
@@ -432,7 +432,7 @@ If you want to have multiple inputs in one row, you should use grid system.
     </label></div>
   </div>
   <div class="row">
-    <label class="col-custom text-right" style="flex-basis:90px">Country: </label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -442,13 +442,13 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col-custom text-right" style="flex-basis:90px">Avatar:</label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
+    <label class="col-custom label text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
