@@ -466,6 +466,8 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 ```
 
+A warn tip, when you are using `<label>` element, you can add `class="label"` if it's a text label, but don't add the class if it's the parent of `checkbox` or `radio`.
+
 ### Disabled Forms
 
 <form action="#disabled-forms">
@@ -490,13 +492,13 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 ## Utilities
 
-Mobi.css also provides some useful utilities, like layout utilities, align utilities, `scroll-view`, etc.
+Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, `scroll-view`, etc.
 
-### Layout utilities
+### Layout Utilities
 
 As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`.
 
-For more information, please read [Margin Top Only](#margin-top-only) section.
+For more details, please read [Margin Top Only](#margin-top-only) section.
 
 ### Align Utilities
 
@@ -609,6 +611,7 @@ The indexes of all available classes.
 - [`col-1-3`](#grid-system)
 - [`container`](#-container)
 - [`container-side`](#-container-side)
+- [`label`](#complicate-forms)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)
