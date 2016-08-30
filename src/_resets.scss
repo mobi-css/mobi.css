@@ -68,7 +68,7 @@ code {
   background-color: $color-background-code;
   font-family: $font-family-code;
   font-size: $font-size-code;
-  padding: 2px;
+  padding: 2px 3px;
 }
 
 pre {
@@ -120,7 +120,7 @@ form {
   label {
     cursor: pointer;
     display: block;
-    margin: $width-gap 0 0;
+    margin-top: $width-gap;
   }
 }
 
@@ -203,6 +203,16 @@ textarea,
   &:focus {
     border-color: $color-border-input-focus;
   }
+}
+
+[type=checkbox],
+[type=radio] {
+  margin: 13px 5px;
+}
+
+[type=file] {
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 button,

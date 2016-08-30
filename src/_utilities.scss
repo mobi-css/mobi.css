@@ -22,41 +22,13 @@
   text-align: right;
 }
 
-.left,
-.center,
-.right,
-.top,
-.middle,
-.bottom {
-  display: flex;
-}
-
-.left {
-  justify-content: flex-start;
-}
-
-.center {
-  justify-content: center;
-}
-
-.right {
-  justify-content: flex-end;
-}
-
-.top {
-  align-items: flex-start;
-}
-
-.middle {
-  align-items: center;
-}
-
-.bottom {
-  align-items: flex-end;
-}
-
 .scroll-view {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
+}
+
+.label {
+  margin-top: $width-gap;
+  padding-top: $padding-top-label;
 }

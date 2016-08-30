@@ -1,6 +1,6 @@
 <h1 class="row mt-15" id="mobi-css">
-  <div class="col-custom middle" style="padding-right:0">
-    <img width="32px" src="img/mobi-logo-512.png" alt="mobi-logo-32"/>
+  <div class="col-custom" style="padding-right:0">
+    <img width="32px" src="img/mobi-logo-512.png" alt="mobi-logo-32" style="position:relative; top:6px;"/>
   </div>
   <div class="col">Mobi.css</div>
   <div class="col-custom">
@@ -14,13 +14,13 @@
 
 <div class="row mt-30">
   <div class="col text-center">
-    <i class="fa fa-leaf" style="font-size: 6rem;"></i>
+    <i class="fa fa-leaf" style="font-size:6rem"></i>
   </div>
   <div class="col text-center">
-    <i class="fa fa-cogs" style="font-size: 6rem;"></i>
+    <i class="fa fa-cogs" style="font-size:6rem"></i>
   </div>
   <div class="col text-center">
-    <i class="fa fa-mobile" style="font-size: 6rem; transform: scale(1.35);"></i>
+    <i class="fa fa-mobile" style="font-size:6rem; transform:scale(1.35);"></i>
   </div>
 </div>
 
@@ -191,26 +191,26 @@ You probably know Mobi.css can use flexbox for layout, and so should you! [Now i
 Here is an example for how you can use `col-custom` and flexbox for a typical fixed-fluid layout.
 
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" style="font-size:56px"></i></div>
+  <div class="col-custom" style="flex-basis:70px"><i class="fa fa-github" style="font-size:56px"></i></div>
   <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
   <div class="col-custom" style="flex-basis:30px"></div>
 </div>
 <div class="row mt-15">
   <div class="col-custom" style="flex-basis:30px"></div>
   <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
-  <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div class="col-custom" style="flex-basis:70px"><img alt="xcatliu" width="48px" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:80px"><i class="fa fa-github" style="font-size:56px"></i></div>
+  <div class="col-custom" style="flex-basis:70px"><i class="fa fa-github" style="font-size:56px"></i></div>
   <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
   <div class="col-custom" style="flex-basis:30px"></div>
 </div>
 <div class="row mt-15">
   <div class="col-custom" style="flex-basis:30px"></div>
   <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
-  <div class="col-custom" style="flex-basis:80px"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div class="col-custom" style="flex-basis:70px"><img alt="xcatliu" width="48px" src="img/xcatliu.png"/></div>
 </div>
 ```
 
@@ -348,18 +348,18 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 
 ### Basic Forms
 
-<form action="#forms">
+<form action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
-  <label><input type="checkbox"/> I agree to terms.</label>
+  <label><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 
 ```html
-<form action="#forms">
+<form action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
-  <label><input type="checkbox"/> I agree to terms.</label>
+  <label><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 ```
@@ -368,13 +368,13 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 
 If you want to have multiple inputs in one row, you should use grid system.
 
-<form action="#forms">
+<form action="#complicate-forms">
   <div class="row">
-    <label class="col-custom right middle" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
+    <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Gender: </label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Gender: </label>
     <div class="col"><label>
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
@@ -383,7 +383,7 @@ If you want to have multiple inputs in one row, you should use grid system.
     </label></div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Country: </label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -393,13 +393,13 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Avatar:</label>
+    <label class="col-custom label text-right" style="flex-basis:90px">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
+    <label class="col-custom label text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
@@ -417,13 +417,13 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 
 ```html
-<form action="#forms">
+<form action="#complicate-forms">
   <div class="row">
-    <label class="col-custom right middle" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
+    <label class="col-custom text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Gender: </label>
+    <label class="col-custom text-right" style="flex-basis:90px">Gender: </label>
     <div class="col"><label>
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
@@ -432,7 +432,7 @@ If you want to have multiple inputs in one row, you should use grid system.
     </label></div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Country: </label>
+    <label class="col-custom text-right" style="flex-basis:90px">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -442,13 +442,13 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col-custom right middle" style="flex-basis:90px">Avatar:</label>
+    <label class="col-custom text-right" style="flex-basis:90px">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
+    <label class="col-custom text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
@@ -468,7 +468,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 ### Disabled Forms
 
-<form action="#forms">
+<form action="#disabled-forms">
   <input type="text" placeholder="Disabled Input" disabled/>
   <div class="row">
     <div class="col"><input type="button" value="Disabled" disabled/></div>
@@ -478,7 +478,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 
 ```html
-<form action="#forms">
+<form action="#disabled-forms">
   <input type="text" placeholder="Disabled Input" disabled/>
   <div class="row">
     <div class="col"><input type="button" value="Disabled" disabled/></div>
@@ -500,7 +500,7 @@ For more information, please read [Margin Top Only](#margin-top-only) section.
 
 ### Align Utilities
 
-You can use Mobi.css to easily align contents, both horizontally and vertically!
+You can use Mobi.css to easily align contents.
 
 #### Align Inline Contents
 
@@ -512,54 +512,6 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 <div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center alert-success">Awesome!</div>
 <div class="text-right alert-success">Some!</div>
-```
-
-#### Align Block Contents
-
-<div class="left alert-success mt-15">
-  <div class="alert-success">Mobi.css</div>
-</div>
-<div class="center alert-success">
-  <div class="alert-success">Is</div>
-</div>
-<div class="right alert-success">
-  <div class="alert-success">Awesome!</div>
-</div>
-<div class="top alert-success" style="height:150px">
-  <div class="alert-success">Mobi.css</div>
-</div>
-<div class="middle alert-success" style="height:150px">
-  <div class="alert-success">Is</div>
-</div>
-<div class="bottom alert-success" style="height:150px">
-  <div class="alert-success">Awesome!</div>
-</div>
-<div class="center middle alert-success" style="height:150px">
-  <div class="alert-success">Mobi.css is awesome!</div>
-</div>
-
-```html
-<div class="left alert-success mt-15">
-  <div class="alert-success">Mobi.css</div>
-</div>
-<div class="center alert-success">
-  <div class="alert-success">Is</div>
-</div>
-<div class="right alert-success">
-  <div class="alert-success">Awesome!</div>
-</div>
-<div class="top alert-success" style="height:150px">
-  <div class="alert-success">Mobi.css</div>
-</div>
-<div class="middle alert-success" style="height:150px">
-  <div class="alert-success">Is</div>
-</div>
-<div class="bottom alert-success" style="height:150px">
-  <div class="alert-success">Awesome!</div>
-</div>
-<div class="center middle alert-success" style="height:150px">
-  <div class="alert-success">Mobi.css is awesome!</div>
-</div>
 ```
 
 ### `scroll-view`
@@ -648,10 +600,8 @@ This is pretty easy, just set the `max-width` of `scroll-view`.
 
 The indexes of all available classes.
 
-- [`bottom`](#align-block-contents)
 - [`btn-danger`](#complicate-forms)
 - [`btn-primary`](#complicate-forms)
-- [`center`](#align-block-contents)
 - [`col`](#grid-system)
 - [`col-custom`](#use-flexbox-for-layout)
 - [`col-1-2`](#grid-system)
@@ -659,18 +609,14 @@ The indexes of all available classes.
 - [`col-1-3`](#grid-system)
 - [`container`](#-container)
 - [`container-side`](#-container-side)
-- [`left`](#align-block-contents)
-- [`middle`](#align-block-contents)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)
-- [`right`](#align-block-contents)
 - [`row`](#grid-system)
 - [`scroll-view`](#-scroll-view-)
 - [`text-center`](#align-inline-contents)
 - [`text-left`](#align-inline-contents)
 - [`text-right`](#align-inline-contents)
-- [`top`](#align-block-contents)
 
 ---
 
