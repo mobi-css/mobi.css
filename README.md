@@ -1,8 +1,6 @@
-# Mobi.css
+# Mobi.css [![Build Status](https://travis-ci.org/xcatliu/mobi.css.svg?branch=master)](https://travis-ci.org/xcatliu/mobi.css)
 
 > Mobi.css is a lightweight, flexible css library that focus on mobile.
-
-[![Build Status](https://travis-ci.org/xcatliu/mobi.css.svg?branch=master)](https://travis-ci.org/xcatliu/mobi.css)
 
 - Homepage: http://getmobicss.com/
 
