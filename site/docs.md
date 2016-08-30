@@ -27,7 +27,7 @@
 ## Introduction
 
 - Only 2.8kb after gzip, less than Skeleton, Pure.css and Bootstrap v4, etc.
-- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://mobicss.xcatliu.com/).
+- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
 ## Download
@@ -255,7 +255,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
     </thead>
     <tbody>
       <tr>
-        <td><a href="http://mobicss.xcatliu.com/">Mobi.css</a></td>
+        <td><a href="http://getmobicss.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
         <td>2.8kb</td>
@@ -302,7 +302,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
     </thead>
     <tbody>
       <tr>
-        <td><a href="http://mobicss.xcatliu.com/">Mobi.css</a></td>
+        <td><a href="http://getmobicss.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
         <td>2.8kb</td>
