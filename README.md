@@ -3,8 +3,6 @@
 > Mobi.css is a lightweight, flexible css library that focus on mobile.
 
 - Homepage: http://mobicss.xcatliu.com/
-- GitHub: http://github.com/xcatliu/mobi.css
-- Author: [@xcatliu](http://github.com/xcatliu/)
 
 ## Introduction
 
