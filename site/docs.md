@@ -548,9 +548,9 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
 ##### Scroll Vertical
 
-This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `500px`.
+This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `300px`.
 
-<div class="mt-15 scroll-view" style="max-height:300px">
+<div class="mt-15 scroll-view" style="max-height:400px">
   <h2>狂人日记</h2>
   <h3>一</h3>
   <p>今天晚上，很好的月光。</p>
