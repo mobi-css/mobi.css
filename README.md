@@ -20,7 +20,6 @@
 - [Tables](http://getmobicss.com/#tables)
 - [Forms](http://getmobicss.com/#forms)
 - [Utilities](http://getmobicss.com/#utilities)
-- [Indexes](http://getmobicss.com/#indexes)
 
 Please checkout the [Homepage] for more details.
 

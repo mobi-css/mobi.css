@@ -1,5 +1,5 @@
 .mt-30 {
-  margin-top: 2 * $width-gap;
+  margin-top: $width-gap-double;
 }
 
 .mt-15 {
@@ -23,9 +23,7 @@
 }
 
 .scroll-view {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
+  @include scroll-view();
 }
 
 .label {

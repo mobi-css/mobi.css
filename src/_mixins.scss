@@ -1,0 +1,28 @@
+@mixin scroll-view() {
+  max-height: $max-height-scroll-view;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Background image of down arrow
+// Converted from https://github.com/encharm/Font-Awesome-SVG-PNG
+$background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');
+
+@mixin background-icon-angle-down() {
+  background-image: $background-image-angle-down;
+  background-position: right 5px top 11px;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-right: 30px;
+}
+
+@mixin flex-container() {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+@mixin flex-width($percentage) {
+  flex-basis: $percentage;
+  max-width: $percentage;
+}

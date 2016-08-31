@@ -1,29 +1,68 @@
-*,
-*::before,
-*::after {
+// scss-lint:disable DuplicateProperty, MergeableSelector, QualifyingElement
+
+// Resets
+//
+// Global resets to common HTML elements.
+// Doesn't depend on any third party libraries.
+// Inspired by Normalise.css and bootstrap/_reboot.scss
+
+
+//
+// `html` and `body`
+//
+
+// Reset the box-sizing
+html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
+  // `rem` based on the `font-size` of html
   font-size: $rem-base;
+  // Changes the default tap highlight in iOS.
+  -webkit-tap-highlight-color: $color-background-active;
+  // Prevent adjustments of font size after orientation changes in IE and iOS.
   text-size-adjust: 100%;
 }
 
 body {
   background-color: $color-background-body;
-  color: $color-text-black;
+  color: $color-text-body;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
   margin: 0;
 }
 
+
+//
+// Typography
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: $width-gap-double 0 0;
+}
+
 p,
 blockquote,
 table,
 hr,
+dl,
 ul,
-ol {
+ol,
+address,
+figure {
   margin: $width-gap 0 0;
 }
 
@@ -34,7 +73,6 @@ h4,
 h5,
 h6 {
   font-weight: $font-weight-bold;
-  margin: 2 * $width-gap 0 0;
 }
 
 h1 { font-size: $font-size-h1; }
@@ -47,40 +85,41 @@ h6 { font-size: $font-size-h6; }
 a {
   color: $color-text-link;
   text-decoration: none;
+  // Remove gaps in links underline in iOS 8+ and Safari 8+.
+  -webkit-text-decoration-skip: objects;
 
-  &:hover,
-  &:active {
+  &:active,
+  &:hover {
     text-decoration: underline;
   }
 }
 
 b,
-strong {
+strong,
+dt {
   font-weight: $font-weight-bold;
-}
-
-img {
-  max-width: 100%;
 }
 
 code {
   background-color: $color-background-code;
   font-family: $font-family-code;
   font-size: $font-size-code;
-  padding: 2px 3px;
+  padding: $padding-code;
 }
 
 pre {
+  // Mobile device has a small height, so we need to enable scroll-view
+  @include scroll-view();
+
   background-color: $color-background-pre;
   font-size: $font-size-pre;
   line-height: $line-height-pre;
+  // Mobile device has a small height, so we need to set the width of pre to the device width
   margin-left: -$width-gap;
   margin-right: -$width-gap;
-  max-height: $max-height-pre;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
   padding: $width-gap;
 
+  // Override the code styles
   code {
     background-color: transparent;
     padding: 0;
@@ -88,29 +127,136 @@ pre {
 }
 
 blockquote {
-  border-left: 5px solid $color-border;
+  border-left: $border-left-blockquote;
   color: $color-text-blockquote;
   padding-left: $width-gap;
 }
 
+ul,
+ol {
+  padding-left: $width-gap-double;
+}
+
+dt,
+dd,
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: $border-top-hr;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+// Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+sub,
+sup {
+  font-size: $font-size-sub-sup;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+mark {
+  background-color: $color-background-mark;
+  color: $color-text;
+}
+
+
+//
+// Embedded Content
+//
+
+// Add the correct display in iOS 4-7.
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+// TODO ifrome?
+// https://github.com/xcatliu/mobi.css/issues/12
+
+
+//
+// Tables
+//
+
 table {
+  // Reset for nesting within parents with `background-color`.
+  background-color: $color-background-table;
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
+  // Enable scroll-view on mobile
   width: 100%;
+}
+
+caption {
+  caption-side: bottom;
+  color: $color-text-muted;
+  padding: $padding-table-cell;
+  text-align: left;
 }
 
 th,
 td {
   border: 0;
-  border-bottom: 1px solid $color-border;
-  padding: 5px;
+  border-bottom: $border-bottom-th-td;
+  padding: $padding-table-cell;
   text-align: left;
 }
 
 th {
   background-color: $color-background-th;
   font-weight: $font-weight-bold;
+}
+
+
+//
+// Forms
+//
+
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+[role="button"] {
+  cursor: pointer;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  outline: 0;
+  touch-action: manipulation;
 }
 
 form {
@@ -123,38 +269,45 @@ form {
   }
 }
 
-a,
 button,
-input,
-select,
-textarea,
-label {
-  outline: 0;
-  -webkit-tap-highlight-color: $color-background-active;
-  touch-action: manipulation;
-}
-
-button,
+// Prevent a WebKit bug where (*) destroys native `audio` and `video` controls in Android 4.
 html [type=button],
 [type=reset],
 [type=submit],
 ::-webkit-file-upload-button {
+  // (*) Correct the inability to style clickable types in iOS and Safari.
   -webkit-appearance: button;
 }
 
 [type=search] {
+  // Correct the odd appearance in Chrome and Safari.
   -webkit-appearance: textfield;
-  outline-offset: -2px;
 }
 
+[type="date"],
+[type="time"],
+[type="datetime-local"],
+[type="month"] {
+  // Remove the default appearance of temporal inputs to avoid a Mobile Safari
+  // bug where setting a custom line-height prevents text from being vertically
+  // centered within the input.
+  //
+  // Bug report: https://github.com/twbs/bootstrap/issues/11266
+  -webkit-appearance: listbox;
+}
+
+// Change the odd styles in iOS
 select,
 textarea,
+// Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
 [type=search]::-webkit-search-cancel-button,
 [type=search]::-webkit-search-decoration,
+// checkbox and radio should follow the default style of browsers
 input:not([type=checkbox]):not([type=radio]) {
   -webkit-appearance: none;
 }
 
+// Change font properties to `inherit` in Safari.
 ::-webkit-file-upload-button {
   font: inherit;
 }
@@ -163,6 +316,7 @@ input:not([type=checkbox]):not([type=radio]) {
   display: none;
 }
 
+// `input`s should be a block element on mobile
 button,
 select,
 textarea,
@@ -173,6 +327,7 @@ input:not([type=checkbox]):not([type=radio]) {
   width: 100%;
 }
 
+// Change the default style of `input`s
 button,
 select,
 textarea,
@@ -191,10 +346,11 @@ textarea,
 [type=time],
 [type=url],
 [type=week] {
-  background-color: $color-white;
-  border: 1px solid $color-border;
-  border-radius: $border-radius;
-  color: $color-text-black;
+  background-color: $color-background-input;
+  border: $border-input;
+  border-radius: $border-radius-input;
+  // Follow the color of body text
+  color: $color-text-body;
   font-family: $font-family;
   font-size: $font-size;
   padding: $padding-input;
@@ -204,17 +360,21 @@ textarea,
   }
 }
 
+// TODO fit all the browsers
+// https://github.com/xcatliu/mobi.css/issues/4
 [type=checkbox],
 [type=radio] {
-  margin: 13px 5px;
+  margin: $margin-checkbox-radio;
 }
 
+// TODO fit all the browsers
+// https://github.com/xcatliu/mobi.css/issues/4
 [type=file] {
-  padding-bottom: 6px;
-  padding-top: 6px;
+  padding: $padding-file;
 }
 
 button,
+select,
 [type=button],
 [type=submit],
 [type=reset] {
@@ -223,11 +383,8 @@ button,
 }
 
 select {
-  background-image: $background-image-angle-down;
-  background-position: right 5px top 11px;
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  padding-right: 30px;
+  // Reset the default angle-down icon
+  @include background-icon-angle-down();
 }
 
 [disabled] {
@@ -235,17 +392,8 @@ select {
   color: $color-text-disabled;
   cursor: not-allowed;
 
+  // Set placeholder color
   &::-webkit-input-placeholder {
     color: $color-text-disabled;
   }
-}
-
-ul,
-ol {
-  padding-left: 2 * $width-gap;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid $color-border;
 }

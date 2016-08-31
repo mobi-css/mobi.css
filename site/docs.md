@@ -1,28 +1,16 @@
-<h1 class="row mt-15" id="mobi-css">
-  <div class="col-custom" style="padding-right:0">
-    <img width="32px" src="img/mobi-logo-512.png" alt="mobi-logo-32" style="position:relative; top:6px;"/>
-  </div>
-  <div class="col">Mobi.css</div>
-  <div class="col-custom">
-    <a href="https://github.com/xcatliu/mobi.css/" style="color:#333">
-      <i class="fa fa-github"></i>
-    </a>
-  </div>
-</h1>
+## Table of Content
 
-> A lightweight, flexible css library that focus on mobile.
-
-<div class="row mt-30">
-  <div class="col text-center">
-    <i class="fa fa-leaf" style="font-size:6rem"></i>
-  </div>
-  <div class="col text-center">
-    <i class="fa fa-cogs" style="font-size:6rem"></i>
-  </div>
-  <div class="col text-center">
-    <i class="fa fa-mobile" style="font-size:6rem; transform:scale(1.35);"></i>
-  </div>
-</div>
+- [Introduction](#introduction)
+- [Downloads](#downloads)
+- [Documentation](#documentation)
+  - [Layout](#layout)
+  - [Grid System](#grid-system)
+  - [Typography](#typography)
+  - [Tables](#tables)
+  - [Forms](#forms)
+  - [Utilities](#utilities)
+- [Customize](#customize)
+- [Indexes](#indexes)
 
 ## Introduction
 
@@ -30,7 +18,7 @@
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
-## Download
+## Downloads
 
 You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
 
@@ -48,21 +36,13 @@ You can also build Mobi.css to your project if you are using sass.
 
 Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
-## Table of Content
+## Documentation
 
-- [Layout](#layout)
-- [Grid System](#grid-system)
-- [Typography](#typography)
-- [Tables](#tables)
-- [Forms](#forms)
-- [Utilities](#utilities)
-- [Indexes](#indexes)
-
-## Layout
+### Layout
 
 Mobi.css provides two kinds of containers, `container` and `container-side`, as well as a simple but flexible grid system.
 
-### `container`
+#### `container`
 
 A `container` contains all of your contents, one page should have only one `container`. In most cases, `container` is the child of `body`.
 
@@ -80,7 +60,7 @@ Otherwise, `container` will have a fixed width and aligned to the center of the 
 </body>
 ```
 
-### `container-side`
+#### `container-side`
 
 `container-side` is designed for additional messages which are not valuable or useful for mobile, such as *Scan to view on mobile* or *Go to top*.
 
@@ -104,7 +84,7 @@ Of course, you should use only one `container-side`, and use it before or after 
 </body>
 ```
 
-### Grid System
+#### Grid System
 
 Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpler but flexible grid system.
 
@@ -184,7 +164,7 @@ Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4#
 </div>
 ```
 
-### Use Flexbox for Layout
+#### Use Flexbox for Layout
 
 You probably know Mobi.css can use flexbox for layout, and so should you! [Now it's safe to use flexbox on all mobile browsers](http://caniuse.com/#feat=flexbox).
 
@@ -214,7 +194,7 @@ Here is an example for how you can use `col-custom` and flexbox for a typical fi
 </div>
 ```
 
-### Margin Top Only
+#### Margin Top Only
 
 Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. Instead, Mobi.css use `margin-top` to make contents flow clearly.
 
@@ -234,7 +214,7 @@ Mobi.css also provides three classes for easily manually override the length to 
 <section class="mt-30 alert-success">section.mt-30</section>
 ```
 
-## Typography
+### Typography
 
 Mobi.css is designed for content based website. It has a pure but pleasant experience for reading.
 
@@ -242,7 +222,7 @@ Most of styles for typography are reset and do not need any classes more.
 
 This site itself is a real example. You guys are smart, so for this part it's not necessary to write examples anymore.
 
-## Tables
+### Tables
 
 Although tables is not widely used in mobile, sometimes you may need it.
 
@@ -342,11 +322,11 @@ However, tables always renders out of screen, especially in small mobiles. So yo
 </div>
 ```
 
-## Forms
+### Forms
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
-### Basic Forms
+#### Basic Forms
 
 <form action="#basic-forms">
   <input type="text" placeholder="Name"/>
@@ -364,7 +344,7 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 </form>
 ```
 
-### Complicate Forms
+#### Complicate Forms
 
 If you want to have multiple inputs in one row, you should use grid system.
 
@@ -468,7 +448,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 A warn tip, when you are using `<label>` element, you can add `class="label"` if it's a text label, but don't add the class if it's the parent of `checkbox` or `radio`.
 
-### Disabled Forms
+#### Disabled Forms
 
 <form action="#disabled-forms">
   <input type="text" placeholder="Disabled Input" disabled/>
@@ -490,21 +470,21 @@ A warn tip, when you are using `<label>` element, you can add `class="label"` if
 </form>
 ```
 
-## Utilities
+### Utilities
 
 Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, `scroll-view`, etc.
 
-### Layout Utilities
+#### Layout Utilities
 
 As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`.
 
 For more details, please read [Margin Top Only](#margin-top-only) section.
 
-### Align Utilities
+#### Align Utilities
 
 You can use Mobi.css to easily align contents.
 
-#### Align Inline Contents
+##### Align Inline Contents
 
 <div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center alert-success">Awesome!</div>
@@ -516,13 +496,13 @@ You can use Mobi.css to easily align contents.
 <div class="text-right alert-success">Some!</div>
 ```
 
-### `scroll-view`
+#### `scroll-view`
 
 Mobile devices usually have small width, so it's very useful to use a `scroll-view` class.
 
 Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
-#### Scroll Horizontal
+##### Scroll Horizontal
 
 <div class="mt-15 scroll-view">
   <div style="width:1024px">
@@ -566,9 +546,9 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 </div>
 ```
 
-#### Scroll Vertical
+##### Scroll Vertical
 
-This is pretty easy, just set the `max-width` of `scroll-view`.
+This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `500px`.
 
 <div class="mt-15 scroll-view" style="max-height:300px">
   <h2>狂人日记</h2>
@@ -598,6 +578,12 @@ This is pretty easy, just set the `max-width` of `scroll-view`.
 </div>
 ```
 
+## Customize
+
+For advanced users, it's pretty easy to customize Mobi.css.
+
+Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override default values, without modifying source files.
+
 ## Indexes
 
 The indexes of all available classes.
@@ -620,7 +606,3 @@ The indexes of all available classes.
 - [`text-center`](#align-inline-contents)
 - [`text-left`](#align-inline-contents)
 - [`text-right`](#align-inline-contents)
-
----
-
-<p style="color:#777;font-size:1.4rem">Designed and built with <i class="fa fa-heart"></i> by <a href="https://github.com/xcatliu/">@xcatliu</a>.</p>

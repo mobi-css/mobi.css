@@ -1,35 +1,126 @@
-@charset 'utf-8';
-
+// Variables
+//
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+//
 // All variables need to be named as ${rule}-${element}-${modifier}
 
-// Fonts
-// 1rem = 10px
-$rem-base: 10px;
 
-$font-size: 1.8rem;
+//
+// Colors
+//
+
+// Common colors
+// Add !default so _custom.scss can override it
+$color-text: #333 !default;
+$color-text-muted: #777 !default;
+
+$color-background: #fff !default;
+$color-background-over: rgba(0, 0, 0, .05) !default;
+$color-background-back: #f3f3f3 !default;
+
+$color-border: #ddd !default;
+
+// `body` and `container`
+$color-text-body: $color-text !default;
+$color-background-body: $color-background-back !default;
+$color-background-container: $color-background !default;
+
+// Links
+// hsl is easy to modify
+$color-text-link: hsl(210, 100%, 50%) !default;
+// Use rgba so it can nesting
+$color-background-active: rgba(0, 0, 0, .1) !default;
+
+// Codes
+$color-background-code: $color-background-over !default;
+$color-background-pre: $color-background-over !default;
+
+// `blockquote`
+$color-text-blockquote: $color-text-muted !default;
+
+// `mark`
+$color-background-mark: #ff0 !default;
+
+// Tables
+$color-background-table: $color-background !default;
+$color-background-th: $color-background-over !default;
+
+// Forms
+// For `input`s which is not a button
+$color-background-input: $color-background !default;
+// For focused input
+$color-border-input-focus: hsl(210, 100%, 60%) !default;
+// For buttons
+$color-background-btn: $color-background-back !default;
+$color-text-btn-primary: $color-background !default;
+$color-background-btn-primary: hsl(120, 50%, 50%) !default;
+$color-text-btn-danger: hsl(0, 100%, 40%) !default;
+// For disabled input, button, textarea
+$color-text-disabled: $color-text-muted !default;
+$color-background-btn-primary-disabled: hsl(120, 50%, 70%) !default;
+$color-text-btn-danger-disabled: hsl(0, 100%, 60%) !default;
+
+
+//
+// Spacing
+//
+
+$width-gap: 15px !default;
+$width-gap-double: 30px !default;
+$width-gap-half: 7px !default;
+
+
+//
+// layouts
+//
+
+$width-scrollbar: 17px !default;
+
+$padding-container: 0 $width-gap $width-gap !default;
+$padding-container-desktop: 0 $width-gap-double $width-gap !default;
+
+$padding-container-side:  0 $width-gap-double $width-gap !default;
+
+$min-width-container: 320px !default;
+$max-width-container: 768px !default;
+$side-width-container: 256px !default;
+// So won't have scroll-x on device which width is 1025px
+$width-container-breakpoint: 1024px + $width-scrollbar !default;
+
+//
+// Typography
+//
+
+// 1rem = 10px
+$rem-base: 10px !default;
+
+$font-size: 1.8rem !default;
 
 // h4, h5, h6 is not very useful, so we set them to the same size of normal
 // font-size, but with $font-weight-bold
-$font-size-h1: 3rem;
-$font-size-h2: 2.4rem;
-$font-size-h3: 2rem;
-$font-size-h4: 1.8rem;
-$font-size-h5: 1.8rem;
-$font-size-h6: 1.8rem;
+$font-size-h1: 3.2rem !default;
+$font-size-h2: 2.6rem !default;
+$font-size-h3: 2.4rem !default;
+$font-size-h4: 2.2rem !default;
+$font-size-h5: 2rem !default;
+$font-size-h6: 1.8rem !default;
 
 // Mobile device always have a small length of width, so we should keep pre as
 // small as it can, 1.4rem is to small and looks strange in Windows Chrome if
 // there are some Chinese words in pre.
-$font-size-pre: 1.5rem;
+$font-size-pre: 1.5rem !default;
 
-$font-size-code: 85%;
+$font-size-code: 85% !default;
+$font-size-small: 80% !default;
+$font-size-sub-sup: 75% !default;
 
-$line-height: 1.5;
+$line-height: 1.5 !default;
 
 // line-height need to be set to pre, not code
-$line-height-pre: 1.2;
+$line-height-pre: 1.2 !default;
 
-$font-weight-bold: 600;
+$font-weight-bold: 600 !default;
 
 $font-family:
   // Safari for OS X and iOS (San Francisco)
@@ -57,64 +148,42 @@ $font-family:
   // Basic web fallback
   Arial, Helvetica, STHeiti, sans-serif,
   // Emoji
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
 // TODO Chinese font-family for pre code
 // https://github.com/xcatliu/mobi.css/issues/8
-$font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
 
-// layouts
-$width-gap: 15px;
-$width-scrollbar: 17px;
+$padding-code: 2px 3px !default;
 
-$padding-container: 0 $width-gap $width-gap;
-$padding-container-desktop: 0 2 * $width-gap $width-gap;
+$border-left-blockquote: 5px solid $color-border !default;
 
-$padding-container-side:  0 2 * $width-gap $width-gap;
+$border-top-hr: 1px solid $color-border !default;
 
-$min-width-container: 320px;
-$max-width-container: 768px;
-$side-width-container: 256px;
-// So won't have scroll-x on device which width is 1025px
-$width-container-breakpoint: 1024px + $width-scrollbar;
+// Set the default max-height to scroll-view
+$max-height-scroll-view: 500px !default;
 
-$padding-input: 5px 10px;
 
-$border-radius: 3px;
+//
+// Tables
+//
 
-$max-height-pre: 300px;
+$padding-table-cell: 5px !default;
+$border-bottom-th-td: 1px solid $color-border !default;
 
+
+//
+// Forms
+//
+
+// For inputs
+$border-radius-input: 3px !default;
+$padding-input: 5px 10px !default;
+$border-input: 1px solid $color-border !default;
+// For file input
+$padding-file: 6px 0 !default;
+
+// For checkbox and radio
+$margin-checkbox-radio: 13px 5px !default;
 // 5px padding + 1px border
-$padding-top-label: 6px;
-
-// Colors
-$color-white: #fff;
-
-$color-text-black: #333;
-// hsl is easy to modify
-$color-text-red: hsl(0, 100%, 40%);
-$color-text-link: hsl(210, 100%, 50%);
-$color-text-blockquote: #777;
-
-$color-background-body: #f3f3f3;
-// Use rgba so it can nesting
-$color-background-code: rgba(0, 0, 0, .05);
-$color-background-th: rgba(0, 0, 0, .05);
-$color-background-pre: rgba(0, 0, 0, .05);
-$color-background-active: rgba(0, 0, 0, .1);
-
-$color-background-btn: #f3f3f3;
-$color-background-btn-primary: hsl(120, 50%, 50%);
-$color-text-btn-danger: $color-text-red;
-
-// For disabled input, button, textarea
-$color-text-disabled: #777;
-$color-background-btn-primary-disabled: hsl(120, 50%, 70%);
-$color-text-btn-danger-disabled: hsl(0, 100%, 60%);
-
-$color-border: #ddd;
-$color-border-input-focus: hsl(210, 100%, 60%);
-
-// Background image of down arrow
-// Converted from https://github.com/encharm/Font-Awesome-SVG-PNG
-$background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');
+$padding-top-label: 6px !default;

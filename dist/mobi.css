@@ -1,11 +1,15 @@
 @charset "UTF-8";
+html {
+  box-sizing: border-box; }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -19,12 +23,23 @@ body {
   line-height: 1.5;
   margin: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 30px 0 0; }
+
 p,
 blockquote,
 table,
 hr,
+dl,
 ul,
-ol {
+ol,
+address,
+figure {
   margin: 15px 0 0; }
 
 h1,
@@ -33,39 +48,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  margin: 30px 0 0; }
+  font-weight: 600; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 3.2rem; }
 
 h2 {
-  font-size: 2.4rem; }
+  font-size: 2.6rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2.4rem; }
 
 h4 {
-  font-size: 1.8rem; }
+  font-size: 2.2rem; }
 
 h5 {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
 
 h6 {
   font-size: 1.8rem; }
 
 a {
   color: #0080ff;
-  text-decoration: none; }
-  a:hover, a:active {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
     text-decoration: underline; }
 
 b,
-strong {
+strong,
+dt {
   font-weight: 600; }
-
-img {
-  max-width: 100%; }
 
 code {
   background-color: rgba(0, 0, 0, 0.05);
@@ -74,14 +87,14 @@ code {
   padding: 2px 3px; }
 
 pre {
+  max-height: 500px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 1.5rem;
   line-height: 1.2;
   margin-left: -15px;
   margin-right: -15px;
-  max-height: 300px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
   padding: 15px; }
   pre code {
     background-color: transparent;
@@ -92,11 +105,62 @@ blockquote {
   color: #777;
   padding-left: 15px; }
 
+ul,
+ol {
+  padding-left: 30px; }
+
+dt,
+dd,
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+mark {
+  background-color: #ff0;
+  color: #333; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
 table {
+  background-color: #fff;
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%; }
+
+caption {
+  caption-side: bottom;
+  color: #777;
+  padding: 5px;
+  text-align: left; }
 
 th,
 td {
@@ -109,23 +173,28 @@ th {
   background-color: rgba(0, 0, 0, 0.05);
   font-weight: 600; }
 
+[role="button"] {
+  cursor: pointer; }
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  outline: 0;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
 form {
   margin: 0; }
   form label {
     cursor: pointer;
     display: block;
     margin-top: 15px; }
-
-a,
-button,
-input,
-select,
-textarea,
-label {
-  outline: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
-  -ms-touch-action: manipulation;
-      touch-action: manipulation; }
 
 button,
 html [type=button],
@@ -135,8 +204,13 @@ html [type=button],
   -webkit-appearance: button; }
 
 [type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px; }
+  -webkit-appearance: textfield; }
+
+[type="date"],
+[type="time"],
+[type="datetime-local"],
+[type="month"] {
+  -webkit-appearance: listbox; }
 
 select,
 textarea,
@@ -210,10 +284,10 @@ textarea,
   margin: 13px 5px; }
 
 [type=file] {
-  padding-bottom: 6px;
-  padding-top: 6px; }
+  padding: 6px 0; }
 
 button,
+select,
 [type=button],
 [type=submit],
 [type=reset] {
@@ -233,14 +307,6 @@ select {
   cursor: not-allowed; }
   [disabled]::-webkit-input-placeholder {
     color: #777; }
-
-ul,
-ol {
-  padding-left: 30px; }
-
-hr {
-  border: 0;
-  border-top: 1px solid #ddd; }
 
 .container {
   background-color: #fff;
@@ -301,8 +367,8 @@ hr {
 .col-1-3,
 .col-1-4,
 .col-custom {
-  padding-left: 7.5px;
-  padding-right: 7.5px; }
+  padding-left: 7px;
+  padding-right: 7px; }
   .col:first-child,
   .col-1-2:first-child,
   .col-1-3:first-child,
@@ -384,9 +450,9 @@ hr {
   text-align: right; }
 
 .scroll-view {
+  max-height: 500px;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  width: 100%; }
+  -webkit-overflow-scrolling: touch; }
 
 .label {
   margin-top: 15px;
