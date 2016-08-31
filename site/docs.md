@@ -26,7 +26,7 @@
 
 ## Introduction
 
-- Only 2.8kb after gzip, less than Skeleton, Pure.css and Bootstrap v4, etc.
+- Only 2.8kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
