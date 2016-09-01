@@ -12,7 +12,7 @@
 .container-side {
   display: none;
   padding: $padding-container-side;
-  width: $side-width-container;
+  width: $width-container-side;
 }
 
 @media (min-width: $width-container-breakpoint) {
@@ -23,6 +23,7 @@
   .container {
     flex-grow: 1;
     margin: 0;
+    max-width: $max-width-container + $width-gap-double;
     outline: 0;
     padding: $padding-container-desktop;
   }

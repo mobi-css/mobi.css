@@ -100,7 +100,7 @@ pre {
   pre code {
     background-color: transparent;
     padding: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 738px) {
     pre {
       margin-left: 0;
       margin-right: 0; } }
@@ -200,7 +200,7 @@ html [type=button],
 .container {
   background-color: #fff;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 738px;
   min-width: 320px;
   outline: 15px solid #fff;
   overflow: hidden;
@@ -231,6 +231,7 @@ html [type=button],
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin: 0;
+    max-width: 768px;
     outline: 0;
     padding: 0 30px 15px; }
   .container-side {
