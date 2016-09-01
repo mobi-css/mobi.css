@@ -111,8 +111,9 @@ $font-size-h6: 1.8rem !default;
 // there are some Chinese words in pre.
 $font-size-pre: 1.5rem !default;
 
-$font-size-code: 85% !default;
-$font-size-small: 80% !default;
+$font-size-small: 85% !default;
+$font-size-code: $font-size-small !default;
+$font-size-address: $font-size-small !default;
 $font-size-sub-sup: 75% !default;
 
 $line-height: 1.5 !default;

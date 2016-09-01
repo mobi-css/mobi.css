@@ -87,7 +87,7 @@ code {
   padding: 2px 3px; }
 
 pre {
-  max-height: 500px;
+  max-height: 300px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   background-color: rgba(0, 0, 0, 0.05);
@@ -122,7 +122,7 @@ hr {
   border-top: 1px solid #ddd; }
 
 small {
-  font-size: 80%; }
+  font-size: 85%; }
 
 sub,
 sup {
@@ -137,6 +137,11 @@ sub {
 sup {
   top: -.5em; }
 
+address {
+  color: #777;
+  font-size: 85%;
+  font-style: normal; }
+
 mark {
   background-color: #ff0;
   color: #333; }
@@ -148,6 +153,9 @@ audio:not([controls]) {
 img {
   max-width: 100%;
   vertical-align: middle; }
+
+iframe {
+  border: 0; }
 
 table {
   background-color: #fff;
@@ -287,7 +295,6 @@ textarea,
   padding: 6px 0; }
 
 button,
-select,
 [type=button],
 [type=submit],
 [type=reset] {
@@ -450,7 +457,7 @@ select {
   text-align: right; }
 
 .scroll-view {
-  max-height: 500px;
+  max-height: 300px;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 

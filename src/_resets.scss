@@ -172,6 +172,12 @@ sup {
   top: -.5em;
 }
 
+address {
+  color: $color-text-muted;
+  font-size: $font-size-address;
+  font-style: normal;
+}
+
 mark {
   background-color: $color-background-mark;
   color: $color-text;
@@ -191,6 +197,10 @@ audio:not([controls]) {
 img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+iframe {
+  border: 0;
 }
 
 // TODO ifrome?
