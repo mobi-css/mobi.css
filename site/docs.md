@@ -44,7 +44,7 @@ Mobi.css provides two kinds of containers, `container` and `container-side`, as 
 
 #### `container`
 
-A `container` contains all of your contents, one page should have only one `container`. In most cases, `container` is the child of `body`.
+A `container` contains all of your contents, one page should have only one `container`. In most cases, `container` is the child of `<body>`.
 
 On a mobile device (with width less than 768px), `container` will fill entire width of screen.
 
@@ -200,7 +200,7 @@ Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. Instead, Mo
 
 That do make sense, since it's each section's responsibility to determine the length it should margin to top.
 
-For example, `h1` ~ `h6` have a length of `30px` margin to top, in the meantime, `p`, `ul`, `input` have a length of `15px` margin to top.
+For example, `<h1>` ~ `<h6>` have a length of `30px` margin to top, in the meantime, `<p>`, `<ul>`, `<table>` have a length of `15px` margin to top.
 
 Mobi.css also provides three classes for easily manually override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`, the length of `margin-top` are `30px`, `15px` and `0`.
 
@@ -228,8 +228,14 @@ Although tables is not widely used in mobile, sometimes you may need it.
 
 However, tables always renders out of screen, especially in small mobiles. So you should probably need a `scroll-view` area to place your table.
 
+And don't forget to add `class="table"` to your `<table>` element.
+
+Why don't Mobi.css reset `<table>` element so you don't need to add the `table` class?
+
+Because once `<table>` element is reset, it's hard to change it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason for `<form>`.
+
 <div class="scroll-view">
-  <table>
+  <table class="table">
     <thead>
       <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
     </thead>
@@ -276,7 +282,7 @@ However, tables always renders out of screen, especially in small mobiles. So yo
 
 ```html
 <div class="scroll-view">
-  <table>
+  <table class="table">
     <thead>
       <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
     </thead>
@@ -326,9 +332,11 @@ However, tables always renders out of screen, especially in small mobiles. So yo
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
+You need add `class="form"` to a `<form>` element.
+
 #### Basic Forms
 
-<form action="#basic-forms">
+<form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
   <label><input type="checkbox"/>I agree to terms.</label>
@@ -336,7 +344,7 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 </form>
 
 ```html
-<form action="#basic-forms">
+<form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
   <label><input type="checkbox"/>I agree to terms.</label>
@@ -348,7 +356,7 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 
 If you want to have multiple inputs in one row, you should use grid system.
 
-<form action="#complicate-forms">
+<form class="form" action="#complicate-forms">
   <div class="row">
     <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
@@ -397,7 +405,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 
 ```html
-<form action="#complicate-forms">
+<form class="form" action="#complicate-forms">
   <div class="row">
     <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
@@ -448,27 +456,55 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 A warn tip, when you are using `<label>` element, you can add `class="label"` if it's a text label, but don't add the class if it's the parent of `checkbox` or `radio`.
 
-#### Disabled Forms
+#### `disabled` and `readonly`
 
-<form action="#disabled-forms">
+<form class="form" action="#disabled-forms">
   <input type="text" placeholder="Disabled Input" disabled/>
+  <input type="text" value="Readonly Input Value" readonly/>
   <div class="row">
-    <div class="col"><input type="button" value="Disabled" disabled/></div>
-    <div class="col"><input type="button" class="btn-primary" value="Disabled" disabled/></div>
-    <div class="col"><input type="button" class="btn-danger" value="Disabled" disabled/></div>
+  <div class="col"><input type="button" value="Set" disabled/></div>
+  <div class="col"><button type="button" class="btn-primary" disabled>Button</button></div>
+  <div class="col"><input type="button" class="btn-danger" value="Disabled" disabled/></div>
   </div>
 </form>
 
 ```html
-<form action="#disabled-forms">
+<form class="form" action="#disabled-forms">
   <input type="text" placeholder="Disabled Input" disabled/>
+  <input type="text" value="Readonly Input Value" readonly/>
   <div class="row">
-    <div class="col"><input type="button" value="Disabled" disabled/></div>
-    <div class="col"><input type="button" class="btn-primary" value="Disabled" disabled/></div>
-    <div class="col"><input type="button" class="btn-danger" value="Disabled" disabled/></div>
+    <div class="col"><input type="button" value="Set" disabled/></div>
+    <div class="col"><button type="button" class="btn-primary" disabled>Button</button></div>
+    <div class="col"><input type="button" class="btn btn-danger" value="Disabled" disabled/></div>
   </div>
 </form>
 ```
+
+#### `btn`
+
+You can also use `btn` to make an `<a>` to a button.
+
+<a href="javascript:void(0);" class="btn">a.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary">a.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
+
+```html
+<a href="javascript:void(0);" class="btn">a.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary">a.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
+```
+
+One more thing, `<button>` inside `<form>` don't need a class `btn`. But when you create a `<button>` outside `<form>`, you should always add `btn` class.
+
+<button class="mt-15">A Button Without `btn`</button>
+<button class="btn">A Button With `btn`</button>
+
+```html
+<button class="mt-15">A Button Without `btn`</button>
+<button class="btn">A Button With `btn`</button>
+```
+
+That is because Mobi.css don't want to reset the default styles of `button`, this make third party libraries easy to override the styles of `button`.
 
 ### Utilities
 
@@ -664,6 +700,7 @@ Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override
 
 The indexes of all available classes.
 
+- [`btn`](#-btn-)
 - [`btn-danger`](#complicate-forms)
 - [`btn-primary`](#complicate-forms)
 - [`col`](#grid-system)
@@ -673,12 +710,14 @@ The indexes of all available classes.
 - [`col-1-3`](#grid-system)
 - [`container`](#-container)
 - [`container-side`](#-container-side)
+- [`form`](#forms)
 - [`label`](#complicate-forms)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)
 - [`row`](#grid-system)
 - [`scroll-view`](#-scroll-view-)
+- [`table`](#tables)
 - [`text-center`](#align-inline-contents)
 - [`text-left`](#align-inline-contents)
 - [`text-right`](#align-inline-contents)

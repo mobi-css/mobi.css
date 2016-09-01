@@ -26,3 +26,75 @@ $background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgA
   flex-basis: $percentage;
   max-width: $percentage;
 }
+
+
+//
+// Forms
+//
+
+@mixin input-without-radio-and-checkbox() {
+  display: block;
+  line-height: $line-height;
+  margin: $width-gap 0 0;
+  width: 100%;
+}
+
+@mixin input-and-button() {
+  -webkit-appearance: none;
+  background-color: $color-background-input;
+  border: $border-input;
+  border-radius: $border-radius-input;
+  // Follow the color of body text
+  color: $color-text-body;
+  font-family: $font-family;
+  font-size: $font-size;
+  padding: $padding-input;
+
+  &:focus {
+    border-color: $color-border-input-focus;
+  }
+}
+
+@mixin button() {
+  text-align: center;
+  background-color: $color-background-btn;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+@mixin disabled() {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+@mixin btn() {
+  @include input-without-radio-and-checkbox();
+  @include input-and-button();
+  @include button();
+
+  &[disabled] {
+    @include disabled();
+  }
+}
+
+@mixin btn-primary() {
+  background-color: $color-background-btn-primary;
+  border-color: $color-background-btn-primary;
+  color: $color-text-btn-primary;
+
+  &[disabled] {
+    @include disabled();
+  }
+}
+
+@mixin btn-danger() {
+  color: $color-text-btn-danger;
+
+  &[disabled] {
+    @include disabled();
+  }
+}

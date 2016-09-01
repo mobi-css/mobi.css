@@ -199,48 +199,6 @@ img {
   vertical-align: middle;
 }
 
-iframe {
-  border: 0;
-}
-
-// TODO ifrome?
-// https://github.com/xcatliu/mobi.css/issues/12
-
-
-//
-// Tables
-//
-
-table {
-  // Reset for nesting within parents with `background-color`.
-  background-color: $color-background-table;
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  // Enable scroll-view on mobile
-  width: 100%;
-}
-
-caption {
-  caption-side: bottom;
-  color: $color-text-muted;
-  padding: $padding-table-cell;
-  text-align: left;
-}
-
-th,
-td {
-  border: 0;
-  border-bottom: $border-bottom-th-td;
-  padding: $padding-table-cell;
-  text-align: left;
-}
-
-th {
-  background-color: $color-background-th;
-  font-weight: $font-weight-bold;
-}
-
 
 //
 // Forms
@@ -267,16 +225,6 @@ summary,
 textarea {
   outline: 0;
   touch-action: manipulation;
-}
-
-form {
-  margin: 0;
-
-  label {
-    cursor: pointer;
-    display: block;
-    margin-top: $width-gap;
-  }
 }
 
 button,
@@ -306,17 +254,6 @@ html [type=button],
   -webkit-appearance: listbox;
 }
 
-// Change the odd styles in iOS
-select,
-textarea,
-// Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration,
-// checkbox and radio should follow the default style of browsers
-input:not([type=checkbox]):not([type=radio]) {
-  -webkit-appearance: none;
-}
-
 // Change font properties to `inherit` in Safari.
 ::-webkit-file-upload-button {
   font: inherit;
@@ -324,85 +261,4 @@ input:not([type=checkbox]):not([type=radio]) {
 
 [hidden] {
   display: none;
-}
-
-// `input`s should be a block element on mobile
-button,
-select,
-textarea,
-input:not([type=checkbox]):not([type=radio]) {
-  display: block;
-  line-height: $line-height;
-  margin: $width-gap 0 0;
-  width: 100%;
-}
-
-// Change the default style of `input`s
-button,
-select,
-textarea,
-[type=button],
-[type=date],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=range],
-[type=search],
-[type=submit],
-[type=tel],
-[type=text],
-[type=time],
-[type=url],
-[type=week] {
-  background-color: $color-background-input;
-  border: $border-input;
-  border-radius: $border-radius-input;
-  // Follow the color of body text
-  color: $color-text-body;
-  font-family: $font-family;
-  font-size: $font-size;
-  padding: $padding-input;
-
-  &:focus {
-    border-color: $color-border-input-focus;
-  }
-}
-
-// TODO fit all the browsers
-// https://github.com/xcatliu/mobi.css/issues/4
-[type=checkbox],
-[type=radio] {
-  margin: $margin-checkbox-radio;
-}
-
-// TODO fit all the browsers
-// https://github.com/xcatliu/mobi.css/issues/4
-[type=file] {
-  padding: $padding-file;
-}
-
-button,
-[type=button],
-[type=submit],
-[type=reset] {
-  background-color: $color-background-btn;
-  cursor: pointer;
-}
-
-select {
-  // Reset the default angle-down icon
-  @include background-icon-angle-down();
-}
-
-[disabled] {
-  background-color: $color-background-btn;
-  color: $color-text-disabled;
-  cursor: not-allowed;
-
-  // Set placeholder color
-  &::-webkit-input-placeholder {
-    color: $color-text-disabled;
-  }
 }

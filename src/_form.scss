@@ -1,18 +1,92 @@
-.btn-primary {
-  background-color: $color-background-btn-primary;
-  border: 0;
-  color: $color-text-btn-primary;
+.form {
+  margin: 0;
 
-  &[disabled] {
-    background-color: $color-background-btn-primary-disabled;
-    border: 0;
+  label {
+    cursor: pointer;
+    display: block;
+    margin-top: $width-gap;
+  }
+
+  // `input`s should always be a block element on mobile
+  button,
+  select,
+  textarea,
+  input:not([type=checkbox]):not([type=radio]) {
+    @include input-without-radio-and-checkbox();
+  }
+
+  // Change the default style of `input`s
+  button,
+  select,
+  textarea,
+  [type=button],
+  [type=date],
+  [type=datetime-local],
+  [type=email],
+  [type=month],
+  [type=number],
+  [type=password],
+  [type=range],
+  [type=search],
+  [type=submit],
+  [type=tel],
+  [type=text],
+  [type=time],
+  [type=url],
+  [type=week] {
+    @include input-and-button();
+  }
+
+  // TODO fit all the browsers
+  // https://github.com/xcatliu/mobi.css/issues/4
+  [type=checkbox],
+  [type=radio] {
+    margin: $margin-checkbox-radio;
+  }
+
+  // TODO fit all the browsers
+  // https://github.com/xcatliu/mobi.css/issues/4
+  [type=file] {
+    padding: $padding-file;
+  }
+
+  button,
+  [type=button],
+  [type=submit],
+  [type=reset] {
+    @include button();
+  }
+
+  select {
+    // Reset the default angle-down icon
+    @include background-icon-angle-down();
+  }
+
+  [disabled] {
+    @include disabled();
+  }
+
+  [readonly] {
+    background-color: $color-background-btn;
+  }
+
+  .btn-primary {
+    @include btn-primary();
+  }
+
+  .btn-danger {
+    @include btn-danger();
   }
 }
 
-.btn-danger {
-  color: $color-text-btn-danger;
+.btn {
+  @include btn();
+}
 
-  &[disabled] {
-    color: $color-text-btn-danger-disabled;
-  }
+.btn-primary {
+  @include btn-primary();
+}
+
+.btn-danger {
+  @include btn-danger();
 }
