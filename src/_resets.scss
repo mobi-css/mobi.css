@@ -61,6 +61,7 @@ hr,
 dl,
 ul,
 ol,
+pre,
 address,
 figure {
   margin: $width-gap 0 0;
@@ -123,6 +124,11 @@ pre {
   code {
     background-color: transparent;
     padding: 0;
+  }
+
+  @media (min-width: $max-width-container) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

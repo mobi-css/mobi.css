@@ -47,6 +47,7 @@
   // TODO fit all the browsers
   // https://github.com/xcatliu/mobi.css/issues/4
   [type=file] {
+    cursor: pointer;
     padding: $padding-file;
   }
 
@@ -60,6 +61,7 @@
   select {
     // Reset the default angle-down icon
     @include background-icon-angle-down();
+    cursor: pointer;
   }
 
   [disabled] {

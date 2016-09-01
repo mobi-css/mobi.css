@@ -168,29 +168,25 @@ Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4#
 
 You probably know Mobi.css can use flexbox for layout, and so should you! [Now it's safe to use flexbox on all mobile browsers](http://caniuse.com/#feat=flexbox).
 
-Here is an example for how you can use `col-custom` and flexbox for a typical fixed-fluid layout.
+Here is an example for how you can use `col` to achieve a typical fixed-fluid layout.
 
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:70px"><i class="fa fa-github" style="font-size:56px"></i></div>
-  <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
-  <div class="col-custom" style="flex-basis:30px"></div>
+  <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:30px"></div>
-  <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
-  <div class="col-custom" style="flex-basis:70px"><img alt="xcatliu" width="48px" src="img/xcatliu.png"/></div>
+  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+  <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:70px"><i class="fa fa-github" style="font-size:56px"></i></div>
-  <div class="col alert-success">Hi, xcatliu, do you know what is Mobi.css?</div>
-  <div class="col-custom" style="flex-basis:30px"></div>
+  <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col-custom" style="flex-basis:30px"></div>
-  <div class="col alert-success text-right">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
-  <div class="col-custom" style="flex-basis:70px"><img alt="xcatliu" width="48px" src="img/xcatliu.png"/></div>
+  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+  <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 ```
 
@@ -358,11 +354,11 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
+    <label class="col label text-right" class="label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Gender: </label>
+    <label class="col label text-right" style="max-width:90px;">Gender: </label>
     <div class="col"><label>
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
@@ -371,7 +367,7 @@ If you want to have multiple inputs in one row, you should use grid system.
     </label></div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Country: </label>
+    <label class="col label text-right" style="max-width:90px;">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -381,24 +377,24 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Avatar:</label>
+    <label class="col label text-right" style="max-width:90px;">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
+    <label class="col label text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom" style="flex-basis:90px"></label>
-    <div class="col-custom" style="flex-basis:90px">
+    <label class="col label text-right" style="max-width:90px;"></label>
+    <div class="col" style="max-width:90px;">
       <button type="reset" class="btn-danger">Reset</button>
     </div>
     <div class="col"></div>
-    <div class="col-custom" style="flex-basis:100px">
+    <div class="col" style="max-width:100px;">
       <button type="submit" class="btn-primary">Submit</button>
     </div>
   </div>
@@ -407,11 +403,11 @@ If you want to have multiple inputs in one row, you should use grid system.
 ```html
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col-custom label text-right" for="multiple-inputs-name" style="flex-basis:90px">Name: </label>
+    <label class="col label text-right" class="label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Gender: </label>
+    <label class="col label text-right" style="max-width:90px;">Gender: </label>
     <div class="col"><label>
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
@@ -420,7 +416,7 @@ If you want to have multiple inputs in one row, you should use grid system.
     </label></div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Country: </label>
+    <label class="col label text-right" style="max-width:90px;">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -430,24 +426,24 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" style="flex-basis:90px">Avatar:</label>
+    <label class="col label text-right" style="max-width:90px;">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom label text-right" for="multiple-inputs-bio" style="flex-basis:90px">Bio: </label>
+    <label class="col label text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
   </div>
   <div class="row">
-    <label class="col-custom" style="flex-basis:90px"></label>
-    <div class="col-custom" style="flex-basis:90px">
+    <label class="col label text-right" style="max-width:90px;"></label>
+    <div class="col" style="max-width:90px;">
       <button type="reset" class="btn-danger">Reset</button>
     </div>
     <div class="col"></div>
-    <div class="col-custom" style="flex-basis:100px">
+    <div class="col" style="max-width:100px;">
       <button type="submit" class="btn-primary">Submit</button>
     </div>
   </div>
@@ -541,43 +537,43 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 ##### Scroll Horizontal
 
 <div class="mt-15 scroll-view">
-  <div style="width:1024px">
-    <i class="fa fa-adjust" style="font-size:6rem"></i>
-    <i class="fa fa-anchor" style="font-size:6rem"></i>
-    <i class="fa fa-archive" style="font-size:6rem"></i>
-    <i class="fa fa-area-chart" style="font-size:6rem"></i>
-    <i class="fa fa-arrows" style="font-size:6rem"></i>
-    <i class="fa fa-asterisk" style="font-size:6rem"></i>
-    <i class="fa fa-at" style="font-size:6rem"></i>
-    <i class="fa fa-automobile" style="font-size:6rem"></i>
-    <i class="fa fa-ban" style="font-size:6rem"></i>
-    <i class="fa fa-bank" style="font-size:6rem"></i>
-    <i class="fa fa-bar-chart" style="font-size:6rem"></i>
-    <i class="fa fa-battery-0" style="font-size:6rem"></i>
-    <i class="fa fa-beer" style="font-size:6rem"></i>
-    <i class="fa fa-bell" style="font-size:6rem"></i>
-    <i class="fa fa-bicycle" style="font-size:6rem"></i>
+  <div style="width:1024px;">
+    <i class="fa fa-adjust" style="font-size:6rem;"></i>
+    <i class="fa fa-anchor" style="font-size:6rem;"></i>
+    <i class="fa fa-archive" style="font-size:6rem;"></i>
+    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-arrows" style="font-size:6rem;"></i>
+    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
+    <i class="fa fa-at" style="font-size:6rem;"></i>
+    <i class="fa fa-automobile" style="font-size:6rem;"></i>
+    <i class="fa fa-ban" style="font-size:6rem;"></i>
+    <i class="fa fa-bank" style="font-size:6rem;"></i>
+    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
+    <i class="fa fa-beer" style="font-size:6rem;"></i>
+    <i class="fa fa-bell" style="font-size:6rem;"></i>
+    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
   </div>
 </div>
 
 ```html
 <div class="mt-15 scroll-view">
-  <div style="width:1024px">
-    <i class="fa fa-adjust" style="font-size:6rem"></i>
-    <i class="fa fa-anchor" style="font-size:6rem"></i>
-    <i class="fa fa-archive" style="font-size:6rem"></i>
-    <i class="fa fa-area-chart" style="font-size:6rem"></i>
-    <i class="fa fa-arrows" style="font-size:6rem"></i>
-    <i class="fa fa-asterisk" style="font-size:6rem"></i>
-    <i class="fa fa-at" style="font-size:6rem"></i>
-    <i class="fa fa-automobile" style="font-size:6rem"></i>
-    <i class="fa fa-ban" style="font-size:6rem"></i>
-    <i class="fa fa-bank" style="font-size:6rem"></i>
-    <i class="fa fa-bar-chart" style="font-size:6rem"></i>
-    <i class="fa fa-battery-0" style="font-size:6rem"></i>
-    <i class="fa fa-beer" style="font-size:6rem"></i>
-    <i class="fa fa-bell" style="font-size:6rem"></i>
-    <i class="fa fa-bicycle" style="font-size:6rem"></i>
+  <div style="width:1024px;">
+    <i class="fa fa-adjust" style="font-size:6rem;"></i>
+    <i class="fa fa-anchor" style="font-size:6rem;"></i>
+    <i class="fa fa-archive" style="font-size:6rem;"></i>
+    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-arrows" style="font-size:6rem;"></i>
+    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
+    <i class="fa fa-at" style="font-size:6rem;"></i>
+    <i class="fa fa-automobile" style="font-size:6rem;"></i>
+    <i class="fa fa-ban" style="font-size:6rem;"></i>
+    <i class="fa fa-bank" style="font-size:6rem;"></i>
+    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
+    <i class="fa fa-beer" style="font-size:6rem;"></i>
+    <i class="fa fa-bell" style="font-size:6rem;"></i>
+    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
   </div>
 </div>
 ```
@@ -586,7 +582,7 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
 This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `300px`.
 
-<div class="mt-15 scroll-view" style="max-height:400px">
+<div class="mt-15 scroll-view" style="max-height:400px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -638,7 +634,7 @@ This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the
 </div>
 
 ```html
-<div class="mt-15 scroll-view" style="max-height:400px">
+<div class="mt-15 scroll-view" style="max-height:400px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -704,7 +700,6 @@ The indexes of all available classes.
 - [`btn-danger`](#complicate-forms)
 - [`btn-primary`](#complicate-forms)
 - [`col`](#grid-system)
-- [`col-custom`](#use-flexbox-for-layout)
 - [`col-1-2`](#grid-system)
 - [`col-1-4`](#grid-system)
 - [`col-1-3`](#grid-system)
