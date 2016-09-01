@@ -1,6 +1,6 @@
-<p style="text-align:center;">
+<p align="center">
   <a href="http://getmobicss.com/">
-    <img alt="Mobi.css Logo" src="site/img/mobi-logo-512.png" style="width:256px;"/>
+    <img width="256" alt="Mobi.css Logo" src="site/img/mobi-logo-512.png"/>
   </a>
 </p>
 
