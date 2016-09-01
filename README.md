@@ -1,8 +1,12 @@
-# Mobi.css
+<p style="text-align:center;">
+  <a href="http://getmobicss.com/">
+    <img alt="Mobi.css Logo" src="site/img/mobi-logo-512.png" style="width:256px;"/>
+  </a>
+</p>
+
+# Mobi.css [![](https://img.shields.io/travis/xcatliu/mobi.css.svg?style=flat-square)](https://travis-ci.org/xcatliu/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![NPM downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://npmjs.org/package/mobi.css)
 
 > A lightweight, flexible css library that focus on mobile.
-
-[![Build Status](https://travis-ci.org/xcatliu/mobi.css.svg?branch=master)](https://travis-ci.org/xcatliu/mobi.css)
 
 - Homepage: http://getmobicss.com/
 
@@ -40,12 +44,6 @@ You can also build Mobi.css to your project if you are using sass.
 ```
 
 Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
-
-## Logo
-
-Inspired by the logo of CSS 3.
-
-![Mobi.css Logo](site/img/mobi-logo-512.png)
 
 ## Contributing
 
