@@ -128,7 +128,6 @@ $font-family:
   'Segoe UI',
   // Android
   'Roboto',
-  /* Forget those environments
   // Linux
   'Oxygen', // KDE
   'Ubuntu',
@@ -137,7 +136,6 @@ $font-family:
   'Fira Sans',
   // Older Android
   'Droid Sans',
-  */
   // Chinese font for OSX and iOS
   'Hiragino Sans GB',
   // Chinese font for Windows
@@ -149,7 +147,7 @@ $font-family:
 
 // TODO Chinese font-family for pre code
 // https://github.com/xcatliu/mobi.css/issues/8
-$font-family-code: Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 $padding-code: 2px 3px !default;
 
