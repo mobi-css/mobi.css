@@ -228,7 +228,7 @@ And don't forget to add `class="table"` to your `<table>` element.
 
 Why don't Mobi.css reset `<table>` element so you don't need to add the `table` class?
 
-Because once `<table>` element is reset, it's hard to change it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason for `<form>`.
+Because once `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason for `<form>`.
 
 <div class="scroll-view">
   <table class="table">

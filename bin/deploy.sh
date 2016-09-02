@@ -12,8 +12,8 @@ fi
 npm test
 npm run build
 
-# # Sync master to coding.net
-git remote add coding git@git.coding.net:xcatliu/mobi.css.git
+# Sync master to coding.net
+git remote add coding git@git.coding.net:$TRAVIS_REPO_SLUG.git
 git checkout master
 git push coding master
 
@@ -22,9 +22,9 @@ LATEST_HASH=$(git log -n 1 --pretty=format:"%H")
 
 # Clone a new repo to .deploy
 rm -rf .deploy
-git clone git@github.com:xcatliu/mobi.css.git .deploy
+git clone git@github.com:$TRAVIS_REPO_SLUG.git .deploy
 cd .deploy
-git remote add coding git@git.coding.net:xcatliu/mobi.css.git
+git remote add coding git@git.coding.net:$TRAVIS_REPO_SLUG.git
 
 # Copy all build results to .deploy
 git checkout gh-pages
