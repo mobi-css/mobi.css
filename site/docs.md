@@ -354,7 +354,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col label text-right" class="label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
+    <label class="col label text-right" class="col label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
@@ -389,12 +389,11 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;"></label>
-    <div class="col" style="max-width:90px;">
+    <div style="width:90px;"></div>
+    <div class="col">
       <button type="reset" class="btn-danger">Reset</button>
     </div>
-    <div class="col"></div>
-    <div class="col" style="max-width:100px;">
+    <div class="col">
       <button type="submit" class="btn-primary">Submit</button>
     </div>
   </div>
@@ -403,7 +402,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 ```html
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col label text-right" class="label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
+    <label class="col label text-right" class="col label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">

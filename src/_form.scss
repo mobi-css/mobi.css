@@ -5,6 +5,7 @@
     cursor: pointer;
     display: block;
     margin-top: $width-gap;
+    padding: 0 0 0 20px;
   }
 
   // `input`s should always be a block element on mobile
@@ -42,6 +43,7 @@
   [type=checkbox],
   [type=radio] {
     margin: $margin-checkbox-radio;
+    position: static;
   }
 
   // TODO fit all the browsers
