@@ -24,7 +24,7 @@ LATEST_HASH=$(git log -n 1 --pretty=format:"%H")
 rm -rf .deploy
 git clone git@github.com:xcatliu/mobi.css.git .deploy
 cd .deploy
-git remote add coding git@git.coding.net:xcatliu/wechat-screenshot-generator.git
+git remote add coding git@git.coding.net:xcatliu/mobi.css.git
 
 # Copy all build results to .deploy
 git checkout gh-pages
