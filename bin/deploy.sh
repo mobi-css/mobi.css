@@ -13,9 +13,9 @@ npm test
 npm run build
 
 # # Sync master to coding.net
-# git remote add coding git@git.coding.net:xcatliu/wechat-screenshot-generator.git
-# git checkout master
-# git push coding master
+git remote add coding git@git.coding.net:xcatliu/mobi.css.git
+git checkout master
+git push coding master
 
 # Get latest commit hash of master
 LATEST_HASH=$(git log -n 1 --pretty=format:"%H")
@@ -24,7 +24,7 @@ LATEST_HASH=$(git log -n 1 --pretty=format:"%H")
 rm -rf .deploy
 git clone git@github.com:xcatliu/mobi.css.git .deploy
 cd .deploy
-# git remote add coding git@git.coding.net:xcatliu/wechat-screenshot-generator.git
+git remote add coding git@git.coding.net:xcatliu/wechat-screenshot-generator.git
 
 # Copy all build results to .deploy
 git checkout gh-pages
@@ -37,7 +37,7 @@ if [ -n "$(git status --porcelain)" ]; then
   git add --all
   git commit -m "Update to $LATEST_HASH"
   git push origin gh-pages
-  # git push coding gh-pages:coding-pages
+  git push coding gh-pages:coding-pages
 else
   echo "No updates"
 fi

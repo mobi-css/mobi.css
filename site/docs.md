@@ -693,7 +693,7 @@ Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override
 
 ## Indexes
 
-The indexes of all available classes.
+The indexes of all available classes
 
 - [`btn`](#-btn-)
 - [`btn-danger`](#complicate-forms)
