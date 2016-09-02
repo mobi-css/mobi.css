@@ -51,7 +51,7 @@ Before contributing, please ensure you have `sass` and `scss-lint` installed. Yo
 
 ```shell
 gem install sass
-gem install scss-lint
+gem install scss_lint
 ```
 
 ### Getting Started
