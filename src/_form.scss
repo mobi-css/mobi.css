@@ -5,7 +5,13 @@
     cursor: pointer;
     display: block;
     margin-top: $width-gap;
-    padding: 0 0 0 20px;
+    padding-bottom: $width-padding-bottom-label;
+    padding-top: $width-padding-top-label;
+  }
+
+  .label-radio,
+  .label-checkbox {
+    padding-left: $width-padding-left-label;
   }
 
   // `input`s should always be a block element on mobile

@@ -6,7 +6,7 @@
 
 // Background image of down arrow
 // Converted from https://github.com/encharm/Font-Awesome-SVG-PNG
-$background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwElEQVR42u2VPQrCQBCFcwhLC0+wv403UAQtvXwEbTyDEQt9IwrDoomzya7NPNgu731fEkiaRqPRaDRfYq31McbZ2B3aoC1RKYSwR/GGczDGzHPh1KUN2qJNicAZpfvrZEkw+HOHNiUCK5QurHxyzi0kcHRa1r/ibKWvIUtiEniuxKTwHonjJ4ki8F8lisKHJKrA3wFwg/GOwdoE3tE1Rb+QgKz5k+B37r3fVflMpxJV4anEX+BMYklHf90ajWZMHoennlbMsO4OAAAAAElFTkSuQmCC');
+$background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfklEQVR42mNgGAWjYBSMAizg////TEDMDMVMdDMHqoEXiKWBWBmIlYBYDIjZyLCcDapXCWqWNNRsJnyauIBYA4gD1q9f33zz5s0iINsDiBWAmIMEyzmgejxAZoDMApkJNZsLn0YBIHbu6uqaaWJi8sfOzu7V2bNny4BiwVCfcJBgeRBIL8gMkFkgM4FiriA78GkWAmI/Kyur98bGxv9BmBRHIFkeDLMcZg7ITJDZIDsIhsCMGTMmmJqa/oJptra2fnPixIlKoFwoLkegW25ra/sSph+If08BAmJCgAMaTwmkOIJIy5OhZnMQkwu0gTiVGEcQaXkaEOsSzAXEOMLGxgbZESA1WlSznAxHgAxPo6rlpDqCJpZjcQTIoDSguZOAefo3zDKQxciWg+RAaqhiOS5HzJw5cyJySCD7fOLEiVOoajkJjqCd5TgckYrkCNpbjiNhhq1YsaIdhIHsCJpbjuYIbiCWg5ZsWlA27S1HcwiokcEKxcyjzbhRMArIBQALjwuJv/PoLwAAAABJRU5ErkJggg==');
 
 @mixin background-icon-angle-down() {
   background-image: $background-image-angle-down;
@@ -19,7 +19,6 @@ $background-image-angle-down: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgA
 @mixin flex-container() {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
 }
 
 @mixin flex-width($percentage) {

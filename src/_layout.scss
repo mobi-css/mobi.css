@@ -18,6 +18,7 @@
 @media (min-width: $width-container-breakpoint) {
   body {
     @include flex-container();
+    justify-content: center;
   }
 
   .container {

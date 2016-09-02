@@ -335,7 +335,7 @@ You need add `class="form"` to a `<form>` element.
 <form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
-  <label><input type="checkbox"/>I agree to terms.</label>
+  <label class="label-checkbox"><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 
@@ -343,7 +343,7 @@ You need add `class="form"` to a `<form>` element.
 <form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
-  <label><input type="checkbox"/>I agree to terms.</label>
+  <label class="label-checkbox"><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 ```
@@ -354,20 +354,20 @@ If you want to have multiple inputs in one row, you should use grid system.
 
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col label text-right" class="col label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
+    <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label>
+    <label class="col text-right" style="max-width:90px;">Gender: </label>
+    <div class="col"><label class="label-radio">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label>
+    <div class="col"><label class="label-checkbox">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Country: </label>
+    <label class="col text-right" style="max-width:90px;">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -377,13 +377,13 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Avatar:</label>
+    <label class="col text-right" style="max-width:90px;">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
+    <label class="col text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
@@ -402,20 +402,20 @@ If you want to have multiple inputs in one row, you should use grid system.
 ```html
 <form class="form" action="#complicate-forms">
   <div class="row">
-    <label class="col label text-right" class="col label text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
+    <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label>
+    <label class="col text-right" style="max-width:90px;">Gender: </label>
+    <div class="col"><label class="label">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label>
+    <div class="col"><label class="label">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Country: </label>
+    <label class="col text-right" style="max-width:90px;">Country: </label>
     <div class="col">
       <select>
         <option disabled selected value> -- select -- </option>
@@ -425,24 +425,23 @@ If you want to have multiple inputs in one row, you should use grid system.
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;">Avatar:</label>
+    <label class="col text-right" style="max-width:90px;">Avatar:</label>
     <div class="col">
       <input type="file"/>
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
+    <label class="col text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
     <div class="col">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
   </div>
   <div class="row">
-    <label class="col label text-right" style="max-width:90px;"></label>
-    <div class="col" style="max-width:90px;">
+    <div style="width:90px;"></div>
+    <div class="col">
       <button type="reset" class="btn-danger">Reset</button>
     </div>
-    <div class="col"></div>
-    <div class="col" style="max-width:100px;">
+    <div class="col">
       <button type="submit" class="btn-primary">Submit</button>
     </div>
   </div>
@@ -513,7 +512,7 @@ For more details, please read [Margin Top Only](#margin-top-only) section.
 
 #### Align Utilities
 
-You can use Mobi.css to easily align contents.
+You can use Mobi.css to easily align contents, both horizontally and vertically!
 
 ##### Align Inline Contents
 
@@ -525,6 +524,72 @@ You can use Mobi.css to easily align contents.
 <div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center alert-success">Awesome!</div>
 <div class="text-right alert-success">Some!</div>
+```
+
+#### Align Block Contents
+
+<div class="flex-left alert-success mt-15">
+  <div class="alert-success">Mobi.css</div>
+</div>
+<div class="flex-center alert-success">
+  <div class="alert-success">Is</div>
+</div>
+<div class="flex-right alert-success">
+  <div class="alert-success">Awesome!</div>
+</div>
+<div class="flex-top alert-success" style="height:150px;">
+  <div class="alert-success">Mobi.css</div>
+</div>
+<div class="flex-middle alert-success" style="height:150px;">
+  <div class="alert-success">Is</div>
+</div>
+<div class="flex-bottom alert-success" style="height:150px;">
+  <div class="alert-success">Awesome!</div>
+</div>
+<div class="flex-center flex-middle alert-success" style="height:150px;">
+  <div class="alert-success">Mobi.css is awesome!</div>
+</div>
+
+```html
+<div class="flex-left alert-success mt-15">
+  <div class="alert-success">Mobi.css</div>
+</div>
+<div class="flex-center alert-success">
+  <div class="alert-success">Is</div>
+</div>
+<div class="flex-right alert-success">
+  <div class="alert-success">Awesome!</div>
+</div>
+<div class="flex-top alert-success" style="height:150px;">
+  <div class="alert-success">Mobi.css</div>
+</div>
+<div class="flex-middle alert-success" style="height:150px;">
+  <div class="alert-success">Is</div>
+</div>
+<div class="flex-bottom alert-success" style="height:150px;">
+  <div class="alert-success">Awesome!</div>
+</div>
+<div class="flex-center flex-middle alert-success" style="height:150px;">
+  <div class="alert-success">Mobi.css is awesome!</div>
+</div>
+```
+
+You can use `flex-xxx` together with `row`
+
+<div class="row mt-15">
+  <div class="col-1-3 alert-success">col-1-3 in row</div>
+</div>
+<div class="row flex-right">
+  <div class="col-1-3 alert-success">col-1-3 in row flex-right</div>
+</div>
+
+```html
+<div class="row mt-15">
+  <div class="col-1-3 alert-success">col-1-3 in row</div>
+</div>
+<div class="row flex-right">
+  <div class="col-1-3 alert-success">col-1-3 in row flex-right</div>
+</div>
 ```
 
 #### `scroll-view`
@@ -704,8 +769,15 @@ The indexes of all available classes.
 - [`col-1-3`](#grid-system)
 - [`container`](#-container)
 - [`container-side`](#-container-side)
+- [`flex-center`](#align-block-contents)
+- [`flex-left`](#align-block-contents)
+- [`flex-middle`](#align-block-contents)
+- [`flex-right`](#align-block-contents)
+- [`flex-top`](#align-block-contents)
+- [`flex-bottom`](#align-block-contents)
 - [`form`](#forms)
-- [`label`](#complicate-forms)
+- [`label-radio`](#complicate-forms)
+- [`label-checkbox`](#complicate-forms)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)

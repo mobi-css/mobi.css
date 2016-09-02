@@ -10,6 +10,10 @@
   margin-top: 0;
 }
 
+.scroll-view {
+  @include scroll-view();
+}
+
 .text-left {
   text-align: left;
 }
@@ -22,11 +26,35 @@
   text-align: right;
 }
 
-.scroll-view {
-  @include scroll-view();
+.flex-left,
+.flex-center,
+.flex-right,
+.flex-top,
+.flex-middle,
+.flex-bottom {
+  @include flex-container();
 }
 
-.label {
-  margin-top: $width-gap;
-  padding-top: $padding-top-label;
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-top {
+  align-items: flex-start;
+}
+
+.flex-middle {
+  align-items: center;
+}
+
+.flex-bottom {
+  align-items: flex-end;
 }
