@@ -175,7 +175,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
   <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
   <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
@@ -185,7 +185,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
   <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css library that focus on mobile.</div>
+  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
   <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 ```
