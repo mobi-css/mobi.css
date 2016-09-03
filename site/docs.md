@@ -407,10 +407,10 @@ If you want to have multiple inputs in one row, you should use grid system.
   </div>
   <div class="row">
     <label class="col text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label class="label">
+    <div class="col"><label class="label-radio">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label class="label">
+    <div class="col"><label class="label-checkbox">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
@@ -448,7 +448,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 ```
 
-A warn tip, when you are using `<label>` element, you can add `class="label"` if it's a text label, but don't add the class if it's the parent of `checkbox` or `radio`.
+A warn tip, when you are using `<label>` element, you can add `class="label-radio"` or `class="label-checkbox"` if it's the parent of `radio` or `checkbox` label, but don't add the class if it's a text label.
 
 #### `disabled` and `readonly`
 
