@@ -33,7 +33,7 @@
       <td valign="top">
         <strong>[√]</strong> Last 5 Android versions<br/>
         <strong>[√]</strong> Last 5 ChromeAndroid versions<br/>
-        <strong>[√]</strong> Last 5 UCAndroid versions<br/?
+        <strong>[√]</strong> Last 5 UCAndroid versions (*)<br/>
         <strong>[√]</strong> Last 5 FirefoxAndroid versions (*)<br/>
         <strong>[√]</strong> Last 5 OperaMobile versions (*)<br/>
         <strong>[√]</strong> Last 5 OperaMini versions (*)<br/>
@@ -49,6 +49,10 @@
     </tr>
   </tbody>
 </table>
+
+- Use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure Mobi.css works on all major mobile devices
+- Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
+- Browsers marked as (*) didn't well-tested, but they should work
 
 ## Documentation
 
