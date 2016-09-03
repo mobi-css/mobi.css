@@ -13,9 +13,27 @@
 
 ## Introduction
 
-- Only 2.8kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
+- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage].
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
+
+## Getting started
+
+You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
+
+Or use npm to install:
+
+```shell
+npm install --save mobi.css
+```
+
+You can also build Mobi.css to your project if you are using sass.
+
+```scss
+@import 'mobi.css/src/mobi';
+```
+
+Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
 ## Browser Support
 
@@ -24,7 +42,7 @@
     <tr>
       <th>iOS</th>
       <th>Android</th>
-      <th>Other</th>
+      <th>Others</th>
     </tr>
   </thead>
   <tbody>
@@ -52,36 +70,7 @@
 
 - Use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure Mobi.css works on all major mobile devices
 - Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
-- Browsers marked as (*) didn't well-tested, but they should work
-
-## Documentation
-
-- [Layout](http://getmobicss.com/#layout)
-- [Grid System](http://getmobicss.com/#grid-system)
-- [Typography](http://getmobicss.com/#typography)
-- [Tables](http://getmobicss.com/#tables)
-- [Forms](http://getmobicss.com/#forms)
-- [Utilities](http://getmobicss.com/#utilities)
-
-Please checkout the [Homepage] for more details.
-
-## Downloads
-
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
-
-Or use npm to install:
-
-```shell
-npm install --save mobi.css
-```
-
-You can also build Mobi.css to your project if you are using sass.
-
-```scss
-@import 'mobi.css/src/mobi';
-```
-
-Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+- Browsers marked as (*) didn't well-tested, but they should works fine
 
 ## Contributing
 
@@ -116,6 +105,6 @@ We use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as our continuous int
 
 ## License
 
-MIT
+All parts of Mobi.css are free to use and abuse under the [open-source MIT license](https://github.com/xcatliu/mobi.css/blob/master/LICENSE).
 
 [Homepage]: http://getmobicss.com

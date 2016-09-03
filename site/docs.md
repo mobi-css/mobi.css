@@ -14,7 +14,7 @@
 
 ## Introduction
 
-- Only 2.8kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
+- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
@@ -240,7 +240,7 @@ Because once `<table>` element is reset, it's hard to set it back. It's more fri
         <td><a href="http://getmobicss.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
-        <td>2.8kb</td>
+        <td>3.6kb</td>
         <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
         <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
       </tr>
@@ -287,7 +287,7 @@ Because once `<table>` element is reset, it's hard to set it back. It's more fri
         <td><a href="http://getmobicss.com/">Mobi.css</a></td>
         <td><a href="https://github.com/xcatliu">xcatliu</a></td>
         <td>Sass</td>
-        <td>2.8kb</td>
+        <td>3.6kb</td>
         <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
         <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
       </tr>
