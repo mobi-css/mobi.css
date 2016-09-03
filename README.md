@@ -24,8 +24,7 @@
     <tr>
       <th>iOS</th>
       <th>Android</th>
-      <th>Windows Phone</th>
-      <th>Desktop</th>
+      <th>Other</th>
     </tr>
   </thead>
   <tbody>
@@ -39,14 +38,14 @@
         <strong>√</strong> Last 5 OperaMobile versions<br/>
         <strong>√</strong> Last 5 OperaMini versions<br/>
         <strong>√</strong> Last 5 Samsung versions<br/>
-        <strong>√</strong> Last 5 UCAndroid versions<br/>
+        <strong>√</strong> Last 5 UCAndroid versions
       </td>
-      <td><strong>√</strong> Last 5 ExplorerMobile versions</td>
       <td>
+        <strong>√</strong> Last 5 ExplorerMobile versions<br/>
         <strong>√</strong> Last 3 Chrome versions<br/>
         <strong>√</strong> Last 3 Firefox versions<br/>
         <strong>√</strong> Last 3 Safari versions<br/>
-        <strong>√</strong> Last 3 Edge versions<br/>
+        <strong>√</strong> Last 3 Edge versions
       </td>
     </tr>
   </tbody>
