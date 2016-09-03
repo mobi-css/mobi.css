@@ -335,7 +335,7 @@ You need add `class="form"` to a `<form>` element.
 <form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
-  <label class="label-checkbox"><input type="checkbox"/>I agree to terms.</label>
+  <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 
@@ -343,7 +343,7 @@ You need add `class="form"` to a `<form>` element.
 <form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
-  <label class="label-checkbox"><input type="checkbox"/>I agree to terms.</label>
+  <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
   <input type="submit" value="Sign Up Now"/>
 </form>
 ```
@@ -359,10 +359,10 @@ If you want to have multiple inputs in one row, you should use grid system.
   </div>
   <div class="row">
     <label class="col text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label class="label-radio">
+    <div class="col"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label class="label-checkbox">
+    <div class="col"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
@@ -407,10 +407,10 @@ If you want to have multiple inputs in one row, you should use grid system.
   </div>
   <div class="row">
     <label class="col text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label class="label-radio">
+    <div class="col"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label class="label-checkbox">
+    <div class="col"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
@@ -448,7 +448,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 ```
 
-A warn tip, when you are using `<label>` element, you can add `class="label-radio"` or `class="label-checkbox"` if it's the parent of `radio` or `checkbox` label, but don't add the class if it's a text label.
+A warn tip, when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes radio button aligned middle vertically.
 
 #### `disabled` and `readonly`
 
@@ -776,8 +776,6 @@ The indexes of all available classes.
 - [`flex-top`](#align-block-contents)
 - [`flex-bottom`](#align-block-contents)
 - [`form`](#forms)
-- [`label-radio`](#complicate-forms)
-- [`label-checkbox`](#complicate-forms)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)

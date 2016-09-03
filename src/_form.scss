@@ -10,19 +10,6 @@
     position: relative;
   }
 
-  .label-radio,
-  .label-checkbox {
-    padding-left: $width-padding-left-label;
-
-    [type=checkbox],
-    [type=radio] {
-      bottom: $width-bottom-radio;
-      left: $width-left-radio;
-      margin: $margin-checkbox-radio;
-      position: absolute;
-    }
-  }
-
   // `input`s should always be a block element on mobile
   button,
   select,
@@ -51,6 +38,11 @@
   [type=url],
   [type=week] {
     @include input-and-button();
+  }
+
+  [type=checkbox],
+  [type=radio] {
+    margin: $margin-checkbox-radio;
   }
 
   [type=file] {

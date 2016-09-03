@@ -66,6 +66,10 @@ $width-gap: 15px !default;
 $width-gap-double: 30px !default;
 $width-gap-half: 7px !default;
 
+$width-padding-input: 5px !default;
+$width-border: 1px !default;
+$width-padding-border-input: $width-padding-input + $width-border !default;
+
 
 //
 // layouts
@@ -151,9 +155,9 @@ $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New
 
 $padding-code: 2px 3px !default;
 
-$border-left-blockquote: 5px solid $color-border !default;
+$border-left-blockquote: $width-padding-input solid $color-border !default;
 
-$border-top-hr: 1px solid $color-border !default;
+$border-top-hr: $width-border solid $color-border !default;
 
 // Set the default max-height to scroll-view
 $max-height-scroll-view: 300px !default;
@@ -163,8 +167,8 @@ $max-height-scroll-view: 300px !default;
 // Tables
 //
 
-$padding-table-cell: 5px !default;
-$border-bottom-th-td: 1px solid $color-border !default;
+$padding-table-cell: $width-padding-input !default;
+$border-bottom-th-td: $width-border solid $color-border !default;
 
 
 //
@@ -173,16 +177,13 @@ $border-bottom-th-td: 1px solid $color-border !default;
 
 // For inputs
 $border-radius-input: 3px !default;
-$padding-input: 5px 10px !default;
-$border-input: 1px solid $color-border !default;
+$padding-input: $width-padding-input 2 * $width-padding-input !default;
+$border-input: $width-border solid $color-border !default;
 // For file input
-$padding-file: 6px 0 !default;
+$padding-file: $width-padding-border-input 0 !default;
 
 // For checkbox and radio
-$margin-checkbox-radio: 0 !default;
-$width-bottom-radio: 12px;
-$width-left-radio: 0;
+$margin-checkbox-radio: 0 $width-padding-input 0 0 !default;
 // 5px padding + 1px border
-$width-padding-top-label: 6px !default;
-$width-padding-bottom-label: 6px !default;
-$width-padding-left-label: 20px !default;
+$width-padding-top-label: $width-padding-border-input !default;
+$width-padding-bottom-label: $width-padding-border-input !default;
