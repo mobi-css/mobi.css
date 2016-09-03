@@ -23,11 +23,11 @@ const postcssConfig = [autoprefixer({ browsers: [
   'last 5 Android versions',
   'last 5 ExplorerMobile versions',
   'last 5 ChromeAndroid versions',
+  'last 5 UCAndroid versions',
   'last 5 FirefoxAndroid versions',
   'last 5 OperaMobile versions',
   'last 5 OperaMini versions',
   'last 5 Samsung versions',
-  'last 5 UCAndroid versions',
 
   'last 3 Chrome versions',
   'last 3 Firefox versions',
