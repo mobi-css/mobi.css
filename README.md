@@ -29,8 +29,8 @@
   </thead>
   <tbody>
     <tr>
-      <td><strong>√</strong> Last 5 iOS versions</td>
-      <td>
+      <td valign="top"><strong>√</strong> Last 5 iOS versions</td>
+      <td valign="top">
         <strong>√</strong> Last 5 Android versions<br/>
         <strong>√</strong> Last 5 ChromeAndroid versions<br/>
         <strong>√</strong> Last 5 FirefoxAndroid versions<br/>
@@ -40,7 +40,7 @@
         <strong>√</strong> Last 5 Samsung versions<br/>
         <strong>√</strong> Last 5 UCAndroid versions
       </td>
-      <td>
+      <td valign="top">
         <strong>√</strong> Last 5 ExplorerMobile versions<br/>
         <strong>√</strong> Last 3 Chrome versions<br/>
         <strong>√</strong> Last 3 Firefox versions<br/>
