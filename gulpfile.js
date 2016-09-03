@@ -32,6 +32,7 @@ const postcssConfig = [autoprefixer({ browsers: [
   'last 3 Chrome versions',
   'last 3 Firefox versions',
   'last 3 Safari versions',
+  'last 3 Edge versions',
 ] })];
 
 const SRC_DIR = path.resolve(__dirname, 'src');

@@ -328,8 +328,7 @@ html [type=button],
     display: block;
     margin-top: 15px;
     padding-bottom: 6px;
-    padding-top: 6px;
-    position: relative; }
+    padding-top: 6px; }
   .form button,
   .form select,
   .form textarea,

@@ -1,4 +1,4 @@
-## Table of Content
+## Table of content
 
 - [Introduction](#introduction)
 - [Downloads](#downloads)
@@ -84,7 +84,7 @@ Of course, you should use only one `container-side`, and use it before or after 
 </body>
 ```
 
-#### Grid System
+#### Grid system
 
 Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpler but flexible grid system.
 
@@ -164,7 +164,7 @@ Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4#
 </div>
 ```
 
-#### Use Flexbox for Layout
+#### Use flexbox for layout
 
 You probably know Mobi.css can use flexbox for layout, and so should you! [Now it's safe to use flexbox on all mobile browsers](http://caniuse.com/#feat=flexbox).
 
@@ -190,7 +190,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 </div>
 ```
 
-#### Margin Top Only
+#### Margin top only
 
 Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. Instead, Mobi.css use `margin-top` to make contents flow clearly.
 
@@ -330,7 +330,7 @@ Mobi.css believes that on mobile devices, **each row should have only one input*
 
 You need add `class="form"` to a `<form>` element.
 
-#### Basic Forms
+#### Basic forms
 
 <form class="form" action="#basic-forms">
   <input type="text" placeholder="Name"/>
@@ -348,7 +348,7 @@ You need add `class="form"` to a `<form>` element.
 </form>
 ```
 
-#### Complicate Forms
+#### Complicate forms
 
 If you want to have multiple inputs in one row, you should use grid system.
 
@@ -504,17 +504,17 @@ That is because Mobi.css don't want to reset the default styles of `button`, thi
 
 Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, `scroll-view`, etc.
 
-#### Layout Utilities
+#### Layout utilities
 
 As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`.
 
 For more details, please read [Margin Top Only](#margin-top-only) section.
 
-#### Align Utilities
+#### Align utilities
 
 You can use Mobi.css to easily align contents, both horizontally and vertically!
 
-##### Align Inline Contents
+##### Align inline contents
 
 <div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center site-alert-success">Awesome!</div>
@@ -526,7 +526,7 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 <div class="text-right site-alert-success">Some!</div>
 ```
 
-#### Align Block Contents
+#### Align block contents
 
 <div class="flex-left site-alert-success mt-15">
   <div class="site-alert-success">Mobi.css</div>
@@ -598,7 +598,7 @@ Mobile devices usually have small width, so it's very useful to use a `scroll-vi
 
 Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
-##### Scroll Horizontal
+##### Scroll horizontal
 
 <div class="mt-15 scroll-view">
   <div style="width:1024px;">
@@ -642,7 +642,7 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 </div>
 ```
 
-##### Scroll Vertical
+##### Scroll vertical
 
 This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `300px`.
 

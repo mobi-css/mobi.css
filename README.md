@@ -17,6 +17,41 @@
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage].
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
+## Browser Support
+
+<table>
+  <thead>
+    <tr>
+      <th>iOS</th>
+      <th>Android</th>
+      <th>Windows Phone</th>
+      <th>Desktop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>√</strong> Last 5 iOS versions</td>
+      <td>
+        <strong>√</strong> Last 5 Android versions<br/>
+        <strong>√</strong> Last 5 ChromeAndroid versions<br/>
+        <strong>√</strong> Last 5 FirefoxAndroid versions<br/>
+        <strong>√</strong> Last 5 FirefoxAndroid versions<br/>
+        <strong>√</strong> Last 5 OperaMobile versions<br/>
+        <strong>√</strong> Last 5 OperaMini versions<br/>
+        <strong>√</strong> Last 5 Samsung versions<br/>
+        <strong>√</strong> Last 5 UCAndroid versions<br/>
+      </td>
+      <td><strong>√</strong> Last 5 ExplorerMobile versions</td>
+      <td>
+        <strong>√</strong> Last 3 Chrome versions<br/>
+        <strong>√</strong> Last 3 Firefox versions<br/>
+        <strong>√</strong> Last 3 Safari versions<br/>
+        <strong>√</strong> Last 3 Edge versions<br/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Documentation
 
 - [Layout](http://getmobicss.com/#layout)
@@ -55,7 +90,7 @@ gem install sass
 gem install scss_lint
 ```
 
-### Getting Started
+### Getting started
 
 ```shell
 npm install
