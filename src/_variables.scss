@@ -179,8 +179,10 @@ $border-input: 1px solid $color-border !default;
 $padding-file: 6px 0 !default;
 
 // For checkbox and radio
-$margin-checkbox-radio: 0 5px 0 -15px !default;
+$margin-checkbox-radio: 0 !default;
+$width-bottom-radio: 12px;
+$width-left-radio: 0;
 // 5px padding + 1px border
 $width-padding-top-label: 6px !default;
 $width-padding-bottom-label: 6px !default;
-$width-padding-left-label: 18px !default;
+$width-padding-left-label: 20px !default;

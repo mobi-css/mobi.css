@@ -91,76 +91,76 @@ Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpl
 First of all, you can create a `row` which contain several `col`s, in this case, `row`'s width is divided equally between `col`s.
 
 <div class="row mt-15">
-  <div class="col alert-success">Lightweight</div>
-  <div class="col alert-success">Flexible</div>
-  <div class="col alert-success">Focus on Mobile</div>
+  <div class="col site-alert-success">Lightweight</div>
+  <div class="col site-alert-success">Flexible</div>
+  <div class="col site-alert-success">Focus on Mobile</div>
 </div>
 <div class="row">
-  <div class="col alert-success">青龙</div>
-  <div class="col alert-success">白虎</div>
-  <div class="col alert-success">朱雀</div>
-  <div class="col alert-success">玄武</div>
+  <div class="col site-alert-success">青龙</div>
+  <div class="col site-alert-success">白虎</div>
+  <div class="col site-alert-success">朱雀</div>
+  <div class="col site-alert-success">玄武</div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col alert-success">Lightweight</div>
-  <div class="col alert-success">Flexible</div>
-  <div class="col alert-success">Focus on Mobile</div>
+  <div class="col site-alert-success">Lightweight</div>
+  <div class="col site-alert-success">Flexible</div>
+  <div class="col site-alert-success">Focus on Mobile</div>
 </div>
 <div class="row">
-  <div class="col alert-success">青龙</div>
-  <div class="col alert-success">白虎</div>
-  <div class="col alert-success">朱雀</div>
-  <div class="col alert-success">玄武</div>
+  <div class="col site-alert-success">青龙</div>
+  <div class="col site-alert-success">白虎</div>
+  <div class="col site-alert-success">朱雀</div>
+  <div class="col site-alert-success">玄武</div>
 </div>
 ```
 
 Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4# grid.
 
 <div class="row mt-15">
-  <div class="col-1-2 alert-success">.col-1-2</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-1-3 alert-success">.col-1-3</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-3 site-alert-success">.col-1-3</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-1-4 alert-success">.col-1-4</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col alert-success">.col</div>
-  <div class="col-1-3 alert-success">.col-1-3</div>
+  <div class="col site-alert-success">.col</div>
+  <div class="col-1-3 site-alert-success">.col-1-3</div>
 </div>
 <div class="row">
-  <div class="col-1-4 alert-success">.col-1-4</div>
-  <div class="col-1-2 alert-success">.col-1-2</div>
-  <div class="col-1-4 alert-success">.col-1-4</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col-1-2 alert-success">.col-1-2</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-1-3 alert-success">.col-1-3</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-3 site-alert-success">.col-1-3</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col-1-4 alert-success">.col-1-4</div>
-  <div class="col alert-success">.col</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
+  <div class="col site-alert-success">.col</div>
 </div>
 <div class="row">
-  <div class="col alert-success">.col</div>
-  <div class="col-1-3 alert-success">.col-1-3</div>
+  <div class="col site-alert-success">.col</div>
+  <div class="col-1-3 site-alert-success">.col-1-3</div>
 </div>
 <div class="row">
-  <div class="col-1-4 alert-success">.col-1-4</div>
-  <div class="col-1-2 alert-success">.col-1-2</div>
-  <div class="col-1-4 alert-success">.col-1-4</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
+  <div class="col-1-4 site-alert-success">.col-1-4</div>
 </div>
 ```
 
@@ -172,20 +172,20 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 
 <div class="row mt-15">
   <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
+  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
+  <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
   <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
 <div class="row mt-15">
   <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
+  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
+  <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
   <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 ```
@@ -200,14 +200,14 @@ For example, `<h1>` ~ `<h6>` have a length of `30px` margin to top, in the meant
 
 Mobi.css also provides three classes for easily manually override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`, the length of `margin-top` are `30px`, `15px` and `0`.
 
-<section class="mt-15 alert-success">section.mt-15</section>
-<p class="mt-0 alert-success">p.mt-0</p>
-<section class="mt-30 alert-success">section.mt-30</section>
+<section class="mt-15 site-alert-success">section.mt-15</section>
+<p class="mt-0 site-alert-success">p.mt-0</p>
+<section class="mt-30 site-alert-success">section.mt-30</section>
 
 ```html
-<section class="mt-15 alert-success">section.mt-15</section>
-<p class="mt-0 alert-success">p.mt-0</p>
-<section class="mt-30 alert-success">section.mt-30</section>
+<section class="mt-15 site-alert-success">section.mt-15</section>
+<p class="mt-0 site-alert-success">p.mt-0</p>
+<section class="mt-30 site-alert-success">section.mt-30</section>
 ```
 
 ### Typography
@@ -516,79 +516,79 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 
 ##### Align Inline Contents
 
-<div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
-<div class="text-center alert-success">Awesome!</div>
-<div class="text-right alert-success">Some!</div>
+<div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
+<div class="text-center site-alert-success">Awesome!</div>
+<div class="text-right site-alert-success">Some!</div>
 
 ```html
-<div class="text-left alert-success mt-15">Mobi.css is awesome!</div>
-<div class="text-center alert-success">Awesome!</div>
-<div class="text-right alert-success">Some!</div>
+<div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
+<div class="text-center site-alert-success">Awesome!</div>
+<div class="text-right site-alert-success">Some!</div>
 ```
 
 #### Align Block Contents
 
-<div class="flex-left alert-success mt-15">
-  <div class="alert-success">Mobi.css</div>
+<div class="flex-left site-alert-success mt-15">
+  <div class="site-alert-success">Mobi.css</div>
 </div>
-<div class="flex-center alert-success">
-  <div class="alert-success">Is</div>
+<div class="flex-center site-alert-success">
+  <div class="site-alert-success">Is</div>
 </div>
-<div class="flex-right alert-success">
-  <div class="alert-success">Awesome!</div>
+<div class="flex-right site-alert-success">
+  <div class="site-alert-success">Awesome!</div>
 </div>
-<div class="flex-top alert-success" style="height:150px;">
-  <div class="alert-success">Mobi.css</div>
+<div class="flex-top site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css</div>
 </div>
-<div class="flex-middle alert-success" style="height:150px;">
-  <div class="alert-success">Is</div>
+<div class="flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Is</div>
 </div>
-<div class="flex-bottom alert-success" style="height:150px;">
-  <div class="alert-success">Awesome!</div>
+<div class="flex-bottom site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Awesome!</div>
 </div>
-<div class="flex-center flex-middle alert-success" style="height:150px;">
-  <div class="alert-success">Mobi.css is awesome!</div>
+<div class="flex-center flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css is awesome!</div>
 </div>
 
 ```html
-<div class="flex-left alert-success mt-15">
-  <div class="alert-success">Mobi.css</div>
+<div class="flex-left site-alert-success mt-15">
+  <div class="site-alert-success">Mobi.css</div>
 </div>
-<div class="flex-center alert-success">
-  <div class="alert-success">Is</div>
+<div class="flex-center site-alert-success">
+  <div class="site-alert-success">Is</div>
 </div>
-<div class="flex-right alert-success">
-  <div class="alert-success">Awesome!</div>
+<div class="flex-right site-alert-success">
+  <div class="site-alert-success">Awesome!</div>
 </div>
-<div class="flex-top alert-success" style="height:150px;">
-  <div class="alert-success">Mobi.css</div>
+<div class="flex-top site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css</div>
 </div>
-<div class="flex-middle alert-success" style="height:150px;">
-  <div class="alert-success">Is</div>
+<div class="flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Is</div>
 </div>
-<div class="flex-bottom alert-success" style="height:150px;">
-  <div class="alert-success">Awesome!</div>
+<div class="flex-bottom site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Awesome!</div>
 </div>
-<div class="flex-center flex-middle alert-success" style="height:150px;">
-  <div class="alert-success">Mobi.css is awesome!</div>
+<div class="flex-center flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css is awesome!</div>
 </div>
 ```
 
 You can use `flex-xxx` together with `row`
 
 <div class="row mt-15">
-  <div class="col-1-3 alert-success">col-1-3 in row</div>
+  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
 </div>
 <div class="row flex-right">
-  <div class="col-1-3 alert-success">col-1-3 in row flex-right</div>
+  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col-1-3 alert-success">col-1-3 in row</div>
+  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
 </div>
 <div class="row flex-right">
-  <div class="col-1-3 alert-success">col-1-3 in row flex-right</div>
+  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
 </div>
 ```
 

@@ -7,11 +7,20 @@
     margin-top: $width-gap;
     padding-bottom: $width-padding-bottom-label;
     padding-top: $width-padding-top-label;
+    position: relative;
   }
 
   .label-radio,
   .label-checkbox {
     padding-left: $width-padding-left-label;
+
+    [type=checkbox],
+    [type=radio] {
+      bottom: $width-bottom-radio;
+      left: $width-left-radio;
+      margin: $margin-checkbox-radio;
+      position: absolute;
+    }
   }
 
   // `input`s should always be a block element on mobile
@@ -44,16 +53,6 @@
     @include input-and-button();
   }
 
-  // TODO fit all the browsers
-  // https://github.com/xcatliu/mobi.css/issues/4
-  [type=checkbox],
-  [type=radio] {
-    margin: $margin-checkbox-radio;
-    position: static;
-  }
-
-  // TODO fit all the browsers
-  // https://github.com/xcatliu/mobi.css/issues/4
   [type=file] {
     cursor: pointer;
     padding: $padding-file;

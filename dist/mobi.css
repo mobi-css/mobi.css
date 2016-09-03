@@ -328,10 +328,19 @@ html [type=button],
     display: block;
     margin-top: 15px;
     padding-bottom: 6px;
-    padding-top: 6px; }
+    padding-top: 6px;
+    position: relative; }
   .form .label-radio,
   .form .label-checkbox {
-    padding-left: 18px; }
+    padding-left: 20px; }
+    .form .label-radio [type=checkbox],
+    .form .label-radio [type=radio],
+    .form .label-checkbox [type=checkbox],
+    .form .label-checkbox [type=radio] {
+      bottom: 12px;
+      left: 0;
+      margin: 0;
+      position: absolute; }
   .form button,
   .form select,
   .form textarea,
@@ -385,10 +394,6 @@ html [type=button],
     .form [type=url]:focus,
     .form [type=week]:focus {
       border-color: #3399ff; }
-  .form [type=checkbox],
-  .form [type=radio] {
-    margin: 0 5px 0 -15px;
-    position: static; }
   .form [type=file] {
     cursor: pointer;
     padding: 6px 0; }
