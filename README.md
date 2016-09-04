@@ -19,7 +19,7 @@
 
 ## Getting started
 
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
+You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
 Or use npm to install:
 

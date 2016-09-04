@@ -19,4 +19,4 @@ install:
 - gem install scss_lint
 - npm install
 script:
-- bash ./bin/deploy.sh
+- bash ./.travis/deploy.sh
