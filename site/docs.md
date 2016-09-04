@@ -1,10 +1,10 @@
 ## Table of content
 
 - [Introduction](#introduction)
-- [Downloads](#downloads)
+- [Getting started](#getting-started)
 - [Documentation](#documentation)
   - [Layout](#layout)
-  - [Grid System](#grid-system)
+  - [Grid system](#grid-system)
   - [Typography](#typography)
   - [Tables](#tables)
   - [Forms](#forms)
@@ -18,9 +18,9 @@
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
 
-## Downloads
+## Getting started
 
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases).
+You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
 Or use npm to install:
 
@@ -40,11 +40,11 @@ Be sure you have added `node-modules` to your sass's [load_paths](http://stackov
 
 ### Layout
 
-Mobi.css provides two kinds of containers, `container` and `container-side`, as well as a simple but flexible grid system.
+Mobi.css includes a simple but flexible system for laying out your project, including `container`, grid system, flex utilities, etc.
 
 #### `container`
 
-A `container` contains all of your contents, one page should have only one `container`. In most cases, `container` is the child of `<body>`.
+A `container` contains all of your contents, one page should have only one `container`.
 
 On a mobile device (with width less than 768px), `container` will fill entire width of screen.
 
@@ -54,35 +54,39 @@ Otherwise, `container` will have a fixed width and aligned to the center of the 
 
 ```html
 <body>
-  <div class="container">
-    <h1>Mobi.css</h1>
+  <div class="flex-center">
+    <div class="container">
+      <h1>Mobi.css</h1>
+    </div>
   </div>
 </body>
 ```
 
-#### `container-side`
+You may want to say "Oh that's too complicated, why should I need to add two `<div>`s to achieve a simple `container`?"
 
-`container-side` is designed for additional messages which are not valuable or useful for mobile, such as *Scan to view on mobile* or *Go to top*.
+Actually `flex-center` is used as a wrapper to ensure `container` aligned to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
 
-So `container-side` **will never be seen** on a mobile device.
+Also, you can add `flex-center` to `<body>`, it will work too. However I don't recommend it, even though you doesn't append any other elements to `<body>`, third-party libraries may do. It might be hard for them to set their position in a flexbox.
 
-Otherwise, `container-side` will land beside the `container`, left or right depends on you.
-
-Of course, you should use only one `container-side`, and use it before or after a `container`.
+What if we want to add a sidebar for the desktop version of your website (that would be useful when you want to show some additional messages which are not valuable for mobile, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
 
 ![layout-with-side](img/layout-with-side.jpg)
 
 ```html
 <body>
-  <div class="container">
-    <h1>Mobi.css</h1>
-  </div>
-  <div class="container-side">
-    <p>Scan to view on mobile</p>
-    <img src="path/to/qrcode.png"/>
+  <div class="flex-center">
+    <div class="container">
+      <h1>Mobi.css</h1>
+    </div>
+    <div class="hide-on-mobile" style="padding:0 30px;">
+      <p>Scan to view on mobile</p>
+      <img src="path/to/qrcode.png"/>
+    </div>
   </div>
 </body>
 ```
+
+As you can see, `hide-on-mobile` **will never be seen** on a mobile device.
 
 #### Grid system
 
@@ -171,22 +175,90 @@ You probably know Mobi.css can use flexbox for layout, and so should you! [Now i
 Here is an example for how you can use `col` to achieve a typical fixed-fluid layout.
 
 <div class="row mt-15">
-  <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
   <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
   <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
-  <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
 <div class="row mt-15">
-  <div class="col" style="max-width:70px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
   <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
 </div>
 <div class="row mt-15">
   <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
-  <div class="col" style="max-width:70px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+</div>
+```
+
+#### Use flexbox for aligning
+
+Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`, you can use flexbox for aligning easily.
+
+<div class="flex-left site-alert-success mt-15">
+  <div class="site-alert-success">Mobi.css</div>
+</div>
+<div class="flex-center site-alert-success">
+  <div class="site-alert-success">Is</div>
+</div>
+<div class="flex-right site-alert-success">
+  <div class="site-alert-success">Awesome!</div>
+</div>
+<div class="flex-top site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css</div>
+</div>
+<div class="flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Is</div>
+</div>
+<div class="flex-bottom site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Awesome!</div>
+</div>
+<div class="flex-center flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css is awesome!</div>
+</div>
+
+```html
+<div class="flex-left site-alert-success mt-15">
+  <div class="site-alert-success">Mobi.css</div>
+</div>
+<div class="flex-center site-alert-success">
+  <div class="site-alert-success">Is</div>
+</div>
+<div class="flex-right site-alert-success">
+  <div class="site-alert-success">Awesome!</div>
+</div>
+<div class="flex-top site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css</div>
+</div>
+<div class="flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Is</div>
+</div>
+<div class="flex-bottom site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Awesome!</div>
+</div>
+<div class="flex-center flex-middle site-alert-success" style="height:150px;">
+  <div class="site-alert-success">Mobi.css is awesome!</div>
+</div>
+```
+
+Also, you can use `flex-xxx` together with `row`.
+
+<div class="row mt-15">
+  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
+</div>
+<div class="row flex-right">
+  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
+</div>
+
+```html
+<div class="row mt-15">
+  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
+</div>
+<div class="row flex-right">
+  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
 </div>
 ```
 
@@ -510,11 +582,9 @@ As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides t
 
 For more details, please read [Margin Top Only](#margin-top-only) section.
 
-#### Align utilities
+#### Text aligning
 
-You can use Mobi.css to easily align contents, both horizontally and vertically!
-
-##### Align inline contents
+You can use Mobi.css to easily align text.
 
 <div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center site-alert-success">Awesome!</div>
@@ -524,72 +594,6 @@ You can use Mobi.css to easily align contents, both horizontally and vertically!
 <div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
 <div class="text-center site-alert-success">Awesome!</div>
 <div class="text-right site-alert-success">Some!</div>
-```
-
-#### Align block contents
-
-<div class="flex-left site-alert-success mt-15">
-  <div class="site-alert-success">Mobi.css</div>
-</div>
-<div class="flex-center site-alert-success">
-  <div class="site-alert-success">Is</div>
-</div>
-<div class="flex-right site-alert-success">
-  <div class="site-alert-success">Awesome!</div>
-</div>
-<div class="flex-top site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css</div>
-</div>
-<div class="flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Is</div>
-</div>
-<div class="flex-bottom site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Awesome!</div>
-</div>
-<div class="flex-center flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css is awesome!</div>
-</div>
-
-```html
-<div class="flex-left site-alert-success mt-15">
-  <div class="site-alert-success">Mobi.css</div>
-</div>
-<div class="flex-center site-alert-success">
-  <div class="site-alert-success">Is</div>
-</div>
-<div class="flex-right site-alert-success">
-  <div class="site-alert-success">Awesome!</div>
-</div>
-<div class="flex-top site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css</div>
-</div>
-<div class="flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Is</div>
-</div>
-<div class="flex-bottom site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Awesome!</div>
-</div>
-<div class="flex-center flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css is awesome!</div>
-</div>
-```
-
-You can use `flex-xxx` together with `row`
-
-<div class="row mt-15">
-  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
-</div>
-<div class="row flex-right">
-  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
-</div>
-
-```html
-<div class="row mt-15">
-  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
-</div>
-<div class="row flex-right">
-  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
-</div>
 ```
 
 #### `scroll-view`
@@ -750,6 +754,16 @@ This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the
 </div>
 ```
 
+#### `hide-on-mobile`
+
+Use `hide-on-mobile` will hide the element on mobile devices.
+
+<p class="hide-on-mobile">This part will not shown on mobiles</p>
+
+```html
+<p class="hide-on-mobile">This part will not shown on mobiles</p>
+```
+
 ## Customize
 
 For advanced users, it's pretty easy to customize Mobi.css.
@@ -768,20 +782,20 @@ The indexes of all available classes.
 - [`col-1-4`](#grid-system)
 - [`col-1-3`](#grid-system)
 - [`container`](#-container)
-- [`container-side`](#-container-side)
-- [`flex-center`](#align-block-contents)
-- [`flex-left`](#align-block-contents)
-- [`flex-middle`](#align-block-contents)
-- [`flex-right`](#align-block-contents)
-- [`flex-top`](#align-block-contents)
-- [`flex-bottom`](#align-block-contents)
+- [`flex-center`](#use-flexbox-for-aligning)
+- [`flex-left`](#use-flexbox-for-aligning)
+- [`flex-middle`](#use-flexbox-for-aligning)
+- [`flex-right`](#use-flexbox-for-aligning)
+- [`flex-top`](#use-flexbox-for-aligning)
+- [`flex-bottom`](#use-flexbox-for-aligning)
 - [`form`](#forms)
+- [`hide-on-mobile`](#hide-on-mobile)
 - [`mt-0`](#margin-top-only)
 - [`mt-15`](#margin-top-only)
 - [`mt-30`](#margin-top-only)
 - [`row`](#grid-system)
 - [`scroll-view`](#-scroll-view-)
 - [`table`](#tables)
-- [`text-center`](#align-inline-contents)
-- [`text-left`](#align-inline-contents)
-- [`text-right`](#align-inline-contents)
+- [`text-center`](#text-aligning)
+- [`text-left`](#text-aligning)
+- [`text-right`](#text-aligning)

@@ -199,7 +199,6 @@ html [type=button],
 
 .container {
   background-color: #fff;
-  margin: 0 auto;
   max-width: 738px;
   min-width: 320px;
   outline: 15px solid #fff;
@@ -207,35 +206,11 @@ html [type=button],
   padding: 0 15px 15px;
   width: 100%; }
 
-.container-side {
-  display: none;
-  padding: 0 30px 15px;
-  width: 256px; }
-
 @media (min-width: 1041px) {
-  body {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .container {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin: 0;
     max-width: 768px;
     outline: 0;
-    padding: 0 30px 15px; }
-  .container-side {
-    display: block; } }
+    padding: 0 30px 15px; } }
 
 .row {
   display: -webkit-box;
@@ -404,11 +379,9 @@ html [type=button],
     .form [type=reset]:active {
       text-decoration: none; }
   .form select {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfklEQVR42mNgGAWjYBSMAizg////TEDMDMVMdDMHqoEXiKWBWBmIlYBYDIjZyLCcDapXCWqWNNRsJnyauIBYA4gD1q9f33zz5s0iINsDiBWAmIMEyzmgejxAZoDMApkJNZsLn0YBIHbu6uqaaWJi8sfOzu7V2bNny4BiwVCfcJBgeRBIL8gMkFkgM4FiriA78GkWAmI/Kyur98bGxv9BmBRHIFkeDLMcZg7ITJDZIDsIhsCMGTMmmJqa/oJptra2fnPixIlKoFwoLkegW25ra/sSph+If08BAmJCgAMaTwmkOIJIy5OhZnMQkwu0gTiVGEcQaXkaEOsSzAXEOMLGxgbZESA1WlSznAxHgAxPo6rlpDqCJpZjcQTIoDSguZOAefo3zDKQxciWg+RAaqhiOS5HzJw5cyJySCD7fOLEiVOoajkJjqCd5TgckYrkCNpbjiNhhq1YsaIdhIHsCJpbjuYIbiCWg5ZsWlA27S1HcwiokcEKxcyjzbhRMArIBQALjwuJv/PoLwAAAABJRU5ErkJggg==");
-    background-position: right 5px top 11px;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    padding-right: 30px;
+    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'><path fill='%23333' d='M0 0h32L16 20z'/></svg>") right 10px center no-repeat;
+    background-size: 8px 8px;
+    padding-right: 25px;
     cursor: pointer; }
   .form [disabled] {
     cursor: not-allowed;
@@ -465,6 +438,13 @@ html [type=button],
   .btn-danger[disabled] {
     cursor: not-allowed;
     opacity: .5; }
+
+.hide-on-mobile {
+  display: none; }
+
+@media (min-width: 1041px) {
+  .hide-on-mobile {
+    display: block; } }
 
 .mt-30 {
   margin-top: 30px; }
