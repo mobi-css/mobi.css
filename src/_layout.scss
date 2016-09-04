@@ -1,6 +1,5 @@
 .container {
   background-color: $color-background-container;
-  margin: 0 auto;
   max-width: $max-width-container;
   min-width: $min-width-container;
   outline: $width-gap solid $color-background-container;
@@ -9,28 +8,11 @@
   width: 100%;
 }
 
-.container-side {
-  display: none;
-  padding: $padding-container-side;
-  width: $width-container-side;
-}
-
 @media (min-width: $width-container-breakpoint) {
-  body {
-    @include flex-container();
-    justify-content: center;
-  }
-
   .container {
-    flex-grow: 1;
-    margin: 0;
     max-width: $max-width-container + $width-gap-double;
     outline: 0;
     padding: $padding-container-desktop;
-  }
-
-  .container-side {
-    display: block;
   }
 }
 

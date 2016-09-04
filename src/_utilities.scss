@@ -1,3 +1,13 @@
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: $width-container-breakpoint) {
+  .hide-on-mobile {
+    display: block;
+  }
+}
+
 .mt-30 {
   margin-top: $width-gap-double;
 }
