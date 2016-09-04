@@ -46,7 +46,7 @@ Mobi.css includes a simple but flexible system for laying out your project, incl
 
 A `container` contains all of your contents. One page should have only one `container`.
 
-On a mobile device (with width less than 768px), `container` will fill entire width of screen.
+On a mobile device (with width less than 768px), `container` will fill the entire width of the screen.
 
 Otherwise, `container` will have a fixed width and align to the center of the screen. It won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
 
@@ -66,7 +66,7 @@ You may want to say "Oh that's too complicated! Why should I need to add two `<d
 
 Actually, `flex-center` is used as a wrapper to ensure `container` aligns to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
 
-Also, you can add `flex-center` to `<body>` and it will work, too. However, I don't recommend it. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
+Also, you can add `flex-center` to `<body>` and it will work, too. However, that is not recommended. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
 
 What if we want to add a sidebar for the desktop version of your website, useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
 
@@ -176,20 +176,20 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 
 <div class="row mt-15">
   <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
+  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
+  <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
   <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 
 ```html
 <div class="row mt-15">
   <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know what is Mobi.css?</div>
+  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
 <div class="row mt-15">
-  <div class="col site-alert-success text-right" style="margin-left:30px;">Sure I know, Mobi.css is a lightweight, flexible css framework that focus on mobile.</div>
+  <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
   <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
 </div>
 ```
@@ -288,13 +288,13 @@ Mobi.css is designed for content-based websites. It has a pure but pleasant expe
 
 Most typography styles are reset to not need additional classes.
 
-This site itself is a real example. You guys are smart, so for this part it's not necessary to write examples.
+This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
 ### Tables
 
 Although tables are not widely used in mobile, sometimes they are necessary.
 
-However, tables typically render out of screen on small mobiles. If so, use the `scroll-view` wrapper to make your table scrollable.
+However, tables typically render out of the viewable area on small mobile devices. If so, use the `scroll-view` wrapper to make your table scrollable.
 
 And don't forget to add `class="table"` to your `<table>` element!
 
@@ -420,7 +420,7 @@ You need add `class="form"` to a `<form>` element.
 </form>
 ```
 
-#### Complicate forms
+#### Complicated forms
 
 If you want to have multiple inputs in one row, you should use the grid system.
 
@@ -520,7 +520,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
 </form>
 ```
 
-**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes radio button aligned middle vertically.
+**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio button aligned middle vertically.
 
 #### `disabled` and `readonly`
 
@@ -570,7 +570,7 @@ You can also use `btn` to make an `<a>` to a button.
 <button class="btn">A Button With `btn`</button>
 ```
 
-That is because Mobi.css don't want to reset the default styles of `button`. This make third party libraries easy to override the styles of `button`.
+That is because Mobi.css doesn't want to reset the default styles of `button`. This make it easy for third party libraries to override the styles of `button`.
 
 ### Utilities
 
@@ -758,10 +758,10 @@ This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the
 
 Using `hide-on-mobile` will hide the element on mobile devices.
 
-<p class="hide-on-mobile">This part will not shown on mobiles</p>
+<p class="hide-on-mobile">This part will not be shown on mobile</p>
 
 ```html
-<p class="hide-on-mobile">This part will not shown on mobiles</p>
+<p class="hide-on-mobile">This part will not be shown on mobile</p>
 ```
 
 ## Customize
