@@ -44,11 +44,11 @@ Mobi.css includes a simple but flexible system for laying out your project, incl
 
 #### `container`
 
-A `container` contains all of your contents, one page should have only one `container`.
+A `container` contains all of your contents. One page should have only one `container`.
 
 On a mobile device (with width less than 768px), `container` will fill entire width of screen.
 
-Otherwise, `container` will have a fixed width and aligned to the center of the screen. So it won't break your design for mobile. Looks like you are viewing mobile pages on desktop.
+Otherwise, `container` will have a fixed width and align to the center of the screen. It won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
 
 ![layout](img/layout.jpg)
 
@@ -62,13 +62,13 @@ Otherwise, `container` will have a fixed width and aligned to the center of the 
 </body>
 ```
 
-You may want to say "Oh that's too complicated, why should I need to add two `<div>`s to achieve a simple `container`?"
+You may want to say "Oh that's too complicated! Why should I need to add two `<div>`s to achieve a simple `container`?"
 
-Actually `flex-center` is used as a wrapper to ensure `container` aligned to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
+Actually, `flex-center` is used as a wrapper to ensure `container` aligns to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
 
-Also, you can add `flex-center` to `<body>`, it will work too. However I don't recommend it, even though you doesn't append any other elements to `<body>`, third-party libraries may do. It might be hard for them to set their position in a flexbox.
+Also, you can add `flex-center` to `<body>` and it will work, too. However, I don't recommend it. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
 
-What if we want to add a sidebar for the desktop version of your website (that would be useful when you want to show some additional messages which are not valuable for mobile, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
+What if we want to add a sidebar for the desktop version of your website, useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
 
 ![layout-with-side](img/layout-with-side.jpg)
 
@@ -90,9 +90,9 @@ As you can see, `hide-on-mobile` **will never be seen** on a mobile device.
 
 #### Grid system
 
-Mobile doesn't need such a complicate 12# grid system, Mobi.css provides a simpler but flexible grid system.
+Mobile doesn't need a complex 12# grid system. So Mobi.css provides a simple but flexible grid system.
 
-First of all, you can create a `row` which contain several `col`s, in this case, `row`'s width is divided equally between `col`s.
+First of all, you can create a `row` which contains several `col`s. In this case, `row`'s width is divided equally between `col`s.
 
 <div class="row mt-15">
   <div class="col site-alert-success">Lightweight</div>
@@ -196,7 +196,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 
 #### Use flexbox for aligning
 
-Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`, you can use flexbox for aligning easily.
+Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily using flexbox!
 
 <div class="flex-left site-alert-success mt-15">
   <div class="site-alert-success">Mobi.css</div>
@@ -264,13 +264,13 @@ Also, you can use `flex-xxx` together with `row`.
 
 #### Margin top only
 
-Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. Instead, Mobi.css use `margin-top` to make contents flow clearly.
+Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
 
-That do make sense, since it's each section's responsibility to determine the length it should margin to top.
+This technique allows each section to determine the spacing it needs from the element above it.
 
-For example, `<h1>` ~ `<h6>` have a length of `30px` margin to top, in the meantime, `<p>`, `<ul>`, `<table>` have a length of `15px` margin to top.
+For example, `<h1>` ~ `<h6>` has `30px` of vertical spacing between them . In the meantime, `<p>`, `<ul>`, `<table>` have only `15px` of vertical spacing.
 
-Mobi.css also provides three classes for easily manually override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`, the length of `margin-top` are `30px`, `15px` and `0`.
+Mobi.css also provides three classes, `mt-30`, `mt-15` and `mt-0`, to easily override the top margin. These set `margin-top` to `30px`, `15px` and `0`, respectively.
 
 <section class="mt-15 site-alert-success">section.mt-15</section>
 <p class="mt-0 site-alert-success">p.mt-0</p>
@@ -284,23 +284,23 @@ Mobi.css also provides three classes for easily manually override the length to 
 
 ### Typography
 
-Mobi.css is designed for content based website. It has a pure but pleasant experience for reading.
+Mobi.css is designed for content-based websites. It has a pure but pleasant experience for reading.
 
-Most of styles for typography are reset and do not need any classes more.
+Most typography styles are reset to not need additional classes.
 
-This site itself is a real example. You guys are smart, so for this part it's not necessary to write examples anymore.
+This site itself is a real example. You guys are smart, so for this part it's not necessary to write examples.
 
 ### Tables
 
-Although tables is not widely used in mobile, sometimes you may need it.
+Although tables are not widely used in mobile, sometimes they are necessary.
 
-However, tables always renders out of screen, especially in small mobiles. So you should probably need a `scroll-view` area to place your table.
+However, tables typically render out of screen on small mobiles. If so, use the `scroll-view` wrapper to make your table scrollable.
 
-And don't forget to add `class="table"` to your `<table>` element.
+And don't forget to add `class="table"` to your `<table>` element!
 
-Why don't Mobi.css reset `<table>` element so you don't need to add the `table` class?
+Why doesn't Mobi.css reset the `<table>` element so you don't need to add the `table` class?
 
-Because once `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason for `<form>`.
+Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
 
 <div class="scroll-view">
   <table class="table">
@@ -422,7 +422,7 @@ You need add `class="form"` to a `<form>` element.
 
 #### Complicate forms
 
-If you want to have multiple inputs in one row, you should use grid system.
+If you want to have multiple inputs in one row, you should use the grid system.
 
 <form class="form" action="#complicate-forms">
   <div class="row">
@@ -520,7 +520,7 @@ If you want to have multiple inputs in one row, you should use grid system.
 </form>
 ```
 
-A warn tip, when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes radio button aligned middle vertically.
+**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes radio button aligned middle vertically.
 
 #### `disabled` and `readonly`
 
@@ -560,7 +560,7 @@ You can also use `btn` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-One more thing, `<button>` inside `<form>` don't need a class `btn`. But when you create a `<button>` outside `<form>`, you should always add `btn` class.
+`<button>`'s inside `<form>` elements don't need a `btn` class. But when you create a `<button>` outside `<form>`, you should always add `btn` class.
 
 <button class="mt-15">A Button Without `btn`</button>
 <button class="btn">A Button With `btn`</button>
@@ -570,7 +570,7 @@ One more thing, `<button>` inside `<form>` don't need a class `btn`. But when yo
 <button class="btn">A Button With `btn`</button>
 ```
 
-That is because Mobi.css don't want to reset the default styles of `button`, this make third party libraries easy to override the styles of `button`.
+That is because Mobi.css don't want to reset the default styles of `button`. This make third party libraries easy to override the styles of `button`.
 
 ### Utilities
 
@@ -578,7 +578,7 @@ Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, 
 
 #### Layout utilities
 
-As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes for override the length to margin to top, they are `mt-30`, `mt-15` and `mt-0`.
+As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes, `mt-30`, `mt-15` and `mt-0`, for overriding an element's top margin.
 
 For more details, please read [Margin Top Only](#margin-top-only) section.
 
@@ -600,7 +600,7 @@ You can use Mobi.css to easily align text.
 
 Mobile devices usually have small width, so it's very useful to use a `scroll-view` class.
 
-Mobi.css optimize `scroll-view` to make it smoothly to scroll.
+Mobi.css optimizes `scroll-view` to make it scroll smoothly.
 
 ##### Scroll horizontal
 
@@ -648,7 +648,7 @@ Mobi.css optimize `scroll-view` to make it smoothly to scroll.
 
 ##### Scroll vertical
 
-This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the default `max-height` is `300px`.
+This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the default `max-height` is `300px`.
 
 <div class="mt-15 scroll-view" style="max-height:400px;">
   <h2>琵琶行</h2>
@@ -756,7 +756,7 @@ This is pretty easy, just set the `max-height` of `scroll-view`, if not set, the
 
 #### `hide-on-mobile`
 
-Use `hide-on-mobile` will hide the element on mobile devices.
+Using `hide-on-mobile` will hide the element on mobile devices.
 
 <p class="hide-on-mobile">This part will not shown on mobiles</p>
 
@@ -766,7 +766,7 @@ Use `hide-on-mobile` will hide the element on mobile devices.
 
 ## Customize
 
-For advanced users, it's pretty easy to customize Mobi.css.
+Advanced customization of Mobi.css is surprisingly easy.
 
 Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override default values, without modifying source files.
 
