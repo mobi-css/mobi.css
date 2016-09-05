@@ -120,23 +120,19 @@ First of all, you can create a `row` which contains several `col`s. In this case
 </div>
 ```
 
-Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4# grid.
+Secondly, you can use `col-1-2`, `col-1-3`, `col-2-3`, `col-1-4` and `col-3-4` to achieve a maximum 4# grid.
 
 <div class="row mt-15">
   <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col site-alert-success">.col</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
 </div>
 <div class="row">
   <div class="col-1-3 site-alert-success">.col-1-3</div>
-  <div class="col site-alert-success">.col</div>
+  <div class="col-2-3 site-alert-success">.col-2-3</div>
 </div>
 <div class="row">
   <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col site-alert-success">.col</div>
-</div>
-<div class="row">
-  <div class="col site-alert-success">.col</div>
-  <div class="col-1-3 site-alert-success">.col-1-3</div>
+  <div class="col-3-4 site-alert-success">.col-3-4</div>
 </div>
 <div class="row">
   <div class="col-1-4 site-alert-success">.col-1-4</div>
@@ -147,19 +143,15 @@ Secondly, you can use `col-1-2`, `col-1-3` and `col-1-4` to achieve a maximum 4#
 ```html
 <div class="row mt-15">
   <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col site-alert-success">.col</div>
+  <div class="col-1-2 site-alert-success">.col-1-2</div>
 </div>
 <div class="row">
   <div class="col-1-3 site-alert-success">.col-1-3</div>
-  <div class="col site-alert-success">.col</div>
+  <div class="col-2-3 site-alert-success">.col-2-3</div>
 </div>
 <div class="row">
   <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col site-alert-success">.col</div>
-</div>
-<div class="row">
-  <div class="col site-alert-success">.col</div>
-  <div class="col-1-3 site-alert-success">.col-1-3</div>
+  <div class="col-3-4 site-alert-success">.col-3-4</div>
 </div>
 <div class="row">
   <div class="col-1-4 site-alert-success">.col-1-4</div>
@@ -758,10 +750,20 @@ This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the
 
 Using `hide-on-mobile` will hide the element on mobile devices.
 
-<p class="hide-on-mobile">This part will not be shown on mobile</p>
+<p class="hide-on-mobile">This part will hide on mobile devices.</p>
 
 ```html
-<p class="hide-on-mobile">This part will not be shown on mobile</p>
+<p class="hide-on-mobile">This part will hide on mobile devices.</p>
+```
+
+#### `show-on-mobile`
+
+Using `show-on-mobile` will only show the element on mobile devices.
+
+<p class="show-on-mobile">This part will only show on mobile devices.</p>
+
+```html
+<p class="show-on-mobile">This part will only show on mobile devices.</p>
 ```
 
 ## Customize

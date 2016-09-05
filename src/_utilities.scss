@@ -1,10 +1,12 @@
-.hide-on-mobile {
-  display: none;
+@media (max-width: $width-container-breakpoint - 1px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: $width-container-breakpoint) {
-  .hide-on-mobile {
-    display: block;
+  .show-on-mobile {
+    display: none;
   }
 }
 
