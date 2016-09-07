@@ -411,7 +411,7 @@ You need add `class="form"` to a `<form>` element.
 #### Basic forms
 
 {% raw %}
-<form class="form" action="#basic-forms">
+<form class="form" action="#Basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
@@ -420,7 +420,7 @@ You need add `class="form"` to a `<form>` element.
 {% endraw %}
 
 ```html
-<form class="form" action="#basic-forms">
+<form class="form" action="#Basic-forms">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
@@ -433,7 +433,7 @@ You need add `class="form"` to a `<form>` element.
 If you want to have multiple inputs in one row, you should use the grid system.
 
 {% raw %}
-<form class="form" action="#complicate-forms">
+<form class="form" action="#Complicated-forms">
   <div class="row">
     <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
@@ -482,7 +482,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
 {% endraw %}
 
 ```html
-<form class="form" action="#complicate-forms">
+<form class="form" action="#Complicated-forms">
   <div class="row">
     <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
     <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
@@ -535,7 +535,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
 #### `disabled` and `readonly`
 
 {% raw %}
-<form class="form" action="#disabled-forms">
+<form class="form" action="#disabled-and-readonly">
   <input type="text" placeholder="Disabled Input" disabled/>
   <input type="text" value="Readonly Input Value" readonly/>
   <div class="row">
@@ -547,7 +547,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
 {% endraw %}
 
 ```html
-<form class="form" action="#disabled-forms">
+<form class="form" action="#disabled-and-readonly">
   <input type="text" placeholder="Disabled Input" disabled/>
   <input type="text" value="Readonly Input Value" readonly/>
   <div class="row">
@@ -594,9 +594,9 @@ Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, 
 
 #### Layout utilities
 
-As mentioned in [Margin Top Only](#margin-top-only) section, Mobi.css provides three classes, `mt-30`, `mt-15` and `mt-0`, for overriding an element's top margin.
+As mentioned in [Margin Top Only](#Margin-top-only) section, Mobi.css provides three classes, `mt-30`, `mt-15` and `mt-0`, for overriding an element's top margin.
 
-For more details, please read [Margin Top Only](#margin-top-only) section.
+For more details, please read [Margin Top Only](#Margin-top-only) section.
 
 #### Text aligning
 
@@ -810,28 +810,29 @@ Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override
 
 The indexes of all available classes.
 
-- [`btn`](#-btn-)
-- [`btn-danger`](#complicate-forms)
-- [`btn-primary`](#complicate-forms)
-- [`col`](#grid-system)
-- [`col-1-2`](#grid-system)
-- [`col-1-4`](#grid-system)
-- [`col-1-3`](#grid-system)
-- [`container`](#-container)
-- [`flex-center`](#use-flexbox-for-aligning)
-- [`flex-left`](#use-flexbox-for-aligning)
-- [`flex-middle`](#use-flexbox-for-aligning)
-- [`flex-right`](#use-flexbox-for-aligning)
-- [`flex-top`](#use-flexbox-for-aligning)
-- [`flex-bottom`](#use-flexbox-for-aligning)
-- [`form`](#forms)
+- [`btn`](#btn)
+- [`btn-danger`](#Complicated-forms)
+- [`btn-primary`](#Complicated-forms)
+- [`col`](#Grid-system)
+- [`col-1-2`](#Grid-system)
+- [`col-1-4`](#Grid-system)
+- [`col-1-3`](#Grid-system)
+- [`container`](#container)
+- [`flex-center`](#Use-flexbox-for-aligning)
+- [`flex-left`](#Use-flexbox-for-aligning)
+- [`flex-middle`](#Use-flexbox-for-aligning)
+- [`flex-right`](#Use-flexbox-for-aligning)
+- [`flex-top`](#Use-flexbox-for-aligning)
+- [`flex-bottom`](#Use-flexbox-for-aligning)
+- [`form`](#Forms)
 - [`hide-on-mobile`](#hide-on-mobile)
-- [`mt-0`](#margin-top-only)
-- [`mt-15`](#margin-top-only)
-- [`mt-30`](#margin-top-only)
-- [`row`](#grid-system)
-- [`scroll-view`](#-scroll-view-)
-- [`table`](#tables)
-- [`text-center`](#text-aligning)
-- [`text-left`](#text-aligning)
-- [`text-right`](#text-aligning)
+- [`mt-0`](#Margin-top-only)
+- [`mt-15`](#Margin-top-only)
+- [`mt-30`](#Margin-top-only)
+- [`row`](#Grid-system)
+- [`scroll-view`](#scroll-view)
+- [`show-on-mobile`](#show-on-mobile)
+- [`table`](#Tables)
+- [`text-center`](#Text-aligning)
+- [`text-left`](#Text-aligning)
+- [`text-right`](#Text-aligning)
