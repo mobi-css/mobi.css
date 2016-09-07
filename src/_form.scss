@@ -69,14 +69,6 @@
   [readonly] {
     background-color: $color-background-btn;
   }
-
-  .btn-primary {
-    @include btn-primary();
-  }
-
-  .btn-danger {
-    @include btn-danger();
-  }
 }
 
 .btn {
