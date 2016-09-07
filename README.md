@@ -70,7 +70,7 @@ Be sure you have added `node-modules` to your sass's [load_paths](http://stackov
 
 - Use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure Mobi.css works on all major mobile devices
 - Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
-- Browsers marked as (*) didn't well-tested, but they should works fine
+- Browsers marked as (*) were not well tested, but they should work fine
 
 ## Contributing
 
