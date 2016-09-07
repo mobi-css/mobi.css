@@ -103,10 +103,7 @@ $font-size-h4: 2.2rem !default;
 $font-size-h5: 2rem !default;
 $font-size-h6: 1.8rem !default;
 
-// Mobile device always have a small length of width, so we should keep pre as
-// small as it can, 1.4rem is to small and looks strange in Windows Chrome if
-// there are some Chinese words in pre.
-$font-size-pre: 1.5rem !default;
+$font-size-pre: 1.3rem !default;
 
 $font-size-small: 85% !default;
 $font-size-code: $font-size-small !default;

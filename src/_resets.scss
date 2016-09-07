@@ -113,6 +113,7 @@ pre {
   @include scroll-view();
 
   background-color: $color-background-pre;
+  font-family: $font-family-monospace;
   font-size: $font-size-pre;
   line-height: $line-height-pre;
   // Mobile device has a small height, so we need to set the width of pre to the device width
@@ -123,6 +124,7 @@ pre {
   // Override the code styles
   code {
     background-color: transparent;
+    font-size: $font-size-pre;
     padding: 0;
   }
 
