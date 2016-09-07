@@ -24,7 +24,7 @@ You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/rel
 
 Or use npm to install:
 
-```shell package.json http://github.com
+```shell
 npm install --save mobi.css
 ```
 
