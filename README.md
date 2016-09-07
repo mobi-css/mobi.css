@@ -27,13 +27,13 @@ Or use npm to install:
 npm install --save mobi.css
 ```
 
-You can also build Mobi.css to your project if you are using sass.
+You can also build Mobi.css to your project if you are using Sass.
 
 ```scss
 @import 'mobi.css/src/mobi';
 ```
 
-Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+Be sure you have added `node-modules` to your Sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
 ## Browser Support
 
