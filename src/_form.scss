@@ -68,10 +68,6 @@
 
   [readonly] {
     background-color: $color-background-btn;
-
-    &:focus {
-      border-color: $color-border;
-    }
   }
 
   .btn-primary {
