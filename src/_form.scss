@@ -68,7 +68,9 @@
 
   [readonly] {
     background-color: $color-background-btn;
-    border-color: $color-border;
+    &:focus{
+      border-color: $color-border;
+    }
   }
 
   .btn-primary {
