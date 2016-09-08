@@ -9,6 +9,12 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
+openssl aes-256-cbc -K $encrypted_bba0dbd5ff95_key -iv $encrypted_bba0dbd5ff95_iv -in ./id_rsa.enc -out ~/.ssh/id_rsa -d
+chmod 600 ~/.ssh/id_rsa
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa
+cp ./ssh_config ~/.ssh/config
+
 npm test
 npm run build
 
