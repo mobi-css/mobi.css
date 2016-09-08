@@ -8,6 +8,7 @@
         "optionalDependencies": false,
         "peerDependencies": false
       }
-    ]
+    ],
+    "no-console": "off"
   }
 }
