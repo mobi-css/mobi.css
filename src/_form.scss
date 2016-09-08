@@ -1,92 +1,92 @@
 .form {
-  margin: 0;
+    margin: 0;
 
-  label {
-    cursor: pointer;
-    display: block;
-    margin-top: $width-gap;
-    padding-bottom: $width-padding-bottom-label;
-    padding-top: $width-padding-top-label;
-  }
+    label {
+      cursor: pointer;
+      display: block;
+      margin-top: $width-gap;
+      padding-bottom: $width-padding-bottom-label;
+      padding-top: $width-padding-top-label;
+    }
 
-  // `input`s should always be a block element on mobile
-  button,
-  select,
-  textarea,
-  input:not([type=checkbox]):not([type=radio]) {
-    @include input-without-radio-and-checkbox();
-  }
+    // `input`s should always be a block element on mobile
+    button,
+    select,
+    textarea,
+    input:not([type=checkbox]):not([type=radio]) {
+      @include input-without-radio-and-checkbox();
+    }
 
-  // Change the default style of `input`s
-  button,
-  select,
-  textarea,
-  [type=button],
-  [type=date],
-  [type=datetime-local],
-  [type=email],
-  [type=month],
-  [type=number],
-  [type=password],
-  [type=range],
-  [type=search],
-  [type=submit],
-  [type=tel],
-  [type=text],
-  [type=time],
-  [type=url],
-  [type=week] {
-    @include input-and-button();
-  }
+    // Change the default style of `input`s
+    button,
+    select,
+    textarea,
+    [type=button],
+    [type=date],
+    [type=datetime-local],
+    [type=email],
+    [type=month],
+    [type=number],
+    [type=password],
+    [type=range],
+    [type=search],
+    [type=submit],
+    [type=tel],
+    [type=text],
+    [type=time],
+    [type=url],
+    [type=week] {
+      @include input-and-button();
+    }
 
-  [type=checkbox],
-  [type=radio] {
-    margin: $margin-checkbox-radio;
-  }
+    [type=checkbox],
+    [type=radio] {
+      margin: $margin-checkbox-radio;
+    }
 
-  [type=file] {
-    cursor: pointer;
-    padding: $padding-file;
-  }
+    [type=file] {
+      cursor: pointer;
+      padding: $padding-file;
+    }
 
-  button,
-  [type=button],
-  [type=submit],
-  [type=reset] {
-    @include button();
-  }
+    button,
+    [type=button],
+    [type=submit],
+    [type=reset] {
+      @include button();
+    }
 
-  select {
-    // Reset the default angle-down icon
-    @include background-icon-angle-down();
-    cursor: pointer;
-  }
+    select {
+      // Reset the default angle-down icon
+      @include background-icon-angle-down();
+      cursor: pointer;
+    }
 
-  [disabled] {
-    @include disabled();
-  }
+    [disabled] {
+      @include disabled();
+    }
 
-  [readonly] {
-    background-color: $color-background-btn;
-  }
+    [readonly] {
+      background-color: $color-background-btn;
+    }
 
-  .btn-primary {
+    .btn-primary {
     @include btn-primary();
-  }
+    }
 
-  .btn-danger {
-    @include btn-danger();
-  }
+    .btn-danger {
+      @include btn-danger();
+    }
 }
 
 .btn {
-  @include btn();
+    @include btn();
 }
 
 .btn-primary {
-  @include btn-primary();
+    @include btn-primary();
 }
 
 .btn-danger {
-  @include btn-danger();
+    @include btn-danger();
 }
