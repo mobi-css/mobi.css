@@ -1,16 +1,16 @@
 ## Table of content
 
-- [Introduction](#introduction)
-- [Getting started](#getting-started)
-- [Documentation](#documentation)
-  - [Layout](#layout)
-  - [Grid system](#grid-system)
-  - [Typography](#typography)
-  - [Tables](#tables)
-  - [Forms](#forms)
-  - [Utilities](#utilities)
-- [Customize](#customize)
-- [Indexes](#indexes)
+- [Introduction](#Introduction)
+- [Getting started](#Getting-started)
+- [Documentation](#Documentation)
+  - [Layout](#Layout)
+  - [Grid system](#Grid-system)
+  - [Typography](#Typography)
+  - [Tables](#Tables)
+  - [Forms](#Forms)
+  - [Utilities](#Utilities)
+- [Customize](#Customize)
+- [Indexes](#Indexes)
 
 ## Introduction
 
