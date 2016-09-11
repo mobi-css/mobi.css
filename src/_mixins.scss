@@ -5,7 +5,7 @@
 }
 
 @mixin background-icon-angle-down() {
-  background: $background-image-angle-down right 10px center no-repeat;
+  background: $background-image-angle-down right 5px center no-repeat;
   background-size: 8px 8px;
   padding-right: 25px;
 }
@@ -25,7 +25,7 @@
 // Forms
 //
 
-@mixin input-without-radio-and-checkbox() {
+@mixin input-block() {
   display: block;
   line-height: $line-height;
   margin: $width-gap 0 0;
@@ -33,7 +33,7 @@
 }
 
 @mixin input-and-button() {
-  -webkit-appearance: none;
+  appearance: none;
   background-color: $color-background-input;
   border: $border-input;
   border-radius: $border-radius-input;
@@ -60,12 +60,13 @@
 }
 
 @mixin disabled() {
-  cursor: not-allowed;
+  cursor: default;
   opacity: .5;
+  pointer-events: none;
 }
 
 @mixin btn() {
-  @include input-without-radio-and-checkbox();
+  @include input-block();
   @include input-and-button();
   @include button();
 

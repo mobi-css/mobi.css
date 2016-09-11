@@ -242,24 +242,12 @@ html [type=button],
 [type=submit],
 ::-webkit-file-upload-button {
   // (*) Correct the inability to style clickable types in iOS and Safari.
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 [type=search] {
   // Correct the odd appearance in Chrome and Safari.
-  -webkit-appearance: textfield;
-}
-
-[type="date"],
-[type="time"],
-[type="datetime-local"],
-[type="month"] {
-  // Remove the default appearance of temporal inputs to avoid a Mobile Safari
-  // bug where setting a custom line-height prevents text from being vertically
-  // centered within the input.
-  //
-  // Bug report: https://github.com/twbs/bootstrap/issues/11266
-  -webkit-appearance: listbox;
+  appearance: none;
 }
 
 // Change font properties to `inherit` in Safari.

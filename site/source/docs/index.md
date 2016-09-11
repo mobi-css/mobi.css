@@ -154,7 +154,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 </div>
 <div class="row mt-15">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
 </div>
 {% endraw %}
 
@@ -165,7 +165,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 </div>
 <div class="row mt-15">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
 </div>
 ```
 
@@ -383,7 +383,7 @@ Because once the `<table>` element is reset, it's hard to set it back. It's more
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
-You need add `class="form"` to a `<form>` element.
+You need add `class="form"` to a `<form>` element and `class="btn"` to each button.
 
 ### Basic forms
 
@@ -392,7 +392,7 @@ You need add `class="form"` to a `<form>` element.
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
-  <input type="submit" value="Sign Up Now"/>
+  <input class="btn" type="submit" value="Sign Up Now"/>
 </form>
 {% endraw %}
 
@@ -401,7 +401,7 @@ You need add `class="form"` to a `<form>` element.
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
-  <input type="submit" value="Sign Up Now"/>
+  <input class="btn" type="submit" value="Sign Up Now"/>
 </form>
 ```
 
@@ -449,10 +449,10 @@ If you want to have multiple inputs in one row, you should use the grid system.
   <div class="row">
     <div style="width:90px;"></div>
     <div class="col">
-      <button type="reset" class="btn-danger">Reset</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
     </div>
     <div class="col">
-      <button type="submit" class="btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </div>
 </form>
@@ -498,10 +498,10 @@ If you want to have multiple inputs in one row, you should use the grid system.
   <div class="row">
     <div style="width:90px;"></div>
     <div class="col">
-      <button type="reset" class="btn-danger">Reset</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
     </div>
     <div class="col">
-      <button type="submit" class="btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </div>
 </form>
@@ -509,35 +509,11 @@ If you want to have multiple inputs in one row, you should use the grid system.
 
 **Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio button aligned middle vertically.
 
-### `disabled` and `readonly`
+### `btn`, `btn-primary` and `btn-danger`
 
-{% raw %}
-<form class="form" action="#disabled-and-readonly">
-  <input type="text" placeholder="Disabled Input" disabled/>
-  <input type="text" value="Readonly Input Value" readonly/>
-  <div class="row">
-  <div class="col"><input type="button" value="Set" disabled/></div>
-  <div class="col"><button type="button" class="btn-primary" disabled>Button</button></div>
-  <div class="col"><input type="button" class="btn-danger" value="Disabled" disabled/></div>
-  </div>
-</form>
-{% endraw %}
+You can use `class="btn"` outside `.form`.
 
-```html
-<form class="form" action="#disabled-and-readonly">
-  <input type="text" placeholder="Disabled Input" disabled/>
-  <input type="text" value="Readonly Input Value" readonly/>
-  <div class="row">
-    <div class="col"><input type="button" value="Set" disabled/></div>
-    <div class="col"><button type="button" class="btn-primary" disabled>Button</button></div>
-    <div class="col"><input type="button" class="btn btn-danger" value="Disabled" disabled/></div>
-  </div>
-</form>
-```
-
-### `btn`
-
-You can also use `btn` to make an `<a>` to a button.
+And you can also use `class="btn"` to make an `<a>` to a button.
 
 {% raw %}
 <a href="javascript:void(0);" class="btn">a.btn</a>
@@ -551,19 +527,7 @@ You can also use `btn` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-`<button>`'s inside `<form>` elements don't need a `btn` class. But when you create a `<button>` outside `<form>`, you should always add `btn` class.
-
-{% raw %}
-<button class="mt-15">A Button Without `btn`</button>
-<button class="btn">A Button With `btn`</button>
-{% endraw %}
-
-```html
-<button class="mt-15">A Button Without `btn`</button>
-<button class="btn">A Button With `btn`</button>
-```
-
-That is because Mobi.css doesn't want to reset the default styles of `button`. This make it easy for third party libraries to override the styles of `button`.
+For more examples about inputs, please check out [HTML5 inputs](/docs/inputs).
 
 ## Utilities
 

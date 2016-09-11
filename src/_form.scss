@@ -9,51 +9,45 @@
     padding-top: $width-padding-top-label;
   }
 
-  // `input`s should always be a block element on mobile
-  button,
-  select,
+  // Text inputs + Select inputs
+  [type=text],
+  [type=password],
+  [type=email],
+  [type=search],
+  [type=url],
+  [type=tel],
+  [type=number],
   textarea,
-  input:not([type=checkbox]):not([type=radio]) {
-    @include input-without-radio-and-checkbox();
+  select {
+    @include input-block();
+    @include input-and-button();
   }
 
-  // Change the default style of `input`s
-  button,
-  select,
-  textarea,
-  [type=button],
-  [type=date],
-  [type=datetime-local],
-  [type=email],
-  [type=month],
-  [type=number],
-  [type=password],
-  [type=range],
-  [type=search],
-  [type=submit],
-  [type=tel],
-  [type=text],
-  [type=time],
-  [type=url],
-  [type=week] {
-    @include input-and-button();
+  @media (max-width: $width-container-breakpoint - 1px) {
+    [type=time],
+    [type=week],
+    [type=month],
+    [type=date],
+    [type=datetime-local] {
+      margin: $width-gap 0 0;
+    }
+  }
+
+  @media (min-width: $width-container-breakpoint) {
+    [type=time],
+    [type=week],
+    [type=month],
+    [type=date],
+    [type=datetime-local] {
+      @include input-block();
+      @include input-and-button();
+    }
   }
 
   [type=checkbox],
   [type=radio] {
-    margin: $margin-checkbox-radio;
-  }
-
-  [type=file] {
     cursor: pointer;
-    padding: $padding-file;
-  }
-
-  button,
-  [type=button],
-  [type=submit],
-  [type=reset] {
-    @include button();
+    margin: $margin-checkbox-radio;
   }
 
   select {
@@ -62,20 +56,25 @@
     cursor: pointer;
   }
 
+  [type=file],
+  [type=range] {
+    @include input-block();
+    cursor: pointer;
+    padding: $padding-file;
+  }
+
+  [type=color],
+  [type=image] {
+    cursor: pointer;
+    margin: $width-gap 0 0;
+  }
+
   [disabled] {
     @include disabled();
   }
 
   [readonly] {
     background-color: $color-background-btn;
-  }
-
-  .btn-primary {
-    @include btn-primary();
-  }
-
-  .btn-danger {
-    @include btn-danger();
   }
 }
 
