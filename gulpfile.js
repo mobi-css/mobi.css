@@ -9,7 +9,9 @@ const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const mkdirp = require('mkdirp');
 const runSequence = require('run-sequence');
+const insert = require('gulp-insert');
 const exec = require('child_process').exec;
+const pkg = require('./package.json');
 
 const postcssConfig = [autoprefixer({ browsers: [
   'last 5 iOS versions',
@@ -68,6 +70,7 @@ gulp.task('clean:dist', () => {
 
 gulp.task('build:mobi:compressed', ['build:mobi:sourcemaps'], () => gulp.src(`${DIST_DIR}/mobi.css`)
   .pipe(cleanCSS())
+  .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(rename('mobi.min.css'))
   .pipe(gulp.dest(DIST_DIR)));
 
@@ -75,6 +78,7 @@ gulp.task('build:mobi:sourcemaps', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss(postcssConfig))
+  .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
