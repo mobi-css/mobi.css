@@ -1,0 +1,20 @@
+<div class="theme-nav-item flex-center flex-middle
+  <%
+    if (url_for(href) === '/' || url_for(href) === '/index.html') {
+      if (url_for(path) === '/index.html') {
+        %>theme-nav-item-current<%
+      }
+    } else if (url_for(path).indexOf(url_for(href)) === 0) {
+      %>theme-nav-item-current<%
+    }
+  %>
+">
+  <a class="theme-nav-item-link text-center" href="<%= url_for(href) %>">
+    <% if (typeof icon !== 'undefined' && icon) { %>
+      <i class="theme-nav-item-icon fa fa-<%= icon %>"></i>
+    <% } %>
+    <% if (typeof img !== 'undefined' && img) { %>
+      <img class="theme-nav-item-img" src="<%= img %>"/>
+    <% } %>
+  </a>
+</div>

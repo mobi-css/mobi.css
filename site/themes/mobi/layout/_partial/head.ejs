@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <% /* Disable Baidu tranformation */ %>
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <%- css(['css/mobi.css/mobi.css', 'css/font-awesome-4.6.3/css/font-awesome.min.css', 'css/mobi-theme.css']) %>
+
+  <% if (page.tags && page.tags.length) { %>
+    <meta name="keywords" content="<%= page.tags.map(tag => tag.name).join(', ') %>" />
+  <% } %>
+
+  <% if (theme.favicon) { %>
+    <%- favicon_tag(theme.favicon) %>
+  <% } %>
+
+  <% if (theme.rss) { %>
+    <%- feed_tag(theme.rss, { title: config.title }) %>
+  <% } %>
+
+  <title><%= (page.title ? (page.title + ' | ') : '') + config.title %></title>
+</head>

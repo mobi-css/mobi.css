@@ -1,0 +1,20 @@
+favicon: /favicon.ico
+
+menu:
+  home:
+    href: /
+    img: /img/mobi-logo-512.png
+    title: Home
+  docs:
+    href: /docs
+    icon: book
+    title: Docs
+  more:
+    href: /extensions
+    icon: cogs
+    title: Extensions
+  github:
+    href: https://github.com/xcatliu/mobi.css
+    icon: github
+    title: GitHub
+    align: right
