@@ -101,7 +101,9 @@ dt {
   font-weight: $font-weight-bold;
 }
 
-code {
+code,
+kbd,
+samp {
   background-color: $color-background-code;
   font-family: $font-family-monospace;
   font-size: $font-size-code;
@@ -189,6 +191,13 @@ address {
 mark {
   background-color: $color-background-mark;
   color: $color-text;
+  padding: 0 .2em;
+}
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 

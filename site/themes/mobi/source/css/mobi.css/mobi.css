@@ -82,7 +82,9 @@ strong,
 dt {
   font-weight: 600; }
 
-code {
+code,
+kbd,
+samp {
   background-color: rgba(0, 0, 0, 0.05);
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 85%;
@@ -152,7 +154,13 @@ address {
 
 mark {
   background-color: #ff0;
-  color: #333; }
+  color: #333;
+  padding: 0 .2em; }
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
 
 audio:not([controls]) {
   display: none;
