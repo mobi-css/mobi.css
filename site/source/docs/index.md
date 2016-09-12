@@ -72,7 +72,7 @@ Mobile doesn't need a complex 12# grid system. So Mobi.css provides a simple but
 First of all, you can create a `row` which contains several `col`s. In this case, `row`'s width is divided equally between `col`s.
 
 {% raw %}
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col site-alert-success">Lightweight</div>
   <div class="col site-alert-success">Flexible</div>
   <div class="col site-alert-success">Focus on Mobile</div>
@@ -86,7 +86,7 @@ First of all, you can create a `row` which contains several `col`s. In this case
 {% endraw %}
 
 ```html
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col site-alert-success">Lightweight</div>
   <div class="col site-alert-success">Flexible</div>
   <div class="col site-alert-success">Focus on Mobile</div>
@@ -102,7 +102,7 @@ First of all, you can create a `row` which contains several `col`s. In this case
 Secondly, you can use `col-1-2`, `col-1-3`, `col-2-3`, `col-1-4` and `col-3-4` to achieve a maximum 4# grid.
 
 {% raw %}
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col-1-2 site-alert-success">.col-1-2</div>
   <div class="col-1-2 site-alert-success">.col-1-2</div>
 </div>
@@ -122,7 +122,7 @@ Secondly, you can use `col-1-2`, `col-1-3`, `col-2-3`, `col-1-4` and `col-3-4` t
 {% endraw %}
 
 ```html
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col-1-2 site-alert-success">.col-1-2</div>
   <div class="col-1-2 site-alert-success">.col-1-2</div>
 </div>
@@ -148,22 +148,22 @@ You probably know Mobi.css can use flexbox for layout, and so should you! [Now i
 Here is an example for how you can use `col` to achieve a typical fixed-fluid layout.
 
 {% raw %}
-<div class="row mt-15">
+<div class="row top-gap">
   <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
   <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
   <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
 </div>
 {% endraw %}
 
 ```html
-<div class="row mt-15">
+<div class="row top-gap">
   <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
   <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
   <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
 </div>
@@ -174,7 +174,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily using flexbox!
 
 {% raw %}
-<div class="flex-left site-alert-success mt-15">
+<div class="flex-left site-alert-success top-gap">
   <div class="site-alert-success">Mobi.css</div>
 </div>
 <div class="flex-center site-alert-success">
@@ -198,7 +198,7 @@ Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily 
 {% endraw %}
 
 ```html
-<div class="flex-left site-alert-success mt-15">
+<div class="flex-left site-alert-success top-gap">
   <div class="site-alert-success">Mobi.css</div>
 </div>
 <div class="flex-center site-alert-success">
@@ -224,7 +224,7 @@ Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily 
 Also, you can use `flex-xxx` together with `row`.
 
 {% raw %}
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col-1-3 site-alert-success">col-1-3 in row</div>
 </div>
 <div class="row flex-right">
@@ -233,7 +233,7 @@ Also, you can use `flex-xxx` together with `row`.
 {% endraw %}
 
 ```html
-<div class="row mt-15">
+<div class="row top-gap">
   <div class="col-1-3 site-alert-success">col-1-3 in row</div>
 </div>
 <div class="row flex-right">
@@ -249,18 +249,16 @@ This technique allows each section to determine the spacing it needs from the el
 
 For example, `<h1>` ~ `<h6>` has `30px` of vertical spacing between them . In the meantime, `<p>`, `<ul>`, `<table>` have only `15px` of vertical spacing.
 
-Mobi.css also provides three classes, `mt-30`, `mt-15` and `mt-0`, to easily override the top margin. These set `margin-top` to `30px`, `15px` and `0`, respectively.
+Mobi.css also provides two classes, `top-gap-big` and `top-gap`, to easily override the top margin. These set `margin-top` to `30px` and `15px`, respectively.
 
 {% raw %}
-<section class="mt-15 site-alert-success">section.mt-15</section>
-<p class="mt-0 site-alert-success">p.mt-0</p>
-<section class="mt-30 site-alert-success">section.mt-30</section>
+<section class="top-gap site-alert-success">section.top-gap</section>
+<section class="top-gap-big site-alert-success">section.top-gap-big</section>
 {% endraw %}
 
 ```html
-<section class="mt-15 site-alert-success">section.mt-15</section>
-<p class="mt-0 site-alert-success">p.mt-0</p>
-<section class="mt-30 site-alert-success">section.mt-30</section>
+<section class="top-gap site-alert-success">section.top-gap</section>
+<section class="top-gap-big site-alert-success">section.top-gap-big</section>
 ```
 
 ## Typography
@@ -531,11 +529,11 @@ For more examples about inputs, please check out [HTML5 inputs](/docs/inputs).
 
 ## Utilities
 
-Mobi.css also provides some useful utilities, like layout `mt-30`, `text-left`, `scroll-view`, etc.
+Mobi.css also provides some useful utilities, like layout `top-gap-big`, `text-left`, `scroll-view`, etc.
 
 ### Layout utilities
 
-As mentioned in [Margin Top Only](#Margin-top-only) section, Mobi.css provides three classes, `mt-30`, `mt-15` and `mt-0`, for overriding an element's top margin.
+As mentioned in [Margin Top Only](#Margin-top-only) section, Mobi.css provides three classes, `top-gap-big`, `top-gap` and `mt-0`, for overriding an element's top margin.
 
 For more details, please read [Margin Top Only](#Margin-top-only) section.
 
@@ -544,13 +542,13 @@ For more details, please read [Margin Top Only](#Margin-top-only) section.
 You can use Mobi.css to easily align text.
 
 {% raw %}
-<div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
+<div class="text-left site-alert-success top-gap">Mobi.css is awesome!</div>
 <div class="text-center site-alert-success">Awesome!</div>
 <div class="text-right site-alert-success">Some!</div>
 {% endraw %}
 
 ```html
-<div class="text-left site-alert-success mt-15">Mobi.css is awesome!</div>
+<div class="text-left site-alert-success top-gap">Mobi.css is awesome!</div>
 <div class="text-center site-alert-success">Awesome!</div>
 <div class="text-right site-alert-success">Some!</div>
 ```
@@ -564,7 +562,7 @@ Mobi.css optimizes `scroll-view` to make it scroll smoothly.
 #### Scroll horizontal
 
 {% raw %}
-<div class="mt-15 scroll-view">
+<div class="top-gap scroll-view">
   <div style="width:1024px;">
     <i class="fa fa-adjust" style="font-size:6rem;"></i>
     <i class="fa fa-anchor" style="font-size:6rem;"></i>
@@ -586,7 +584,7 @@ Mobi.css optimizes `scroll-view` to make it scroll smoothly.
 {% endraw %}
 
 ```html
-<div class="mt-15 scroll-view">
+<div class="top-gap scroll-view">
   <div style="width:1024px;">
     <i class="fa fa-adjust" style="font-size:6rem;"></i>
     <i class="fa fa-anchor" style="font-size:6rem;"></i>
@@ -612,7 +610,7 @@ Mobi.css optimizes `scroll-view` to make it scroll smoothly.
 This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the default `max-height` is `300px`.
 
 {% raw %}
-<div class="mt-15 scroll-view" style="max-height:400px;">
+<div class="top-gap scroll-view" style="max-height:400px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -665,7 +663,7 @@ This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the
 {% endraw %}
 
 ```html
-<div class="mt-15 scroll-view" style="max-height:400px;">
+<div class="top-gap scroll-view" style="max-height:400px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
