@@ -27,7 +27,7 @@ On a mobile device (with width less than 768px), `container` will fill the entir
 
 Otherwise, `container` will have a fixed width and align to the center of the screen. It won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
 
-![layout](../img/layout.jpg)
+![layout](../assets/layout.jpg)
 
 ```html
 <body>
@@ -47,7 +47,7 @@ Also, you can add `flex-center` to `<body>` and it will work, too. However, that
 
 What if we want to add a sidebar for the desktop version of your website, useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
 
-![layout-with-side](../img/layout-with-side.jpg)
+![layout-with-side](../assets/layout-with-side.jpg)
 
 ```html
 <body>
@@ -154,7 +154,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 </div>
 <div class="row top-gap">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="../assets/xcatliu.png"/></div>
 </div>
 {% endraw %}
 
@@ -165,7 +165,7 @@ Here is an example for how you can use `col` to achieve a typical fixed-fluid la
 </div>
 <div class="row top-gap">
   <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="/img/xcatliu.png"/></div>
+  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="../assets/xcatliu.png"/></div>
 </div>
 ```
 

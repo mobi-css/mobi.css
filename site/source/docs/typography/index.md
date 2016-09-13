@@ -145,14 +145,14 @@ document.write('Hello World');</code></pre>
 
 {% raw %}
 <figure>
-  <img src="/img/layout-with-side.jpg" alt="Layout with side"/>
+  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
   <figcaption>Sketch: Layout with side</figcaption>
 </figure>
 {% endraw %}
 
 ```html
 <figure>
-  <img src="/img/layout-with-side.jpg" alt="Layout with side"/>
+  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
   <figcaption>Sketch: Layout with side</figcaption>
 </figure>
 ```
@@ -161,14 +161,14 @@ document.write('Hello World');</code></pre>
 
 Mobi.css Logo:
 
-![Mobi.css Logo](/img/mobi-logo-512.png)
+![Mobi.css Logo](../../assets/mobi-logo-512.png)
 
 Croatian Rhapsody:
 
 {% raw %}
 <div class="top-gap">
   <audio controls>
-    <source src="/audio/croatian-rhapsody.mp3" type="audio/mpeg">
+    <source src="../../assets/croatian-rhapsody.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -179,7 +179,7 @@ Croatian Rhapsody:
 {% raw %}
 <div class="top-gap">
   <video controls>
-    <source src="/video/big-buck-bunny.mp4" type="video/mp4">
+    <source src="../../assets/big-buck-bunny.mp4" type="video/mp4">
     Your browser does not support the video element.
   </video>
 </div>

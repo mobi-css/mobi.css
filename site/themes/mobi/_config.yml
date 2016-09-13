@@ -3,7 +3,7 @@ favicon: /favicon.ico
 menu:
   home:
     href: /
-    img: /img/mobi-logo-512.png
+    img: /assets/mobi-logo-512.png
     title: Home
   docs:
     href: /docs

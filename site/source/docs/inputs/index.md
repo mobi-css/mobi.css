@@ -166,7 +166,7 @@ This page lists all the possible inputs.
   <p><code>[type=range]</code></p>
   <input type="range" min="1" max="99" step="2"/>
   <p><code>[type=image]</code></p>
-  <input type="image" src="/img/xcatliu.png" alt="xcatliu" width="64"/>
+  <input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64"/>
   <p><code>[type=hidden]</code></p>
   <input type="hidden"/>
 {% endraw %}
@@ -174,7 +174,7 @@ This page lists all the possible inputs.
 ```html
 <input type="color"/>
 <input type="range" min="1" max="99" step="2"/>
-<input type="image" src="/img/xcatliu.png" alt="xcatliu" width="64"/>
+<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64"/>
 <input type="hidden"/>
 ```
 
@@ -285,7 +285,7 @@ This page lists all the possible inputs.
   <p><code>[type=range][disabled]</code></p>
   <input type="range" min="1" max="99" step="2" disabled/>
   <p><code>[type=image][disabled]</code></p>
-  <input type="image" src="/img/xcatliu.png" alt="xcatliu" width="64" disabled/>
+  <input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64" disabled/>
   <p><code>[type=hidden][disabled]</code></p>
   <input type="hidden" disabled/>
   <p><code>[type=color][readonly]</code></p>
@@ -299,7 +299,7 @@ This page lists all the possible inputs.
 ```html
 <input type="color" disabled/>
 <input type="range" min="1" max="99" step="2" disabled/>
-<input type="image" src="/img/xcatliu.png" alt="xcatliu" width="64" disabled/>
+<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64" disabled/>
 <input type="hidden" disabled/>
 <input type="color" value="#ff0000" readonly/>
 <input type="range" min="1" max="99" step="2" value="15" readonly/>
