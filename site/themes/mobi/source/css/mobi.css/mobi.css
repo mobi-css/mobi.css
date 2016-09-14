@@ -205,6 +205,25 @@ html [type=button],
 [hidden] {
   display: none; }
 
+fieldset {
+  border: 1px solid #ddd;
+  margin: 15px 0 0;
+  padding: 0 15px 15px; }
+
+legend {
+  padding: 0 3px; }
+
+optgroup {
+  color: #777;
+  font-style: normal;
+  font-weight: 300; }
+
+option {
+  color: #333; }
+
+progress {
+  width: 100%; }
+
 .container {
   background-color: #fff;
   max-width: 738px;
@@ -418,6 +437,7 @@ html [type=button],
   .form [type=color],
   .form [type=image] {
     cursor: pointer;
+    display: block;
     margin: 15px 0 0; }
   .form [disabled] {
     cursor: default;
@@ -477,11 +497,17 @@ html [type=button],
   .show-on-mobile {
     display: none; } }
 
-.top-gap-big {
+.top-gap-big,
+.form .top-gap-big {
   margin-top: 30px; }
 
-.top-gap {
+.top-gap,
+.form .top-gap {
   margin-top: 15px; }
+
+.top-gap-0,
+.form .top-gap-0 {
+  margin-top: 0; }
 
 .scroll-view {
   max-height: 300px;

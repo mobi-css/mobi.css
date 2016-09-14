@@ -10,12 +10,19 @@
   }
 }
 
-.top-gap-big {
+.top-gap-big,
+.form .top-gap-big {
   margin-top: $width-gap-double;
 }
 
-.top-gap {
+.top-gap,
+.form .top-gap {
   margin-top: $width-gap;
+}
+
+.top-gap-0,
+.form .top-gap-0 {
+  margin-top: 0;
 }
 
 .scroll-view {

@@ -267,3 +267,27 @@ html [type=button],
 [hidden] {
   display: none;
 }
+
+fieldset {
+  border: $width-border solid $color-border;
+  margin: $width-gap 0 0;
+  padding: 0 $width-gap $width-gap;
+}
+
+legend {
+  padding: $padding-legend;
+}
+
+optgroup {
+  color: $color-optgroup;
+  font-style: normal;
+  font-weight: $font-weight-optgroup;
+}
+
+option {
+  color: $color-text;
+}
+
+progress {
+  width: 100%;
+}
