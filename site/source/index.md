@@ -24,7 +24,7 @@ You can also build Mobi.css to your project if you are using sass.
 @import 'mobi.css/src/mobi';
 ```
 
-Be sure you have added `node-modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+Be sure you have added `node_modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
 ## Next step
 
