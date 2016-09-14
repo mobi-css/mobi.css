@@ -28,4 +28,7 @@ Be sure you have added `node_modules` to your sass's [load_paths](http://stackov
 
 ## Next step
 
-Checkout our [documentations](/docs).
+- [Documentations](/docs): Design philosophy and tutorial.
+- [Reference](/docs/reference): View styles of all the HTML elements (exclude metadata).
+- [Extensions](/extenstions): Plugins, themes, etc.
+- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.

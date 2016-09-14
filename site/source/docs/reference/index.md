@@ -1,6 +1,6 @@
 # Reference
 
-This page lists almost all the HTML elements (exclude metadata).
+This page lists all the HTML elements (exclude metadata).
 
 ## Typography
 
@@ -100,6 +100,8 @@ Use `<bdo>` to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.
 text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.
 <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.
 ```
+
+`<bdi>` is not working in iOS and Chrome. Don't use it in your project, use `<bdo>` instead.
 
 Use `<dfn>` to create a defining instance of a term:  
 <dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.  
@@ -249,6 +251,178 @@ document.write('Hello World');</code></pre>
 ```
 
 ## Tables
+
+{% raw %}
+<div class="scroll-view">
+  <table class="table">
+    <thead>
+      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://getmobicss.com/">Mobi.css</a></td>
+        <td><a href="https://github.com/xcatliu">xcatliu</a></td>
+        <td>Sass</td>
+        <td>3.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://getskeleton.com/">Skeleton</a></td>
+        <td><a href="https://github.com/dhg">Dave Gamache</a></td>
+        <td>Css</td>
+        <td>3.2kb</td>
+        <td><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/dhg/Skeleton/">Skeleton GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://purecss.io/">Pure.css</a></td>
+        <td><a href="https://github.com/yahoo">Yahoo Inc.</a></td>
+        <td>Css</td>
+        <td>4.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/yahoo/pure/">Pure.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://v4-alpha.getbootstrap.com/">Bootstrap v4</a></td>
+        <td><a href="https://github.com/twbs">Twitter</a></td>
+        <td>Sass, JavaScript</td>
+        <td>20.1kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endraw %}
+
+```html
+<div class="scroll-view">
+  <table class="table">
+    <thead>
+      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://getmobicss.com/">Mobi.css</a></td>
+        <td><a href="https://github.com/xcatliu">xcatliu</a></td>
+        <td>Sass</td>
+        <td>3.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://getskeleton.com/">Skeleton</a></td>
+        <td><a href="https://github.com/dhg">Dave Gamache</a></td>
+        <td>Css</td>
+        <td>3.2kb</td>
+        <td><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/dhg/Skeleton/">Skeleton GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://purecss.io/">Pure.css</a></td>
+        <td><a href="https://github.com/yahoo">Yahoo Inc.</a></td>
+        <td>Css</td>
+        <td>4.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/yahoo/pure/">Pure.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://v4-alpha.getbootstrap.com/">Bootstrap v4</a></td>
+        <td><a href="https://github.com/twbs">Twitter</a></td>
+        <td>Sass, JavaScript</td>
+        <td>20.1kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+{% raw %}
+<div class="scroll-view">
+  <table class="table">
+    <caption>Caption</caption>
+    <colgroup>
+      <col style="background-color:rgba(255, 0, 0, 0.1);"/>
+      <col span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+        <td>Footer 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endraw %}
+
+```html
+<div class="scroll-view">
+  <table class="table">
+    <caption>Caption</caption>
+    <colgroup>
+      <col style="background-color:rgba(255, 0, 0, 0.1);"/>
+      <col span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+        <td>1.3</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+        <td>Footer 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+```
 
 ## Forms
 
@@ -530,6 +704,8 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 <meter min="200" max="500" value="350">350 degrees</meter>
 ```
 
+`<meter>` is not supported in iOS. Don't use this in your project.
+
 {% raw %}
 </form>
 <form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
@@ -706,3 +882,8 @@ Buttons cannot set to `readonly`.
 {% raw %}
 </form>
 {% endraw %}
+
+## Next step
+
+- [Extensions](/extenstions): Plugins, themes, etc.
+- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.

@@ -525,7 +525,7 @@ And you can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about inputs, please check out [HTML5 inputs](/docs/inputs).
+For more examples about inputs, please check out [Reference # Forms](/docs/reference/#Forms).
 
 ## Utilities
 
@@ -741,4 +741,6 @@ Using `show-on-mobile` will only show the element on mobile devices.
 
 ## Next step
 
-[Extensions for Mobi.css](/extensions)
+- [Reference](/docs/reference): View styles of all the HTML elements (exclude metadata) and Mobi.css classes.
+- [Extensions](/extenstions): Plugins, themes, etc.
+- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.

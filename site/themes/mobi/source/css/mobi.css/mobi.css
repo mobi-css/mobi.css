@@ -216,7 +216,7 @@ legend {
 optgroup {
   color: #777;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: normal; }
 
 option {
   color: #333; }
@@ -331,7 +331,6 @@ progress {
   .table caption {
     caption-side: bottom;
     color: #777;
-    padding: 5px;
     text-align: left; }
   .table th,
   .table td {
@@ -422,7 +421,7 @@ progress {
     cursor: pointer;
     margin: 0 5px 0 0; }
   .form select {
-    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'><path fill='#333' d='M0 0h32L16 20z'/></svg>") right 5px center no-repeat;
+    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'><path fill='#333' d='M0 0h32L16 20z'/></svg>") right 8px center no-repeat;
     background-size: 8px 8px;
     padding-right: 25px;
     cursor: pointer; }
