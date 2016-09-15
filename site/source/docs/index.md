@@ -8,24 +8,33 @@
 
 # Documentations
 
-- [Layout](#Layout)
-- [Grid system](#Grid-system)
+- [Design](#Design)
+- [Flexbox](#Flexbox)
 - [Typography](#Typography)
 - [Tables](#Tables)
 - [Forms](#Forms)
 - [Utilities](#Utilities)
+- [FAQ](#FAQ)
 
-## Layout
+## Design
 
-Mobi.css includes a simple but flexible system for laying out your project, including `container`, grid system, flex utilities, etc.
+> Mobi.css is designed for mobile devices.
 
-### `container`
+### Layout
 
-A `container` contains all of your contents. One page should have only one `container`.
+Most of CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
 
-On a mobile device (with width less than 768px), `container` will fill the entire width of the screen.
+![Responsive design](../assets/responsive-design.jpg)
 
-Otherwise, `container` will have a fixed width and align to the center of the screen. It won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
+It sounds like a good idea, however, it's not suitable for all situations.
+
+Although frameworks help you reduce a lot of works, you still need to design for each screen size, to write redundant classes (an example for Bootstrap: `<div class="col-xs-12 col-sm-6 col-md-8">`), and to test on every devices.
+
+If you are building a website for mobile devices, Mobi.css provides a simpler and easier solution.
+
+On mobile devices (with width less than 768px), your container will fill the entire width of the screen.
+
+Otherwise, your container will have a fixed width and align to the center of the screen. Then it won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
 
 ![layout](../assets/layout.jpg)
 
@@ -39,13 +48,7 @@ Otherwise, `container` will have a fixed width and align to the center of the sc
 </body>
 ```
 
-You may want to say "Oh that's too complicated! Why should I need to add two `<div>`s to achieve a simple `container`?"
-
-Actually, `flex-center` is used as a wrapper to ensure `container` aligns to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
-
-Also, you can add `flex-center` to `<body>` and it will work, too. However, that is not recommended. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
-
-What if we want to add a sidebar for the desktop version of your website, useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Go to top*)? Here is a solution:
+Optionally, you can add a sidebar for the desktop version of your website. It's useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Back to top*:
 
 ![layout-with-side](../assets/layout-with-side.jpg)
 
@@ -63,7 +66,33 @@ What if we want to add a sidebar for the desktop version of your website, useful
 </body>
 ```
 
-As you can see, `hide-on-mobile` **will never be seen** on a mobile device.
+### Margin top only
+
+Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
+
+This technique allows each section to determine the spacing it needs from the element above it.
+
+For example, `<h1>` ~ `<h6>` has `30px` of vertical spacing between them. In the meantime, `<p>`, `<ul>`, `<table>` have only `15px` of vertical spacing.
+
+Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` to easily override the top margin. These set `margin-top` to `30px`, `15px` and `0`, respectively.
+
+{% raw %}
+<div class="top-gap site-alert-success">div.top-gap</div>
+<p class="top-gap-0 site-alert-success">p.top-gap-0</p>
+<section class="top-gap-big site-alert-success">section.top-gap-big</section>
+{% endraw %}
+
+```html
+<div class="top-gap site-alert-success">div.top-gap</div>
+<p class="top-gap-0 site-alert-success">p.top-gap-0</p>
+<section class="top-gap-big site-alert-success">section.top-gap-big</section>
+```
+
+## Flexbox
+
+Mobi.css use flexbox for layout. It's super flexible, you'll love it.
+
+According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe to use flexbox on all mobile devices as well as the last version of all major desktop browsers.
 
 ### Grid system
 
@@ -142,8 +171,6 @@ Secondly, you can use `col-1-2`, `col-1-3`, `col-2-3`, `col-1-4` and `col-3-4` t
 ```
 
 ### Use flexbox for layout
-
-You probably know Mobi.css can use flexbox for layout, and so should you! [Now it's safe to use flexbox on all mobile browsers](http://caniuse.com/#feat=flexbox).
 
 Here is an example for how you can use `col` to achieve a typical fixed-fluid layout.
 
@@ -241,26 +268,6 @@ Also, you can use `flex-xxx` together with `row`.
 </div>
 ```
 
-### Margin top only
-
-Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
-
-This technique allows each section to determine the spacing it needs from the element above it.
-
-For example, `<h1>` ~ `<h6>` has `30px` of vertical spacing between them . In the meantime, `<p>`, `<ul>`, `<table>` have only `15px` of vertical spacing.
-
-Mobi.css also provides two classes, `top-gap-big` and `top-gap`, to easily override the top margin. These set `margin-top` to `30px` and `15px`, respectively.
-
-{% raw %}
-<section class="top-gap site-alert-success">section.top-gap</section>
-<section class="top-gap-big site-alert-success">section.top-gap-big</section>
-{% endraw %}
-
-```html
-<section class="top-gap site-alert-success">section.top-gap</section>
-<section class="top-gap-big site-alert-success">section.top-gap-big</section>
-```
-
 ## Typography
 
 Mobi.css is designed for content-based websites. It has a pure but pleasant experience for reading.
@@ -269,17 +276,13 @@ Most typography styles are reset to not need additional classes.
 
 This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
+For more examples about typography, please check out [Reference # Typography](/docs/reference/#Typography).
+
 ## Tables
 
-Although tables are not widely used in mobile, sometimes they are necessary.
-
-However, tables typically render out of the viewable area on small mobile devices. If so, use the `scroll-view` wrapper to make your table scrollable.
+Tables typically render out of the viewable area on small mobile devices. If so, use the `scroll-view` wrapper to make your table scrollable.
 
 And don't forget to add `class="table"` to your `<table>` element!
-
-Why doesn't Mobi.css reset the `<table>` element so you don't need to add the `table` class?
-
-Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
 
 {% raw %}
 <div class="scroll-view">
@@ -377,11 +380,13 @@ Because once the `<table>` element is reset, it's hard to set it back. It's more
 </div>
 ```
 
+For more examples about tables, please check out [Reference # Tables](/docs/reference/#Tables).
+
 ## Forms
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
-You need add `class="form"` to a `<form>` element and `class="btn"` to each button.
+You need add `class="form"` to a `<form>` element and add `class="btn"` to each button.
 
 ### Basic forms
 
@@ -525,11 +530,11 @@ And you can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about inputs, please check out [Reference # Forms](/docs/reference/#Forms).
+For more examples about forms, please check out [Reference # Forms](/docs/reference/#Forms).
 
 ## Utilities
 
-Mobi.css also provides some useful utilities, like layout `top-gap-big`, `text-left`, `scroll-view`, etc.
+Mobi.css also provides some useful utilities, like `top-gap-big`, `text-left`, `scroll-view`, etc.
 
 ### Layout utilities
 
@@ -739,8 +744,20 @@ Using `show-on-mobile` will only show the element on mobile devices.
 <p class="show-on-mobile">This part will only show on mobile devices.</p>
 ```
 
+## FAQ
+
+###### 1. Why a `flex-center` in needed outside `container`?
+
+Actually, `flex-center` is used as a wrapper to ensure `container` aligns to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
+
+Also, you can add `flex-center` to `<body>` and it will work, too. However, that is not recommended. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
+
+###### 2. Why doesn't Mobi.css reset the `<table>` element so you don't need to add the `table` class?
+
+Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
+
 ## Next step
 
-- [Reference](/docs/reference): View styles of all the HTML elements (exclude metadata) and Mobi.css classes.
-- [Extensions](/extenstions): Plugins, themes, etc.
+- [Reference](/docs/reference): Styles of all the HTML elements (exclude metadata).
+- [Extensions](/extensions): Plugins, themes, etc.
 - [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.

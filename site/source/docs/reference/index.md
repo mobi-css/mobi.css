@@ -2,6 +2,10 @@
 
 This page lists all the HTML elements (exclude metadata).
 
+- [Typography](#Typography)
+- [Tables](#Tables)
+- [Forms](#Forms)
+
 ## Typography
 
 ### Headings
@@ -13,7 +17,7 @@ This page lists all the HTML elements (exclude metadata).
 ##### h5. Mobi.css
 ###### h6. Mobi.css
 
-### Inline text semantics
+### Inline text
 
 Use `<a>` to create <a href="#Inline-text-elements">links</a>.
 
@@ -885,5 +889,5 @@ Buttons cannot set to `readonly`.
 
 ## Next step
 
-- [Extensions](/extenstions): Plugins, themes, etc.
+- [Extensions](/extensions): Plugins, themes, etc.
 - [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.
