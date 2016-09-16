@@ -16,4 +16,4 @@ Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override
 
 ## Next step
 
-- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.
+- [GitHub](https://github.com/xcatliu/mobi.css)

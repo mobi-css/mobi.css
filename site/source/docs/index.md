@@ -1,8 +1,7 @@
 <style>
-  .site-alert-success {
+  .site-box {
     background-color: hsla(120, 50%, 50%, .15);
     border: 1px solid hsla(120, 50%, 50%, .2);
-    padding: 15px;
   }
 </style>
 
@@ -58,7 +57,7 @@ Optionally, you can add a sidebar for the desktop version of your website. It's 
     <div class="container">
       <h1>Mobi.css</h1>
     </div>
-    <div class="hide-on-mobile" style="padding:0 30px;">
+    <div class="hide-on-mobile" style="padding:0 28px;">
       <p>Scan to view on mobile</p>
       <img src="path/to/qrcode.png"/>
     </div>
@@ -72,20 +71,20 @@ Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertica
 
 This technique allows each section to determine the spacing it needs from the element above it.
 
-For example, `<h1>` ~ `<h6>` has `30px` of vertical spacing between them. In the meantime, `<p>`, `<ul>`, `<table>` have only `15px` of vertical spacing.
+For example, `<h1>` ~ `<h6>` have `32px` of vertical spacing between them. In the meantime, `<p>`, `<ul>`, `<table>` have only `14px` of vertical spacing.
 
-Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` to easily override the top margin. These set `margin-top` to `30px`, `15px` and `0`, respectively.
+Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` to easily override the top margin. These set `margin-top` to `32px`, `14px` and `0`, respectively.
 
 {% raw %}
-<div class="top-gap site-alert-success">div.top-gap</div>
-<p class="top-gap-0 site-alert-success">p.top-gap-0</p>
-<section class="top-gap-big site-alert-success">section.top-gap-big</section>
+<div class="top-gap site-box">div.top-gap</div>
+<p class="top-gap-0 site-box">p.top-gap-0</p>
+<section class="top-gap-big site-box">section.top-gap-big</section>
 {% endraw %}
 
 ```html
-<div class="top-gap site-alert-success">div.top-gap</div>
-<p class="top-gap-0 site-alert-success">p.top-gap-0</p>
-<section class="top-gap-big site-alert-success">section.top-gap-big</section>
+<div class="top-gap site-box">div.top-gap</div>
+<p class="top-gap-0 site-box">p.top-gap-0</p>
+<section class="top-gap-big site-box">section.top-gap-big</section>
 ```
 
 ## Flexbox
@@ -98,175 +97,207 @@ According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe 
 
 Mobile doesn't need a complex 12# grid system. So Mobi.css provides a simple but flexible grid system.
 
-First of all, you can create a `row` which contains several `col`s. In this case, `row`'s width is divided equally between `col`s.
+First of all, you can create a `flex-left` which contains several `unit`s. In this case, `flex-left`'s width is divided equally between `unit`s.
 
 {% raw %}
-<div class="row top-gap">
-  <div class="col site-alert-success">Lightweight</div>
-  <div class="col site-alert-success">Flexible</div>
-  <div class="col site-alert-success">Focus on Mobile</div>
+<div class="flex-left top-gap">
+  <div class="unit site-box">天王盖地虎</div>
+  <div class="unit site-box">宝塔镇河妖</div>
 </div>
-<div class="row">
-  <div class="col site-alert-success">青龙</div>
-  <div class="col site-alert-success">白虎</div>
-  <div class="col site-alert-success">朱雀</div>
-  <div class="col site-alert-success">玄武</div>
+<div class="flex-left">
+  <div class="unit site-box">曹操</div>
+  <div class="unit site-box">刘备</div>
+  <div class="unit site-box">孙权</div>
 </div>
 {% endraw %}
 
 ```html
-<div class="row top-gap">
-  <div class="col site-alert-success">Lightweight</div>
-  <div class="col site-alert-success">Flexible</div>
-  <div class="col site-alert-success">Focus on Mobile</div>
+<div class="flex-left top-gap">
+  <div class="unit site-box">天王盖地虎</div>
+  <div class="unit site-box">宝塔镇河妖</div>
 </div>
-<div class="row">
-  <div class="col site-alert-success">青龙</div>
-  <div class="col site-alert-success">白虎</div>
-  <div class="col site-alert-success">朱雀</div>
-  <div class="col site-alert-success">玄武</div>
+<div class="flex-left">
+  <div class="unit site-box">曹操</div>
+  <div class="unit site-box">刘备</div>
+  <div class="unit site-box">孙权</div>
 </div>
 ```
 
-Secondly, you can use `col-1-2`, `col-1-3`, `col-2-3`, `col-1-4` and `col-3-4` to achieve a maximum 4# grid.
+You can add `units-gap` style to ensure there are gaps between each `unit`. This is useful when your `unit`s have `background-color` or have text in it.
 
 {% raw %}
-<div class="row top-gap">
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
+<div class="flex-left units-gap top-gap">
+  <div class="unit site-box">青龙</div>
+  <div class="unit site-box">白虎</div>
+  <div class="unit site-box">朱雀</div>
+  <div class="unit site-box">玄武</div>
 </div>
-<div class="row">
-  <div class="col-1-3 site-alert-success">.col-1-3</div>
-  <div class="col-2-3 site-alert-success">.col-2-3</div>
-</div>
-<div class="row">
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col-3-4 site-alert-success">.col-3-4</div>
-</div>
-<div class="row">
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
+<div class="flex-left units-gap">
+  <div class="unit site-box">金</div>
+  <div class="unit site-box">木</div>
+  <div class="unit site-box">水</div>
+  <div class="unit site-box">火</div>
+  <div class="unit site-box">土</div>
 </div>
 {% endraw %}
 
 ```html
-<div class="row top-gap">
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
+<div class="flex-left units-gap top-gap">
+  <div class="unit site-box">青龙</div>
+  <div class="unit site-box">白虎</div>
+  <div class="unit site-box">朱雀</div>
+  <div class="unit site-box">玄武</div>
 </div>
-<div class="row">
-  <div class="col-1-3 site-alert-success">.col-1-3</div>
-  <div class="col-2-3 site-alert-success">.col-2-3</div>
-</div>
-<div class="row">
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col-3-4 site-alert-success">.col-3-4</div>
-</div>
-<div class="row">
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
-  <div class="col-1-2 site-alert-success">.col-1-2</div>
-  <div class="col-1-4 site-alert-success">.col-1-4</div>
+<div class="flex-left units-gap">
+  <div class="unit site-box">金</div>
+  <div class="unit site-box">木</div>
+  <div class="unit site-box">水</div>
+  <div class="unit site-box">火</div>
+  <div class="unit site-box">土</div>
 </div>
 ```
 
-### Use flexbox for layout
-
-Here is an example for how you can use `col` to achieve a typical fixed-fluid layout.
+Secondly, you can use `unit-1-2`, `unit-1-3`, `unit-2-3`, `unit-1-4` and `unit-3-4` to achieve a maximum 4# grid.
 
 {% raw %}
-<div class="row top-gap">
-  <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
+<div class="flex-left top-gap">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-2 site-box">.unit-1-2</div>
 </div>
-<div class="row top-gap">
-  <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="../assets/xcatliu.png"/></div>
+<div class="flex-left">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+  <div class="unit-2-3 site-box">.unit-2-3</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-3-4 site-box">.unit-3-4</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
 </div>
 {% endraw %}
 
 ```html
-<div class="row top-gap">
-  <div style="width:70px; padding:0 7px 0 15px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="col site-alert-success" style="margin-right:30px;">Hi, xcatliu, do you know about Mobi.css?</div>
+<div class="flex-left top-gap">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-2 site-box">.unit-1-2</div>
 </div>
-<div class="row top-gap">
-  <div class="col site-alert-success text-right" style="margin-left:30px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div style="width:70px; padding:0 15px 0 7px;"><img alt="xcatliu" src="../assets/xcatliu.png"/></div>
+<div class="flex-left">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+  <div class="unit-2-3 site-box">.unit-2-3</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-3-4 site-box">.unit-3-4</div>
+</div>
+<div class="flex-left">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+```
+
+Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let the content decide the width.
+
+{% raw %}
+<div class="flex-left units-gap top-gap">
+  <div class="unit-0" style="width:62px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
+</div>
+<div class="flex-left units-gap top-gap">
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit-0"><img alt="xcatliu" src="../assets/xcatliu.png" width="48"/></div>
+</div>
+{% endraw %}
+
+```html
+<div class="flex-left units-gap top-gap">
+  <div class="unit-0" style="width:62px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
+  <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
+</div>
+<div class="flex-left units-gap top-gap">
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit-0"><img alt="xcatliu" src="../assets/xcatliu.png" width="48"/></div>
 </div>
 ```
 
 ### Use flexbox for aligning
 
-Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily using flexbox!
+Forget `margin:0 auto` and `top:50%; margin-top:-100px`. You can align easily using flexbox!
 
 {% raw %}
-<div class="flex-left site-alert-success top-gap">
-  <div class="site-alert-success">Mobi.css</div>
+<div class="flex-left site-box top-gap">
+  <div class="site-box">Mobi.css</div>
 </div>
-<div class="flex-center site-alert-success">
-  <div class="site-alert-success">Is</div>
+<div class="flex-center site-box">
+  <div class="site-box">Is</div>
 </div>
-<div class="flex-right site-alert-success">
-  <div class="site-alert-success">Awesome!</div>
+<div class="flex-right site-box">
+  <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-top site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css</div>
+<div class="flex-top site-box" style="height:60px;">
+  <div class="site-box">Mobi.css</div>
 </div>
-<div class="flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Is</div>
+<div class="flex-middle site-box" style="height:60px;">
+  <div class="site-box">Is</div>
 </div>
-<div class="flex-bottom site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Awesome!</div>
+<div class="flex-bottom site-box" style="height:60px;">
+  <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-center flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css is awesome!</div>
+<div class="flex-center flex-middle site-box" style="height:60px;">
+  <div class="site-box">Mobi.css is awesome!</div>
 </div>
 {% endraw %}
 
 ```html
-<div class="flex-left site-alert-success top-gap">
-  <div class="site-alert-success">Mobi.css</div>
+<div class="flex-left site-box top-gap">
+  <div class="site-box">Mobi.css</div>
 </div>
-<div class="flex-center site-alert-success">
-  <div class="site-alert-success">Is</div>
+<div class="flex-center site-box">
+  <div class="site-box">Is</div>
 </div>
-<div class="flex-right site-alert-success">
-  <div class="site-alert-success">Awesome!</div>
+<div class="flex-right site-box">
+  <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-top site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css</div>
+<div class="flex-top site-box" style="height:100px;">
+  <div class="site-box">Mobi.css</div>
 </div>
-<div class="flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Is</div>
+<div class="flex-middle site-box" style="height:100px;">
+  <div class="site-box">Is</div>
 </div>
-<div class="flex-bottom site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Awesome!</div>
+<div class="flex-bottom site-box" style="height:100px;">
+  <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-center flex-middle site-alert-success" style="height:150px;">
-  <div class="site-alert-success">Mobi.css is awesome!</div>
+<div class="flex-center flex-middle site-box" style="height:80px;">
+  <div class="site-box">Mobi.css is awesome!</div>
 </div>
 ```
 
-Also, you can use `flex-xxx` together with `row`.
+### Vertical flex layouts
+
+What's more? You can use `flex-vertical` to easily achieve vertical layouts!
 
 {% raw %}
-<div class="row top-gap">
-  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
-</div>
-<div class="row flex-right">
-  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
+<div class="flex-vertical site-box top-gap" style="height:300px;">
+  <div class="unit-1-3 site-box">.unit-1-4</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box">.unit-0</div>
 </div>
 {% endraw %}
 
 ```html
-<div class="row top-gap">
-  <div class="col-1-3 site-alert-success">col-1-3 in row</div>
-</div>
-<div class="row flex-right">
-  <div class="col-1-3 site-alert-success">col-1-3 in row flex-right</div>
+<div class="flex-vertical site-box top-gap" style="height:300px;">
+  <div class="unit-1-3 site-box">.unit-1-4</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box">.unit-0</div>
 </div>
 ```
+
+For more examples about flexbox, please check out [Reference # Flexbox](/docs/reference/#Flexbox).
 
 ## Typography
 
@@ -276,7 +307,7 @@ Most typography styles are reset to not need additional classes.
 
 This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
-For more examples about typography, please check out [Reference # Typography](/docs/reference/#Typography).
+For more examples about typography, please check out [Reference # Text content](/docs/reference/#Text-content).
 
 ## Tables
 
@@ -285,7 +316,7 @@ Tables typically render out of the viewable area on small mobile devices. If so,
 And don't forget to add `class="table"` to your `<table>` element!
 
 {% raw %}
-<div class="scroll-view">
+<div class="scroll-view top-gap">
   <table class="table">
     <thead>
       <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
@@ -380,7 +411,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 </div>
 ```
 
-For more examples about tables, please check out [Reference # Tables](/docs/reference/#Tables).
+For more examples about tables, please check out [Reference # Table-content](/docs/reference/#Table-content).
 
 ## Forms
 
@@ -414,22 +445,22 @@ If you want to have multiple inputs in one row, you should use the grid system.
 
 {% raw %}
 <form class="form" action="#Complicated-forms">
-  <div class="row">
-    <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
-    <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">Name: </label>
+    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label class="flex-middle">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Gender: </label>
+    <div class="unit"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label class="flex-middle">
+    <div class="unit"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Country: </label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Country: </label>
+    <div class="unit">
       <select>
         <option disabled selected value> -- select -- </option>
         <option>China</option>
@@ -437,24 +468,24 @@ If you want to have multiple inputs in one row, you should use the grid system.
       </select>
     </div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Avatar:</label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <div class="unit">
       <input type="file"/>
     </div>
   </div>
-  <div class="row">
-    <label class="col text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">Bio: </label>
+    <div class="unit">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
   </div>
-  <div class="row">
-    <div style="width:90px;"></div>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <div style="width:85px;"></div>
+    <div class="unit">
       <button type="reset" class="btn btn-danger">Reset</button>
     </div>
-    <div class="col">
+    <div class="unit">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </div>
@@ -463,22 +494,22 @@ If you want to have multiple inputs in one row, you should use the grid system.
 
 ```html
 <form class="form" action="#Complicated-forms">
-  <div class="row">
-    <label class="col text-right" for="multiple-inputs-name" style="max-width:90px;">Name: </label>
-    <div class="col"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">Name: </label>
+    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Gender: </label>
-    <div class="col"><label class="flex-middle">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Gender: </label>
+    <div class="unit"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
     </label></div>
-    <div class="col"><label class="flex-middle">
+    <div class="unit"><label class="flex-middle">
       <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
     </label></div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Country: </label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Country: </label>
+    <div class="unit">
       <select>
         <option disabled selected value> -- select -- </option>
         <option>China</option>
@@ -486,37 +517,37 @@ If you want to have multiple inputs in one row, you should use the grid system.
       </select>
     </div>
   </div>
-  <div class="row">
-    <label class="col text-right" style="max-width:90px;">Avatar:</label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <div class="unit">
       <input type="file"/>
     </div>
   </div>
-  <div class="row">
-    <label class="col text-right" for="multiple-inputs-bio" style="max-width:90px;">Bio: </label>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">Bio: </label>
+    <div class="unit">
       <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
     </div>
   </div>
-  <div class="row">
-    <div style="width:90px;"></div>
-    <div class="col">
+  <div class="flex-left units-gap">
+    <div style="width:85px;"></div>
+    <div class="unit">
       <button type="reset" class="btn btn-danger">Reset</button>
     </div>
-    <div class="col">
+    <div class="unit">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </div>
 </form>
 ```
 
-**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio button aligned middle vertically.
+**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio buttons align middle vertically.
 
-### `btn`, `btn-primary` and `btn-danger`
+### Buttons
 
 You can use `class="btn"` outside `.form`.
 
-And you can also use `class="btn"` to make an `<a>` to a button.
+You can also use `class="btn"` to make an `<a>` to a button.
 
 {% raw %}
 <a href="javascript:void(0);" class="btn">a.btn</a>
@@ -534,85 +565,29 @@ For more examples about forms, please check out [Reference # Forms](/docs/refere
 
 ## Utilities
 
-Mobi.css also provides some useful utilities, like `top-gap-big`, `text-left`, `scroll-view`, etc.
-
-### Layout utilities
-
-As mentioned in [Margin Top Only](#Margin-top-only) section, Mobi.css provides three classes, `top-gap-big`, `top-gap` and `mt-0`, for overriding an element's top margin.
-
-For more details, please read [Margin Top Only](#Margin-top-only) section.
+Mobi.css also provides some useful utilities.
 
 ### Text aligning
 
 You can use Mobi.css to easily align text.
 
 {% raw %}
-<div class="text-left site-alert-success top-gap">Mobi.css is awesome!</div>
-<div class="text-center site-alert-success">Awesome!</div>
-<div class="text-right site-alert-success">Some!</div>
+<div class="text-left top-gap">我是小雨</div>
+<div class="text-center">我愛你</div>
+<div class="text-right">你愛我嗎？</div>
 {% endraw %}
 
 ```html
-<div class="text-left site-alert-success top-gap">Mobi.css is awesome!</div>
-<div class="text-center site-alert-success">Awesome!</div>
-<div class="text-right site-alert-success">Some!</div>
+<div class="text-left top-gap">我是小雨</div>
+<div class="text-center">我愛你</div>
+<div class="text-right">你愛我嗎？</div>
 ```
 
-### `scroll-view`
+### Scroll view
 
-Mobile devices usually have small width, so it's very useful to use a `scroll-view` class.
+Mobile devices usually have small width, so it's very useful to use a `scroll-view` class. Mobi.css optimizes `scroll-view` to make it scroll smoothly.
 
-Mobi.css optimizes `scroll-view` to make it scroll smoothly.
-
-#### Scroll horizontal
-
-{% raw %}
-<div class="top-gap scroll-view">
-  <div style="width:1024px;">
-    <i class="fa fa-adjust" style="font-size:6rem;"></i>
-    <i class="fa fa-anchor" style="font-size:6rem;"></i>
-    <i class="fa fa-archive" style="font-size:6rem;"></i>
-    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
-    <i class="fa fa-arrows" style="font-size:6rem;"></i>
-    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
-    <i class="fa fa-at" style="font-size:6rem;"></i>
-    <i class="fa fa-automobile" style="font-size:6rem;"></i>
-    <i class="fa fa-ban" style="font-size:6rem;"></i>
-    <i class="fa fa-bank" style="font-size:6rem;"></i>
-    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
-    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
-    <i class="fa fa-beer" style="font-size:6rem;"></i>
-    <i class="fa fa-bell" style="font-size:6rem;"></i>
-    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
-  </div>
-</div>
-{% endraw %}
-
-```html
-<div class="top-gap scroll-view">
-  <div style="width:1024px;">
-    <i class="fa fa-adjust" style="font-size:6rem;"></i>
-    <i class="fa fa-anchor" style="font-size:6rem;"></i>
-    <i class="fa fa-archive" style="font-size:6rem;"></i>
-    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
-    <i class="fa fa-arrows" style="font-size:6rem;"></i>
-    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
-    <i class="fa fa-at" style="font-size:6rem;"></i>
-    <i class="fa fa-automobile" style="font-size:6rem;"></i>
-    <i class="fa fa-ban" style="font-size:6rem;"></i>
-    <i class="fa fa-bank" style="font-size:6rem;"></i>
-    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
-    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
-    <i class="fa fa-beer" style="font-size:6rem;"></i>
-    <i class="fa fa-bell" style="font-size:6rem;"></i>
-    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
-  </div>
-</div>
-```
-
-#### Scroll vertical
-
-This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the default `max-height` is `300px`.
+You can set the `max-height` of `scroll-view` to override the default `300px` height.
 
 {% raw %}
 <div class="top-gap scroll-view" style="max-height:400px;">
@@ -720,7 +695,53 @@ This is pretty easy. Just set the `max-height` of `scroll-view`. If not set, the
 </div>
 ```
 
-### `hide-on-mobile`
+Or set `width` of the content to achieve a horizontal scroll view.
+
+{% raw %}
+<div class="top-gap scroll-view">
+  <div style="width:1024px;">
+    <i class="fa fa-adjust" style="font-size:6rem;"></i>
+    <i class="fa fa-anchor" style="font-size:6rem;"></i>
+    <i class="fa fa-archive" style="font-size:6rem;"></i>
+    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-arrows" style="font-size:6rem;"></i>
+    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
+    <i class="fa fa-at" style="font-size:6rem;"></i>
+    <i class="fa fa-automobile" style="font-size:6rem;"></i>
+    <i class="fa fa-ban" style="font-size:6rem;"></i>
+    <i class="fa fa-bank" style="font-size:6rem;"></i>
+    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
+    <i class="fa fa-beer" style="font-size:6rem;"></i>
+    <i class="fa fa-bell" style="font-size:6rem;"></i>
+    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
+  </div>
+</div>
+{% endraw %}
+
+```html
+<div class="top-gap scroll-view">
+  <div style="width:1024px;">
+    <i class="fa fa-adjust" style="font-size:6rem;"></i>
+    <i class="fa fa-anchor" style="font-size:6rem;"></i>
+    <i class="fa fa-archive" style="font-size:6rem;"></i>
+    <i class="fa fa-area-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-arrows" style="font-size:6rem;"></i>
+    <i class="fa fa-asterisk" style="font-size:6rem;"></i>
+    <i class="fa fa-at" style="font-size:6rem;"></i>
+    <i class="fa fa-automobile" style="font-size:6rem;"></i>
+    <i class="fa fa-ban" style="font-size:6rem;"></i>
+    <i class="fa fa-bank" style="font-size:6rem;"></i>
+    <i class="fa fa-bar-chart" style="font-size:6rem;"></i>
+    <i class="fa fa-battery-0" style="font-size:6rem;"></i>
+    <i class="fa fa-beer" style="font-size:6rem;"></i>
+    <i class="fa fa-bell" style="font-size:6rem;"></i>
+    <i class="fa fa-bicycle" style="font-size:6rem;"></i>
+  </div>
+</div>
+```
+
+### Hide or show on mobile
 
 Using `hide-on-mobile` will hide the element on mobile devices.
 
@@ -731,8 +752,6 @@ Using `hide-on-mobile` will hide the element on mobile devices.
 ```html
 <p class="hide-on-mobile">This part will hide on mobile devices.</p>
 ```
-
-### `show-on-mobile`
 
 Using `show-on-mobile` will only show the element on mobile devices.
 
@@ -748,16 +767,16 @@ Using `show-on-mobile` will only show the element on mobile devices.
 
 ###### 1. Why a `flex-center` in needed outside `container`?
 
-Actually, `flex-center` is used as a wrapper to ensure `container` aligns to the center of the screen. So if you don't add this wrapper, mobile users will not feel any difference.
+Actually, we use `flex-center` as a wrapper to ensure `container` aligns to the center of the screen. If you don't add this wrapper, mobile users will not feel any difference.
 
 Also, you can add `flex-center` to `<body>` and it will work, too. However, that is not recommended. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
 
-###### 2. Why doesn't Mobi.css reset the `<table>` element so you don't need to add the `table` class?
+###### 2. Why doesn't Mobi.css reset the `<table>` element so we don't need to add the `table` class?
 
 Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
 
 ## Next step
 
-- [Reference](/docs/reference): Styles of all the HTML elements (exclude metadata).
+- [Reference](/docs/reference): All the Mobi.css styles in one page.
 - [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.
+- [GitHub](https://github.com/xcatliu/mobi.css)

@@ -1,6 +1,6 @@
 .container {
   background-color: $color-background-container;
-  max-width: $max-width-container;
+  max-width: $max-width-container - $width-gap-double;
   min-width: $min-width-container;
   outline: $width-gap solid $color-background-container;
   overflow: hidden;
@@ -10,66 +10,23 @@
 
 @media (min-width: $width-container-breakpoint) {
   .container {
-    max-width: $max-width-container + $width-gap-double;
+    max-width: $max-width-container;
     outline: 0;
     padding: $padding-container-desktop;
   }
 }
 
-.row {
-  @include flex-container();
-  margin-left: -$width-gap;
-  margin-right: -$width-gap;
+.top-gap-big,
+.form .top-gap-big {
+  margin-top: $width-gap-big;
 }
 
-.col,
-.col-1-2,
-.col-1-3,
-.col-2-3,
-.col-1-4,
-.col-3-4, {
-  padding-left: $width-gap-half;
-  padding-right: $width-gap-half;
-
-  &:first-child {
-    padding-left: $width-gap;
-  }
-
-  &:last-child {
-    padding-right: $width-gap;
-  }
+.top-gap,
+.form .top-gap {
+  margin-top: $width-gap;
 }
 
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-}
-
-.col-1-2,
-.col-1-3,
-.col-2-3,
-.col-1-4,
-.col-3-4 {
-  flex-shrink: 0;
-}
-
-.col-1-2 {
-  @include flex-width(50%);
-}
-
-.col-1-3 {
-  @include flex-width(33.33%);
-}
-
-.col-2-3 {
-  @include flex-width(66.67%);
-}
-
-.col-1-4 {
-  @include flex-width(25%);
-}
-
-.col-3-4 {
-  @include flex-width(75%);
+.top-gap-0,
+.form .top-gap-0 {
+  margin-top: 0;
 }

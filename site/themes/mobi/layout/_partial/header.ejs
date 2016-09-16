@@ -4,7 +4,7 @@
       <% Object.keys(theme.menu).filter(key => theme.menu[key].align !== 'right').forEach(key => { %>
         <%- partial('header_item', theme.menu[key]) %>
       <% }) %>
-      <div class="col"></div>
+      <div class="unit"></div>
       <% Object.keys(theme.menu).filter(key => theme.menu[key].align === 'right').forEach(key => { %>
         <%- partial('header_item', theme.menu[key]) %>
       <% }) %>

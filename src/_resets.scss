@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: $width-gap-double 0 0;
+  margin: $width-gap-big 0 0;
 }
 
 p,
@@ -130,7 +130,7 @@ pre {
     padding: 0;
   }
 
-  @media (min-width: $max-width-container) {
+  @media (min-width: $max-width-container - $width-gap-double) {
     margin-left: 0;
     margin-right: 0;
   }

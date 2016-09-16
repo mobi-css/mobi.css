@@ -1,12 +1,49 @@
 # Reference
 
-This page lists all the HTML elements (exclude metadata).
+Classes (TODO):
 
-- [Typography](#Typography)
-- [Tables](#Tables)
-- [Forms](#Forms)
+- `.container`
+- `.top-gap`, `.top-gap-big`, `.top-gap-0`
+- `.flex-left`, `.flex-center`, `.flex-right`, `.flex-top`, `.flex-middle`, `.flex-bottom`
+- `.flex-vertical`
+- `.unit`, `.unit-0`, `.unit-1-2`, `.unit-1-3`, `.unit-1-4`, `.unit-2-3`, `.unit-3-4`
+- `.units-gap`
+- `.scroll-view`
+- `.hide-on-mobile`, `show-on-mobile`
+- `.text-left`, `.text-center`, `text-right`
+- `.table`
+- `.form`
 
-## Typography
+Elemens:
+
+- [Content sectioning](Content-sectioning)
+- [Text content](Text-content)
+- [Inline text semantics](Inline-text-semantics)
+- [Multimedia](Multimedia)
+- [Table content](Table-content)
+- [Forms](Forms)
+
+## Content sectioning
+
+### Layout
+
+(TODO)
+
+- `.container`
+- `.top-gap`, `.top-gap-big`, `.top-gap-0`
+- `.scroll-view`
+- `.hide-on-mobile`, `show-on-mobile`
+- `<article>`, `<aside>`, `<footer>`, `<header>`, `<hgroup>`, `<nav>`, `<section>`
+- `<address>`
+
+### Flexbox
+
+(TODO)
+
+- `.flex-left`, `.flex-center`, `.flex-right`, `.flex-top`, `.flex-middle`, `.flex-bottom`
+- `.flex-vertical`
+- `.unit`, `.unit-0`, `.unit-1-2`, `.unit-1-3`, `.unit-1-4`, `.unit-2-3`, `.unit-3-4`
+- `.units-gap`
 
 ### Headings
 
@@ -17,7 +54,92 @@ This page lists all the HTML elements (exclude metadata).
 ##### h5. Mobi.css
 ###### h6. Mobi.css
 
-### Inline text
+## Text content
+
+- Unordered List
+- Unordered List
+- Nesting
+  - Sub Unordered List
+  - Sub Unordered List
+
+1. Ordered List
+2. Ordered List
+3. Nesting
+  1. Sub Ordered List
+  2. Sub Ordered List
+
+{% raw %}
+<dl>
+  <dt>Mobi.css</dt>
+  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
+  <dt>Bootstrap</dt>
+  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
+</dl>
+{% endraw %}
+
+```html
+<dl>
+  <dt>Mobi.css</dt>
+  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
+  <dt>Bootstrap</dt>
+  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
+</dl>
+```
+
+{% raw %}
+<pre><code>// Use &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; to create code blocks.
+document.write('Hello World');</code></pre>
+{% endraw %}
+
+{% raw %}
+<blockquote>
+  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+</blockquote>
+{% endraw %}
+
+```html
+<blockquote>
+  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+</blockquote>
+```
+
+Use `<hr>` to create horizontal rules:
+
+{% raw %}
+<hr/>
+{% endraw %}
+
+Use `<figure>` and `<figcaption>` to create self-contained content:
+
+{% raw %}
+<figure>
+  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
+  <figcaption>Sketch: Layout with side</figcaption>
+</figure>
+{% endraw %}
+
+```html
+<figure>
+  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
+  <figcaption>Sketch: Layout with side</figcaption>
+</figure>
+```
+
+## Inline text semantics
+
+Use `class="text-left"`, `class="text-center"` or `class="text-right"` to align text:
+
+{% raw %}
+<div class="text-left top-gap">我是小雨</div>
+<div class="text-center">我愛你</div>
+<div class="text-right">你愛我嗎？</div>
+{% endraw %}
+
+```html
+<div class="text-left top-gap">我是小雨</div>
+<div class="text-center">我愛你</div>
+<div class="text-right">你愛我嗎？</div>
+```
 
 Use `<a>` to create <a href="#Inline-text-elements">links</a>.
 
@@ -133,82 +255,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
 ```
 
-### Lists
-
-- Unordered List
-- Unordered List
-- Nesting
-  - Sub Unordered List
-  - Sub Unordered List
-
-1. Ordered List
-2. Ordered List
-3. Nesting
-  1. Sub Ordered List
-  2. Sub Ordered List
-
-{% raw %}
-<dl>
-  <dt>Mobi.css</dt>
-  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
-  <dt>Bootstrap</dt>
-  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
-</dl>
-{% endraw %}
-
-```html
-<dl>
-  <dt>Mobi.css</dt>
-  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
-  <dt>Bootstrap</dt>
-  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
-</dl>
-```
-
-### Horizontal rules
-
-{% raw %}
-<hr/>
-{% endraw %}
-
-### Figure elements
-
-{% raw %}
-<figure>
-  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
-  <figcaption>Sketch: Layout with side</figcaption>
-</figure>
-{% endraw %}
-
-```html
-<figure>
-  <img src="../../assets/layout-with-side.jpg" alt="Layout with side"/>
-  <figcaption>Sketch: Layout with side</figcaption>
-</figure>
-```
-
-### Code blocks
-
-{% raw %}
-<pre><code>// Use &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; to create code blocks.
-document.write('Hello World');</code></pre>
-{% endraw %}
-
-### Blockquotes
-
-{% raw %}
-<blockquote>
-  <p>A lightweight, flexible css framework that focus on mobile.</p>
-</blockquote>
-{% endraw %}
-
-```html
-<blockquote>
-  <p>A lightweight, flexible css framework that focus on mobile.</p>
-</blockquote>
-```
-
-### Multimedia
+## Multimedia
 
 ![Mobi.css Logo](../../assets/mobi-logo-512.png)
 
@@ -254,7 +301,7 @@ document.write('Hello World');</code></pre>
 <iframe width="100%" height="320" src="https://www.youtube.com/embed/c2vm-QjK2xQ" frameborder="0" allowfullscreen></iframe>
 ```
 
-## Tables
+## Table content
 
 {% raw %}
 <div class="scroll-view">
@@ -357,8 +404,8 @@ document.write('Hello World');</code></pre>
   <table class="table">
     <caption>Caption</caption>
     <colgroup>
-      <col style="background-color:rgba(255, 0, 0, 0.1);"/>
-      <col span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
+      <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
+      <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
     </colgroup>
     <thead>
       <tr>
@@ -395,8 +442,8 @@ document.write('Hello World');</code></pre>
   <table class="table">
     <caption>Caption</caption>
     <colgroup>
-      <col style="background-color:rgba(255, 0, 0, 0.1);"/>
-      <col span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
+      <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
+      <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
     </colgroup>
     <thead>
       <tr>
@@ -713,12 +760,12 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 {% raw %}
 </form>
 <form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-  <div class="row top-gap">
-    <div class="col flex-middle">
+  <div class="flex-left top-gap">
+    <div class="unit flex-middle">
       <input class="top-gap-0" type="range" name="b" value="50" max="80" />
     </div>
     <div class="flex-middle">+</div>
-    <div class="col flex-middle">
+    <div class="unit flex-middle">
       <input class="top-gap-0" type="number" name="a" value="10" />
     </div>
     <div class="flex-middle">=</div>
@@ -730,12 +777,12 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 
 ```html
 <form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-  <div class="row top-gap">
-    <div class="col flex-middle">
+  <div class="flex-left top-gap">
+    <div class="unit flex-middle">
       <input class="top-gap-0" type="range" name="b" value="50" max="80" />
     </div>
     <div class="flex-middle">+</div>
-    <div class="col flex-middle">
+    <div class="unit flex-middle">
       <input class="top-gap-0" type="number" name="a" value="10" />
     </div>
     <div class="flex-middle">=</div>
@@ -890,4 +937,4 @@ Buttons cannot set to `readonly`.
 ## Next step
 
 - [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css): Star, folk, open an issue or create a pull request.
+- [GitHub](https://github.com/xcatliu/mobi.css)
