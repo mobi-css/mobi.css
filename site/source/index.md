@@ -29,6 +29,6 @@ Be sure you have added `node_modules` to your sass's [load_paths](http://stackov
 ## Next step
 
 - [Documentations](/docs): Design philosophy and tutorial.
-- [Reference](/docs/reference): All the Mobi.css styles in one page.
+- [Reference](/reference): All the Mobi.css styles in one page.
 - [Extensions](/extensions): Plugins, themes, etc.
 - [GitHub](https://github.com/xcatliu/mobi.css)

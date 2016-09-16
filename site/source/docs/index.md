@@ -297,7 +297,7 @@ What's more? You can use `flex-vertical` to easily achieve vertical layouts!
 </div>
 ```
 
-For more examples about flexbox, please check out [Reference # Flexbox](/docs/reference/#Flexbox).
+For more examples about flexbox, please check out [Reference # Flexbox](/reference/#Flexbox).
 
 ## Typography
 
@@ -307,7 +307,7 @@ Most typography styles are reset to not need additional classes.
 
 This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
-For more examples about typography, please check out [Reference # Text content](/docs/reference/#Text-content).
+For more examples about typography, please check out [Reference # Text content](/reference/#Text-content).
 
 ## Tables
 
@@ -411,7 +411,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 </div>
 ```
 
-For more examples about tables, please check out [Reference # Table-content](/docs/reference/#Table-content).
+For more examples about tables, please check out [Reference # Table-content](/reference/#Table-content).
 
 ## Forms
 
@@ -561,7 +561,7 @@ You can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about forms, please check out [Reference # Forms](/docs/reference/#Forms).
+For more examples about forms, please check out [Reference # Forms](/reference/#Forms).
 
 ## Utilities
 
@@ -777,6 +777,6 @@ Because once the `<table>` element is reset, it's hard to set it back. It's more
 
 ## Next step
 
-- [Reference](/docs/reference): All the Mobi.css styles in one page.
+- [Reference](/reference): All the Mobi.css styles in one page.
 - [Extensions](/extensions): Plugins, themes, etc.
 - [GitHub](https://github.com/xcatliu/mobi.css)

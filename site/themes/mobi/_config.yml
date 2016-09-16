@@ -4,17 +4,16 @@ menu:
   home:
     href: /
     img: /assets/mobi-logo-512.png
-    title: Home
   docs:
     href: /docs
     icon: book
-    title: Docs
-  more:
+  reference:
+    href: /reference
+    icon: hashtag
+  extensions:
     href: /extensions
     icon: cogs
-    title: Extensions
   github:
     href: https://github.com/xcatliu/mobi.css
     icon: github
-    title: GitHub
     align: right
