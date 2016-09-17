@@ -7,7 +7,7 @@
 
 # Documentations
 
-- [Design](#Design)
+- [Layout](#Layout)
 - [Flexbox](#Flexbox)
 - [Typography](#Typography)
 - [Tables](#Tables)
@@ -15,11 +15,7 @@
 - [Utilities](#Utilities)
 - [FAQ](#FAQ)
 
-## Design
-
-> Mobi.css is designed for mobile devices.
-
-### Layout
+## Layout
 
 Most of CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
 
@@ -57,10 +53,10 @@ Optionally, you can add a sidebar for the desktop version of your website. It's 
     <div class="container">
       <h1>Mobi.css</h1>
     </div>
-    <div class="hide-on-mobile" style="padding:0 28px;">
+    <aside class="hide-on-mobile" style="padding:0 28px;">
       <p>Scan to view on mobile</p>
       <img src="path/to/qrcode.png"/>
-    </div>
+    </aside>
   </div>
 </body>
 ```
@@ -123,7 +119,7 @@ First of all, you can create a `flex-left` which contains several `unit`s. In th
 </div>
 ```
 
-You can add `units-gap` style to ensure there are gaps between each `unit`. This is useful when your `unit`s have `background-color` or have text in it.
+You can add `units-gap` style to ensure there are gaps between each `unit`. This is useful when your `unit`s have text in it.
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
@@ -223,7 +219,7 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
 
 ### Use flexbox for aligning
 
-Forget `margin:0 auto` and `top:50%; margin-top:-100px`. You can align easily using flexbox!
+Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily using flexbox!
 
 {% raw %}
 <div class="flex-left site-box top-gap">
@@ -259,41 +255,37 @@ Forget `margin:0 auto` and `top:50%; margin-top:-100px`. You can align easily us
 <div class="flex-right site-box">
   <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-top site-box" style="height:100px;">
+<div class="flex-top site-box" style="height:60px;">
   <div class="site-box">Mobi.css</div>
 </div>
-<div class="flex-middle site-box" style="height:100px;">
+<div class="flex-middle site-box" style="height:60px;">
   <div class="site-box">Is</div>
 </div>
-<div class="flex-bottom site-box" style="height:100px;">
+<div class="flex-bottom site-box" style="height:60px;">
   <div class="site-box">Awesome!</div>
 </div>
-<div class="flex-center flex-middle site-box" style="height:80px;">
+<div class="flex-center flex-middle site-box" style="height:60px;">
   <div class="site-box">Mobi.css is awesome!</div>
 </div>
 ```
 
-### Vertical flex layouts
+### Vertical flex layout
 
-What's more? You can use `flex-vertical` to easily achieve vertical layouts!
+What's more? You can use `flex-vertical` to easily achieve vertical flexbox layout.
 
 {% raw %}
 <div class="flex-vertical site-box top-gap" style="height:300px;">
-  <div class="unit-1-3 site-box">.unit-1-4</div>
-  <div class="unit site-box">.unit</div>
-  <div class="unit site-box">.unit</div>
-  <div class="unit site-box">.unit</div>
   <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
 </div>
 {% endraw %}
 
 ```html
 <div class="flex-vertical site-box top-gap" style="height:300px;">
-  <div class="unit-1-3 site-box">.unit-1-4</div>
-  <div class="unit site-box">.unit</div>
-  <div class="unit site-box">.unit</div>
-  <div class="unit site-box">.unit</div>
   <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
 </div>
 ```
 

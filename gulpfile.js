@@ -7,7 +7,6 @@ const rimraf = require('rimraf');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const mkdirp = require('mkdirp');
 const runSequence = require('run-sequence');
 const insert = require('gulp-insert');
 const exec = require('child_process').exec;
@@ -42,7 +41,9 @@ gulp.task('default', ['hexo', 'build_copy'], () => {
 });
 
 gulp.task('build_copy', () => {
-  runSequence('build', 'copy');
+  setTimeout(() => {
+    runSequence('build', 'copy');
+  }, 300);
 });
 
 gulp.task('build', [
@@ -64,8 +65,7 @@ gulp.task('hexo', () => {
 });
 
 gulp.task('clean:dist', () => {
-  rimraf.sync(DIST_DIR);
-  mkdirp.sync(DIST_DIR);
+  rimraf.sync(`${DIST_DIR}/*`);
 });
 
 gulp.task('build:mobi:compressed', ['build:mobi:sourcemaps'], () => gulp.src(`${DIST_DIR}/mobi.css`)
@@ -83,8 +83,7 @@ gulp.task('build:mobi:sourcemaps', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(gulp.dest(DIST_DIR)));
 
 gulp.task('clean:site_theme_mobi_css', () => {
-  rimraf.sync(SITE_THEME_MOBI_CSS_DIR);
-  mkdirp.sync(SITE_THEME_MOBI_CSS_DIR);
+  rimraf.sync(`${SITE_THEME_MOBI_CSS_DIR}/*`);
 });
 
 gulp.task('copy:site_theme_mobi_css', () => gulp.src(`${DIST_DIR}/*`)
