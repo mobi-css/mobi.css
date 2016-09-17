@@ -270,9 +270,6 @@ progress {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
 
-.flex-vertical {
-  height: 100%; }
-
 .flex-left,
 .flex-center,
 .flex-right,
@@ -285,15 +282,15 @@ progress {
 .flex-vertical.flex-top,
 .flex-vertical.flex-middle,
 .flex-vertical.flex-bottom {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
               -ms-grid-row-align: stretch;
-          align-items: stretch; }
+          align-items: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .flex-center,
 .flex-vertical.flex-middle {
