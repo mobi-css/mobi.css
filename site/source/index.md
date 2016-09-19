@@ -41,8 +41,6 @@ Be sure you have added `node_modules` to your sass's [load_paths](http://stackov
 
 It would be nice if you could buy me a coffee, thanks for your support!
 
-- [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-or
+### [PayPal](https://www.paypal.me/xcatliu/5usd)
 
 ![Buy Me a Coffee](assets/buy-me-a-coffee.jpg)
