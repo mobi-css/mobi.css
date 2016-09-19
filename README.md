@@ -48,20 +48,20 @@ Be sure you have added `node-modules` to your Sass's [load_paths](http://stackov
     <tr>
       <td valign="top"><strong>[√]</strong> Last 5 iOS versions</td>
       <td valign="top">
-        <strong>[√]</strong> Last 5 Android versions<br/>
-        <strong>[√]</strong> Last 5 ChromeAndroid versions<br/>
-        <strong>[√]</strong> Last 5 UCAndroid versions (*)<br/>
-        <strong>[√]</strong> Last 5 FirefoxAndroid versions (*)<br/>
-        <strong>[√]</strong> Last 5 OperaMobile versions (*)<br/>
-        <strong>[√]</strong> Last 5 OperaMini versions (*)<br/>
-        <strong>[√]</strong> Last 5 Samsung versions (*)
+        [√] Last 5 Android versions<br/>
+        [√] Last 5 ChromeAndroid versions<br/>
+        [√] Last 5 UCAndroid versions (\*)<br/>
+        [√] Last 5 FirefoxAndroid versions (\*)<br/>
+        [√] Last 5 OperaMobile versions (\*)<br/>
+        [√] Last 5 OperaMini versions (\*)<br/>
+        [√] Last 5 Samsung versions (\*)
       </td>
       <td valign="top">
-        <strong>[√]</strong> Last 3 Chrome versions<br/>
-        <strong>[√]</strong> Last 3 Firefox versions<br/>
-        <strong>[√]</strong> Last 3 Safari versions<br/>
-        <strong>[√]</strong> Last 3 Edge versions<br/>
-        <strong>[√]</strong> Last 5 ExplorerMobile versions (*)
+        [√] Last 3 Chrome versions<br/>
+        [√] Last 3 Firefox versions<br/>
+        [√] Last 3 Safari versions<br/>
+        [√] Last 3 Edge versions<br/>
+        [√] Last 5 ExplorerMobile versions (\*)
       </td>
     </tr>
   </tbody>
@@ -69,7 +69,7 @@ Be sure you have added `node-modules` to your Sass's [load_paths](http://stackov
 
 - Use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure Mobi.css works on all major mobile devices
 - Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
-- Browsers marked as (*) were not well tested, but they should work fine
+- Browsers marked as (\*) were not well tested, but they should work fine
 
 ## Contributing
 
@@ -101,6 +101,16 @@ We use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as our continuous int
 
 - The [Homepage] will be generated automatically when new commits are pushed to master branch
 - Pull request cannot be merged when Travis CI not pass
+
+## Buy me a coffee
+
+It would be nice if you could buy me a coffee, thanks for your support!
+
+- [PayPal](https://www.paypal.me/xcatliu/5usd)
+
+or
+
+![Buy Me a Coffee](site/source/assets/buy-me-a-coffee.jpg)
 
 ## License
 

@@ -1,3 +1,7 @@
+---
+layout: index
+---
+
 # Mobi.css
 
 > A lightweight, flexible css framework that focus on mobile.
@@ -32,3 +36,13 @@ Be sure you have added `node_modules` to your sass's [load_paths](http://stackov
 - [Reference](/reference): All the Mobi.css styles in one page.
 - [Extensions](/extensions): Plugins, themes, etc.
 - [GitHub](https://github.com/xcatliu/mobi.css)
+
+## Buy me a coffee
+
+It would be nice if you could buy me a coffee, thanks for your support!
+
+- [PayPal](https://www.paypal.me/xcatliu/5usd)
+
+or
+
+![Buy Me a Coffee](assets/buy-me-a-coffee.jpg)
