@@ -106,9 +106,7 @@ We use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as our continuous int
 
 It would be nice if you could buy me a coffee, thanks for your support!
 
-- [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-or
+### [PayPal](https://www.paypal.me/xcatliu/5usd)
 
 ![Buy Me a Coffee](site/source/assets/buy-me-a-coffee.jpg)
 
