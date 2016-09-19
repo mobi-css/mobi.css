@@ -9,6 +9,7 @@
     }
   %>
 ">
+  <%- url_for_lang(href) %>
   <a class="unit-0 theme-nav-item-link text-center" href="<%= url_for(href) %>">
     <% if (typeof icon !== 'undefined' && icon) { %>
       <i class="theme-nav-item-icon fa fa-<%= icon %>"></i>
