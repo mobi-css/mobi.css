@@ -43,4 +43,6 @@ It would be nice if you could buy me a coffee, thanks for your support!
 
 ### [PayPal](https://www.paypal.me/xcatliu/5usd)
 
-![Buy Me a Coffee](assets/buy-me-a-coffee.jpg)
+![Buy Me a Coffee Wechat](assets/buy-me-a-coffee-wechat.jpg)
+
+![Buy Me a Coffee Alipay](assets/buy-me-a-coffee-alipay.jpg)
