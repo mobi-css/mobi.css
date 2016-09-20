@@ -111,7 +111,7 @@ Buy me a coffee if you love this project, thanks for your support!
 
 ## License
 
-[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE).
+[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE)
 
 <a id="zh-cn"></a>
 
@@ -216,4 +216,4 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 
 ## 开源协议
 
-[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE).
+[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE)
