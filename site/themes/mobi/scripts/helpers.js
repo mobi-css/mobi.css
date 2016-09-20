@@ -3,9 +3,7 @@
 
 'use strict';
 
-console.log('------------');
-
-hexo.extend.helper.register('url_for_lang', (path) => {
+hexo.extend.helper.register('url_for_lang', function (path) {
   const lang = this.page.lang;
   let url = this.url_for(path);
 

@@ -1,34 +1,78 @@
 # Mobi.css
 
-> A lightweight, flexible css framework that focus on mobile.
+> 轻量灵活的移动端 CSS 框架。
 
-## Introduction
+## 选择语言
 
-- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
-- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
-- Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
+[English](..) | 简体中文
 
-## Getting started
+## 介绍
 
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
+- 压缩后只有 4.6kb，比 Skeleton、Pure.css、Bootstrap 等所有 CSS 库都小
+- 大量使用 Flexbox ，非常灵活，官方网站只有不到 10 行的自定义样式
+- 专注于移动端，桌面端端相当于展示的还是移动端的页面，不过可以在左侧或右侧加上侧边栏
 
-Or use npm to install:
+## 开始使用
+
+你可以在[这个页面](https://github.com/xcatliu/mobi.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/mobi.min.css`。
+
+或者使用 npm 安装：
 
 ```shell
 npm install --save mobi.css
 ```
 
-You can also build Mobi.css to your project if you are using sass.
+如果你用的是 Sass，那么也可以在自己的项目中构建 Mobi.css：
 
 ```scss
 @import 'mobi.css/src/mobi';
 ```
 
-Be sure you have added `node_modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+注意你需要将 `node_modules` 添加到 Sass 的 [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory) 中。
 
-## Next step
+## 支持的浏览器
 
-- [Documentations](/docs): Design philosophy and tutorial.
-- [Reference](/reference): All the Mobi.css styles in one page.
-- [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css)
+### iOS
+
+- [√] Last 5 iOS versions
+
+### 安卓
+
+- [√] Last 5 Android versions
+- [√] Last 5 ChromeAndroid versions
+- [√] Last 5 UCAndroid versions (\*)
+- [√] Last 5 FirefoxAndroid versions (\*)
+- [√] Last 5 OperaMobile versions (\*)
+- [√] Last 5 OperaMini versions (\*)
+- [√] Last 5 Samsung versions (\*)
+
+### 其他浏览器
+
+- [√] Last 3 Chrome versions
+- [√] Last 3 Firefox versions
+- [√] Last 3 Safari versions
+- [√] Last 3 Edge versions
+- [√] Last 5 ExplorerMobile versions (\*)
+
+### 备注
+
+- Mobi.css 使用 [Autoprefixer](https://github.com/postcss/autoprefixer) 来保证能兼容主流的移动端浏览器
+- 浏览器查询语句来自于 [Browserslist](https://github.com/ai/browserslist)
+- 标注为 (\*) 的浏览器可能没有很好的测试，但是应该能够正常工作
+
+## 请我喝杯咖啡
+
+如果你喜欢这个项目，欢迎请我喝杯咖啡，感谢你的支持！
+
+### [PayPal](https://www.paypal.me/xcatliu/5usd)
+
+![Buy Me a Coffee Wechat](/assets/img/buy-me-a-coffee-wechat.jpg)
+
+![Buy Me a Coffee Alipay](/assets/img/buy-me-a-coffee-alipay.jpg)
+
+## 下一步
+
+- [文档](docs)：设计理念、使用教程
+- [参考](reference)：一个页面展示所有 Mobi.css 的样式
+- [扩展](extensions)：插件、主题和其他
+- [GitHub](https://github.com/xcatliu/mobi.css)：反馈问题，参与贡献

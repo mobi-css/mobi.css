@@ -5,7 +5,7 @@
   }
 </style>
 
-# Documentations
+# 文档
 
 - [Layout](#Layout)
 - [Flexbox](#Flexbox)
@@ -19,7 +19,7 @@
 
 Most of CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
 
-![Responsive design](../assets/responsive-design.jpg)
+![Responsive design](/assets/img/responsive-design.jpg)
 
 It sounds like a good idea, however, it's not suitable for all situations.
 
@@ -31,7 +31,7 @@ On mobile devices (with width less than 768px), your container will fill the ent
 
 Otherwise, your container will have a fixed width and align to the center of the screen. Then it won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
 
-![layout](../assets/layout.jpg)
+![layout](/assets/img/layout.jpg)
 
 ```html
 <body>
@@ -45,7 +45,7 @@ Otherwise, your container will have a fixed width and align to the center of the
 
 Optionally, you can add a sidebar for the desktop version of your website. It's useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Back to top*:
 
-![layout-with-side](../assets/layout-with-side.jpg)
+![layout-with-side](/assets/img/layout-with-side.jpg)
 
 ```html
 <body>
@@ -202,7 +202,7 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
 </div>
 <div class="flex-left units-gap top-gap">
   <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div class="unit-0"><img alt="xcatliu" src="../assets/xcatliu.png" width="48"/></div>
+  <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 {% endraw %}
 
@@ -213,7 +213,7 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
 </div>
 <div class="flex-left units-gap top-gap">
   <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
-  <div class="unit-0"><img alt="xcatliu" src="../assets/xcatliu.png" width="48"/></div>
+  <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 ```
 
@@ -289,7 +289,7 @@ What's more? You can use `flex-vertical` to easily achieve vertical flexbox layo
 </div>
 ```
 
-For more examples about flexbox, please check out [Reference # Flexbox](/reference/#Flexbox).
+For more examples about flexbox, please check out [Reference # Flexbox](reference/#Flexbox).
 
 ## Typography
 
@@ -299,7 +299,7 @@ Most typography styles are reset to not need additional classes.
 
 This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
-For more examples about typography, please check out [Reference # Text content](/reference/#Text-content).
+For more examples about typography, please check out [Reference # Text content](reference/#Text-content).
 
 ## Tables
 
@@ -403,7 +403,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 </div>
 ```
 
-For more examples about tables, please check out [Reference # Table-content](/reference/#Table-content).
+For more examples about tables, please check out [Reference # Table-content](reference/#Table-content).
 
 ## Forms
 
@@ -553,7 +553,7 @@ You can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about forms, please check out [Reference # Forms](/reference/#Forms).
+For more examples about forms, please check out [Reference # Forms](reference/#Forms).
 
 ## Utilities
 
@@ -767,8 +767,8 @@ Also, you can add `flex-center` to `<body>` and it will work, too. However, that
 
 Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
 
-## Next step
+## 下一步
 
-- [Reference](/reference): All the Mobi.css styles in one page.
-- [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css)
+- [参考](../reference)：一个页面展示所有 Mobi.css 的样式
+- [扩展](../extensions)：插件、主题和其他
+- [GitHub](https://github.com/xcatliu/mobi.css)：反馈问题，参与贡献

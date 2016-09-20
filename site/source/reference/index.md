@@ -36,7 +36,7 @@ Elemens:
 
 Use `.container` to create a container which contains all of your content.
 
-![layout](../assets/layout.jpg)
+![layout](/assets/img/layout.jpg)
 
 ```html
 <body>
@@ -48,7 +48,7 @@ Use `.container` to create a container which contains all of your content.
 </body>
 ```
 
-![layout-with-side](../assets/layout-with-side.jpg)
+![layout-with-side](/assets/img/layout-with-side.jpg)
 
 ```html
 <body>
@@ -397,7 +397,7 @@ Use `units-gap` to add gap between each `unit`:
 </div>
 ```
 
-If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not. 
+If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not.
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -621,14 +621,14 @@ Use `<figure>` and `<figcaption>` to create self-contained content:
 
 {% raw %}
 <figure>
-  <img src="../../assets/mobi-logo-512.png" alt="Mobi.css Logo"/>
+  <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Mobi.css Logo</figcaption>
 </figure>
 {% endraw %}
 
 ```html
 <figure>
-  <img src="../../assets/mobi-logo-512.png" alt="Mobi.css Logo"/>
+  <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Mobi.css Logo</figcaption>
 </figure>
 ```
@@ -765,12 +765,12 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 
 ## Multimedia
 
-![Mobi.css Logo](../../assets/mobi-logo-512.png)
+![Mobi.css Logo](/assets/img/mobi-logo-512.png)
 
 {% raw %}
 <p>
   <audio controls>
-    <source src="../../assets/croatian-rhapsody.mp3" type="audio/mpeg">
+    <source src="/assets/croatian-rhapsody.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </p>
@@ -778,7 +778,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 
 ```html
 <audio controls>
-  <source src="../../assets/croatian-rhapsody.mp3" type="audio/mpeg">
+  <source src="/assets/croatian-rhapsody.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 ```
@@ -786,7 +786,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 {% raw %}
 <p>
   <video controls>
-    <source src="../../assets/big-buck-bunny.mp4" type="video/mp4">
+    <source src="/assets/big-buck-bunny.mp4" type="video/mp4">
     Your browser does not support the video element.
   </video>
 </p>
@@ -794,7 +794,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 
 ```html
 <video controls>
-  <source src="../../assets/big-buck-bunny.mp4" type="video/mp4">
+  <source src="/assets/big-buck-bunny.mp4" type="video/mp4">
   Your browser does not support the video element.
 </video>
 ```
@@ -1243,14 +1243,14 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 {% raw %}
 <input type="color"/>
 <input type="range" min="1" max="99" step="2"/>
-<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64"/>
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64"/>
 <input type="hidden"/>
 {% endraw %}
 
 ```html
 <input type="color"/>
 <input type="range" min="1" max="99" step="2"/>
-<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64"/>
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64"/>
 <input type="hidden"/>
 ```
 
@@ -1405,7 +1405,7 @@ Buttons cannot set to `readonly`.
 {% raw %}
 <input type="color" disabled/>
 <input type="range" min="1" max="99" step="2" disabled/>
-<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64" disabled/>
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64" disabled/>
 <input type="hidden" disabled/>
 <input type="color" value="#ff0000" readonly/>
 <input type="range" min="1" max="99" step="2" value="15" readonly/>
@@ -1414,7 +1414,7 @@ Buttons cannot set to `readonly`.
 ```html
 <input type="color" disabled/>
 <input type="range" min="1" max="99" step="2" disabled/>
-<input type="image" src="../../assets/xcatliu.png" alt="xcatliu" width="64" disabled/>
+<input type="image" src="/assets/img/xcatliu.png" alt="xcatliu" width="64" disabled/>
 <input type="hidden" disabled/>
 <input type="range" min="1" max="99" step="2" value="15" readonly/>
 ```
@@ -1443,7 +1443,7 @@ Buttons cannot set to `readonly`.
 </form>
 {% endraw %}
 
-## Next step
+## What's next
 
-- [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css)
+- [Extensions](../extensions): Plugins, themes, etc
+- [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css
