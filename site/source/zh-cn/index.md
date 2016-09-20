@@ -34,25 +34,25 @@ npm install --save mobi.css
 
 ### iOS
 
-- [√] Last 5 iOS versions
+- [x] Last 5 iOS versions
 
 ### 安卓
 
-- [√] Last 5 Android versions
-- [√] Last 5 ChromeAndroid versions
-- [√] Last 5 UCAndroid versions (\*)
-- [√] Last 5 FirefoxAndroid versions (\*)
-- [√] Last 5 OperaMobile versions (\*)
-- [√] Last 5 OperaMini versions (\*)
-- [√] Last 5 Samsung versions (\*)
+- [x] Last 5 Android versions
+- [x] Last 5 ChromeAndroid versions
+- [x] Last 5 UCAndroid versions (\*)
+- [x] Last 5 FirefoxAndroid versions (\*)
+- [x] Last 5 OperaMobile versions (\*)
+- [x] Last 5 OperaMini versions (\*)
+- [x] Last 5 Samsung versions (\*)
 
 ### 其他浏览器
 
-- [√] Last 3 Chrome versions
-- [√] Last 3 Firefox versions
-- [√] Last 3 Safari versions
-- [√] Last 3 Edge versions
-- [√] Last 5 ExplorerMobile versions (\*)
+- [x] Last 3 Chrome versions
+- [x] Last 3 Firefox versions
+- [x] Last 3 Safari versions
+- [x] Last 3 Edge versions
+- [x] Last 5 ExplorerMobile versions (\*)
 
 ### 备注
 
