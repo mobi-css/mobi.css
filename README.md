@@ -119,10 +119,6 @@ Buy me a coffee if you love this project, thanks for your support!
 
 > 轻量灵活的移动端 CSS 框架。
 
-## 选择语言
-
-[English](#en) | 简体中文
-
 ## 介绍
 
 - 压缩后只有 4.6kb，比 Skeleton、Pure.css、Bootstrap 等所有 CSS 库都小
