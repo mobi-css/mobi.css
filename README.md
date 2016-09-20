@@ -32,7 +32,7 @@ You can also build Mobi.css to your project if you are using Sass.
 @import 'mobi.css/src/mobi';
 ```
 
-Be sure you have added `node-modules` to your Sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+Be sure you have added `node_modules` to your Sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
 ## Browser Support
 
@@ -73,7 +73,7 @@ Be sure you have added `node-modules` to your Sass's [load_paths](http://stackov
 
 ## Contributing
 
-Before contributing, please ensure you have `sass` and `scss-lint` installed. You can install them by running this:
+Before contributing, please ensure you have `sass` and `scss_lint` installed. You can install them by running this:
 
 ```shell
 gem install sass
