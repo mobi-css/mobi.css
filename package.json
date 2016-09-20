@@ -8,7 +8,8 @@
     "build": "gulp build",
     "test": "npm run lint",
     "lint": "scss-lint src && echo 'SCSS Lint Passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
-    "preversion": "npm test && npm run build"
+    "preversion": "npm test",
+    "version": "npm run build"
   },
   "repository": {
     "type": "git",
