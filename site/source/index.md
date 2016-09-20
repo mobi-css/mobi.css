@@ -1,16 +1,16 @@
----
-layout: index
----
-
 # Mobi.css
 
 > A lightweight, flexible css framework that focus on mobile.
 
+## Languages
+
+English | [简体中文](zh-cn)
+
 ## Introduction
 
-- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc.
-- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the [Homepage](http://getmobicss.com/).
-- Focus on mobile, show mobile pages in desktop with a sidebar on the left or right.
+- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc
+- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the official site
+- Focus on mobile, show mobile pages in desktop with a sidebar on the left or right
 
 ## Getting started
 
@@ -22,27 +22,57 @@ Or use npm to install:
 npm install --save mobi.css
 ```
 
-You can also build Mobi.css to your project if you are using sass.
+You can also build Mobi.css to your project if you are using Sass:
 
 ```scss
 @import 'mobi.css/src/mobi';
 ```
 
-Be sure you have added `node_modules` to your sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
+Be sure you have added `node_modules` to your Sass's [load_paths](http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory).
 
-## Next step
+## Browser Support
 
-- [Documentations](/docs): Design philosophy and tutorial.
-- [Reference](/reference): All the Mobi.css styles in one page.
-- [Extensions](/extensions): Plugins, themes, etc.
-- [GitHub](https://github.com/xcatliu/mobi.css)
+### iOS
+
+- [√] Last 5 iOS versions
+
+### Android
+
+- [√] Last 5 Android versions
+- [√] Last 5 ChromeAndroid versions
+- [√] Last 5 UCAndroid versions (\*)
+- [√] Last 5 FirefoxAndroid versions (\*)
+- [√] Last 5 OperaMobile versions (\*)
+- [√] Last 5 OperaMini versions (\*)
+- [√] Last 5 Samsung versions (\*)
+
+### Others
+
+- [√] Last 3 Chrome versions
+- [√] Last 3 Firefox versions
+- [√] Last 3 Safari versions
+- [√] Last 3 Edge versions
+- [√] Last 5 ExplorerMobile versions (\*)
+
+### Note
+
+- Use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure Mobi.css works on all major mobile devices
+- Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
+- Browsers marked as (\*) were not well tested, but they should work fine
 
 ## Buy me a coffee
 
-It would be nice if you could buy me a coffee, thanks for your support!
+Buy me a coffee if you love this project, thanks for your support!
 
 ### [PayPal](https://www.paypal.me/xcatliu/5usd)
 
-![Buy Me a Coffee Wechat](assets/buy-me-a-coffee-wechat.jpg)
+![Buy Me a Coffee Wechat](/assets/img/buy-me-a-coffee-wechat.jpg)
 
-![Buy Me a Coffee Alipay](assets/buy-me-a-coffee-alipay.jpg)
+![Buy Me a Coffee Alipay](/assets/img/buy-me-a-coffee-alipay.jpg)
+
+## What's next
+
+- [Documentations](docs): Design philosophy and tutorial
+- [Reference](reference): All the Mobi.css styles in one page
+- [Extensions](extensions): Plugins, themes, etc
+- [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css

@@ -5,7 +5,7 @@
   }
 </style>
 
-# Reference
+# 参考
 
 Classes:
 
@@ -1443,7 +1443,7 @@ Buttons cannot set to `readonly`.
 </form>
 {% endraw %}
 
-## What's next
+## 下一步
 
-- [Extensions](../extensions): Plugins, themes, etc
-- [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css
+- [扩展](../extensions)：插件、主题和其他
+- [GitHub](https://github.com/xcatliu/mobi.css)：反馈问题，参与贡献

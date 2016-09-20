@@ -5,7 +5,7 @@
   }
 </style>
 
-# Documentations
+# 文档
 
 - [Layout](#Layout)
 - [Flexbox](#Flexbox)
@@ -767,8 +767,8 @@ Also, you can add `flex-center` to `<body>` and it will work, too. However, that
 
 Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
 
-## What's next
+## 下一步
 
-- [Reference](../reference): All the Mobi.css styles in one page
-- [Extensions](../extensions): Plugins, themes, etc
-- [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css
+- [参考](../reference)：一个页面展示所有 Mobi.css 的样式
+- [扩展](../extensions)：插件、主题和其他
+- [GitHub](https://github.com/xcatliu/mobi.css)：反馈问题，参与贡献

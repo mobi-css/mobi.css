@@ -1,4 +1,4 @@
-# Extensions
+# 扩展
 
 ## Customize
 
@@ -14,6 +14,6 @@ Just copy variables from `src/_variables.scss` to `src/_custom.scss` to override
 
 [Themes will be added in Mobi.css v2.0.0](https://github.com/xcatliu/mobi.css/issues/39).
 
-## What's next
+## 下一步
 
-- [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css
+- [GitHub](https://github.com/xcatliu/mobi.css)：反馈问题，参与贡献

@@ -1,15 +1,15 @@
 <div class="theme-nav-item flex-center flex-middle
   <%
-    if (url_for(href) === '/' || url_for(href) === '/index.html') {
-      if (url_for(path) === '/index.html') {
+    if (url_for_lang(href) === url_for_lang('/')) {
+      if (url_for(path) === `${url_for_lang('/')}index.html`) {
         %>theme-nav-item-current<%
       }
-    } else if (url_for(path).indexOf(url_for(href)) === 0) {
+    } else if (url_for(path).indexOf(url_for_lang(href)) === 0) {
       %>theme-nav-item-current<%
     }
   %>
 ">
-  <a class="unit-0 theme-nav-item-link text-center" href="<%= url_for(href) %>">
+  <a class="unit-0 theme-nav-item-link text-center" href="<%= url_for_lang(href) %>">
     <% if (typeof icon !== 'undefined' && icon) { %>
       <i class="theme-nav-item-icon fa fa-<%= icon %>"></i>
     <% } %>

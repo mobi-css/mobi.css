@@ -2,16 +2,16 @@ favicon: /favicon.ico
 
 menu:
   home:
-    href: /
-    img: /assets/mobi-logo-512.png
+    href: ''
+    img: /assets/img/mobi-logo-512.png
   docs:
-    href: /docs
+    href: docs
     icon: book
   reference:
-    href: /reference
+    href: reference
     icon: hashtag
   extensions:
-    href: /extensions
+    href: extensions
     icon: cogs
   github:
     href: https://github.com/xcatliu/mobi.css
