@@ -7,7 +7,7 @@
 
 # 参考
 
-Classes:
+类：
 
 - [`.container`](#Layout)
 - [`.top-gap`](#top-gap), [`.top-gap-big`](#top-gap), [`.top-gap-0`](#top-gap)
@@ -21,7 +21,7 @@ Classes:
 - [`.table`](#Table-content)
 - [`.form`](#Forms)
 
-Elemens:
+元素：
 
 - [Content sectioning](#Content-sectioning)
 - [Text content](#Text-content)
