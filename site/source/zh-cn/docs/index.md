@@ -14,15 +14,15 @@
 
 ![Responsive design](/assets/img/responsive-design.jpg)
 
-它看上去是一个好点子，但是不一定适合所有情况。
+这个点子看上去不错，但是不一定适合所有情况。
 
-Although frameworks help you reduce a lot of works, you still need to design for each screen size, to write redundant classes (an example for Bootstrap: `<div class="col-xs-12 col-sm-6 col-md-8">`), and to test on every devices.
+虽然框架帮你减少了很多工作，但是你还是需要设计各个大小屏幕的设备的样式，代码也会有冗余（比如 Bootstrap 的代码：`<div class="col-xs-12 col-sm-6 col-md-8">`），并且需要在每个设备上进行测试。
 
-If you are building a website for mobile devices, Mobi.css provides a simpler and easier solution.
+如果你想开发一个移动端网页，Mobi.css 提供了一个更简单易行的解决方案。
 
-On mobile devices (with width less than 768px), your container will fill the entire width of the screen.
+在移动端设备（宽度小于 768px）上，容器宽度将会充满中各屏幕。
 
-Otherwise, your container will have a fixed width and align to the center of the screen. Then it won't break your design for mobile. Instead, it looks like you are viewing mobile pages on desktop.
+其他情况下，容器将会有一个固定宽度，并且水平居中在屏幕中。这样的话就不会破坏你为移动端设计的样式，而就像在桌面端访问移动端的页面一样。
 
 ![layout](/assets/img/layout.jpg)
 
@@ -36,7 +36,7 @@ Otherwise, your container will have a fixed width and align to the center of the
 </body>
 ```
 
-Optionally, you can add a sidebar for the desktop version of your website. It's useful to show some additional, non-mobile messages, such as *Scan to view on mobile* or *Back to top*:
+另外你可以给桌面端添加一个侧边栏，用于显示一个额外的不会在移动端显示的信息，比如*扫描可在手机中查看*或*返回顶部*。
 
 ![layout-with-side](/assets/img/layout-with-side.jpg)
 
@@ -47,7 +47,7 @@ Optionally, you can add a sidebar for the desktop version of your website. It's 
       <h1>Mobi.css</h1>
     </div>
     <aside class="hide-on-mobile" style="padding:0 28px;">
-      <p>Scan to view on mobile</p>
+      <p>扫描可在手机中查看</p>
       <img src="path/to/qrcode.png"/>
     </aside>
   </div>
@@ -82,11 +82,11 @@ Mobi.css use flexbox for layout. It's super flexible, you'll love it.
 
 According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe to use flexbox on all mobile devices as well as the last version of all major desktop browsers.
 
-### Grid system
+### 网格系统
 
-Mobile doesn't need a complex 12# grid system. So Mobi.css provides a simple but flexible grid system.
+移动端不需要复杂的 12# 网格系统，Mobi.css 提供了一个简单却灵活的网格系统。
 
-First of all, you can create a `flex-left` which contains several `unit`s. In this case, `flex-left`'s width is divided equally between `unit`s.
+首先，你可以创建一个 `flex-left` 作为容器，然后创建一些 `unit` 作为单元。此时 `flex-left` 的宽度会被 `unit` 平分。
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -112,7 +112,7 @@ First of all, you can create a `flex-left` which contains several `unit`s. In th
 </div>
 ```
 
-You can add `units-gap` style to ensure there are gaps between each `unit`. This is useful when your `unit`s have text in it.
+你可以使用 `units-gap` 类，给 `unit` 之间添加空隙。这在 `unit` 内部有文字的时候很有用。
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
@@ -146,7 +146,7 @@ You can add `units-gap` style to ensure there are gaps between each `unit`. This
 </div>
 ```
 
-Secondly, you can use `unit-1-2`, `unit-1-3`, `unit-2-3`, `unit-1-4` and `unit-3-4` to achieve a maximum 4# grid.
+然后，你可以使用 `unit-1-2`, `unit-1-3`, `unit-2-3`, `unit-1-4` 和 `unit-3-4` 实现一个 4# 网格系统。
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -186,15 +186,15 @@ Secondly, you can use `unit-1-2`, `unit-1-3`, `unit-2-3`, `unit-1-4` and `unit-3
 </div>
 ```
 
-Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let the content decide the width.
+最后，你可以使用 `unit-0` 实现自定义大小的单元，通过 `width` 设置宽度或者让内容决定它的宽度。
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
   <div class="unit-0" style="width:62px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
+  <div class="unit site-box" style="padding:7px; margin-right:32px;">嗨，流浪小猫，你知道什么是 Mobi.css 吗？</div>
 </div>
 <div class="flex-left units-gap top-gap">
-  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">我当然知道，Mobi.css 是一个轻量灵活的移动端 CSS 框架。</div>
   <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 {% endraw %}
@@ -202,39 +202,39 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
 ```html
 <div class="flex-left units-gap top-gap">
   <div class="unit-0" style="width:62px;"><i class="fa fa-github" style="font-size:56px;"></i></div>
-  <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
+  <div class="unit site-box" style="padding:7px; margin-right:32px;">嗨，流浪小猫，你知道什么是 Mobi.css 吗？</div>
 </div>
 <div class="flex-left units-gap top-gap">
-  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">我当然知道，Mobi.css 是一个轻量灵活的移动端 CSS 框架。</div>
   <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 ```
 
-### Use flexbox for aligning
+### 使用 Flexbox 对齐元素
 
-Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily using flexbox!
+再也不需要 `margin:0 auto;` 和 `top:50%; margin-top:-100px;` 了，你可以简单的使用 Flexbox 实现元素的对齐！
 
 {% raw %}
 <div class="flex-left site-box top-gap">
   <div class="site-box">Mobi.css</div>
 </div>
 <div class="flex-center site-box">
-  <div class="site-box">Is</div>
+  <div class="site-box">太棒</div>
 </div>
 <div class="flex-right site-box">
-  <div class="site-box">Awesome!</div>
+  <div class="site-box">了！</div>
 </div>
 <div class="flex-top site-box" style="height:60px;">
   <div class="site-box">Mobi.css</div>
 </div>
 <div class="flex-middle site-box" style="height:60px;">
-  <div class="site-box">Is</div>
+  <div class="site-box">太棒</div>
 </div>
 <div class="flex-bottom site-box" style="height:60px;">
-  <div class="site-box">Awesome!</div>
+  <div class="site-box">了！</div>
 </div>
 <div class="flex-center flex-middle site-box" style="height:60px;">
-  <div class="site-box">Mobi.css is awesome!</div>
+  <div class="site-box">Mobi.css 太棒了！</div>
 </div>
 {% endraw %}
 
@@ -243,28 +243,28 @@ Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily 
   <div class="site-box">Mobi.css</div>
 </div>
 <div class="flex-center site-box">
-  <div class="site-box">Is</div>
+  <div class="site-box">太棒</div>
 </div>
 <div class="flex-right site-box">
-  <div class="site-box">Awesome!</div>
+  <div class="site-box">了！</div>
 </div>
 <div class="flex-top site-box" style="height:60px;">
   <div class="site-box">Mobi.css</div>
 </div>
 <div class="flex-middle site-box" style="height:60px;">
-  <div class="site-box">Is</div>
+  <div class="site-box">太棒</div>
 </div>
 <div class="flex-bottom site-box" style="height:60px;">
-  <div class="site-box">Awesome!</div>
+  <div class="site-box">了！</div>
 </div>
 <div class="flex-center flex-middle site-box" style="height:60px;">
-  <div class="site-box">Mobi.css is awesome!</div>
+  <div class="site-box">Mobi.css 太棒了！</div>
 </div>
 ```
 
-### Vertical flex layout
+### 垂直 Flex 布局
 
-What's more? You can use `flex-vertical` to easily achieve vertical flexbox layout.
+另外，你可以简单的使用 `flex-vertical` 实现垂直 Flex 布局。
 
 {% raw %}
 <div class="flex-vertical site-box top-gap" style="height:300px;">
@@ -282,7 +282,7 @@ What's more? You can use `flex-vertical` to easily achieve vertical flexbox layo
 </div>
 ```
 
-For more examples about flexbox, please check out [Reference # Flexbox](reference/#Flexbox).
+查看[参考 # Flexbox](reference/#Flexbox) 获取更多关于 Flexbox 的例子。
 
 ## 排版
 
@@ -292,7 +292,7 @@ Most typography styles are reset to not need additional classes.
 
 This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
 
-For more examples about typography, please check out [Reference # Text content](reference/#Text-content).
+For more examples about typography, please check out [参考 # 文本内容](reference/#文本内容).
 
 ## 表格
 
@@ -396,7 +396,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 </div>
 ```
 
-For more examples about tables, please check out [Reference # Table-content](reference/#Table-content).
+For more examples about tables, please check out [参考 # 表格内容](reference/#表格内容).
 
 ## 表单
 
@@ -546,7 +546,7 @@ You can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about forms, please check out [Reference # Forms](reference/#Forms).
+For more examples about forms, please check out [参考 # 表单](reference/#表单).
 
 ## 工具
 

@@ -432,7 +432,7 @@
 
 ### Flexbox
 
-使用 `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` 和 `flex-bottom` 对其块级元素：
+使用 `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` 和 `flex-bottom` 对齐块级元素：
 
 {% raw %}
 <div class="flex-left site-box top-gap" style="height:60px;">
@@ -502,7 +502,7 @@
 </div>
 ```
 
-对其的功能也适用于垂直布局：
+对齐的功能也适用于垂直布局：
 
 {% raw %}
 <div class="flex-vertical flex-left site-box top-gap" style="height:200px;">
@@ -628,7 +628,7 @@ document.write('你好，世界');</code></pre>
 
 ## 内联文本语义
 
-使用 `class="text-left"`, `class="text-center"` 或 `class="text-right"` 对其文本：
+使用 `class="text-left"`, `class="text-center"` 或 `class="text-right"` 对齐文本：
 
 {% raw %}
 <div class="text-left top-gap">我是小雨</div>
@@ -668,10 +668,10 @@ document.write('你好，世界');</code></pre>
 
 使用 `<span>` 创建行内容器：我<span style="color:red;">爱</span> Mobi.css。
 
-使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对其的描述">缩写</abbr>。
+使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对齐的描述">缩写</abbr>。
 
 ```html
-使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对其的描述">缩写</abbr>。
+使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对齐的描述">缩写</abbr>。
 ```
 
 使用 `<cite>` 创建引用的元素：<cite><a href="http://getmobicss.com">Mobi.css</a></cite>。
@@ -809,7 +809,7 @@ document.write('你好，世界');</code></pre>
 <div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>功能</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>特性</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -857,7 +857,7 @@ document.write('你好，世界');</code></pre>
 <div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>功能</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>特性</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>

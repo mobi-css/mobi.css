@@ -112,7 +112,7 @@ First of all, you can create a `flex-left` which contains several `unit`s. In th
 </div>
 ```
 
-You can add `units-gap` style to ensure there are gaps between each `unit`. This is useful when your `unit`s have text in it.
+You can add `units-gap` class to ensure there are gaps between each `unit`. This is useful when your `unit`s have text in it.
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
