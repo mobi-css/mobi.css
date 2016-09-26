@@ -9,32 +9,32 @@
 
 类：
 
-- [`.container`](#Layout)
+- [`.container`](#布局)
 - [`.top-gap`](#top-gap), [`.top-gap-big`](#top-gap), [`.top-gap-0`](#top-gap)
 - [`.flex-left`](#Flexbox), [`.flex-center`](#Flexbox), [`.flex-right`](#Flexbox), [`.flex-top`](#Flexbox), [`.flex-middle`](#Flexbox), [`.flex-bottom`](#Flexbox)
 - [`.flex-vertical`](#flex-vertical)
-- [`.unit`](#Units), [`.unit-1-2`](#Units), [`.unit-1-3`](#Units), [`.unit-1-4`](#Units), [`.unit-2-3`](#Units), [`.unit-3-4`](#Units), [`.unit-0`](#Units)
+- [`.unit`](#单元), [`.unit-1-2`](#单元), [`.unit-1-3`](#单元), [`.unit-1-4`](#单元), [`.unit-2-3`](#单元), [`.unit-3-4`](#单元), [`.unit-0`](#单元)
 - [`.units-gap`](#units-gap)
 - [`.scroll-view`](#scroll-view)
 - [`.hide-on-mobile`](#hide-on-mobile), [`show-on-mobile`](#hide-on-mobile)
-- [`.text-left`](#Inline-text-semantics), [`.text-center`](#Inline-text-semantics), [`text-right`](#Inline-text-semantics)
-- [`.table`](#Table-content)
-- [`.form`](#Forms)
+- [`.text-left`](#内联文本语义), [`.text-center`](#内联文本语义), [`text-right`](#内联文本语义)
+- [`.table`](#表格内容)
+- [`.form`](#表单)
 
 元素：
 
-- [Content sectioning](#Content-sectioning)
-- [Text content](#Text-content)
-- [Inline text semantics](#Inline-text-semantics)
-- [Multimedia](#Multimedia)
-- [Table content](#Table-content)
-- [Forms](#Forms)
+- [内容分区](#内容分区)
+- [文本内容](#文本内容)
+- [内联文本语义](#内联文本语义)
+- [多媒体](#多媒体)
+- [表格内容](#表格内容)
+- [表单](#表单)
 
-## Content sectioning
+## 内容分区
 
-### Layout
+### 布局
 
-Use `.container` to create a container which contains all of your content.
+使用 `.container` 创建一个包含所有内容的容器。
 
 ![layout](/assets/img/layout.jpg)
 
@@ -57,14 +57,14 @@ Use `.container` to create a container which contains all of your content.
       <h1>Mobi.css</h1>
     </div>
     <aside class="hide-on-mobile" style="padding:0 28px;">
-      <p>Scan to view on mobile</p>
+      <p>扫描可在手机中查看</p>
       <img src="path/to/qrcode.png"/>
     </aside>
   </div>
 </body>
 ```
 
-Use `<article>`, `<aside>`, `<footer>`, `<header>`, `<nav>` and `<section>` to layout:
+使用 `<article>`, `<aside>`, `<footer>`, `<header>`, `<nav>` 和 `<section>` 布局：
 
 {% raw %}
 <div class="flex-center top-gap site-box">
@@ -81,7 +81,7 @@ Use `<article>`, `<aside>`, `<footer>`, `<header>`, `<nav>` and `<section>` to l
 
 <a id="top-gap"></a>
 
-Use `.top-gap`, `.top-gap-big` and `.top-gap-0` to override `margin-top`:
+使用 `.top-gap`, `.top-gap-big` 和 `.top-gap-0` 覆盖 `margin-top`：
 
 {% raw %}
 <div class="top-gap site-box">div.top-gap</div>
@@ -97,7 +97,7 @@ Use `.top-gap`, `.top-gap-big` and `.top-gap-0` to override `margin-top`:
 
 <a id="scroll-view"></a>
 
-Use `.scroll-view` to make a block element scrollable:
+使用 `.scroll-view` 让块级元素可滚动：
 
 {% raw %}
 <div class="top-gap scroll-view" style="max-height:400px;">
@@ -251,27 +251,27 @@ Use `.scroll-view` to make a block element scrollable:
 
 <a id="hide-on-mobile"></a>
 
-Using `hide-on-mobile` or `show-on-mobile` to hide or show elements on mobile devices.
+使用 `hide-on-mobile` 或 `show-on-mobile` 让元素在手机中隐藏或显示：
 
 {% raw %}
-<p class="hide-on-mobile">This part will hide on mobile devices.</p>
+<p class="hide-on-mobile">这部分会在手机上隐藏。</p>
 {% endraw %}
 
 ```html
-<p class="hide-on-mobile">This part will hide on mobile devices.</p>
+<p class="hide-on-mobile">这部分会在手机上隐藏。</p>
 ```
 
 {% raw %}
-<p class="show-on-mobile">This part will only show on mobile devices.</p>
+<p class="show-on-mobile">这部分只会在手机上显示。</p>
 {% endraw %}
 
 ```html
-<p class="show-on-mobile">This part will only show on mobile devices.</p>
+<p class="show-on-mobile">这部分只会在手机上显示。</p>
 ```
 
-### Units
+### 单元
 
-Use `unit`, `unit-1-2`, `unit-1-3`, `unit-1-4`, `unit-2-3`, `unit-3-4` and `unit-0` to achieve a grid syatem:
+使用 `unit`, `unit-1-2`, `unit-1-3`, `unit-1-4`, `unit-2-3`, `unit-3-4` 和 `unit-0` 实现网格系统：
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -373,7 +373,7 @@ Use `unit`, `unit-1-2`, `unit-1-3`, `unit-1-4`, `unit-2-3`, `unit-3-4` and `unit
 
 <a id="units-gap"></a>
 
-Use `units-gap` to add gap between each `unit`:
+使用 `units-gap` 在 `unit` 之间添加空隙：
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
@@ -397,7 +397,7 @@ Use `units-gap` to add gap between each `unit`:
 </div>
 ```
 
-If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not.
+如果父元素中没有 `units-gap` 类，则无论子元素使不使用 `unit-0` 表现都将一致。
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -439,7 +439,7 @@ If there is no `units-gap` class in the parent element, the child element will h
 
 ### Flexbox
 
-Use `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` and `flex-bottom` to align block elements:
+使用 `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` 和 `flex-bottom` 对其块级元素：
 
 {% raw %}
 <div class="flex-left site-box top-gap" style="height:60px;">
@@ -491,7 +491,7 @@ Use `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` and `fle
 
 <a if="flex-vertical"></a>
 
-Use `flex-vertical` to achieve vertical flexbox layout:
+使用 `flex-vertical` 实现垂直布局：
 
 {% raw %}
 <div class="flex-vertical site-box top-gap" style="height:300px;">
@@ -509,7 +509,7 @@ Use `flex-vertical` to achieve vertical flexbox layout:
 </div>
 ```
 
-Aligning also works on vertical flexbox:
+对其的功能也适用于垂直布局：
 
 {% raw %}
 <div class="flex-vertical flex-left site-box top-gap" style="height:200px;">
@@ -553,7 +553,7 @@ Aligning also works on vertical flexbox:
 </div>
 ```
 
-### Headings
+### 标题
 
 # h1. Mobi.css
 ## h2. Mobi.css
@@ -562,80 +562,80 @@ Aligning also works on vertical flexbox:
 ##### h5. Mobi.css
 ###### h6. Mobi.css
 
-## Text content
+## 文本内容
 
-- Unordered List
-- Unordered List
-- Nesting
-  - Sub Unordered List
-  - Sub Unordered List
+- 无序列表
+- 无序列表
+- 嵌套
+  - 子无序列表
+  - 子无序列表
 
-1. Ordered List
-2. Ordered List
-3. Nesting
-  1. Sub Ordered List
-  2. Sub Ordered List
+1. 有序列表
+2. 有序列表
+3. 嵌套
+  1. 子有序列表
+  2. 子有序列表
 
 {% raw %}
 <dl>
   <dt>Mobi.css</dt>
-  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
+  <dd>轻量灵活的移动端 CSS 框架。</dd>
   <dt>Bootstrap</dt>
-  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
+  <dd>全世界最流行的移动端优先的响应式布局的前端框架。</dd>
 </dl>
 {% endraw %}
 
 ```html
 <dl>
   <dt>Mobi.css</dt>
-  <dd>A lightweight, flexible css framework that focus on mobile.</dd>
+  <dd>轻量灵活的移动端 CSS 框架。</dd>
   <dt>Bootstrap</dt>
-  <dd>The world's most popular mobile-first and responsive front-end framework.</dd>
+  <dd>全世界最流行的移动端优先的响应式布局的前端框架。</dd>
 </dl>
 ```
 
 {% raw %}
-<pre><code>// Use &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; to create code blocks.
-document.write('Hello World');</code></pre>
+<pre><code>// 使用 &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; 创建块级代码片段。
+document.write('你好，世界');</code></pre>
 {% endraw %}
 
 {% raw %}
 <blockquote>
-  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+  <p>使用 &lt;blockquote&gt; 创建块级引用。</p>
 </blockquote>
 {% endraw %}
 
 ```html
 <blockquote>
-  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+  <p>使用 &lt;blockquote&gt; 创建块级引用。</p>
 </blockquote>
 ```
 
-Use `<hr>` to create horizontal rules:
+使用 `<hr>` 创建水平线分隔：
 
 {% raw %}
 <hr/>
 {% endraw %}
 
-Use `<figure>` and `<figcaption>` to create self-contained content:
+使用 `<figure>` 和 `<figcaption>` 创建相关联的图片和说明：
 
 {% raw %}
 <figure>
   <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
-  <figcaption>Figure caption: Mobi.css Logo</figcaption>
+  <figcaption>图片说明：Mobi.css 的标志</figcaption>
 </figure>
 {% endraw %}
 
 ```html
 <figure>
   <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
-  <figcaption>Figure caption: Mobi.css Logo</figcaption>
+  <figcaption>图片说明：Mobi.css 的标志</figcaption>
 </figure>
 ```
 
-## Inline text semantics
+## 内联文本语义
 
-Use `class="text-left"`, `class="text-center"` or `class="text-right"` to align text:
+使用 `class="text-left"`, `class="text-center"` 或 `class="text-right"` 对其文本：
 
 {% raw %}
 <div class="text-left top-gap">我是小雨</div>
@@ -649,63 +649,63 @@ Use `class="text-left"`, `class="text-center"` or `class="text-right"` to align 
 <div class="text-right">你愛我嗎？</div>
 ```
 
-Use `<a>` to create <a href="#Inline-text-elements">links</a>.
+使用 `<a>` 创建<a href="#Inline-text-elements">超链接</a>。
 
-Use `<strong>` to create <strong>strong importance text</strong>.  
-Use `<b>` to create <b>bold text</b>.
+使用 `<strong>` 创建<strong>重要的文本</strong>。  
+使用 `<b>` 创建<b>粗体文本</b>。
 
-Use `<em>` to create <em>emphasized text</em>.  
-Use `<i>` to create <i>italic text</i>.
+使用 `<em>` 创建<em>强调的文本</em>。  
+使用 `<i>` 创建<i>斜体文本</i>。
 
-Use `<del>` to create <del>text that has been deleted from a document</del>.  
-Use `<s>` to create <s>text with a strikethrough</s>.
+使用 `<del>` 创建<del>从文档中被删除的文本</del>。  
+使用 `<s>` 创建<s>带中划线的文本</s>。
 
-Use `<ins>` to create <ins>text that has been added to a document</ins>.  
-Use `<u>` to create <u>text with an underline</u>.
+使用 `<ins>` 创建<ins>从文档中被添加的文本</ins>。  
+使用 `<u>` 创建<u>带下划线的文本</u>。
 
-Use `<small>` to create <small>small text</small>.  
-Use `<sub>` to create text that <sub>lower</sub> and <sub>smaller</sub> than the main text.  
-Use `<sup>` to create text that <sup>higher</sup> and <sup>smaller</sup> than the main text.
+使用 `<small>` 创建<small>缩小的文本</small>。  
+使用 `<sub>` 创建<sub>下标</sub>。  
+使用 `<sup>` 创建<sup>上标</sup>。
 
-Use `<code>` to create fragments of computer code: <code>alert('Hello World');</code>.  
-Use `<kbd>` to create the defining instance of a term: <kbd>Ctrl</kbd> + <kbd>D</kbd>.  
-Use `<samp>` to create sample output from a computer: <samp>Build passed!</samp>.
+使用 `<code>` 创建行内代码片段：<code>alert('你好，世界');</code>。  
+使用 `<kbd>` 创建键盘输入：<kbd>Ctrl</kbd> + <kbd>D</kbd>。  
+使用 `<samp>` 创建计算机输出的内容：<samp>Build passed!</samp>。
 
-Use `<br/>` to create line<br/>breaks.
+使用 `<br/>` 创建换<br/>行。
 
-Use `<span>` to create inline container: I <span style="color:red;">love</span> Mobi.css.
+使用 `<span>` 创建行内容器：我<span style="color:red;">爱</span> Mobi.css。
 
-Use `<abbr>` to create <abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>.
+使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对其的描述">缩写</abbr>。
 
 ```html
-<abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>
+使用 `<abbr>` 创建<abbr title="abbr 元素表示缩写，可以包含一段对其的描述">缩写</abbr>。
 ```
 
-Use `<cite>` to create citation elements: <cite><a href="http://getmobicss.com">Mobi.css</a></cite>.
+使用 `<cite>` 创建引用的元素：<cite><a href="http://getmobicss.com">Mobi.css</a></cite>。
 
 ```html
 <cite><a href="http://getmobicss.com">Mobi.css</a></cite>
 ```
 
-Use `<data>` to link a given content with a machine-readable translation: <data value="100000">Beijing</data>.
+使用 `<data>` 关联一段文本和一个计算机能识别的值：<data value="100000">Beijing</data>。
 
 ```html
 <data value="100000">Beijing</data>
 ```
 
-Use `<time>` to create time: <time datetime="2016-09-30T00:00">Sep 30</time>.
+使用 `<time>` 创建时间：<time datetime="2016-09-30T00:00">九月三十日</time>。
 
 ```html
-<time datetime="2016-09-30T00:00">Sep 30</time>
+<time datetime="2016-09-30T00:00">九月三十日</time>
 ```
 
-Use `<q>` to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.
+使用 `<q>` 行内引用：<q>我爱 Mobi.css</q>，xcatliu 说到。
 
 ```html
-<q>I love Mobi.css</q>, xcatliu said.
+<q>我爱 Mobi.css</q>，xcatliu 说到。
 ```
 
-Use `<ruby>`, `<rp>`, `<rt>` to create ruby annotations:
+使用 `<ruby>`, `<rp>`, `<rt>` 创建带音标的文本：
 
 {% raw %}
 <ruby>
@@ -727,43 +727,44 @@ Use `<ruby>`, `<rp>`, `<rt>` to create ruby annotations:
 </ruby>
 ```
 
-Use `<bdi>` to create text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.  
-Use `<bdo>` to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.
+使用 `<bdi>` 创建与外界<bdi>不同方向</bdi>的文本。  
+使用 `<bdo>` <bdo dir="rtl">覆盖</bdo>当前文本方向。
 
 ```html
-text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.
-<bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.
+与外界<bdi>不同方向</bdi>的文本。  
+<bdo dir="rtl">覆盖</bdo>当前文本方向。
 ```
 
-`<bdi>` is not working in iOS and Chrome. Don't use it in your project, use `<bdo>` instead.
+`<bdi>` 在 iOS 和 Chrome 中都不可用。请不要在你的项目中使用它。可以使用 `<bdo>`。
 
-Use `<dfn>` to create a defining instance of a term:  
-<dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.  
-What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
+使用 `<dfn>` 创建对一个概念的定义：  
+<dfn id="dfn-mobicss">Mobi.css</dfn> 是一个轻量灵活的移动端 CSS 框架。  
+什么是 Mobi.css？你可以在<a href="#dfn-mobicss">这里</a>找到定义。
 
 ```html
-<dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.
-What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
+<dfn id="dfn-mobicss">Mobi.css</dfn> 是一个轻量灵活的移动端 CSS 框架。  
+什么是 Mobi.css？你可以在<a href="#dfn-mobicss">这里</a>找到定义。
 ```
 
-Use `<var>` to create a variable in a mathematical expression or a programming context:  
-A simple equation: <var>x</var> = <var>y</var> + 2
+使用 `<var>` 创建数学表达式或者程序中的变量：
+
+一个简单的等式：<var>x</var> = <var>y</var> + 2
 
 ```html
-A simple equation: <var>x</var> = <var>y</var> + 2
+一个简单的等式：<var>x</var> = <var>y</var> + 2
 ```
 
-Use `<wbr>` to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:
+使用 `<wbr/>` 创建允许浏览器断行的占位符：
 
 {% raw %}
-http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
+这是一段很长<wbr/>很长<wbr/>很长<wbr/>很长<wbr/>很长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药的话。
 {% endraw %}
 
 ```html
-http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
+这是一段很长<wbr/>很长<wbr/>很长<wbr/>很长<wbr/>很长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>非常长<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药<wbr/>长的无可救药的话。
 ```
 
-## Multimedia
+## 多媒体
 
 ![Mobi.css Logo](/assets/img/mobi-logo-512.png)
 
@@ -771,7 +772,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <p>
   <audio controls>
     <source src="/assets/croatian-rhapsody.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    你的浏览器不支持 audio 元素。
   </audio>
 </p>
 {% endraw %}
@@ -779,7 +780,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 ```html
 <audio controls>
   <source src="/assets/croatian-rhapsody.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+  你的浏览器不支持 audio 元素。
 </audio>
 ```
 
@@ -787,7 +788,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <p>
   <video controls>
     <source src="/assets/big-buck-bunny.mp4" type="video/mp4">
-    Your browser does not support the video element.
+    你的浏览器不支持 video 元素。
   </video>
 </p>
 {% endraw %}
@@ -795,27 +796,27 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 ```html
 <video controls>
   <source src="/assets/big-buck-bunny.mp4" type="video/mp4">
-  Your browser does not support the video element.
+  你的浏览器不支持 video 元素。
 </video>
 ```
 
 {% raw %}
 <p>
-  <iframe width="100%" height="240" src="https://www.youtube.com/embed/c2vm-QjK2xQ" frameborder="0" allowfullscreen></iframe>
+  <iframe width="100%" height="240" src="http://player.youku.com/embed/XNDM5ODk1NzUy" frameborder="0" allowfullscreen></iframe>
 </p>
 {% endraw %}
 
 ```html
-<iframe width="100%" height="320" src="https://www.youtube.com/embed/c2vm-QjK2xQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="240" src="http://player.youku.com/embed/XNDM5ODk1NzUy" frameborder="0" allowfullscreen></iframe>
 ```
 
-## Table content
+## 表格内容
 
 {% raw %}
 <div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>功能</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -852,7 +853,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
       </tr>
       <tr>
         <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
-        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>这个项目即将死亡。</s></a></td>
       </tr>
     </tbody>
   </table>
@@ -863,7 +864,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>功能</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -900,7 +901,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
       </tr>
       <tr>
         <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
-        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>这个项目即将死亡。</s></a></td>
       </tr>
     </tbody>
   </table>
@@ -910,16 +911,16 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 {% raw %}
 <div class="scroll-view">
   <table class="table">
-    <caption>Caption</caption>
+    <caption>表格标题</caption>
     <colgroup>
       <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
       <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
     </colgroup>
     <thead>
       <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
+        <th>头部 1</th>
+        <th>头部 2</th>
+        <th>头部 3</th>
       </tr>
     </thead>
     <tbody>
@@ -936,9 +937,9 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
     </tbody>
     <tfoot>
       <tr>
-        <td>Footer 1</td>
-        <td>Footer 2</td>
-        <td>Footer 3</td>
+        <td>尾部 1</td>
+        <td>尾部 2</td>
+        <td>尾部 3</td>
       </tr>
     </tfoot>
   </table>
@@ -948,16 +949,16 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 ```html
 <div class="scroll-view">
   <table class="table">
-    <caption>Caption</caption>
+    <caption>表格标题</caption>
     <colgroup>
       <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
       <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
     </colgroup>
     <thead>
       <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
+        <th>头部 1</th>
+        <th>头部 2</th>
+        <th>头部 3</th>
       </tr>
     </thead>
     <tbody>
@@ -974,22 +975,22 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
     </tbody>
     <tfoot>
       <tr>
-        <td>Footer 1</td>
-        <td>Footer 2</td>
-        <td>Footer 3</td>
+        <td>尾部 1</td>
+        <td>尾部 2</td>
+        <td>尾部 3</td>
       </tr>
     </tfoot>
   </table>
 </div>
 ```
 
-## Forms
+## 表单
 
 {% raw %}
 <form class="form">
 {% endraw %}
 
-### Text inputs
+### 文本输入框
 
 {% raw %}
 <input type="text" placeholder="input[type=text]"/>
@@ -1013,99 +1014,99 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <textarea placeholder="textarea"></textarea>
 ```
 
-### Radio and checkbox
+### 单选框和复选框
 
 {% raw %}
-<label class="flex-middle"><input type="radio" name="gender"/>Male</label>
-<label class="flex-middle"><input type="radio" name="gender"/>Female</label>
-<label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
+<label class="flex-middle"><input type="radio" name="gender"/>男</label>
+<label class="flex-middle"><input type="radio" name="gender"/>女</label>
+<label class="flex-middle"><input type="checkbox"/>我同意条款。</label>
 {% endraw %}
 
 ```html
-<label class="flex-middle"><input type="radio" name="gender"/>Male</label>
-<label class="flex-middle"><input type="radio" name="gender"/>Female</label>
-<label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
+<label class="flex-middle"><input type="radio" name="gender"/>男</label>
+<label class="flex-middle"><input type="radio" name="gender"/>女</label>
+<label class="flex-middle"><input type="checkbox"/>我同意条款。</label>
 ```
 
-### Select inputs
+### 选择框
 
 {% raw %}
 <select>
-  <option disabled selected value> -- select -- </option>
-  <option>China</option>
-  <option>USA</option>
+  <option disabled selected value> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
 </select>
 {% endraw %}
 
 ```html
 <select>
-  <option disabled selected value> -- select -- </option>
-  <option>China</option>
-  <option>USA</option>
+  <option disabled selected value> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
 </select>
 ```
 
 {% raw %}
 <select>
-  <optgroup label="China">
-    <option>Beijing</option>
-    <option>Shanghai</option>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
   </optgroup>
-  <optgroup label="USA">
-    <option>San Francisco</option>
-    <option>Seattle</option>
-    <option>New York City</option>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
   </optgroup>
 </select>
 {% endraw %}
 
 ```html
 <select>
-  <optgroup label="China">
-    <option>Beijing</option>
-    <option>Shanghai</option>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
   </optgroup>
-  <optgroup label="USA">
-    <option>San Francisco</option>
-    <option>Seattle</option>
-    <option>New York City</option>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
   </optgroup>
 </select>
 ```
 
 {% raw %}
 <select multiple>
-  <optgroup label="China">
-    <option>Beijing</option>
-    <option>Shanghai</option>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
   </optgroup>
-  <optgroup label="USA">
-    <option>San Francisco</option>
-    <option>Seattle</option>
-    <option>New York City</option>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
   </optgroup>
 </select>
 {% endraw %}
 
 ```html
 <select multiple>
-  <optgroup label="China">
-    <option>Beijing</option>
-    <option>Shanghai</option>
+  <optgroup label="中国">
+    <option>北京</option>
+    <option>上海</option>
   </optgroup>
-  <optgroup label="USA">
-    <option>San Francisco</option>
-    <option>Seattle</option>
-    <option>New York City</option>
+  <optgroup label="美国">
+    <option>三藩市</option>
+    <option>西雅图</option>
+    <option>纽约</option>
   </optgroup>
 </select>
 ```
 
-### Datalists
+### 数据列表
 
 {% raw %}
 <label>
-  Choose a browser from this list:
+  请选择一个浏览器：
   <input type="text" list="browsers"/>
 </label>
 <datalist id="browsers">
@@ -1118,9 +1119,9 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 </datalist>
 {% endraw %}
 
-`<datalist>` is not supported in iOS. Don't use this in your project.
+`<datalist>` 在 iOS 中不支持，请不要在你的项目中使用它。
 
-### File inputs
+### 文件上传
 
 {% raw %}
 <input type="file"/>
@@ -1130,7 +1131,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <input type="file"/>
 ```
 
-### Buttons
+### 按钮
 
 {% raw %}
 <input type="button" class="btn" value=".btn"/>
@@ -1216,7 +1217,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <a href="javascript:void(0);" class="btn btn-danger">.btn.btn-danger</a>
 ```
 
-### Date inputs
+### 日期输入框
 
 {% raw %}
 <input type="time"/>
@@ -1234,11 +1235,11 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 <input type="datetime-local"/>
 ```
 
-All the date inputs look ugly in iOS, and their styles cannot be changed. Please be careful while using them. It's not recommended to use them in your project.
+所有日期输入框在 iOS 中都很丑陋，并且他们的样式无法修改，使用需谨慎。不建议在你的项目中使用它们。
 
-`[type=week]` is not supported in iOS. Don't use this in your project.
+`[type=week]` 在 iOS 中不支持。不要使用它。
 
-### Other inputs
+### 其他输入框
 
 {% raw %}
 <input type="color"/>
@@ -1254,17 +1255,17 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 <input type="hidden"/>
 ```
 
-`[type=color]` is not supported in iOS. Don't use this in your project.
+`[type=color]` 在 iOS 中不支持。不要使用它。
 
 {% raw %}
-<meter min="200" max="500" value="350">350 degrees</meter>
+<meter min="0" max="100" value="37">37 度</meter>
 {% endraw %}
 
 ```html
-<meter min="200" max="500" value="350">350 degrees</meter>
+<meter min="0" max="100" value="37">37 度</meter>
 ```
 
-`<meter>` is not supported in iOS. Don't use this in your project.
+`<meter>` 在 iOS 中不支持。不要使用它。
 
 {% raw %}
 </form>
@@ -1308,7 +1309,7 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 <progress class="top-gap" value="70" max="100">70 %</progress>
 ```
 
-### Disabled and readonly
+### 禁用和只读
 
 {% raw %}
 <input type="text" disabled placeholder="input[disabled]"/>
@@ -1325,36 +1326,36 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 ```
 
 {% raw %}
-<label class="flex-middle"><input type="radio" name="gender" checked disabled/><span disabled>Male</span></label>
-<label class="flex-middle"><input type="radio" name="gender" disabled/><span disabled>Female</span></label>
-<label class="flex-middle"><input type="checkbox" disabled/><span disabled>I agree to terms.</span></label>
+<label class="flex-middle"><input type="radio" name="gender" checked disabled/><span disabled>男</span></label>
+<label class="flex-middle"><input type="radio" name="gender" disabled/><span disabled>女</span></label>
+<label class="flex-middle"><input type="checkbox" disabled/><span disabled>我同意条款。</span></label>
 {% endraw %}
 
 ```html
-<label class="flex-middle"><input type="radio" name="gender" checked disabled/><span disabled>Male</span></label>
-<label class="flex-middle"><input type="radio" name="gender" disabled/><span disabled>Female</span></label>
-<label class="flex-middle"><input type="checkbox" disabled/><span disabled>I agree to terms.</span></label>
+<label class="flex-middle"><input type="radio" name="gender" checked disabled/><span disabled>男</span></label>
+<label class="flex-middle"><input type="radio" name="gender" disabled/><span disabled>女</span></label>
+<label class="flex-middle"><input type="checkbox" disabled/><span disabled>我同意条款。</span></label>
 ```
 
-Radio and checkbox cannot set to `readonly`.
+单选框和复选框不能设置为只读。
 
 {% raw %}
 <select disabled>
-  <option disabled selected value> -- select -- </option>
-  <option>China</option>
-  <option>USA</option>
+  <option disabled selected value> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
 </select>
 {% endraw %}
 
 ```html
 <select disabled>
-  <option disabled selected value> -- select -- </option>
-  <option>China</option>
-  <option>USA</option>
+  <option disabled selected value> -- 请选择 -- </option>
+  <option>中国</option>
+  <option>美国</option>
 </select>
 ```
 
-Select inputs cannot set to `readonly`.
+选择框不能设置为只读。
 
 {% raw %}
 <input type="file" disabled/>
@@ -1364,7 +1365,7 @@ Select inputs cannot set to `readonly`.
 <input type="file" disabled/>
 ```
 
-File inputs cannot set to `readonly`.
+文件上传控件不能设置为只读。
 
 {% raw %}
 <input type="button" class="btn" value=".btn" disabled/>
@@ -1390,7 +1391,7 @@ File inputs cannot set to `readonly`.
 <a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a>
 ```
 
-Buttons cannot set to `readonly`.
+按钮不能设置为只读。
 
 {% raw %}
 <input type="datetime-local" disabled/>
@@ -1419,23 +1420,23 @@ Buttons cannot set to `readonly`.
 <input type="range" min="1" max="99" step="2" value="15" readonly/>
 ```
 
-`[type=image]`, `[type=color]` and `[type=hidden]` cannot set to `readonly`.
+`[type=image]`, `[type=color]` 和 `[type=hidden]` 不能设置为只读。
 
-### Fieldset in form
+### 表单中的字段集
 
 {% raw %}
 <fieldset>
-  <legend>Basic info</legend>
-  <input type="text" placeholder="Name">
-  <input type="number" placeholder="Age">
+  <legend>基本信息</legend>
+  <input type="text" placeholder="姓名">
+  <input type="number" placeholder="年龄">
 </fieldset>
 {% endraw %}
 
 ```html
 <fieldset>
-  <legend>Basic info</legend>
-  <input type="text" placeholder="Name">
-  <input type="number" placeholder="Age">
+  <legend>基本信息</legend>
+  <input type="text" placeholder="姓名">
+  <input type="number" placeholder="年龄">
 </fieldset>
 ```
 

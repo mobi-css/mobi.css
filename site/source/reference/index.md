@@ -251,7 +251,7 @@ Use `.scroll-view` to make a block element scrollable:
 
 <a id="hide-on-mobile"></a>
 
-Using `hide-on-mobile` or `show-on-mobile` to hide or show elements on mobile devices.
+Using `hide-on-mobile` or `show-on-mobile` to hide or show elements on mobile devices:
 
 {% raw %}
 <p class="hide-on-mobile">This part will hide on mobile devices.</p>
@@ -746,21 +746,22 @@ What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
 What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
 ```
 
-Use `<var>` to create a variable in a mathematical expression or a programming context:  
+Use `<var>` to create a variable in a mathematical expression or a programming context:
+
 A simple equation: <var>x</var> = <var>y</var> + 2
 
 ```html
 A simple equation: <var>x</var> = <var>y</var> + 2
 ```
 
-Use `<wbr>` to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:
+Use `<wbr/>` to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:
 
 {% raw %}
-http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
+http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/With<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages
 {% endraw %}
 
 ```html
-http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
+http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/With<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages
 ```
 
 ## Multimedia
@@ -910,7 +911,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 {% raw %}
 <div class="scroll-view">
   <table class="table">
-    <caption>Caption</caption>
+    <caption>Table Caption</caption>
     <colgroup>
       <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
       <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
@@ -948,7 +949,7 @@ http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>
 ```html
 <div class="scroll-view">
   <table class="table">
-    <caption>Caption</caption>
+    <caption>Table Caption</caption>
     <colgroup>
       <unit style="background-color:rgba(255, 0, 0, 0.1);"/>
       <unit span="2" style="background-color:rgba(255, 255, 0, 0.1);"/>
@@ -1257,11 +1258,11 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 `[type=color]` is not supported in iOS. Don't use this in your project.
 
 {% raw %}
-<meter min="200" max="500" value="350">350 degrees</meter>
+<meter min="0" max="100" value="37">37 degrees</meter>
 {% endraw %}
 
 ```html
-<meter min="200" max="500" value="350">350 degrees</meter>
+<meter min="0" max="100" value="37">37 degrees</meter>
 ```
 
 `<meter>` is not supported in iOS. Don't use this in your project.
