@@ -7,21 +7,21 @@
 
 # 文档
 
-- [Layout](#Layout)
+- [布局](#布局)
 - [Flexbox](#Flexbox)
-- [Typography](#Typography)
-- [Tables](#Tables)
-- [Forms](#Forms)
-- [Utilities](#Utilities)
-- [FAQ](#FAQ)
+- [排版](#排版)
+- [表格](#表格)
+- [表单](#表单)
+- [工具](#工具)
+- [问答](#问答)
 
-## Layout
+## 布局
 
-Most of CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
+大部分 CSS 框架都有响应式布局，使用媒体查询将内容在不同大小屏幕上重新排版，使一个网站能够兼容不同大小屏幕的设备：
 
 ![Responsive design](/assets/img/responsive-design.jpg)
 
-It sounds like a good idea, however, it's not suitable for all situations.
+它看上去是一个好点子，但是不一定适合所有情况。
 
 Although frameworks help you reduce a lot of works, you still need to design for each screen size, to write redundant classes (an example for Bootstrap: `<div class="col-xs-12 col-sm-6 col-md-8">`), and to test on every devices.
 
@@ -291,7 +291,7 @@ What's more? You can use `flex-vertical` to easily achieve vertical flexbox layo
 
 For more examples about flexbox, please check out [Reference # Flexbox](reference/#Flexbox).
 
-## Typography
+## 排版
 
 Mobi.css is designed for content-based websites. It has a pure but pleasant experience for reading.
 
@@ -301,7 +301,7 @@ This site itself is a real example. If you've been reading this, you can just in
 
 For more examples about typography, please check out [Reference # Text content](reference/#Text-content).
 
-## Tables
+## 表格
 
 Tables typically render out of the viewable area on small mobile devices. If so, use the `scroll-view` wrapper to make your table scrollable.
 
@@ -405,7 +405,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 
 For more examples about tables, please check out [Reference # Table-content](reference/#Table-content).
 
-## Forms
+## 表单
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
@@ -555,7 +555,7 @@ You can also use `class="btn"` to make an `<a>` to a button.
 
 For more examples about forms, please check out [Reference # Forms](reference/#Forms).
 
-## Utilities
+## 工具
 
 Mobi.css also provides some useful utilities.
 
@@ -755,7 +755,7 @@ Using `show-on-mobile` will only show the element on mobile devices.
 <p class="show-on-mobile">This part will only show on mobile devices.</p>
 ```
 
-## FAQ
+## 问答
 
 ###### 1. Why a `flex-center` in needed outside `container`?
 
