@@ -1,10 +1,3 @@
-<style>
-  .site-box {
-    background-color: hsla(120, 50%, 50%, .15);
-    border: 1px solid hsla(120, 50%, 50%, .2);
-  }
-</style>
-
 # Reference
 
 Classes:
@@ -397,7 +390,7 @@ Use `units-gap` to add gap between each `unit`:
 </div>
 ```
 
-If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not.
+If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not:
 
 {% raw %}
 <div class="flex-left top-gap">

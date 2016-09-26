@@ -1,10 +1,3 @@
-<style>
-  .site-box {
-    background-color: hsla(120, 50%, 50%, .15);
-    border: 1px solid hsla(120, 50%, 50%, .2);
-  }
-</style>
-
 # Documentations
 
 - [Layout](#Layout)

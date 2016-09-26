@@ -1,10 +1,3 @@
-<style>
-  .site-box {
-    background-color: hsla(120, 50%, 50%, .15);
-    border: 1px solid hsla(120, 50%, 50%, .2);
-  }
-</style>
-
 # 参考
 
 类：
@@ -397,7 +390,7 @@
 </div>
 ```
 
-如果父元素中没有 `units-gap` 类，则无论子元素使不使用 `unit-0` 表现都将一致。
+如果父元素中没有 `units-gap` 类，则无论子元素使不使用 `unit-0` 表现都将一致：
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -1119,7 +1112,7 @@ document.write('你好，世界');</code></pre>
 </datalist>
 {% endraw %}
 
-`<datalist>` 在 iOS 中不支持，请不要在你的项目中使用它。
+`<datalist>` 在 iOS 中不支持。不要使用它。
 
 ### 文件上传
 
