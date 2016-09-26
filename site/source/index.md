@@ -60,15 +60,7 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 - Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
 - Browsers marked as (\*) were not well tested, but they should work fine
 
-## Buy me a coffee
-
-Buy me a coffee if you love this project, thanks for your support!
-
-### [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-![Buy Me a Coffee Wechat](/assets/img/buy-me-a-coffee-wechat.jpg)
-
-![Buy Me a Coffee Alipay](/assets/img/buy-me-a-coffee-alipay.jpg)
+## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## What's next
 

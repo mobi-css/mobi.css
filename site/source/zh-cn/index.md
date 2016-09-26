@@ -60,15 +60,7 @@ npm install --save mobi.css
 - 浏览器查询语句来自于 [Browserslist](https://github.com/ai/browserslist)
 - 标注为 (\*) 的浏览器可能没有很好的测试，但是应该能够正常工作
 
-## 请我喝杯咖啡
-
-如果你喜欢这个项目，欢迎请我喝杯咖啡，感谢你的支持！
-
-### [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-![Buy Me a Coffee Wechat](/assets/img/buy-me-a-coffee-wechat.jpg)
-
-![Buy Me a Coffee Alipay](/assets/img/buy-me-a-coffee-alipay.jpg)
+## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## 下一步
 

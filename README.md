@@ -99,15 +99,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 - The [official site](http://getmobicss.com) will be generated automatically when new commits are pushed to master branch
 - Pull request cannot be merged when Travis CI not pass
 
-## Buy me a coffee
-
-Buy me a coffee if you love this project, thanks for your support!
-
-### [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-![Buy Me a Coffee Wechat](site/source/assets/img/buy-me-a-coffee-wechat.jpg)
-
-![Buy Me a Coffee Alipay](site/source/assets/img/buy-me-a-coffee-alipay.jpg)
+## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## License
 
@@ -204,15 +196,7 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 - 当 master 分支有新的提交时，[官方网站](http://getmobicss.com) 将会自动更新
 - Travis CI 不通过时，Pull request 不能被 merge
 
-## 请我喝杯咖啡
-
-如果你喜欢这个项目，欢迎请我喝杯咖啡，感谢你的支持！
-
-### [PayPal](https://www.paypal.me/xcatliu/5usd)
-
-![Buy Me a Coffee Wechat](site/source/assets/img/buy-me-a-coffee-wechat.jpg)
-
-![Buy Me a Coffee Alipay](site/source/assets/img/buy-me-a-coffee-alipay.jpg)
+## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## 开源协议
 
