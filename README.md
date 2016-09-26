@@ -107,7 +107,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 
 <a id="zh-cn"></a>
 
-# [Mobi.css](http://getmobicss.com)
+# [Mobi.css](http://getmobicss.com/zh-cn/)
 
 > 轻量灵活的移动端 CSS 框架。
 
