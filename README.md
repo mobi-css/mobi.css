@@ -4,7 +4,7 @@
   </a>
 </p>
 
-[Engligh](#en) | [简体中文](#zh-cn)
+[English](#en) | [简体中文](#zh-cn)
 
 [![Build Status](https://img.shields.io/travis/xcatliu/mobi.css.svg?style=flat-square)](https://travis-ci.org/xcatliu/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
 
