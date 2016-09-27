@@ -90,7 +90,7 @@
 
 <a id="scroll-view"></a>
 
-使用 `.scroll-view` 让块级元素可滚动：
+使用 `.scroll-view` 让块级元素可滑动：
 
 {% raw %}
 <div class="top-gap scroll-view" style="max-height:400px;">

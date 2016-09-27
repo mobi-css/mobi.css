@@ -437,10 +437,10 @@ If you want to have multiple inputs in one row, you should use the grid system.
   <div class="flex-left units-gap">
     <label class="unit-0 text-right" style="width:85px;">Gender: </label>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
+      <input type="radio" name="multiple-inputs-gender" value="male"/>Male
     </label></div>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
+      <input type="radio" name="multiple-inputs-gender" value="female"/>Female
     </label></div>
   </div>
   <div class="flex-left units-gap">
@@ -454,7 +454,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <label class="unit-0 text-right" style="width:85px;">Avatar: </label>
     <div class="unit">
       <input type="file"/>
     </div>
@@ -486,10 +486,10 @@ If you want to have multiple inputs in one row, you should use the grid system.
   <div class="flex-left units-gap">
     <label class="unit-0 text-right" style="width:85px;">Gender: </label>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
+      <input type="radio" name="multiple-inputs-gender" value="male"/>Male
     </label></div>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
+      <input type="radio" name="multiple-inputs-gender" value="female"/>Female
     </label></div>
   </div>
   <div class="flex-left units-gap">
@@ -503,7 +503,7 @@ If you want to have multiple inputs in one row, you should use the grid system.
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <label class="unit-0 text-right" style="width:85px;">Avatar: </label>
     <div class="unit">
       <input type="file"/>
     </div>
@@ -728,7 +728,7 @@ Or set `width` of the content to achieve a horizontal scroll view.
 
 ### Hide or show on mobile
 
-Using `hide-on-mobile` will hide the element on mobile devices.
+Using `hide-on-mobile` or `show-on-mobile` to hide or show elements on mobile devices:
 
 {% raw %}
 <p class="hide-on-mobile">This part will hide on mobile devices.</p>
@@ -737,8 +737,6 @@ Using `hide-on-mobile` will hide the element on mobile devices.
 ```html
 <p class="hide-on-mobile">This part will hide on mobile devices.</p>
 ```
-
-Using `show-on-mobile` will only show the element on mobile devices.
 
 {% raw %}
 <p class="show-on-mobile">This part will only show on mobile devices.</p>

@@ -54,15 +54,15 @@
 </body>
 ```
 
-### Margin top only
+### 只使用 Margin top
 
-Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
+在 Mobi.css 中，几乎所有的 `margin-bottom` 都设置成了 `0`，而使用 `margin-top` 来控制垂直间距。
 
-This technique allows each section to determine the spacing it needs from the element above it.
+这样能使内容流很明确，每个区块自己觉得它应该和上一个区块的间距是多少。
 
-For example, `<h1>` ~ `<h6>` have `32px` of vertical spacing between them. In the meantime, `<p>`, `<ul>`, `<table>` have only `14px` of vertical spacing.
+比如，`<h1>` ~ `<h6>` 的垂直间距是 `32px`，同时 `<p>`, `<ul>`, `<table>` 的垂直间距是 `14px`。
 
-Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` to easily override the top margin. These set `margin-top` to `32px`, `14px` and `0`, respectively.
+同时，Mobi.css 提供了三个类用来覆盖垂直间距：`top-gap-big`, `top-gap` 和 `top-gap-0`，他们的 `margin-top` 是 `32px`, `14px` 和 `0`。
 
 {% raw %}
 <div class="top-gap site-box">div.top-gap</div>
@@ -78,9 +78,9 @@ Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` t
 
 ## Flexbox
 
-Mobi.css use flexbox for layout. It's super flexible, you'll love it.
+Mobi.css 使用 Flexbox 布局，你会爱上这个灵活的布局方式的。
 
-According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe to use flexbox on all mobile devices as well as the last version of all major desktop browsers.
+根据 [caniuse flexbox](http://caniuse.com/#feat=flexbox)，现在可以在所有移动端设备上和主流桌面端浏览器中使用 Flexbox 了。
 
 ### 网格系统
 
@@ -286,25 +286,25 @@ According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe 
 
 ## 排版
 
-Mobi.css is designed for content-based websites. It has a pure but pleasant experience for reading.
+Mobi.css 专门为基于内容的网站设计了一套简洁又赏心悦目的排版样式。
 
-Most typography styles are reset to not need additional classes.
+大部分排版样式是直接重置了默认样式，所以不需要添加额外的类。
 
-This site itself is a real example. If you've been reading this, you can just inspect using your browser to see how it's done.
+这个网站本身就是一个例子。你可以打开开发者工具，看看它们是如何实现的。
 
-For more examples about typography, please check out [参考 # 文本内容](reference/#文本内容).
+查看[参考 # 文本内容](reference/#文本内容)获取更多关于排版的例子。
 
 ## 表格
 
-Tables typically render out of the viewable area on small mobile devices. If so, use the `scroll-view` wrapper to make your table scrollable.
+在移动端设备上，表格很容易就超出了屏幕的显示范围。这时可以用 `scroll-view` 套在表格外面，使它能够滑动。
 
-And don't forget to add `class="table"` to your `<table>` element!
+别忘了给 `<table>` 添加 `class=table`！
 
 {% raw %}
-<div class="scroll-view top-gap">
+<div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>特性</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -341,7 +341,7 @@ And don't forget to add `class="table"` to your `<table>` element!
       </tr>
       <tr>
         <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
-        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>这个项目即将死亡。</s></a></td>
       </tr>
     </tbody>
   </table>
@@ -352,7 +352,7 @@ And don't forget to add `class="table"` to your `<table>` element!
 <div class="scroll-view">
   <table class="table">
     <thead>
-      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+      <tr><th>名称</th><th>作者</th><th>开发语言</th><th>大小</th><th>特性</th><th>GitHub</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -389,89 +389,89 @@ And don't forget to add `class="table"` to your `<table>` element!
       </tr>
       <tr>
         <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
-        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>这个项目即将死亡。</s></a></td>
       </tr>
     </tbody>
   </table>
 </div>
 ```
 
-For more examples about tables, please check out [参考 # 表格内容](reference/#表格内容).
+查看[参考 # 表格内容](reference/#表格内容)获取更多关于表格的例子。
 
 ## 表单
 
-Mobi.css believes that on mobile devices, **each row should have only one input**.
+Mobi.css 认为在移动端设备上，**每行应该只有一个输入框**。
 
-You need add `class="form"` to a `<form>` element and add `class="btn"` to each button.
+你需要给 `<form>` 添加 `class="form"` 并且给每个按钮添加 `class="btn"`。
 
-### Basic forms
+### 基本表单
 
 {% raw %}
 <form class="form" action="#Basic-forms">
-  <input type="text" placeholder="Name"/>
-  <input type="password" placeholder="Password"/>
-  <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
-  <input class="btn" type="submit" value="Sign Up Now"/>
+  <input type="text" placeholder="姓名"/>
+  <input type="password" placeholder="密码"/>
+  <label class="flex-middle"><input type="checkbox"/>我同意条款。</label>
+  <input class="btn" type="submit" value="注册"/>
 </form>
 {% endraw %}
 
 ```html
 <form class="form" action="#Basic-forms">
-  <input type="text" placeholder="Name"/>
-  <input type="email" placeholder="Email"/>
-  <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
-  <input class="btn" type="submit" value="Sign Up Now"/>
+  <input type="text" placeholder="姓名"/>
+  <input type="password" placeholder="密码"/>
+  <label class="flex-middle"><input type="checkbox"/>我同意条款。</label>
+  <input class="btn" type="submit" value="注册"/>
 </form>
 ```
 
-### Complicated forms
+### 复杂表单
 
-If you want to have multiple inputs in one row, you should use the grid system.
+如果你想让一行拥有多个输入框，那么你可以使用网格系统。
 
 {% raw %}
 <form class="form" action="#Complicated-forms">
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">Name: </label>
-    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
+    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">姓名：</label>
+    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="流浪小猫"/></div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Gender: </label>
+    <label class="unit-0 text-right" style="width:85px;">性别：</label>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
+      <input type="radio" name="multiple-inputs-gender" value="male"/>男
     </label></div>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
+      <input type="radio" name="multiple-inputs-gender" value="female"/>女
     </label></div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Country: </label>
+    <label class="unit-0 text-right" style="width:85px;">国家：</label>
     <div class="unit">
       <select>
-        <option disabled selected value> -- select -- </option>
-        <option>China</option>
-        <option>USA</option>
+        <option disabled selected value> -- 请选择 -- </option>
+        <option>中国</option>
+        <option>美国</option>
       </select>
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <label class="unit-0 text-right" style="width:85px;">头像：</label>
     <div class="unit">
       <input type="file"/>
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">Bio: </label>
+    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">签名：</label>
     <div class="unit">
-      <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
+      <textarea id="multiple-inputs-bio" placeholder="描述你自己"></textarea>
     </div>
   </div>
   <div class="flex-left units-gap">
     <div style="width:85px;"></div>
     <div class="unit">
-      <button type="reset" class="btn btn-danger">Reset</button>
+      <button type="reset" class="btn btn-danger">重置</button>
     </div>
     <div class="unit">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">提交</button>
     </div>
   </div>
 </form>
@@ -480,59 +480,59 @@ If you want to have multiple inputs in one row, you should use the grid system.
 ```html
 <form class="form" action="#Complicated-forms">
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">Name: </label>
-    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="xcatliu"/></div>
+    <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">姓名：</label>
+    <div class="unit"><input type="text" id="multiple-inputs-name" placeholder="流浪小猫"/></div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Gender: </label>
+    <label class="unit-0 text-right" style="width:85px;">性别：</label>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Male"/>Male
+      <input type="radio" name="multiple-inputs-gender" value="male"/>男
     </label></div>
     <div class="unit"><label class="flex-middle">
-      <input type="radio" name="multiple-inputs-gender" value="Female"/>Female
+      <input type="radio" name="multiple-inputs-gender" value="female"/>女
     </label></div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Country: </label>
+    <label class="unit-0 text-right" style="width:85px;">国家：</label>
     <div class="unit">
       <select>
-        <option disabled selected value> -- select -- </option>
-        <option>China</option>
-        <option>USA</option>
+        <option disabled selected value> -- 请选择 -- </option>
+        <option>中国</option>
+        <option>美国</option>
       </select>
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" style="width:85px;">Avatar:</label>
+    <label class="unit-0 text-right" style="width:85px;">头像：</label>
     <div class="unit">
       <input type="file"/>
     </div>
   </div>
   <div class="flex-left units-gap">
-    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">Bio: </label>
+    <label class="unit-0 text-right" for="multiple-inputs-bio" style="width:85px;">签名：</label>
     <div class="unit">
-      <textarea id="multiple-inputs-bio" placeholder="Who are you?"></textarea>
+      <textarea id="multiple-inputs-bio" placeholder="描述你自己"></textarea>
     </div>
   </div>
   <div class="flex-left units-gap">
     <div style="width:85px;"></div>
     <div class="unit">
-      <button type="reset" class="btn btn-danger">Reset</button>
+      <button type="reset" class="btn btn-danger">重置</button>
     </div>
     <div class="unit">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">提交</button>
     </div>
   </div>
 </form>
 ```
 
-**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio buttons align middle vertically.
+**注意**，当你使用 `<label>` 的时候，可以给它添加 `class="flex-middle"`，让它内部的单选框或复选框垂直居中。
 
-### Buttons
+### 按钮
 
-You can use `class="btn"` outside `.form`.
+在 `.form` 外部也可以使用 `class="btn"`。
 
-You can also use `class="btn"` to make an `<a>` to a button.
+给 `<a>` 添加 `class="btn"` 可以让它变成一个按钮。
 
 {% raw %}
 <a href="javascript:void(0);" class="btn">a.btn</a>
@@ -546,15 +546,15 @@ You can also use `class="btn"` to make an `<a>` to a button.
 <a href="javascript:void(0);" class="btn btn-danger">a.btn.btn-danger</a>
 ```
 
-For more examples about forms, please check out [参考 # 表单](reference/#表单).
+查看[参考 # 表单](reference/#表单)获取更多关于表单的例子。
 
 ## 工具
 
-Mobi.css also provides some useful utilities.
+Mobi.css 还提供了一些有用的工具类。
 
-### Text aligning
+### 文字对齐
 
-You can use Mobi.css to easily align text.
+你可以使用 Mobi.css 容易的对齐文字。
 
 {% raw %}
 <div class="text-left top-gap">我是小雨</div>
@@ -568,11 +568,11 @@ You can use Mobi.css to easily align text.
 <div class="text-right">你愛我嗎？</div>
 ```
 
-### Scroll view
+### 滑动视图
 
-Mobile devices usually have small width, so it's very useful to use a `scroll-view` class. Mobi.css optimizes `scroll-view` to make it scroll smoothly.
+移动端设备的宽度都比较小，所以 `scroll-view` 是很有用的一个类。Mobi.css 优化了 `scroll-view` 使得它滑动起来很流畅。
 
-You can set the `max-height` of `scroll-view` to override the default `300px` height.
+你可以给 `scroll-view` 设置 `max-height`，来覆盖默认的 `300px` 高度。
 
 {% raw %}
 <div class="top-gap scroll-view" style="max-height:400px;">
@@ -680,7 +680,7 @@ You can set the `max-height` of `scroll-view` to override the default `300px` he
 </div>
 ```
 
-Or set `width` of the content to achieve a horizontal scroll view.
+你也可以给内容设置 `width` 来实现一个水平方向的滑动视图。 
 
 {% raw %}
 <div class="top-gap scroll-view">
@@ -726,39 +726,37 @@ Or set `width` of the content to achieve a horizontal scroll view.
 </div>
 ```
 
-### Hide or show on mobile
+### 在移动端隐藏或显示
 
-Using `hide-on-mobile` will hide the element on mobile devices.
+使用 `hide-on-mobile` 让元素在手机中隐藏或显示：
 
 {% raw %}
-<p class="hide-on-mobile">This part will hide on mobile devices.</p>
+<p class="hide-on-mobile">这部分会在手机上隐藏。</p>
 {% endraw %}
 
 ```html
-<p class="hide-on-mobile">This part will hide on mobile devices.</p>
+<p class="hide-on-mobile">这部分会在手机上隐藏。</p>
 ```
 
-Using `show-on-mobile` will only show the element on mobile devices.
-
 {% raw %}
-<p class="show-on-mobile">This part will only show on mobile devices.</p>
+<p class="show-on-mobile">这部分只会在手机上显示。</p>
 {% endraw %}
 
 ```html
-<p class="show-on-mobile">This part will only show on mobile devices.</p>
+<p class="show-on-mobile">这部分只会在手机上显示。</p>
 ```
 
 ## 问答
 
-###### 1. Why a `flex-center` in needed outside `container`?
+###### 1. 为什么我需要在 `container` 外面包一层 `flex-center`？
 
-Actually, we use `flex-center` as a wrapper to ensure `container` aligns to the center of the screen. If you don't add this wrapper, mobile users will not feel any difference.
+实际上，`flex-center` 是为了让 `container` 水平居中。如果你不添加这个外壳，移动端用户不会有任何影响。
 
-Also, you can add `flex-center` to `<body>` and it will work, too. However, that is not recommended. Even though you don't append any other elements to `<body>`, third-party libraries may do so. It might be hard for them to set their position in a flexbox.
+当然，你也可以给 `<body>` 添加 `flex-center`，但是我不建议这么做。因为第三方库可能会在 `<body>` 中插入内容，如果给 `<body>` 添加了额外的样式，那么第三方库就比较难控制它们的位置了。
 
-###### 2. Why doesn't Mobi.css reset the `<table>` element so we don't need to add the `table` class?
+###### 2. 为什么 Mobi.css 不干脆把 `<table>` 的样式也重置了，这样我就不需要添加 `table` 类了？
 
-Because once the `<table>` element is reset, it's hard to set it back. It's more friendly to third party libraries if we don't reset `<table>` element. The same reason applies to `<form>`.
+因为一旦 `<table>` 被重置了，就很难再修改回来了。这也是为了第三方库考虑。同样 `<form>` 也没有被重置。
 
 ## 下一步
 
