@@ -9,7 +9,7 @@
     "test": "npm run lint",
     "lint": "scss-lint src && echo 'SCSS Lint Passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
     "preversion": "npm test",
-    "version": "npm run build"
+    "version": "npm run build && git add -A dist"
   },
   "repository": {
     "type": "git",
