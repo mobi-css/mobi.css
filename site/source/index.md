@@ -16,6 +16,12 @@ English | [简体中文](zh-cn)
 
 You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
+Or use [cndjs](https://cdnjs.com/libraries/mobi.css):
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.0/mobi.min.css" />
+```
+
 Or use npm to install:
 
 ```shell
