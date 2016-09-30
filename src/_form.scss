@@ -23,7 +23,7 @@
     @include input-block();
   }
 
-  @media (max-width: $width-container-breakpoint - .1) {
+  @media (max-width: $width-container-breakpoint - 1px) {
     [type=time],
     [type=week],
     [type=month],

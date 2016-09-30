@@ -63,31 +63,31 @@ $color-optgroup: $color-text-muted;
 // Spacing
 //
 
-$width-gap: 1.4rem !default;
-$width-gap-double: 2.8rem !default;
-$width-gap-half: .7rem !default;
+$width-gap: 14px !default;
+$width-gap-double: 28px !default;
+$width-gap-half: 7px !default;
 
-$width-gap-big: 3.2rem !default;
+$width-gap-big: 32px !default;
 
-$width-padding-input: .5rem !default;
+$width-padding-input: 5px !default;
 
 $width-border: 1px !default;
 
 // $width-padding-input + $width-border
-$width-padding-border-input: .6rem !default;
+$width-padding-border-input: 6px !default;
 
 //
 // layouts
 //
 
-$width-scrollbar: 1.7rem !default;
+$width-scrollbar: 17px !default;
 
 $padding-container: 0 $width-gap $width-gap !default;
 $padding-container-desktop: 0 $width-gap-double $width-gap !default;
 
-$min-width-container: 32rem !default;
-$max-width-container: 76.8rem !default;
-$max-width-side: 25.6rem !default;
+$min-width-container: 320px !default;
+$max-width-container: 768px !default;
+$max-width-side: 256px !default;
 // So won't have scroll-x on device which width is 1025px
 $width-container-breakpoint: $max-width-container + $max-width-side + $width-scrollbar !default;
 

@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 3.2rem 0 0; }
+  margin: 32px 0 0; }
 
 p,
 blockquote,
@@ -42,7 +42,7 @@ ol,
 pre,
 address,
 figure {
-  margin: 1.4rem 0 0; }
+  margin: 14px 0 0; }
 
 h1,
 h2,
@@ -98,26 +98,26 @@ pre {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.3rem;
   line-height: 1.2;
-  margin-left: -1.4rem;
-  margin-right: -1.4rem;
-  padding: 1.4rem; }
+  margin-left: -14px;
+  margin-right: -14px;
+  padding: 14px; }
   pre code {
     background-color: transparent;
     font-size: 1.3rem;
     padding: 0; }
-  @media (min-width: 74rem) {
+  @media (min-width: 740px) {
     pre {
       margin-left: 0;
       margin-right: 0; } }
 
 blockquote {
-  border-left: 0.5rem solid #ddd;
+  border-left: 5px solid #ddd;
   color: #777;
-  padding-left: 1.4rem; }
+  padding-left: 14px; }
 
 ul,
 ol {
-  padding-left: 2.8rem; }
+  padding-left: 28px; }
 
 dt,
 dd,
@@ -217,8 +217,8 @@ html [type=button],
 
 fieldset {
   border: 1px solid #ddd;
-  margin: 1.4rem 0 0;
-  padding: 0 1.4rem 1.4rem; }
+  margin: 14px 0 0;
+  padding: 0 14px 14px; }
 
 legend {
   padding: 0 3px; }
@@ -236,26 +236,26 @@ progress {
 
 .container {
   background-color: #fff;
-  max-width: 74rem;
-  min-width: 32rem;
-  outline: 1.4rem solid #fff;
+  max-width: 740px;
+  min-width: 320px;
+  outline: 14px solid #fff;
   overflow: hidden;
-  padding: 0 1.4rem 1.4rem;
+  padding: 0 14px 14px;
   width: 100%; }
 
-@media (min-width: 104.1rem) {
+@media (min-width: 1041px) {
   .container {
-    max-width: 76.8rem;
+    max-width: 768px;
     outline: 0;
-    padding: 0 2.8rem 1.4rem; } }
+    padding: 0 28px 14px; } }
 
 .top-gap-big,
 .form .top-gap-big {
-  margin-top: 3.2rem; }
+  margin-top: 32px; }
 
 .top-gap,
 .form .top-gap {
-  margin-top: 1.4rem; }
+  margin-top: 14px; }
 
 .top-gap-0,
 .form .top-gap-0 {
@@ -333,8 +333,8 @@ progress {
           align-items: flex-end; }
 
 .units-gap {
-  margin-left: -0.7rem;
-  margin-right: -0.7rem; }
+  margin-left: -7px;
+  margin-right: -7px; }
   .units-gap > .unit,
   .units-gap > .unit-0,
   .units-gap > .unit-1-2,
@@ -342,8 +342,8 @@ progress {
   .units-gap > .unit-2-3,
   .units-gap > .unit-1-4,
   .units-gap > .unit-3-4 {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem; }
+    padding-left: 7px;
+    padding-right: 7px; }
 
 .unit {
   -webkit-flex-basis: 0;
@@ -428,13 +428,13 @@ progress {
   .table caption {
     caption-side: bottom;
     color: #777;
-    padding: 0.5rem;
+    padding: 5px;
     text-align: left; }
   .table th,
   .table td {
     border: 0;
     border-bottom: 1px solid #ddd;
-    padding: 0.5rem;
+    padding: 5px;
     text-align: left; }
   .table th {
     background-color: rgba(0, 0, 0, 0.05);
@@ -445,9 +445,9 @@ progress {
   .form label {
     cursor: pointer;
     display: block;
-    margin-top: 1.4rem;
-    padding-bottom: 0.6rem;
-    padding-top: 0.6rem; }
+    margin-top: 14px;
+    padding-bottom: 6px;
+    padding-top: 6px; }
   .form [type=text],
   .form [type=password],
   .form [type=email],
@@ -466,10 +466,10 @@ progress {
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.8rem;
-    padding: 0.5rem 1rem;
+    padding: 5px 10px;
     display: block;
     line-height: 1.25;
-    margin: 1.4rem 0 0;
+    margin: 14px 0 0;
     width: 100%; }
     .form [type=text]:focus,
     .form [type=password]:focus,
@@ -481,14 +481,14 @@ progress {
     .form textarea:focus,
     .form select:focus {
       border-color: #3399ff; }
-  @media (max-width: 104rem) {
+  @media (max-width: 1040px) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
     .form [type=date],
     .form [type=datetime-local] {
-      margin: 1.4rem 0 0; } }
-  @media (min-width: 104.1rem) {
+      margin: 14px 0 0; } }
+  @media (min-width: 1041px) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
@@ -503,10 +503,10 @@ progress {
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       font-size: 1.8rem;
-      padding: 0.5rem 1rem;
+      padding: 5px 10px;
       display: block;
       line-height: 1.25;
-      margin: 1.4rem 0 0;
+      margin: 14px 0 0;
       width: 100%; }
       .form [type=time]:focus,
       .form [type=week]:focus,
@@ -517,7 +517,7 @@ progress {
   .form [type=checkbox],
   .form [type=radio] {
     cursor: pointer;
-    margin: 0 0.5rem 0 0; }
+    margin: 0 5px 0 0; }
   .form select {
     background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'><path fill='#333' d='M0 0h32L16 20z'/></svg>") right 8px center no-repeat;
     background-size: 8px 8px;
@@ -527,15 +527,15 @@ progress {
   .form [type=range] {
     display: block;
     line-height: 1.25;
-    margin: 1.4rem 0 0;
+    margin: 14px 0 0;
     width: 100%;
     cursor: pointer;
-    padding: 0.6rem 0; }
+    padding: 6px 0; }
   .form [type=color],
   .form [type=image] {
     cursor: pointer;
     display: block;
-    margin: 1.4rem 0 0; }
+    margin: 14px 0 0; }
   .form [disabled] {
     cursor: default;
     opacity: .5;
@@ -546,7 +546,7 @@ progress {
 .btn {
   display: block;
   line-height: 1.25;
-  margin: 1.4rem 0 0;
+  margin: 14px 0 0;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -557,7 +557,7 @@ progress {
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.8rem;
-  padding: 0.5rem 1rem;
+  padding: 5px 10px;
   text-align: center;
   background-color: #f3f3f3;
   cursor: pointer; }
@@ -586,11 +586,11 @@ progress {
     opacity: .5;
     pointer-events: none; }
 
-@media (max-width: 104rem) {
+@media (max-width: 1040px) {
   .hide-on-mobile {
     display: none; } }
 
-@media (min-width: 104.1rem) {
+@media (min-width: 1041px) {
   .show-on-mobile {
     display: none; } }
 
