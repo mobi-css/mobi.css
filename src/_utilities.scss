@@ -1,4 +1,4 @@
-@media (max-width: $width-container-breakpoint - 1px) {
+@media (max-width: $width-container-breakpoint - .1rem) {
   .hide-on-mobile {
     display: none;
   }

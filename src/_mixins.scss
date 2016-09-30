@@ -25,13 +25,6 @@
 // Forms
 //
 
-@mixin input-block() {
-  display: block;
-  line-height: $line-height;
-  margin: $width-gap 0 0;
-  width: 100%;
-}
-
 @mixin input-and-button() {
   appearance: none;
   background-color: $color-background-input;
@@ -46,6 +39,13 @@
   &:focus {
     border-color: $color-border-input-focus;
   }
+}
+
+@mixin input-block() {
+  display: block;
+  line-height: $input-line-height;
+  margin: $width-gap 0 0;
+  width: 100%;
 }
 
 @mixin button() {

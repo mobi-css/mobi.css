@@ -250,6 +250,13 @@ textarea {
 }
 
 button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
 // Prevent a WebKit bug where (*) destroys native `audio` and `video` controls in Android 4.
 html [type=button],
 [type=reset],

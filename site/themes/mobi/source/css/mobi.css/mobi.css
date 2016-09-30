@@ -1,4 +1,4 @@
-/* Mobi.css v1.0.0-alpha.4 http://getmobicss.com */
+/* Mobi.css v1.0.0 http://getmobicss.com */
 @charset "UTF-8";
 html {
   box-sizing: border-box; }
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 32px 0 0; }
+  margin: 3.2rem 0 0; }
 
 p,
 blockquote,
@@ -42,7 +42,7 @@ ol,
 pre,
 address,
 figure {
-  margin: 14px 0 0; }
+  margin: 1.4rem 0 0; }
 
 h1,
 h2,
@@ -98,26 +98,26 @@ pre {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.3rem;
   line-height: 1.2;
-  margin-left: -14px;
-  margin-right: -14px;
-  padding: 14px; }
+  margin-left: -1.4rem;
+  margin-right: -1.4rem;
+  padding: 1.4rem; }
   pre code {
     background-color: transparent;
     font-size: 1.3rem;
     padding: 0; }
-  @media (min-width: 740px) {
+  @media (min-width: 74rem) {
     pre {
       margin-left: 0;
       margin-right: 0; } }
 
 blockquote {
-  border-left: 5px solid #ddd;
+  border-left: 0.5rem solid #ddd;
   color: #777;
-  padding-left: 14px; }
+  padding-left: 1.4rem; }
 
 ul,
 ol {
-  padding-left: 28px; }
+  padding-left: 2.8rem; }
 
 dt,
 dd,
@@ -191,6 +191,12 @@ textarea {
       touch-action: manipulation; }
 
 button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+button,
 html [type=button],
 [type=reset],
 [type=submit],
@@ -211,8 +217,8 @@ html [type=button],
 
 fieldset {
   border: 1px solid #ddd;
-  margin: 14px 0 0;
-  padding: 0 14px 14px; }
+  margin: 1.4rem 0 0;
+  padding: 0 1.4rem 1.4rem; }
 
 legend {
   padding: 0 3px; }
@@ -230,26 +236,26 @@ progress {
 
 .container {
   background-color: #fff;
-  max-width: 740px;
-  min-width: 320px;
-  outline: 14px solid #fff;
+  max-width: 74rem;
+  min-width: 32rem;
+  outline: 1.4rem solid #fff;
   overflow: hidden;
-  padding: 0 14px 14px;
+  padding: 0 1.4rem 1.4rem;
   width: 100%; }
 
-@media (min-width: 1041px) {
+@media (min-width: 104.1rem) {
   .container {
-    max-width: 768px;
+    max-width: 76.8rem;
     outline: 0;
-    padding: 0 28px 14px; } }
+    padding: 0 2.8rem 1.4rem; } }
 
 .top-gap-big,
 .form .top-gap-big {
-  margin-top: 32px; }
+  margin-top: 3.2rem; }
 
 .top-gap,
 .form .top-gap {
-  margin-top: 14px; }
+  margin-top: 1.4rem; }
 
 .top-gap-0,
 .form .top-gap-0 {
@@ -327,8 +333,8 @@ progress {
           align-items: flex-end; }
 
 .units-gap {
-  margin-left: -7px;
-  margin-right: -7px; }
+  margin-left: -0.7rem;
+  margin-right: -0.7rem; }
   .units-gap > .unit,
   .units-gap > .unit-0,
   .units-gap > .unit-1-2,
@@ -336,8 +342,8 @@ progress {
   .units-gap > .unit-2-3,
   .units-gap > .unit-1-4,
   .units-gap > .unit-3-4 {
-    padding-left: 7px;
-    padding-right: 7px; }
+    padding-left: 0.7rem;
+    padding-right: 0.7rem; }
 
 .unit {
   -webkit-flex-basis: 0;
@@ -422,13 +428,13 @@ progress {
   .table caption {
     caption-side: bottom;
     color: #777;
-    padding: 5px;
+    padding: 0.5rem;
     text-align: left; }
   .table th,
   .table td {
     border: 0;
     border-bottom: 1px solid #ddd;
-    padding: 5px;
+    padding: 0.5rem;
     text-align: left; }
   .table th {
     background-color: rgba(0, 0, 0, 0.05);
@@ -439,9 +445,9 @@ progress {
   .form label {
     cursor: pointer;
     display: block;
-    margin-top: 14px;
-    padding-bottom: 6px;
-    padding-top: 6px; }
+    margin-top: 1.4rem;
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem; }
   .form [type=text],
   .form [type=password],
   .form [type=email],
@@ -451,10 +457,6 @@ progress {
   .form [type=number],
   .form textarea,
   .form select {
-    display: block;
-    line-height: 1.5;
-    margin: 14px 0 0;
-    width: 100%;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -464,7 +466,11 @@ progress {
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.8rem;
-    padding: 5px 10px; }
+    padding: 0.5rem 1rem;
+    display: block;
+    line-height: 1.25;
+    margin: 1.4rem 0 0;
+    width: 100%; }
     .form [type=text]:focus,
     .form [type=password]:focus,
     .form [type=email]:focus,
@@ -475,23 +481,19 @@ progress {
     .form textarea:focus,
     .form select:focus {
       border-color: #3399ff; }
-  @media (max-width: 1040px) {
+  @media (max-width: 104rem) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
     .form [type=date],
     .form [type=datetime-local] {
-      margin: 14px 0 0; } }
-  @media (min-width: 1041px) {
+      margin: 1.4rem 0 0; } }
+  @media (min-width: 104.1rem) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
     .form [type=date],
     .form [type=datetime-local] {
-      display: block;
-      line-height: 1.5;
-      margin: 14px 0 0;
-      width: 100%;
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
@@ -501,7 +503,11 @@ progress {
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       font-size: 1.8rem;
-      padding: 5px 10px; }
+      padding: 0.5rem 1rem;
+      display: block;
+      line-height: 1.25;
+      margin: 1.4rem 0 0;
+      width: 100%; }
       .form [type=time]:focus,
       .form [type=week]:focus,
       .form [type=month]:focus,
@@ -511,7 +517,7 @@ progress {
   .form [type=checkbox],
   .form [type=radio] {
     cursor: pointer;
-    margin: 0 5px 0 0; }
+    margin: 0 0.5rem 0 0; }
   .form select {
     background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='20' viewBox='0 0 32 20'><path fill='#333' d='M0 0h32L16 20z'/></svg>") right 8px center no-repeat;
     background-size: 8px 8px;
@@ -520,16 +526,16 @@ progress {
   .form [type=file],
   .form [type=range] {
     display: block;
-    line-height: 1.5;
-    margin: 14px 0 0;
+    line-height: 1.25;
+    margin: 1.4rem 0 0;
     width: 100%;
     cursor: pointer;
-    padding: 6px 0; }
+    padding: 0.6rem 0; }
   .form [type=color],
   .form [type=image] {
     cursor: pointer;
     display: block;
-    margin: 14px 0 0; }
+    margin: 1.4rem 0 0; }
   .form [disabled] {
     cursor: default;
     opacity: .5;
@@ -539,8 +545,8 @@ progress {
 
 .btn {
   display: block;
-  line-height: 1.5;
-  margin: 14px 0 0;
+  line-height: 1.25;
+  margin: 1.4rem 0 0;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -551,7 +557,7 @@ progress {
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.8rem;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   text-align: center;
   background-color: #f3f3f3;
   cursor: pointer; }
@@ -580,11 +586,11 @@ progress {
     opacity: .5;
     pointer-events: none; }
 
-@media (max-width: 1040px) {
+@media (max-width: 104rem) {
   .hide-on-mobile {
     display: none; } }
 
-@media (min-width: 1041px) {
+@media (min-width: 104.1rem) {
   .show-on-mobile {
     display: none; } }
 

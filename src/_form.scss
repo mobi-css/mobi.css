@@ -19,11 +19,11 @@
   [type=number],
   textarea,
   select {
-    @include input-block();
     @include input-and-button();
+    @include input-block();
   }
 
-  @media (max-width: $width-container-breakpoint - 1px) {
+  @media (max-width: $width-container-breakpoint - .1) {
     [type=time],
     [type=week],
     [type=month],
@@ -39,8 +39,8 @@
     [type=month],
     [type=date],
     [type=datetime-local] {
-      @include input-block();
       @include input-and-button();
+      @include input-block();
     }
   }
 
