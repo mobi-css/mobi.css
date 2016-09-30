@@ -18,10 +18,10 @@ cp .travis/ssh_config ~/.ssh/config
 npm test
 npm run build
 
-echo "Syncing master to coding.net"
-git remote add coding git@git.coding.net:$TRAVIS_REPO_SLUG.git
-git checkout master
-git push coding master
+# echo "Syncing master to coding.net"
+# git remote add coding git@git.coding.net:$TRAVIS_REPO_SLUG.git
+# git checkout master
+# git push coding master
 
 echo "Deploying site"
 cd site
