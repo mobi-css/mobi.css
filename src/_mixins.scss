@@ -43,7 +43,7 @@
 
 @mixin input-block() {
   display: block;
-  line-height: $input-line-height;
+  line-height: $line-height-input;
   margin: $width-gap 0 0;
   width: 100%;
 }

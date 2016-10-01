@@ -445,6 +445,7 @@ progress {
   .form label {
     cursor: pointer;
     display: block;
+    line-height: 1.25;
     margin-top: 14px;
     padding-bottom: 6px;
     padding-top: 6px; }
