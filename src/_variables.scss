@@ -70,9 +70,11 @@ $width-gap-half: 7px !default;
 $width-gap-big: 32px !default;
 
 $width-padding-input: 5px !default;
-$width-border: 1px !default;
-$width-padding-border-input: $width-padding-input + $width-border !default;
 
+$width-border: 1px !default;
+
+// $width-padding-input + $width-border
+$width-padding-border-input: 6px !default;
 
 //
 // layouts
@@ -116,6 +118,7 @@ $font-size-sub-sup: 75% !default;
 
 $line-height: 1.5 !default;
 
+$line-height-input: 1.25 !default;
 // line-height need to be set to pre, not code
 $line-height-pre: 1.2 !default;
 
@@ -167,7 +170,6 @@ $max-height-scroll-view: 300px !default;
 
 $padding-table-cell: $width-padding-input !default;
 $border-bottom-th-td: $width-border solid $color-border !default;
-
 
 //
 // Forms

@@ -4,6 +4,7 @@
   label {
     cursor: pointer;
     display: block;
+    line-height: $line-height-input;
     margin-top: $width-gap;
     padding-bottom: $width-padding-bottom-label;
     padding-top: $width-padding-top-label;
@@ -19,8 +20,8 @@
   [type=number],
   textarea,
   select {
-    @include input-block();
     @include input-and-button();
+    @include input-block();
   }
 
   @media (max-width: $width-container-breakpoint - 1px) {
@@ -39,8 +40,8 @@
     [type=month],
     [type=date],
     [type=datetime-local] {
-      @include input-block();
       @include input-and-button();
+      @include input-block();
     }
   }
 

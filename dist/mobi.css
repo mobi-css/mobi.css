@@ -191,6 +191,12 @@ textarea {
       touch-action: manipulation; }
 
 button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+button,
 html [type=button],
 [type=reset],
 [type=submit],
@@ -439,6 +445,7 @@ progress {
   .form label {
     cursor: pointer;
     display: block;
+    line-height: 1.25;
     margin-top: 14px;
     padding-bottom: 6px;
     padding-top: 6px; }
@@ -451,10 +458,6 @@ progress {
   .form [type=number],
   .form textarea,
   .form select {
-    display: block;
-    line-height: 1.5;
-    margin: 14px 0 0;
-    width: 100%;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -464,7 +467,11 @@ progress {
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.8rem;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    display: block;
+    line-height: 1.25;
+    margin: 14px 0 0;
+    width: 100%; }
     .form [type=text]:focus,
     .form [type=password]:focus,
     .form [type=email]:focus,
@@ -488,10 +495,6 @@ progress {
     .form [type=month],
     .form [type=date],
     .form [type=datetime-local] {
-      display: block;
-      line-height: 1.5;
-      margin: 14px 0 0;
-      width: 100%;
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
@@ -501,7 +504,11 @@ progress {
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       font-size: 1.8rem;
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      display: block;
+      line-height: 1.25;
+      margin: 14px 0 0;
+      width: 100%; }
       .form [type=time]:focus,
       .form [type=week]:focus,
       .form [type=month]:focus,
@@ -520,7 +527,7 @@ progress {
   .form [type=file],
   .form [type=range] {
     display: block;
-    line-height: 1.5;
+    line-height: 1.25;
     margin: 14px 0 0;
     width: 100%;
     cursor: pointer;
@@ -539,7 +546,7 @@ progress {
 
 .btn {
   display: block;
-  line-height: 1.5;
+  line-height: 1.25;
   margin: 14px 0 0;
   width: 100%;
   -webkit-appearance: none;
