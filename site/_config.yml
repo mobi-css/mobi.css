@@ -75,7 +75,7 @@ deploy:
   repo: git@github.com:xcatliu/mobi.css.git
   branch: gh-pages
   message:
-- type: git
-  repo: git@git.coding.net:xcatliu/mobi.css.git
-  branch: coding-pages
-  message:
+# - type: git
+#   repo: git@git.coding.net:xcatliu/mobi.css.git
+#   branch: coding-pages
+#   message:
