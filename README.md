@@ -107,6 +107,15 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 
 ## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
+## Contributors
+
+- Thanks [xueliang huang](https://github.com/hxlniada) for debugging and fixing macOS issues
+- Thanks [Xuehua Cai](https://github.com/pixcai) for fixing deploy issues
+- Thanks [Matt Bailey](https://github.com/breeze4) for fixing grammar issues
+- Thanks [Eric Nolte](https://github.com/ETNOL) for fixing grammar issues
+- Thanks [Robert Chang](https://github.com/cht8687) for fixing typo
+- Thanks [David Kane](https://github.com/geditdk) for fixing typo
+
 ## License
 
 [MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE)
@@ -209,6 +218,15 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 - Travis CI 不通过时，Pull request 不能被 merge
 
 ## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
+
+## 贡献者
+
+- 感谢 [xueliang huang](https://github.com/hxlniada) 调试和修复 macOS 上的问题
+- 感谢 [Xuehua Cai](https://github.com/pixcai) 修复部署的问题
+- 感谢 [Matt Bailey](https://github.com/breeze4) 修复语法问题
+- 感谢 [Eric Nolte](https://github.com/ETNOL) 修复语法问题
+- 感谢 [Robert Chang](https://github.com/cht8687) 修复拼写错误
+- 感谢 [David Kane](https://github.com/geditdk) 修复拼写错误
 
 ## 开源协议
 
