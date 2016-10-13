@@ -1,6 +1,6 @@
 {
   "name": "mobi.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, flexible css framework that focus on mobile.",
   "main": "dist/mobi.css",
   "scripts": {
