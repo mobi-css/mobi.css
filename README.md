@@ -27,7 +27,7 @@ You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/rel
 Or use [cndjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.0/mobi.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.1/mobi.min.css" />
 ```
 
 Or use npm to install:
@@ -139,7 +139,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 或者使用 [cndjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.0/mobi.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.1/mobi.min.css" />
 ```
 
 或者使用 npm 安装：
