@@ -63,6 +63,7 @@ ul,
 ol,
 pre,
 address,
+time,
 figure {
   margin: $width-gap 0 0;
 }
@@ -182,7 +183,8 @@ sup {
   top: -.5em;
 }
 
-address {
+address,
+time {
   color: $color-text-muted;
   font-size: $font-size-address;
   font-style: normal;

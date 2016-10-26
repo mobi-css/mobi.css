@@ -41,6 +41,7 @@ ul,
 ol,
 pre,
 address,
+time,
 figure {
   margin: 14px 0 0; }
 
@@ -147,7 +148,8 @@ sub {
 sup {
   top: -.5em; }
 
-address {
+address,
+time {
   color: #777;
   font-size: 85%;
   font-style: normal; }
