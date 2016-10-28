@@ -25,3 +25,12 @@
 .text-right {
   text-align: right;
 }
+
+.text-muted {
+  color: $color-text-muted;
+}
+
+a.text-muted {
+  color: $color-text-muted;
+  text-decoration: underline;
+}

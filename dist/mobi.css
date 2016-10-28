@@ -150,7 +150,6 @@ sup {
 address,
 time {
   color: #777;
-  font-size: 85%;
   font-style: normal; }
 
 mark {
@@ -609,5 +608,12 @@ progress {
 
 .text-right {
   text-align: right; }
+
+.text-muted {
+  color: #777; }
+
+a.text-muted {
+  color: #777;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=mobi.css.map */
