@@ -1,15 +1,15 @@
 {
   "name": "mobi.css",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A lightweight, flexible css framework that focus on mobile.",
   "main": "dist/mobi.css",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build",
+    "build": "gulp build_copy",
     "test": "npm run lint",
     "lint": "scss-lint src && echo 'SCSS Lint Passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
     "preversion": "npm test",
-    "version": "npm run build && git add -A dist"
+    "version": "npm run build && git add -A dist site"
   },
   "repository": {
     "type": "git",

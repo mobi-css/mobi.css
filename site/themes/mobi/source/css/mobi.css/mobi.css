@@ -1,4 +1,4 @@
-/* Mobi.css v1.0.0 http://getmobicss.com */
+/* Mobi.css v1.1.0 http://getmobicss.com */
 @charset "UTF-8";
 html {
   box-sizing: border-box; }
@@ -147,9 +147,9 @@ sub {
 sup {
   top: -.5em; }
 
-address {
+address,
+time {
   color: #777;
-  font-size: 85%;
   font-style: normal; }
 
 mark {
@@ -608,5 +608,12 @@ progress {
 
 .text-right {
   text-align: right; }
+
+.text-muted {
+  color: #777; }
+
+a.text-muted {
+  color: #777;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=mobi.css.map */
