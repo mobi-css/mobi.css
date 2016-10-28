@@ -1,0 +1,3 @@
+linters:
+  QualifyingElement:
+    allow_element_with_class: true
