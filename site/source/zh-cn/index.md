@@ -16,7 +16,7 @@
 
 你可以在[这个页面](https://github.com/xcatliu/mobi.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/mobi.min.css`。
 
-或者使用 [cndjs](https://cdnjs.com/libraries/mobi.css):
+或者使用 [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.1/mobi.min.css" />
