@@ -66,6 +66,15 @@ npm install --save mobi.css
 - 浏览器查询语句来自于 [Browserslist](https://github.com/ai/browserslist)
 - 标注为 (\*) 的浏览器可能没有很好的测试，但是应该能够正常工作
 
+## 谁在用 Mobi.css?
+
+- [Hexo 主题 Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Xcat Liu's Blog](http://blog.xcatliu.com/)
+- [Hexo 主题 mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
+- [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+
+[告诉我](https://github.com/xcatliu/mobi.css/issues/72)你也在用 Mobi.css！
+
 ## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## 下一步

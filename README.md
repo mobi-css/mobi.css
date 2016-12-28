@@ -105,6 +105,15 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 - The [official site](http://getmobicss.com) will be generated automatically when new commits are pushed to master branch
 - Pull request cannot be merged when Travis CI not pass
 
+## Who's using Mobi.css?
+
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Xcat Liu's Blog](http://blog.xcatliu.com/)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
+- [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+
+[Tell me](https://github.com/xcatliu/mobi.css/issues/72) if you are using Mobi.css!
+
 ## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## Contributors
@@ -216,6 +225,15 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 
 - 当 master 分支有新的提交时，[官方网站](http://getmobicss.com) 将会自动更新
 - Travis CI 不通过时，Pull request 不能被 merge
+
+## 谁在用 Mobi.css?
+
+- [Hexo 主题 Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Xcat Liu's Blog](http://blog.xcatliu.com/)
+- [Hexo 主题 mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
+- [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+
+[告诉我](https://github.com/xcatliu/mobi.css/issues/72)你也在用 Mobi.css！
 
 ## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
 
