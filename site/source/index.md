@@ -66,6 +66,11 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 - Browsers query comes from [Browserslist](https://github.com/ai/browserslist)
 - Browsers marked as (\*) were not well tested, but they should work fine
 
+## Who's using Mobi.css?
+
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css), [Xcat Liu's Blog](http://blog.xcatliu.com/)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo), [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+
 ## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
 ## What's next
