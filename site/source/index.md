@@ -68,8 +68,12 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 
 ## Who's using Mobi.css?
 
-- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css), [Xcat Liu's Blog](http://blog.xcatliu.com/)
-- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo), [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Xcat Liu's Blog](http://blog.xcatliu.com/)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
+- [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+
+[Tell me](https://github.com/xcatliu/mobi.css/issues/72) if you are using Mobi.css!
 
 ## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
