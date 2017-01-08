@@ -68,10 +68,9 @@ npm install --save mobi.css
 
 ## 谁在用 Mobi.css?
 
-- [Hexo 主题 Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
-- [Xcat Liu's Blog](http://blog.xcatliu.com/)
-- [Hexo 主题 mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
-- [mbxo](https://alleysakura.github.io/hexo-theme-mbxo/)
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
+- [solovyov.net: Alexander Solovyov](https://solovyov.net/)
 
 [告诉我](https://github.com/xcatliu/mobi.css/issues/72)你也在用 Mobi.css！
 
