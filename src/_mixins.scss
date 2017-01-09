@@ -49,9 +49,9 @@
 }
 
 @mixin button() {
-  text-align: center;
   background-color: $color-background-btn;
   cursor: pointer;
+  text-align: center;
 
   &:hover,
   &:active {
@@ -61,7 +61,7 @@
 
 @mixin disabled() {
   cursor: default;
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 
