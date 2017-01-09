@@ -48,8 +48,8 @@ gulp.task('build_copy', () => {
 
 gulp.task('build', [
   'clean:dist',
-  'build:mobi:sourcemaps',
-  'build:mobi:compressed',
+  'build:mobi',
+  'build:mobi:min',
 ]);
 
 gulp.task('copy', [
@@ -68,15 +68,19 @@ gulp.task('clean:dist', () => {
   rimraf.sync(`${DIST_DIR}/*`);
 });
 
-gulp.task('build:mobi:compressed', ['build:mobi:sourcemaps'], () => gulp.src(`${DIST_DIR}/mobi.css`)
+gulp.task('build:mobi:min', ['build:mobi'], () => gulp.src(`${DIST_DIR}/mobi.css`)
+  .pipe(sourcemaps.init())
   .pipe(cleanCSS())
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(rename('mobi.min.css'))
+  .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
-gulp.task('build:mobi:sourcemaps', () => gulp.src(`${SRC_DIR}/mobi.scss`)
+gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({
+//    includePaths: 'node_modules'
+  }).on('error', sass.logError))
   .pipe(postcss(postcssConfig))
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(sourcemaps.write('./'))

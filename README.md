@@ -76,13 +76,6 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 
 ## Contributing
 
-Before contributing, please ensure you have `sass` and `scss-lint` installed. You can install them by running this:
-
-```shell
-gem install sass
-gem install scss_lint
-```
-
 ### Getting started
 
 ```shell
@@ -111,7 +104,6 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 - [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
 - [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
-
 
 [Tell me](https://github.com/xcatliu/mobi.css/issues/72) if you are using Mobi.css!
 
@@ -197,13 +189,6 @@ npm install --save mobi.css
 - 标注为 (\*) 的浏览器可能没有很好的测试，但是应该能够正常工作
 
 ## 参与贡献
-
-开始贡献之前，请确保你已经安装了 `sass` 和 `scss-lint`。可以运行以下命令安装：
-
-```shell
-gem install sass
-gem install scss_lint
-```
 
 ### 如何开始
 
