@@ -110,6 +110,8 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 - [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
 - [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
+- [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
+
 
 [Tell me](https://github.com/xcatliu/mobi.css/issues/72) if you are using Mobi.css!
 
@@ -230,6 +232,7 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 - [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
 - [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
+- [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
 
 [告诉我](https://github.com/xcatliu/mobi.css/issues/72)你也在用 Mobi.css！
 
