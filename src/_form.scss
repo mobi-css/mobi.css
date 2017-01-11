@@ -54,12 +54,14 @@
   select {
     // Reset the default angle-down icon
     @include background-icon-angle-down();
+
     cursor: pointer;
   }
 
   [type=file],
   [type=range] {
     @include input-block();
+
     cursor: pointer;
     padding: $padding-file;
   }

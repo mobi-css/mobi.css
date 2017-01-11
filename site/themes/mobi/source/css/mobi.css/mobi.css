@@ -142,10 +142,10 @@ sup {
   vertical-align: baseline; }
 
 sub {
-  bottom: -.25em; }
+  bottom: -0.25em; }
 
 sup {
-  top: -.5em; }
+  top: -0.5em; }
 
 address,
 time {
@@ -155,7 +155,7 @@ time {
 mark {
   background-color: #ff0;
   color: #333;
-  padding: 0 .2em; }
+  padding: 0 0.2em; }
 
 abbr[title] {
   border-bottom: 0;
@@ -539,7 +539,7 @@ progress {
     margin: 14px 0 0; }
   .form [disabled] {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none; }
   .form [readonly] {
     background-color: #f3f3f3; }
@@ -559,16 +559,16 @@ progress {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.8rem;
   padding: 5px 10px;
-  text-align: center;
   background-color: #f3f3f3;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   .btn:focus {
     border-color: #3399ff; }
   .btn:hover, .btn:active {
     text-decoration: none; }
   .btn[disabled] {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none; }
 
 .btn-primary {
@@ -577,14 +577,14 @@ progress {
   color: #fff; }
   .btn-primary[disabled] {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none; }
 
 .btn-danger {
   color: #cc0000; }
   .btn-danger[disabled] {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none; }
 
 @media (max-width: 1040px) {

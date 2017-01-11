@@ -1,5 +1,3 @@
-// scss-lint:disable DuplicateProperty, MergeableSelector, QualifyingElement
-
 // Resets
 //
 // Global resets to common HTML elements.
@@ -175,11 +173,11 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 address,
@@ -191,7 +189,7 @@ time {
 mark {
   background-color: $color-background-mark;
   color: $color-text;
-  padding: 0 .2em;
+  padding: 0 0.2em;
 }
 
 abbr[title] {

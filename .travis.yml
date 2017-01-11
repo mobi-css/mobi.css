@@ -8,9 +8,6 @@ before_install:
 - git config --global user.name 'xcatliu'
 - git config --global user.email 'xcatliu@gmail.com'
 install:
-- rvm install 2.3.1
-- gem install sass
-- gem install scss_lint
 - npm install
 script:
 - bash ./.travis/deploy.sh

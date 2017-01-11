@@ -7,7 +7,7 @@
     "start": "gulp",
     "build": "gulp build_copy",
     "test": "npm run lint",
-    "lint": "scss-lint src && echo 'SCSS Lint Passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
+    "lint": "stylelint src/**/*.scss --syntax scss && echo 'stylelint passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
     "preversion": "npm test",
     "version": "npm run build && git add -A dist site"
   },
@@ -39,7 +39,9 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "rimraf": "^2.5.4",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "stylelint": "^7.7.1",
+    "stylelint-config-standard": "^15.0.1"
   },
   "dependencies": {}
 }
