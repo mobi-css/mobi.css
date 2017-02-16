@@ -8,6 +8,10 @@
     "at-rule-empty-line-before": null,
     "declaration-block-properties-order": "alphabetical",
     "max-empty-lines": 3,
-    "rule-nested-empty-line-before": null
+    "rule-nested-empty-line-before": null,
+    "comment-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "rule-non-nested-empty-line-before": null,
+    "declaration-empty-line-before": null
   }
 }
