@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xcatliu/mobi.css.git"
+    "url": "git+https://github.com/mobi-css/mobi.css.git"
   },
   "keywords": [
     "css",
@@ -23,7 +23,7 @@
   "author": "xcatliu <xcatliu@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xcatliu/mobi.css/issues"
+    "url": "https://github.com/mobi-css/mobi.css/issues"
   },
   "homepage": "http://getmobicss.com",
   "devDependencies": {
