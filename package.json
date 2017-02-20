@@ -5,7 +5,7 @@
   "main": "dist/mobi.css",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build_copy",
+    "build": "gulp build",
     "test": "npm run lint",
     "lint": "stylelint src/**/*.scss --syntax scss && echo 'stylelint passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
     "preversion": "npm test",
