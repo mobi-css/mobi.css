@@ -7,9 +7,7 @@ const rimraf = require('rimraf');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const runSequence = require('run-sequence');
 const insert = require('gulp-insert');
-const exec = require('child_process').exec;
 const pkg = require('./package.json');
 
 const postcssConfig = [autoprefixer({ browsers: [
@@ -31,19 +29,11 @@ const postcssConfig = [autoprefixer({ browsers: [
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
-const SITE_DIR = path.resolve(__dirname, 'site');
-const SITE_THEME_MOBI_CSS_DIR = path.resolve(SITE_DIR, 'themes/mobi/source/css/mobi.css');
 
-gulp.task('default', ['hexo', 'build_copy'], () => {
+gulp.task('default', ['build'], () => {
   gulp.watch([
     `${SRC_DIR}/**/*`,
-  ], ['build_copy']);
-});
-
-gulp.task('build_copy', () => {
-  setTimeout(() => {
-    runSequence('build', 'copy');
-  }, 300);
+  ], ['build']);
 });
 
 gulp.task('build', [
@@ -51,18 +41,6 @@ gulp.task('build', [
   'build:mobi',
   'build:mobi:min',
 ]);
-
-gulp.task('copy', [
-  'clean:site_theme_mobi_css',
-  'copy:site_theme_mobi_css',
-]);
-
-gulp.task('hexo', () => {
-  console.log(`cd ${SITE_DIR} && npm install && npm start`);
-  const child = exec(`cd ${SITE_DIR} && npm install && npm start`);
-  child.stderr.pipe(process.stderr);
-  child.stdout.pipe(process.stdout);
-});
 
 gulp.task('clean:dist', () => {
   rimraf.sync(`${DIST_DIR}/*`);
@@ -85,10 +63,3 @@ gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
-
-gulp.task('clean:site_theme_mobi_css', () => {
-  rimraf.sync(`${SITE_THEME_MOBI_CSS_DIR}/*`);
-});
-
-gulp.task('copy:site_theme_mobi_css', () => gulp.src(`${DIST_DIR}/*`)
-  .pipe(gulp.dest(`${SITE_THEME_MOBI_CSS_DIR}/`)));
