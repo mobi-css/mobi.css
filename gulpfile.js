@@ -54,12 +54,7 @@ gulp.task('build:mobi:min', ['build:mobi'], () => gulp.src(`${DIST_DIR}/mobi.css
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
-gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-//    includePaths: 'node_modules'
-  }).on('error', sass.logError))
+gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.css`)
   .pipe(postcss(postcssConfig))
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
-  .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
