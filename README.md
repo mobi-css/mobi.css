@@ -1,12 +1,12 @@
 <p align="center">
   <a href="http://getmobicss.com/">
-    <img width="256" alt="Mobi.css Logo" src="site/source/assets/img/mobi-logo-512.png"/>
+    <img width="256" alt="Mobi.css Logo" src="http://getmobicss.com/assets/img/mobi-logo-512.png"/>
   </a>
 </p>
 
 [English](#en) | [简体中文](#zh-cn)
 
-[![Build Status](https://img.shields.io/travis/xcatliu/mobi.css.svg?style=flat-square)](https://travis-ci.org/xcatliu/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
+[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg?style=flat-square)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
 
 <a id="en"></a>
 
@@ -22,7 +22,7 @@
 
 ## Getting started
 
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
+You can download Mobi.css in [this page](https://github.com/mobi-css/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
 Or use [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
@@ -93,7 +93,7 @@ npm test
 
 ### Travis CI
 
-Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous integration system.
+Mobi.css use [Travis CI](https://travis-ci.org/mobi-css/mobi.css) as continuous integration system.
 
 - The [official site](http://getmobicss.com) will be generated automatically when new commits are pushed to master branch
 - Pull request cannot be merged when Travis CI not pass
@@ -105,7 +105,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
 - [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
 
-[Tell me](https://github.com/xcatliu/mobi.css/issues/72) if you are using Mobi.css!
+[Tell me](https://github.com/mobi-css/mobi.css/issues/72) if you are using Mobi.css!
 
 ## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
 
@@ -120,7 +120,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 
 ## License
 
-[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE)
+[MIT](https://github.com/mobi-css/mobi.css/blob/master/LICENSE)
 
 <a id="zh-cn"></a>
 
@@ -136,12 +136,12 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 
 ## 开始使用
 
-你可以在[这个页面](https://github.com/xcatliu/mobi.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/mobi.min.css`。
+你可以在[这个页面](https://github.com/mobi-css/mobi.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/mobi.min.css`。
 
 或者使用 [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.0.1/mobi.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.1.0/mobi.min.css" />
 ```
 
 或者使用 npm 安装：
@@ -207,7 +207,7 @@ npm test
 
 ### Travis CI
 
-Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续集成系统。
+Mobi.css 使用 [Travis CI](https://travis-ci.org/mobi-css/mobi.css) 作为持续集成系统。
 
 - 当 master 分支有新的提交时，[官方网站](http://getmobicss.com) 将会自动更新
 - Travis CI 不通过时，Pull request 不能被 merge
@@ -219,7 +219,7 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
 - [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
 
-[告诉我](https://github.com/xcatliu/mobi.css/issues/72)你也在用 Mobi.css！
+[告诉我](https://github.com/mobi-css/mobi.css/issues/72)你也在用 Mobi.css！
 
 ## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
 
@@ -234,4 +234,4 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/xcatliu/mobi.css) 作为持续
 
 ## 开源协议
 
-[MIT](https://github.com/xcatliu/mobi.css/blob/master/LICENSE)
+[MIT](https://github.com/mobi-css/mobi.css/blob/master/LICENSE)

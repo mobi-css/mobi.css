@@ -5,15 +5,15 @@
   "main": "dist/mobi.css",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build_copy",
+    "build": "gulp build",
     "test": "npm run lint",
     "lint": "stylelint src/**/*.scss --syntax scss && echo 'stylelint passed!\\n' && eslint . && echo 'ESLint Passed!\\n'",
     "preversion": "npm test",
-    "version": "npm run build && git add -A dist site"
+    "version": "npm run build && git add -A dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xcatliu/mobi.css.git"
+    "url": "git+https://github.com/mobi-css/mobi.css.git"
   },
   "keywords": [
     "css",
@@ -23,7 +23,7 @@
   "author": "xcatliu <xcatliu@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xcatliu/mobi.css/issues"
+    "url": "https://github.com/mobi-css/mobi.css/issues"
   },
   "homepage": "http://getmobicss.com",
   "devDependencies": {
@@ -39,7 +39,6 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "rimraf": "^2.5.4",
-    "run-sequence": "^1.2.2",
     "stylelint": "^7.7.1",
     "stylelint-config-standard": "^15.0.1"
   },

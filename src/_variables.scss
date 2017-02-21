@@ -14,6 +14,7 @@
 // Add !default so _custom.scss can override it
 $color-text: #333 !default;
 $color-text-muted: #777 !default;
+$color-text-danger: hsl(0, 100%, 40%) !default;
 
 $color-background: #fff !default;
 $color-background-over: rgba(0, 0, 0, 0.05) !default;
@@ -55,7 +56,7 @@ $color-border-input-focus: hsl(210, 100%, 60%) !default;
 $color-background-btn: $color-background-back !default;
 $color-text-btn-primary: $color-background !default;
 $color-background-btn-primary: hsl(120, 50%, 50%) !default;
-$color-text-btn-danger: hsl(0, 100%, 40%) !default;
+$color-text-btn-danger: $color-text-danger !default;
 //For optgroup
 $color-optgroup: $color-text-muted;
 
@@ -149,8 +150,6 @@ $font-family:
   // Emoji
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
-// TODO Chinese font-family for pre code
-// https://github.com/xcatliu/mobi.css/issues/8
 $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 $padding-code: 0.1em 0.2em !default;

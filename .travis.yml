@@ -4,10 +4,8 @@ node_js:
 branches:
   only:
   - master
-before_install:
-- git config --global user.name 'xcatliu'
-- git config --global user.email 'xcatliu@gmail.com'
 install:
 - npm install
 script:
-- bash ./.travis/deploy.sh
+- npm test
+- npm run build

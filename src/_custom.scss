@@ -7,6 +7,7 @@
 
 // $color-text: #aaa !default;
 // $color-text-muted: #777 !default;
+// $color-text-danger: hsl(0, 100%, 60%) !default;
 
 // $color-background: #444 !default;
 // $color-background-over: rgba(255, 255, 255, 0.05) !default;
@@ -48,4 +49,4 @@
 // $color-background-btn: $color-background-back !default;
 // $color-text-btn-primary: $color-background !default;
 // $color-background-btn-primary: hsl(80, 50%, 50%) !default;
-// $color-text-btn-danger: hsl(0, 100%, 60%) !default;
+// $color-text-btn-danger: $color-text-danger !default;
