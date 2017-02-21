@@ -272,6 +272,8 @@ progress {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
@@ -615,5 +617,11 @@ progress {
 a.text-muted {
   color: #777;
   text-decoration: underline; }
+
+.text-small {
+  font-size: 85%; }
+
+.text-danger {
+  color: #cc0000; }
 
 /*# sourceMappingURL=mobi.css.map */

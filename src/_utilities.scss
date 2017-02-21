@@ -34,3 +34,11 @@ a.text-muted {
   color: $color-text-muted;
   text-decoration: underline;
 }
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-danger {
+  color: $color-text-danger;
+}
