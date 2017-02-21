@@ -24,10 +24,10 @@
 
 You can download Mobi.css in [this page](https://github.com/mobi-css/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
-Or use [cdnjs](https://cdnjs.com/libraries/mobi.css):
+Or simply insert this to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.1.0/mobi.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
 ```
 
 Or use npm to install:
@@ -91,13 +91,6 @@ Open http://localhost:8000/
 npm test
 ```
 
-### Travis CI
-
-Mobi.css use [Travis CI](https://travis-ci.org/mobi-css/mobi.css) as continuous integration system.
-
-- The [official site](http://getmobicss.com) will be generated automatically when new commits are pushed to master branch
-- Pull request cannot be merged when Travis CI not pass
-
 ## Who's using Mobi.css?
 
 - [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
@@ -107,8 +100,6 @@ Mobi.css use [Travis CI](https://travis-ci.org/mobi-css/mobi.css) as continuous 
 
 [Tell me](https://github.com/mobi-css/mobi.css/issues/72) if you are using Mobi.css!
 
-## [Buy me a coffee](https://github.com/xcatliu/buy-me-a-coffee)
-
 ## Contributors
 
 - Thanks [xueliang huang](https://github.com/hxlniada) for debugging and fixing macOS issues
@@ -116,7 +107,7 @@ Mobi.css use [Travis CI](https://travis-ci.org/mobi-css/mobi.css) as continuous 
 - Thanks [Matt Bailey](https://github.com/breeze4) for fixing grammar issues
 - Thanks [Eric Nolte](https://github.com/ETNOL) for fixing grammar issues
 - Thanks [Robert Chang](https://github.com/cht8687) for fixing typo
-- Thanks [David Kane](https://github.com/geditdk) for fixing typo
+- Thanks [David Kane](https://github.com/dkanejs) for fixing typo
 
 ## License
 
@@ -138,10 +129,10 @@ Mobi.css use [Travis CI](https://travis-ci.org/mobi-css/mobi.css) as continuous 
 
 你可以在[这个页面](https://github.com/mobi-css/mobi.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/mobi.min.css`。
 
-或者使用 [cdnjs](https://cdnjs.com/libraries/mobi.css):
+或者简单的将以下代码插入到 `<head>` 中：
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/1.1.0/mobi.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
 ```
 
 或者使用 npm 安装：
@@ -205,13 +196,6 @@ npm start
 npm test
 ```
 
-### Travis CI
-
-Mobi.css 使用 [Travis CI](https://travis-ci.org/mobi-css/mobi.css) 作为持续集成系统。
-
-- 当 master 分支有新的提交时，[官方网站](http://getmobicss.com) 将会自动更新
-- Travis CI 不通过时，Pull request 不能被 merge
-
 ## 谁在用 Mobi.css?
 
 - [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
@@ -221,8 +205,6 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/mobi-css/mobi.css) 作为持�
 
 [告诉我](https://github.com/mobi-css/mobi.css/issues/72)你也在用 Mobi.css！
 
-## [请我喝杯咖啡](https://github.com/xcatliu/buy-me-a-coffee)
-
 ## 贡献者
 
 - 感谢 [xueliang huang](https://github.com/hxlniada) 调试和修复 macOS 上的问题
@@ -230,7 +212,7 @@ Mobi.css 使用 [Travis CI](https://travis-ci.org/mobi-css/mobi.css) 作为持�
 - 感谢 [Matt Bailey](https://github.com/breeze4) 修复语法问题
 - 感谢 [Eric Nolte](https://github.com/ETNOL) 修复语法问题
 - 感谢 [Robert Chang](https://github.com/cht8687) 修复拼写错误
-- 感谢 [David Kane](https://github.com/geditdk) 修复拼写错误
+- 感谢 [David Kane](https://github.com/dkanejs) 修复拼写错误
 
 ## 开源协议
 
