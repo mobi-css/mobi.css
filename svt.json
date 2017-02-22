@@ -1,0 +1,14 @@
+{
+  "screenshotsDir": "test/screenshots", 
+  "testcases": [
+    {
+      "path": "http://localhost:8000"
+    },
+    {
+      "path": "http://localhost:8000/headings"
+    },
+    {
+      "path": "http://localhost:8000/scroll-view"
+    }
+  ]
+}

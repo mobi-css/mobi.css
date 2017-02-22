@@ -10,7 +10,11 @@ const cleanCSS = require('gulp-clean-css');
 const insert = require('gulp-insert');
 const pkg = require('./package.json');
 const tap = require('gulp-tap');
-const md = require('markdown-it')().use(require('markdown-it-anchor'));
+const md = require('markdown-it')({
+  html: true,
+  breaks: true,
+});
+const gutil = require('gulp-util');
 
 const postcssConfig = [autoprefixer({ browsers: [
   'last 5 iOS versions',
@@ -31,8 +35,7 @@ const postcssConfig = [autoprefixer({ browsers: [
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
-const DEMO_SRC_DIR = path.resolve(__dirname, 'public');
-const DEMO_DIST_DIR = path.resolve(__dirname, 'public');
+const TEST_PUBLIC_DIR = path.resolve(__dirname, 'test/public');
 
 gulp.task('default', ['build'], () => {
   gulp.watch([
@@ -68,28 +71,33 @@ gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
-gulp.task('build:demo', () => gulp.src(`${DEMO_SRC_DIR}/**/*.md`)
+gulp.task('test:build_html', () => gulp.src(`${TEST_PUBLIC_DIR}/**/*.md`)
   .pipe(tap(file => {
     /* eslint no-param-reassign:0 */
-    file.contents = Buffer.concat([
-      new Buffer(`
-        <!doctype html>
-        <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <meta http-equiv="x-ua-compatible" content="ie=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0,
-              maximum-scale=1.0, user-scalable=no"/>
+    const cssPath = path.join(
+      path.relative(path.resolve(file.path, '..'), path.resolve(TEST_PUBLIC_DIR)),
+      'css/mobi.min.css'
+    );
+    file.contents = new Buffer(`
+      <!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="x-ua-compatible" content="ie=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0,
+            maximum-scale=1.0, user-scalable=no"/>
 
-            <link rel="stylesheet" href="css/mobi.min.css" />
-          </head>
-          <body>
-      `),
-      new Buffer(md.render(file.contents.toString())),
-      new Buffer(`
+          <link rel="stylesheet" href="${cssPath}" />
+        </head>
+        <body>
+          <div class="flex-center">
+            <div class="container">
+              ${md.render(file.contents.toString())}
+            </div>
+          </div>
         </body>
-          </html>
-      `),
-    ]);
+      </html>
+    `);
+    file.path = gutil.replaceExtension(file.path, '.html');
   }))
-  .pipe(gulp.dest(DEMO_DIST_DIR)));
+  .pipe(gulp.dest(TEST_PUBLIC_DIR)));
