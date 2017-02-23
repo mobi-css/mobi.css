@@ -16,7 +16,7 @@
 
 ## Introduction
 
-- Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc
+- Only 2.8kb after minified and gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc
 - Heavy use of flexbox, super flexible, less than 10 lines of custom style in the official site
 - Focus on mobile, show mobile pages in desktop with a sidebar on the left or right
 
@@ -27,7 +27,7 @@ You can download Mobi.css in [this page](https://github.com/mobi-css/mobi.css/re
 Or simply insert this to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/mobi.css@1.2.0/dist/mobi.min.css" />
 ```
 
 Or use npm to install:
@@ -93,10 +93,13 @@ npm test
 
 ## Who's using Mobi.css?
 
-- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
-- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
-- [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
+- [About Me](https://github.com/xcatliu/xcatliu.github.io)
+- [码字 md](https://github.com/xcatliu/mazimd)
+- [simplemde-theme-base](https://github.com/xcatliu/simplemde-theme-base)
+- [simplemde-theme-dark](https://github.com/xcatliu/simplemde-theme-dark)
 
 [Tell me](https://github.com/mobi-css/mobi.css/issues/72) if you are using Mobi.css!
 
@@ -198,10 +201,13 @@ npm test
 
 ## 谁在用 Mobi.css?
 
-- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css) | [Demo](http://blog.xcatliu.com/)
-- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo) | [Demo](https://alleysakura.github.io/hexo-theme-mbxo/)
+- [Hexo Theme Mobi.css](https://github.com/xcatliu/hexo-theme-mobi.css)
+- [Hexo Theme mbxo](https://github.com/Alleysakura/hexo-theme-mbxo)
 - [solovyov.net: Alexander Solovyov](https://solovyov.net/)
-- [note-md](https://github.com/hanxi/note-md) 一个专注浏览的个人笔记
+- [About Me](https://github.com/xcatliu/xcatliu.github.io)
+- [码字 md](https://github.com/xcatliu/mazimd)
+- [simplemde-theme-base](https://github.com/xcatliu/simplemde-theme-base)
+- [simplemde-theme-dark](https://github.com/xcatliu/simplemde-theme-dark)
 
 [告诉我](https://github.com/mobi-css/mobi.css/issues/72)你也在用 Mobi.css！
 
