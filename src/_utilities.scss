@@ -1,10 +1,10 @@
-@media (max-width: $width-container-breakpoint - 1px) {
+@media (max-width: $width-breakpoint - 1px) {
   .hide-on-mobile {
     display: none;
   }
 }
 
-@media (min-width: $width-container-breakpoint) {
+@media (min-width: $width-breakpoint) {
   .show-on-mobile {
     display: none;
   }

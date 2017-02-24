@@ -1,24 +1,14 @@
 .container {
-  background-color: $color-background-container;
-  max-width: $max-width-container - $width-gap-double;
+  background-color: $color-background;
+  max-width: $max-width-container;
   min-width: $min-width-container;
-  outline: $width-gap solid $color-background-container;
-  overflow: hidden;
-  padding: $padding-container;
+  padding: 0 $width-gap $width-gap;
   width: 100%;
-}
-
-@media (min-width: $width-container-breakpoint) {
-  .container {
-    max-width: $max-width-container;
-    outline: 0;
-    padding: $padding-container-desktop;
-  }
 }
 
 .top-gap-big,
 .form .top-gap-big {
-  margin-top: $width-gap-big;
+  margin-top: $width-gap-double;
 }
 
 .top-gap,

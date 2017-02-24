@@ -12,6 +12,7 @@ const pkg = require('./package.json');
 const tap = require('gulp-tap');
 const http = require('http');
 const ecstatic = require('ecstatic');
+const runSequence = require('run-sequence');
 const md = require('markdown-it')({
   html: true,
 }).use(require('markdown-it-anchor'));
@@ -37,28 +38,30 @@ const postcssConfig = [autoprefixer({ browsers: [
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
 const TEST_PUBLIC_DIR = path.resolve(__dirname, 'test/public');
+const TEST_PUBLIC_CSS_DIR = path.resolve(__dirname, 'test/public/assets/css');
 
-gulp.task('default', ['build', 'test:build_html', 'test:serve'], () => {
+gulp.task('default', () => {
+  runSequence('build', 'test:build_css', 'test:build_html', 'test:serve');
   gulp.watch([
     `${SRC_DIR}/**/*`,
-  ], ['build']);
+  ], () => {
+    runSequence('build', 'test:build_css');
+  });
   gulp.watch([
     `${TEST_PUBLIC_DIR}/**/*`,
     `!${TEST_PUBLIC_DIR}/**/*.html`,
   ], ['test:build_html']);
 });
 
-gulp.task('build', [
-  'clean:dist',
-  'build:mobi',
-  'build:mobi:min',
-]);
+gulp.task('build', (callback) => {
+  runSequence('clean:dist', 'build:mobi', 'build:mobi:min', callback);
+});
 
 gulp.task('clean:dist', () => {
   rimraf.sync(`${DIST_DIR}/*`);
 });
 
-gulp.task('build:mobi:min', ['build:mobi'], () => gulp.src(`${DIST_DIR}/mobi.css`)
+gulp.task('build:mobi:min', () => gulp.src(`${DIST_DIR}/mobi.css`)
   .pipe(sourcemaps.init())
   .pipe(cleanCSS())
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
@@ -69,12 +72,21 @@ gulp.task('build:mobi:min', ['build:mobi'], () => gulp.src(`${DIST_DIR}/mobi.css
 gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
   .pipe(sourcemaps.init())
   .pipe(sass({
-//    includePaths: 'node_modules'
+    includePaths: 'node_modules',
   }).on('error', sass.logError))
   .pipe(postcss(postcssConfig))
   .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
+
+gulp.task('test:build_css', ['test:clean_css', 'test:copy_css']);
+
+gulp.task('test:clean_css', () => {
+  rimraf.sync(`${TEST_PUBLIC_CSS_DIR}/*`);
+});
+
+gulp.task('test:copy_css', () => gulp.src(`${DIST_DIR}/**/*`)
+  .pipe(gulp.dest(TEST_PUBLIC_CSS_DIR)));
 
 gulp.task('test:build_html', () => gulp.src(`${TEST_PUBLIC_DIR}/**/*.md`)
   .pipe(tap(file => {
@@ -96,8 +108,8 @@ gulp.task('test:build_html', () => gulp.src(`${TEST_PUBLIC_DIR}/**/*.md`)
           <link rel="stylesheet" href="${mobicssPath}" />
           <style>
             .site-box {
-              background-color: hsla(120, 50%, 50%, 0.15);
-              border: 1px solid hsla(120, 50%, 50%, 0.2);
+              background-color: hsla(210, 56%, 50%, 0.1);
+              border: 1px solid hsla(210, 86%, 50%, 0.1);
             }
           </style>
         </head>

@@ -22,16 +22,16 @@ html {
 
 html {
   // `rem` based on the `font-size` of html
-  font-size: $rem-base;
+  font-size: $size-base;
   // Changes the default tap highlight in iOS.
-  -webkit-tap-highlight-color: $color-background-active;
+  -webkit-tap-highlight-color: $color-background-over;
   // Prevent adjustments of font size after orientation changes in IE and iOS.
   text-size-adjust: 100%;
 }
 
 body {
-  background-color: $color-background-body;
-  color: $color-text-body;
+  background-color: $color-background;
+  color: $color-text;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: $width-gap-big 0 0;
+  margin: $width-gap-double 0 0;
 }
 
 p,
@@ -82,7 +82,7 @@ h5 { font-size: $font-size-h5; }
 h6 { font-size: $font-size-h6; }
 
 a {
-  color: $color-text-link;
+  color: $color-text-primary;
   text-decoration: none;
   // Remove gaps in links underline in iOS 8+ and Safari 8+.
   -webkit-text-decoration-skip: objects;
@@ -102,9 +102,9 @@ dt {
 code,
 kbd,
 samp {
-  background-color: $color-background-code;
+  background-color: $color-background-over;
   font-family: $font-family-monospace;
-  font-size: $font-size-code;
+  font-size: $font-size-small;
   padding: $padding-code;
 }
 
@@ -112,7 +112,7 @@ pre {
   // Mobile device has a small height, so we need to enable scroll-view
   @include scroll-view();
 
-  background-color: $color-background-pre;
+  background-color: $color-background-over;
   font-family: $font-family-monospace;
   font-size: $font-size-pre;
   line-height: $line-height-pre;
@@ -135,8 +135,8 @@ pre {
 }
 
 blockquote {
-  border-left: $border-left-blockquote;
-  color: $color-text-blockquote;
+  border-left: $width-padding-input solid $color-border;
+  color: $color-text-muted;
   padding-left: $width-gap;
 }
 
@@ -156,7 +156,7 @@ ul ol {
 
 hr {
   border: 0;
-  border-top: $border-top-hr;
+  border-top: $width-border solid $color-border;
 }
 
 small {
@@ -166,23 +166,22 @@ small {
 // Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 sub,
 sup {
-  font-size: $font-size-sub-sup;
+  font-size: $font-size-small;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.2em;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.4em;
 }
 
 address,
 time {
-  color: $color-text-muted;
   font-style: normal;
 }
 
@@ -190,6 +189,10 @@ mark {
   background-color: $color-background-mark;
   color: $color-text;
   padding: 0 0.2em;
+}
+
+rt {
+  font-size: 60%;
 }
 
 abbr[title] {
@@ -217,6 +220,11 @@ img {
 audio,
 video {
   width: 100%;
+}
+
+figcaption {
+  color: $color-text-muted;
+  font-size: $font-size-small;
 }
 
 
@@ -285,11 +293,11 @@ fieldset {
 }
 
 legend {
-  padding: $padding-legend;
+  padding: 0 0.2em;
 }
 
 optgroup {
-  color: $color-optgroup;
+  color: $color-text-muted;
   font-style: normal;
   font-weight: normal;
 }

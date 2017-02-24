@@ -1,6 +1,6 @@
 @import 'custom';
-@import 'variables';
-@import 'mixins';
+@import 'mobi-theme-dark/src/index.scss';
+@import '_mixins';
 
 @import 'resets';
 
@@ -9,3 +9,4 @@
 @import 'table';
 @import 'form';
 @import 'utilities';
+@import 'mobi-plugin-alert/src/index.scss';

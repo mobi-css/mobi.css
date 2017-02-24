@@ -10,8 +10,8 @@
           <link rel="stylesheet" href="assets\css\mobi.min.css" />
           <style>
             .site-box {
-              background-color: hsla(120, 50%, 50%, 0.15);
-              border: 1px solid hsla(120, 50%, 50%, 0.2);
+              background-color: hsla(210, 56%, 50%, 0.1);
+              border: 1px solid hsla(210, 86%, 50%, 0.1);
             }
           </style>
         </head>
@@ -232,28 +232,28 @@
 </div>
 <p><a id="flex-vertical"></a></p>
 <p>Use <code>flex-vertical</code> to achieve vertical flexbox layout:</p>
-<div class="flex-vertical site-box top-gap" style="height:300px;">
+<div class="flex-vertical site-box top-gap" style="height:200px;">
   <div class="unit-0 site-box">.unit-0</div>
   <div class="unit site-box">.unit</div>
-  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
 <p>Aligning also works on vertical flexbox:</p>
-<div class="flex-vertical flex-left site-box top-gap" style="height:200px;">
+<div class="flex-vertical flex-left site-box top-gap" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-center site-box" style="height:200px;">
+<div class="flex-vertical flex-center site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-right site-box" style="height:200px;">
+<div class="flex-vertical flex-right site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-top site-box" style="height:200px;">
+<div class="flex-vertical flex-top site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-middle site-box" style="height:200px;">
+<div class="flex-vertical flex-middle site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-bottom site-box" style="height:200px;">
+<div class="flex-vertical flex-bottom site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
 <h3 id="headings">Headings</h3>
@@ -295,8 +295,8 @@ document.write('Hello World');</code></pre>
 <p>Use <code>&lt;hr&gt;</code> to create horizontal rules:</p>
 <hr/>
 <p>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to create self-contained content:</p>
-<figure>
-  <img src="assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
+<figure class="text-center">
+  <img src="assets/img/mobi-logo-512.png" height="256" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Mobi.css Logo</figcaption>
 </figure>
 <h2 id="inline-text-semantics">Inline Text Semantics</h2>
@@ -322,23 +322,28 @@ Use <code>&lt;sup&gt;</code> to create text that <sup>higher</sup> and <sup>smal
 Use <code>&lt;kbd&gt;</code> to create the defining instance of a term: <kbd>Ctrl</kbd> + <kbd>D</kbd>.<br>
 Use <code>&lt;samp&gt;</code> to create sample output from a computer: <samp>Build passed!</samp>.</p>
 <p>Use <code>&lt;br/&gt;</code> to create line<br/>breaks.</p>
-<p>Use <code>&lt;span&gt;</code> to create inline container: I <span style="color:red;">love</span> Mobi.css.</p>
+<p>Use <code>&lt;span&gt;</code> to create inline container: I <span style="color:purple;">love</span> Mobi.css.</p>
+<p>Use <code>&lt;mark&gt;</code> to create a <mark>marked text</mark>.</p>
 <p>Use <code>&lt;abbr&gt;</code> to create <abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>.</p>
 <p>Use <code>&lt;cite&gt;</code> to create citation elements: <cite><a href="http://getmobicss.com">Mobi.css</a></cite>.</p>
 <p>Use <code>&lt;data&gt;</code> to link a given content with a machine-readable translation: <data value="100000">Beijing</data>.</p>
 <p>Use <code>&lt;time&gt;</code> to create time: <time datetime="2016-09-30T00:00">Sep 30</time>.</p>
 <p>Use <code>&lt;q&gt;</code> to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.</p>
 <p>Use <code>&lt;ruby&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;rt&gt;</code> to create ruby annotations:</p>
-<ruby>
-  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
-  去 <rp>(</rp><rt>de</rt><rp>)</rp>
-  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
-  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
-  了 <rp>(</rp><rt>le</rt><rp>)</rp>
-</ruby>
+<p>
+  <ruby>
+    我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
+    去 <rp>(</rp><rt>de</rt><rp>)</rp>
+    洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
+    澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
+    了 <rp>(</rp><rt>le</rt><rp>)</rp>
+  </ruby>
+</p>
 <p>Use <code>&lt;bdi&gt;</code> to create text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.<br>
 Use <code>&lt;bdo&gt;</code> to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.</p>
-<p><code>&lt;bdi&gt;</code> is not working in iOS and Chrome. Don't use it in your project, use <code>&lt;bdo&gt;</code> instead.</p>
+<p class="alert-danger">
+  <code>&lt;bdi&gt;</code> is not working in iOS and Chrome. Don't use it in your project, use <code>&lt;bdo&gt;</code> instead.
+</p>
 <p>Use <code>&lt;dfn&gt;</code> to create a defining instance of a term:<br>
 <dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.<br>
 What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</p>
@@ -347,7 +352,9 @@ What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</
 <p>Use <code>&lt;wbr/&gt;</code> to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:</p>
 <p>http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/With<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages</p>
 <h2 id="multimedia">Multimedia</h2>
-<p><img src="assets/img/mobi-logo-512.png" alt="Mobi.css Logo"></p>
+<p class="text-center">
+  <img src="assets/img/mobi-logo-512.png" height="256" alt="Mobi.css Logo"/>
+</p>
 <p>
   <audio controls>
     <source src="assets/croatian-rhapsody.mp3" type="audio/mpeg">
@@ -500,7 +507,9 @@ What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</
   <option value="Safari">
   <option value="Microsoft Edge">
 </datalist>
-<p><code>&lt;datalist&gt;</code> is not supported in iOS. Don't use this in your project.</p>
+<p class="alert-danger">
+  <code>&lt;datalist&gt;</code> is not supported in iOS. Don't use this in your project.
+</p>
 <h3 id="file-inputs">File Inputs</h3>
 <input type="file"/>
 <h3 id="buttons">Buttons</h3>
@@ -521,7 +530,7 @@ What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</
 <button type="reset" class="btn btn-danger">.btn.btn-danger</button></p>
 <p><button type="submit" class="btn">.btn</button>
 <button type="submit" class="btn btn-primary">.btn.btn-primary</button>
-<button type="submit" class="btn btn-danger">.btn.btn-danger&gt;</button></p>
+<button type="submit" class="btn btn-danger">.btn.btn-danger</button></p>
 <p><a href="javascript:void(0);" class="btn">.btn</a>
 <a href="javascript:void(0);" class="btn btn-primary">.btn.btn-primary</a>
 <a href="javascript:void(0);" class="btn btn-danger">.btn.btn-danger</a></p>
@@ -532,15 +541,21 @@ What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</
 <input type="date"/>
 <input type="datetime-local"/>
 <p>All the date inputs look ugly in iOS, and their styles cannot be changed. Please be careful while using them. It's not recommended to use them in your project.</p>
-<p><code>[type=week]</code> is not supported in iOS. Don't use this in your project.</p>
+<p class="alert-danger">
+  <code>[type=week]</code> is not supported in iOS. Don't use this in your project.
+</p>
 <h3 id="other-inputs">Other Inputs</h3>
 <input type="color"/>
 <input type="range" min="1" max="99" step="2"/>
 <input type="image" src="assets/img/xcatliu.png" alt="xcatliu" width="64"/>
 <input type="hidden"/>
-<p><code>[type=color]</code> is not supported in iOS. Don't use this in your project.</p>
+<p class="alert-danger">
+  <code>[type=color]</code> is not supported in iOS. Don't use this in your project.
+</p>
 <p><meter min="0" max="100" value="37">37 degrees</meter></p>
-<p><code>&lt;meter&gt;</code> is not supported in iOS. Don't use this in your project.</p>
+<p class="alert-danger">
+  <code>&lt;meter&gt;</code> is not supported in iOS. Don't use this in your project.
+</p>
 </form>
 <form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
   <div class="flex-left units-gap">

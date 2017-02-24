@@ -27,17 +27,17 @@
 
 @mixin input-and-button() {
   appearance: none;
-  background-color: $color-background-input;
-  border: $border-input;
-  border-radius: $border-radius-input;
+  background-color: $color-background;
+  border: $width-border solid $color-border;
+  border-radius: $width-border-radius;
   // Follow the color of body text
-  color: $color-text-body;
+  color: $color-text;
   font-family: $font-family;
   font-size: $font-size;
-  padding: $padding-input;
+  padding: $width-padding-input 2 * $width-padding-input;
 
   &:focus {
-    border-color: $color-border-input-focus;
+    border-color: $color-text-primary;
   }
 }
 
@@ -49,7 +49,7 @@
 }
 
 @mixin button() {
-  background-color: $color-background-btn;
+  background-color: $color-background;
   cursor: pointer;
   text-align: center;
 
@@ -70,15 +70,17 @@
   @include input-and-button();
   @include button();
 
+  background-color: $color-background-over;
+
   &[disabled] {
     @include disabled();
   }
 }
 
 @mixin btn-primary() {
-  background-color: $color-background-btn-primary;
-  border-color: $color-background-btn-primary;
-  color: $color-text-btn-primary;
+  background-color: $color-background-primary;
+  border-color: $color-background-primary;
+  color: $color-background;
 
   &[disabled] {
     @include disabled();
@@ -86,7 +88,9 @@
 }
 
 @mixin btn-danger() {
-  color: $color-text-btn-danger;
+  background-color: $color-background-danger;
+  border-color: $color-background-danger;
+  color: $color-background;
 
   &[disabled] {
     @include disabled();

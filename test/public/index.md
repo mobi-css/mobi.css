@@ -247,30 +247,30 @@ Use `flex-left`, `flex-center`, `flex-right`, `flex-top`, `flex-middle` and `fle
 
 Use `flex-vertical` to achieve vertical flexbox layout:
 
-<div class="flex-vertical site-box top-gap" style="height:300px;">
+<div class="flex-vertical site-box top-gap" style="height:200px;">
   <div class="unit-0 site-box">.unit-0</div>
   <div class="unit site-box">.unit</div>
-  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
 
 Aligning also works on vertical flexbox:
 
-<div class="flex-vertical flex-left site-box top-gap" style="height:200px;">
+<div class="flex-vertical flex-left site-box top-gap" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-center site-box" style="height:200px;">
+<div class="flex-vertical flex-center site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-right site-box" style="height:200px;">
+<div class="flex-vertical flex-right site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-top site-box" style="height:200px;">
+<div class="flex-vertical flex-top site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-middle site-box" style="height:200px;">
+<div class="flex-vertical flex-middle site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
-<div class="flex-vertical flex-bottom site-box" style="height:200px;">
+<div class="flex-vertical flex-bottom site-box" style="height:100px;">
   <div class="unit-1-3 site-box">.unit-1-3</div>
 </div>
 
@@ -317,8 +317,8 @@ Use `<hr>` to create horizontal rules:
 
 Use `<figure>` and `<figcaption>` to create self-contained content:
 
-<figure>
-  <img src="assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
+<figure class="text-center">
+  <img src="assets/img/mobi-logo-512.png" height="256" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Mobi.css Logo</figcaption>
 </figure>
 
@@ -358,7 +358,9 @@ Use `<samp>` to create sample output from a computer: <samp>Build passed!</samp>
 
 Use `<br/>` to create line<br/>breaks.
 
-Use `<span>` to create inline container: I <span style="color:red;">love</span> Mobi.css.
+Use `<span>` to create inline container: I <span style="color:purple;">love</span> Mobi.css.
+
+Use `<mark>` to create a <mark>marked text</mark>.
 
 Use `<abbr>` to create <abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>.
 
@@ -372,18 +374,22 @@ Use `<q>` to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.
 
 Use `<ruby>`, `<rp>`, `<rt>` to create ruby annotations:
 
-<ruby>
-  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
-  去 <rp>(</rp><rt>de</rt><rp>)</rp>
-  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
-  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
-  了 <rp>(</rp><rt>le</rt><rp>)</rp>
-</ruby>
+<p>
+  <ruby>
+    我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
+    去 <rp>(</rp><rt>de</rt><rp>)</rp>
+    洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
+    澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
+    了 <rp>(</rp><rt>le</rt><rp>)</rp>
+  </ruby>
+</p>
 
 Use `<bdi>` to create text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.  
 Use `<bdo>` to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.
 
-`<bdi>` is not working in iOS and Chrome. Don't use it in your project, use `<bdo>` instead.
+<p class="alert-danger">
+  <code>&lt;bdi&gt;</code> is not working in iOS and Chrome. Don't use it in your project, use <code>&lt;bdo&gt;</code> instead.
+</p>
 
 Use `<dfn>` to create a defining instance of a term:  
 <dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.  
@@ -399,7 +405,9 @@ http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/Wit
 
 ## Multimedia
 
-![Mobi.css Logo](assets/img/mobi-logo-512.png)
+<p class="text-center">
+  <img src="assets/img/mobi-logo-512.png" height="256" alt="Mobi.css Logo"/>
+</p>
 
 <p>
   <audio controls>
@@ -571,7 +579,9 @@ http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/Wit
   <option value="Microsoft Edge">
 </datalist>
 
-`<datalist>` is not supported in iOS. Don't use this in your project.
+<p class="alert-danger">
+  <code>&lt;datalist&gt;</code> is not supported in iOS. Don't use this in your project.
+</p>
 
 ### File Inputs
 
@@ -601,7 +611,7 @@ http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/Wit
 
 <button type="submit" class="btn">.btn</button>
 <button type="submit" class="btn btn-primary">.btn.btn-primary</button>
-<button type="submit" class="btn btn-danger">.btn.btn-danger></button>
+<button type="submit" class="btn btn-danger">.btn.btn-danger</button>
 
 <a href="javascript:void(0);" class="btn">.btn</a>
 <a href="javascript:void(0);" class="btn btn-primary">.btn.btn-primary</a>
@@ -617,7 +627,9 @@ http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/Wit
 
 All the date inputs look ugly in iOS, and their styles cannot be changed. Please be careful while using them. It's not recommended to use them in your project.
 
-`[type=week]` is not supported in iOS. Don't use this in your project.
+<p class="alert-danger">
+  <code>[type=week]</code> is not supported in iOS. Don't use this in your project.
+</p>
 
 ### Other Inputs
 
@@ -626,11 +638,15 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 <input type="image" src="assets/img/xcatliu.png" alt="xcatliu" width="64"/>
 <input type="hidden"/>
 
-`[type=color]` is not supported in iOS. Don't use this in your project.
+<p class="alert-danger">
+  <code>[type=color]</code> is not supported in iOS. Don't use this in your project.
+</p>
 
 <meter min="0" max="100" value="37">37 degrees</meter>
 
-`<meter>` is not supported in iOS. Don't use this in your project.
+<p class="alert-danger">
+  <code>&lt;meter&gt;</code> is not supported in iOS. Don't use this in your project.
+</p>
 
 </form>
 <form class="form" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
