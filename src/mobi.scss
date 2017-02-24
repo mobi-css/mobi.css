@@ -1,12 +1,11 @@
-@import 'custom';
-@import 'mobi-theme-dark/src/index.scss';
-@import '_mixins';
+@import 'mobi-theme-base/index.scss';
 
-@import 'resets';
+@import 'mobi-plugin-reset/index.scss';
 
-@import 'layout';
-@import 'flexbox';
-@import 'table';
-@import 'form';
-@import 'utilities';
-@import 'mobi-plugin-alert/src/index.scss';
+@import 'mobi-plugin-layout/index.scss';
+@import 'mobi-plugin-flexbox/index.scss';
+@import 'mobi-plugin-table/index.scss';
+@import 'mobi-plugin-button/index.scss';
+@import 'mobi-plugin-form/index.scss';
+@import 'mobi-plugin-color/index.scss';
+@import 'mobi-plugin-alert/index.scss';
