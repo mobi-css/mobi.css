@@ -114,11 +114,7 @@ gulp.task('test:build_html', () => gulp.src(`${TEST_PUBLIC_DIR}/**/*.md`)
           </style>
         </head>
         <body>
-          <div class="flex-center">
-            <div class="container">
-              ${md.render(file.contents.toString())}
-            </div>
-          </div>
+          ${md.render(file.contents.toString())}
         </body>
       </html>
     `);
