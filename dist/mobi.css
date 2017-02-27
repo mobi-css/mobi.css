@@ -1,4 +1,4 @@
-/* Mobi.css v1.2.0 http://getmobicss.com */
+/* Mobi.css v2.0.0-alpha.1 http://getmobicss.com */
 @charset "UTF-8";
 html {
   box-sizing: border-box; }
@@ -262,6 +262,8 @@ progress {
 .flex-middle,
 .flex-bottom,
 .flex-vertical {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
