@@ -78,12 +78,13 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 
 ### Getting started
 
-```shell
-npm install
-npm start
-```
+1. Clone the repo with `git clone https://github.com/xcatliu/mobi.css.git`
 
-Open http://localhost:8000/
+2. Run `npm install` in the root `mobi.css` folder
+
+3. Run `npm start` to start the project
+
+4. Open http://localhost:8000/
 
 ### Testing
 
