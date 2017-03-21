@@ -1,9 +1,11 @@
 @import 'mobi-theme-base/index.scss';
-
 @import 'mobi-plugin-reset/index.scss';
-@import 'mobi-plugin-layout/index.scss';
+@import 'mobi-plugin-container/index.scss';
+@import 'mobi-plugin-flexbox/index.scss';
+@import 'mobi-plugin-top-gap/index.scss';
+@import 'mobi-plugin-show-hide-on-mobile/index.scss';
 @import 'mobi-plugin-table/index.scss';
 @import 'mobi-plugin-button/index.scss';
 @import 'mobi-plugin-form/index.scss';
-@import 'mobi-plugin-color/index.scss';
-@import 'mobi-plugin-alert/index.scss';
+@import 'mobi-plugin-scroll-view/index.scss';
+@import 'mobi-plugin-text/index.scss';

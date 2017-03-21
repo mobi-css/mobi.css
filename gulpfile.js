@@ -8,15 +8,15 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const insert = require('gulp-insert');
-const pkg = require('./package.json');
-const tap = require('gulp-tap');
 const http = require('http');
 const ecstatic = require('ecstatic');
 const runSequence = require('run-sequence');
-const md = require('markdown-it')({
-  html: true,
-}).use(require('markdown-it-anchor'));
-const gutil = require('gulp-util');
+const Pagic = require('pagic');
+const debounce = require('debounce');
+const pkg = require('./package.json');
+
+const DEBOUNCE_DELAY = 300;
+const PORT = 8000;
 
 const postcssConfig = [autoprefixer({ browsers: [
   'last 5 iOS versions',
@@ -37,95 +37,81 @@ const postcssConfig = [autoprefixer({ browsers: [
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
-const TEST_PUBLIC_DIR = path.resolve(__dirname, 'test/public');
-const TEST_PUBLIC_CSS_DIR = path.resolve(__dirname, 'test/public/assets/css');
+const SITE_DIR = path.resolve(__dirname, 'site');
+const SITE_CSS_DIR = path.resolve(__dirname, 'site/css');
+const PUBLIC_DIR = path.resolve(__dirname, 'docs');
 
 gulp.task('default', () => {
-  runSequence('build', 'test:build_css', 'test:build_html', 'test:serve');
-  gulp.watch([
-    `${SRC_DIR}/**/*`,
-  ], () => {
-    runSequence('build', 'test:build_css');
+  runSequence('build', 'serve', () => {
+    gulp.watch([
+      `${SRC_DIR}/**/*`,
+    ], debounce(() => {
+      runSequence('build:src', 'clean:site_css', 'copy:css_to_site');
+    }, DEBOUNCE_DELAY));
+    gulp.watch([
+      `${SITE_DIR}/**/*`,
+    ], debounce(() => {
+      runSequence('pagic');
+    }, DEBOUNCE_DELAY));
   });
-  gulp.watch([
-    `${TEST_PUBLIC_DIR}/**/*`,
-    `!${TEST_PUBLIC_DIR}/**/*.html`,
-  ], ['test:build_html']);
 });
 
 gulp.task('build', (callback) => {
-  runSequence('clean:dist', 'build:mobi', 'build:mobi:min', callback);
+  runSequence('build:src', 'build:site', callback);
+});
+
+gulp.task('build:src', (callback) => {
+  runSequence('clean:dist', 'build:css', 'build:css:min', callback);
+});
+
+gulp.task('build:site', (callback) => {
+  runSequence('clean:site_css', 'copy:css_to_site', 'pagic', callback);
 });
 
 gulp.task('clean:dist', () => {
   rimraf.sync(`${DIST_DIR}/*`);
 });
 
-gulp.task('build:mobi:min', () => gulp.src(`${DIST_DIR}/mobi.css`)
-  .pipe(sourcemaps.init())
-  .pipe(cleanCSS())
-  .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
-  .pipe(rename('mobi.min.css'))
-  .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest(DIST_DIR)));
-
-gulp.task('build:mobi', () => gulp.src(`${SRC_DIR}/mobi.scss`)
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-    includePaths: 'node_modules',
-  }).on('error', sass.logError))
-  .pipe(postcss(postcssConfig))
-  .pipe(insert.prepend(`/* Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
-  .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest(DIST_DIR)));
-
-gulp.task('test:build_css', ['test:clean_css', 'test:copy_css']);
-
-gulp.task('test:clean_css', () => {
-  rimraf.sync(`${TEST_PUBLIC_CSS_DIR}/*`);
+gulp.task('build:css', (callback) => {
+  gulp.src(`${SRC_DIR}/mobi.scss`)
+    .pipe(sass({
+      includePaths: 'node_modules',
+    }).on('error', sass.logError))
+    .pipe(postcss(postcssConfig))
+    .pipe(insert.prepend(`/*!\n * Mobi.css v${pkg.version}\n * ${pkg.homepage}\n */\n\n`))
+    .pipe(gulp.dest(DIST_DIR))
+    .on('end', callback);
 });
 
-gulp.task('test:copy_css', () => gulp.src(`${DIST_DIR}/**/*`)
-  .pipe(gulp.dest(TEST_PUBLIC_CSS_DIR)));
+gulp.task('build:css:min', (callback) => {
+  gulp.src(`${DIST_DIR}/mobi.css`)
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS())
+    .pipe(rename('mobi.min.css'))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest(DIST_DIR))
+    .on('end', callback);
+});
 
-gulp.task('test:build_html', () => gulp.src(`${TEST_PUBLIC_DIR}/**/*.md`)
-  .pipe(tap(file => {
-    /* eslint no-param-reassign:0 */
-    const relativeToPublicDir = path.relative(
-      path.resolve(file.path, '..'),
-      path.resolve(TEST_PUBLIC_DIR)
-    );
-    const mobicssPath = path.join(relativeToPublicDir, 'assets/css/mobi.min.css');
-    file.contents = new Buffer(`
-      <!doctype html>
-      <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta http-equiv="x-ua-compatible" content="ie=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0,
-            maximum-scale=1.0, user-scalable=no"/>
+gulp.task('clean:site_css', () => {
+  rimraf.sync(`${SITE_CSS_DIR}/*`);
+});
 
-          <link rel="stylesheet" href="${mobicssPath}" />
-          <style>
-            .site-box {
-              background-color: hsla(210, 56%, 50%, 0.1);
-              border: 1px solid hsla(210, 86%, 50%, 0.1);
-            }
-          </style>
-        </head>
-        <body>
-          ${md.render(file.contents.toString())}
-        </body>
-      </html>
-    `);
-    file.path = gutil.replaceExtension(file.path, '.html');
-  }))
-  .pipe(gulp.dest(TEST_PUBLIC_DIR)));
+gulp.task('copy:css_to_site', (callback) => {
+  gulp.src(`${DIST_DIR}/**/*`)
+    .pipe(gulp.dest(SITE_CSS_DIR))
+    .on('end', callback);
+});
 
-gulp.task('test:serve', () => {
+gulp.task('pagic', () => {
+  const pagic = new Pagic();
+  pagic.build();
+});
+
+gulp.task('serve', () => {
   http.createServer(
-    ecstatic({ root: TEST_PUBLIC_DIR })
-  ).listen(8000);
+    ecstatic({ root: PUBLIC_DIR })
+  ).listen(PORT);
 
-  console.log(`ecstatic serving ${TEST_PUBLIC_DIR} at http://0.0.0.0:8000`);
+  console.log(`ecstatic serving ${PUBLIC_DIR} at http://0.0.0.0:${PORT}`);
 });
