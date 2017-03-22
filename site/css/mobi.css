@@ -247,6 +247,11 @@ progress {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
+@media (min-width: 1000px) {
+  .container-wider,
+  .container-fluid {
+    padding: 0 48px 12px; } }
+
 .container {
   max-width: 800px; }
 
@@ -260,8 +265,6 @@ progress {
 .flex-middle,
 .flex-bottom,
 .flex-vertical {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
