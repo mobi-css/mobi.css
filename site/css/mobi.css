@@ -24,7 +24,7 @@ body {
   background-color: white;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
   margin: 0; }
 
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 24px 0 0; }
+  margin: 2.4rem 0 0; }
 
 p,
 blockquote,
@@ -46,7 +46,7 @@ ol,
 pre,
 address,
 figure {
-  margin: 12px 0 0; }
+  margin: 1.2rem 0 0; }
 
 h1,
 h2,
@@ -57,22 +57,22 @@ h6 {
   font-weight: 600; }
 
 h1 {
-  font-size: 32px; }
+  font-size: 3.2rem; }
 
 h2 {
-  font-size: 26px; }
+  font-size: 2.6rem; }
 
 h3 {
-  font-size: 22px; }
+  font-size: 2.2rem; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 2rem; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 1.8rem; }
 
 h6 {
-  font-size: 16px; }
+  font-size: 1.6rem; }
 
 a {
   color: #2680d9;
@@ -97,24 +97,24 @@ samp {
 pre {
   background-color: rgba(51, 51, 51, 0.05);
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.2;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 12px; }
+  padding: 1.2rem; }
   pre code {
     background-color: transparent;
-    font-size: 13px;
+    font-size: 1.3rem;
     padding: 0; }
 
 blockquote {
   border-left: 5px solid #ddd;
   color: #777;
-  padding-left: 12px; }
+  padding-left: 1.2rem; }
 
 ul,
 ol {
-  padding-left: 24px; }
+  padding-left: 2.4rem; }
 
 dt,
 dd,
@@ -220,8 +220,8 @@ html [type=button],
 
 fieldset {
   border: 1px solid #ddd;
-  margin: 12px 0 0;
-  padding: 0 12px 12px; }
+  margin: 1.2rem 0 0;
+  padding: 0 1.2rem 1.2rem; }
 
 legend {
   padding: 0 0.2em; }
@@ -240,17 +240,17 @@ progress {
 .container,
 .container-wider,
 .container-fluid {
-  overflow-y: auto;
-  padding: 0 12px 12px;
+  overflow: hidden;
+  padding: 0 1.2rem 1.2rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .container-wider,
   .container-fluid {
-    padding: 0 48px 12px; } }
+    padding: 0 4.8rem 1.2rem; } }
 
 .container {
   max-width: 800px; }
@@ -265,6 +265,8 @@ progress {
 .flex-middle,
 .flex-bottom,
 .flex-vertical {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
@@ -330,8 +332,8 @@ progress {
           align-items: flex-end; }
 
 .units-gap {
-  margin-left: -6px;
-  margin-right: -6px; }
+  margin-left: -0.6rem;
+  margin-right: -0.6rem; }
   .units-gap > .unit,
   .units-gap > .unit-0,
   .units-gap > .unit-1,
@@ -341,12 +343,12 @@ progress {
   .units-gap > .unit-2-3,
   .units-gap > .unit-1-4,
   .units-gap > .unit-3-4 {
-    padding-left: 6px;
-    padding-right: 6px; }
+    padding-left: 0.6rem;
+    padding-right: 0.6rem; }
 
 .units-gap-big {
-  margin-left: -12px;
-  margin-right: -12px; }
+  margin-left: -1.2rem;
+  margin-right: -1.2rem; }
   .units-gap-big > .unit,
   .units-gap-big > .unit-0,
   .units-gap-big > .unit-1,
@@ -356,8 +358,8 @@ progress {
   .units-gap-big > .unit-2-3,
   .units-gap-big > .unit-1-4,
   .units-gap-big > .unit-3-4 {
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 1.2rem;
+    padding-right: 1.2rem; }
 
 .unit {
   -webkit-flex-basis: 0;
@@ -450,7 +452,7 @@ progress {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-@media (max-width: 999px) {
+@media (max-width: 767px) {
   .unit-1-on-mobile {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -460,19 +462,19 @@ progress {
     max-height: 100%; } }
 
 .top-gap-big {
-  margin-top: 24px !important; }
+  margin-top: 2.4rem !important; }
 
 .top-gap {
-  margin-top: 12px !important; }
+  margin-top: 1.2rem !important; }
 
 .top-gap-0 {
   margin-top: 0 !important; }
 
-@media (max-width: 999px) {
+@media (max-width: 767px) {
   .hide-on-mobile {
     display: none !important; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .show-on-mobile {
     display: none !important; } }
 
@@ -508,9 +510,9 @@ progress {
   color: #333;
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.25;
-  margin: 12px 0 0;
+  margin: 1.2rem 0 0;
   padding: 5px 10px;
   text-align: center; }
   .btn:focus {
@@ -550,7 +552,7 @@ progress {
     cursor: pointer;
     display: block;
     line-height: 1.25;
-    margin-top: 12px;
+    margin-top: 1.2rem;
     padding-bottom: 6px;
     padding-top: 6px; }
   .form [type=text],
@@ -570,11 +572,11 @@ progress {
     border-radius: 3px;
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 5px;
     display: block;
     line-height: 1.25;
-    margin: 12px 0 0;
+    margin: 1.2rem 0 0;
     width: 100%; }
     .form [type=text]:focus,
     .form [type=password]:focus,
@@ -586,14 +588,14 @@ progress {
     .form textarea:focus,
     .form select:focus {
       border-color: #2680d9; }
-  @media (max-width: 999px) {
+  @media (max-width: 767px) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
     .form [type=date],
     .form [type=datetime-local] {
-      margin: 12px 0 0; } }
-  @media (min-width: 1000px) {
+      margin: 1.2rem 0 0; } }
+  @media (min-width: 768px) {
     .form [type=time],
     .form [type=week],
     .form [type=month],
@@ -607,11 +609,11 @@ progress {
       border-radius: 3px;
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-size: 16px;
+      font-size: 1.6rem;
       padding: 5px;
       display: block;
       line-height: 1.25;
-      margin: 12px 0 0;
+      margin: 1.2rem 0 0;
       width: 100%; }
       .form [type=time]:focus,
       .form [type=week]:focus,
@@ -629,7 +631,7 @@ progress {
   .form [type=range] {
     display: block;
     line-height: 1.25;
-    margin: 12px 0 0;
+    margin: 1.2rem 0 0;
     width: 100%;
     cursor: pointer;
     padding: 6px; }
@@ -637,7 +639,7 @@ progress {
   .form [type=image] {
     cursor: pointer;
     display: block;
-    margin: 12px 0 0; }
+    margin: 1.2rem 0 0; }
   .form [disabled] {
     cursor: default;
     opacity: 0.5;
