@@ -1,6 +1,6 @@
 {
   "name": "mobi.css",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "A themeable, pluginable, mobile-first css framework",
   "main": "index.scss",
   "scripts": {
