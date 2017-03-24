@@ -52,7 +52,7 @@
     "stylelint-config-standard": "^16.0.0"
   },
   "dependencies": {
-    "mobi-plugin-button": "^0.2.3",
+    "mobi-plugin-button": "^0.2.4",
     "mobi-plugin-container": "^0.1.10",
     "mobi-plugin-flexbox": "^0.2.3",
     "mobi-plugin-form": "^0.1.2",

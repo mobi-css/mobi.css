@@ -504,6 +504,7 @@ progress {
   border-radius: 0.3rem;
   color: #333;
   cursor: pointer;
+  display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
   line-height: 1.25;
