@@ -247,12 +247,6 @@ progress {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-@media (min-width: 768px) {
-  .container,
-  .container-wider,
-  .container-fluid {
-    padding: 0 6rem 1.5rem; } }
-
 .container {
   max-width: 800px; }
 

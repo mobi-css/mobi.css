@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "mobi-plugin-button": "^0.2.3",
-    "mobi-plugin-container": "^0.1.9",
+    "mobi-plugin-container": "^0.1.10",
     "mobi-plugin-flexbox": "^0.2.3",
     "mobi-plugin-form": "^0.1.2",
     "mobi-plugin-reset": "^0.1.5",
