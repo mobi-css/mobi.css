@@ -14,7 +14,7 @@ html {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(51, 51, 51, 0.05);
+  -webkit-tap-highlight-color: #f2f2f2;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -89,13 +89,13 @@ dt {
 code,
 kbd,
 samp {
-  background-color: rgba(51, 51, 51, 0.05);
+  background-color: #f2f2f2;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 85%;
   padding: 0.2em 0.3em; }
 
 pre {
-  background-color: rgba(51, 51, 51, 0.05);
+  background-color: #f2f2f2;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.3rem;
   line-height: 1.2;
@@ -149,7 +149,7 @@ time {
   font-style: normal; }
 
 mark {
-  background-color: #f0a742;
+  background-color: yellow;
   color: #333;
   padding: 0 0.2em; }
 
@@ -189,7 +189,6 @@ label,
 select,
 summary,
 textarea {
-  outline: 0;
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
 
@@ -248,10 +247,10 @@ progress {
           flex-grow: 1; }
 
 .container {
-  max-width: 800px; }
+  max-width: 80rem; }
 
 .container-wider {
-  max-width: 1200px; }
+  max-width: 120rem; }
 
 .flex-left,
 .flex-center,
@@ -492,7 +491,7 @@ progress {
     padding: 0.5rem;
     text-align: left; }
   .table th {
-    background-color: rgba(51, 51, 51, 0.05);
+    background-color: #f2f2f2;
     font-weight: 600; }
 
 .btn {
@@ -511,9 +510,8 @@ progress {
   margin: 1.5rem 0 0;
   padding: 0.5rem 1rem;
   text-align: center; }
-  .btn:focus {
-    border-color: #2680d9; }
   .btn:hover, .btn:active {
+    background-color: #f2f2f2;
     text-decoration: none; }
   .btn[disabled] {
     cursor: default;
@@ -524,6 +522,8 @@ progress {
   background-color: #2680d9;
   border-color: #2680d9;
   color: white; }
+  .btn-primary:hover, .btn-primary:active {
+    background-color: #2273c3; }
   .btn-primary[disabled] {
     cursor: default;
     opacity: 0.5;
@@ -533,6 +533,8 @@ progress {
   background-color: #db5757;
   border-color: #db5757;
   color: white; }
+  .btn-danger:hover, .btn-danger:active {
+    background-color: #d74242; }
   .btn-danger[disabled] {
     cursor: default;
     opacity: 0.5;
@@ -584,7 +586,8 @@ progress {
     .form [type=number]:focus,
     .form textarea:focus,
     .form select:focus {
-      border-color: #2680d9; }
+      border-color: #2680d9;
+      outline: 0; }
   @media (max-width: 767px) {
     .form [type=time],
     .form [type=week],
@@ -617,7 +620,8 @@ progress {
       .form [type=month]:focus,
       .form [type=date]:focus,
       .form [type=datetime-local]:focus {
-        border-color: #2680d9; } }
+        border-color: #2680d9;
+        outline: 0; } }
   .form [type=checkbox],
   .form [type=radio] {
     cursor: pointer;
@@ -645,7 +649,7 @@ progress {
     opacity: 0.5;
     pointer-events: none; }
   .form [readonly] {
-    background-color: rgba(51, 51, 51, 0.05); }
+    background-color: #f2f2f2; }
 
 .scroll-view {
   overflow: auto;
