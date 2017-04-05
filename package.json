@@ -52,16 +52,16 @@
     "stylelint-config-standard": "^16.0.0"
   },
   "dependencies": {
-    "mobi-plugin-button": "^0.2.7",
-    "mobi-plugin-container": "^0.1.13",
-    "mobi-plugin-flexbox": "^0.2.6",
-    "mobi-plugin-form": "^0.1.5",
-    "mobi-plugin-reset": "^0.1.10",
-    "mobi-plugin-scroll-view": "^0.1.4",
-    "mobi-plugin-show-hide-on-mobile": "^0.1.4",
-    "mobi-plugin-table": "^0.1.6",
-    "mobi-plugin-text": "^0.1.5",
-    "mobi-plugin-top-gap": "^0.1.5",
-    "mobi-theme-base": "^0.2.6"
+    "mobi-plugin-button": "^1.0.0",
+    "mobi-plugin-container": "^1.0.0",
+    "mobi-plugin-flexbox": "^1.0.0",
+    "mobi-plugin-form": "^1.0.0",
+    "mobi-plugin-reset": "^1.0.0",
+    "mobi-plugin-scroll-view": "^1.0.0",
+    "mobi-plugin-show-hide-on-mobile": "^1.0.0",
+    "mobi-plugin-table": "^1.0.0",
+    "mobi-plugin-text": "^1.0.0",
+    "mobi-plugin-top-gap": "^1.0.0",
+    "mobi-theme-base": "^1.0.0"
   }
 }

@@ -78,7 +78,7 @@ gulp.task('build:css', (callback) => {
       includePaths: 'node_modules',
     }).on('error', sass.logError))
     .pipe(postcss(postcssConfig))
-    .pipe(insert.prepend(`/*!\n * Mobi.css v${pkg.version}\n * ${pkg.homepage}\n */\n\n`))
+    .pipe(insert.prepend(`/*! Mobi.css v${pkg.version} ${pkg.homepage} */\n`))
     .pipe(gulp.dest(DIST_DIR))
     .on('end', callback);
 });
