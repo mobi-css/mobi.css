@@ -4,9 +4,9 @@
   </a>
 </p>
 
-[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
-
 # [Mobi.css](http://getmobicss.com)
+
+[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
 
 > A lightweight, scalable, mobile-first css framework
 
