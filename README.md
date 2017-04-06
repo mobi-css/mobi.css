@@ -10,11 +10,6 @@
 
 > A lightweight, scalable, mobile-first css framework
 
-## Getting started
-
-- [Documents](http://getmobicss.com)
-- [Downloads](https://github.com/mobi-css/mobi.css/releases)
-
 ## Features
 
 ### Lightweight
