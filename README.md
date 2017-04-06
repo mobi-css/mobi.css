@@ -1,10 +1,10 @@
 <p align="center">
   <a href="http://getmobicss.com/">
-    <img width="256" alt="Mobi.css Logo" src="http://getmobicss.com/img/mobi-logo.png"/>
+    <img height="200" alt="Mobi.css Logo" src="http://getmobicss.com/img/mobi-logo.png"/>
   </a>
 </p>
 
-[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg?style=flat-square)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
+[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
 
 # [Mobi.css](http://getmobicss.com)
 
