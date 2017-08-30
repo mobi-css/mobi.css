@@ -1,0 +1,61 @@
+.btn {
+    appearance: none;
+    background-color: var(--color-background);
+    border: var(--width-border) solid var(--color-border);
+    border-radius: var(--width-border-radius);
+    color: var(--color-text);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height-input);
+    margin: var(--width-gap) 0 0;
+    padding: var(--width-padding-input) 2 * var(--width-padding-input);
+    text-align: center;
+}
+.btn:hover,
+.btn:active {
+    background-color: var(--color-background-faded);
+    text-decoration: none;
+}
+.btn[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-background);
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: darken(var(--color-primary), 5%);
+}
+.btn-primary[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+    color: var(--color-background);
+}
+.btn-danger:hover,
+.btn-danger:active {
+    background-color: darken(var(--color-danger), 5%);
+}
+
+.btn-danger[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}

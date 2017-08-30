@@ -1,0 +1,53 @@
+{
+  "name": "mobi-plugin-flexbox",
+  "version": "1.0.0",
+  "description": "Use flexbox to layout.",
+  "main": "index.scss",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "npm run lint",
+    "lint": "stylelint **/*.scss --syntax scss && eslint .",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobi-css/mobi-plugin-flexbox.git"
+  },
+  "keywords": [
+    "mobi-css",
+    "mobi-plugin",
+    "flexbox",
+    "css"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobi-css/mobi-plugin-flexbox/issues"
+  },
+  "homepage": "https://mobi-css.github.io/mobi-plugin-flexbox/",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "debounce": "^1.0.0",
+    "ecstatic": "^2.1.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb-base": "^5.0.3",
+    "eslint-plugin-import": "^1.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-insert": "^0.5.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "pagic": "^0.6.0",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "dependencies": {
+    "mobi-theme-base": "^1.0.0"
+  }
+}

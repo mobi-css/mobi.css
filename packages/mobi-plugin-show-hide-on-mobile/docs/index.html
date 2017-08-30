@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no"/>
+    
+    <title>Show hide on mobile</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mobi-plugin-prism/dist/mobi-plugin-prism.min.css" />
+    <link rel="stylesheet" href="./css/mobi-plugin-show-hide-on-mobile.min.css" />
+  </head>
+  <body>
+    <div class="flex-center">
+      <div class="container">
+        <h1 id="show-hide-on-mobile">Show hide on mobile</h1>
+<blockquote>
+<p>Show element on mobile or hide element on mobile.</p>
+</blockquote>
+<h2 id="one-breakpoint">One breakpoint</h2>
+<p>There are only one breakpoint in Mobi.css. It separates the mobile and desktop.</p>
+<p>Device with width less than <code>768px</code> will be recognized as mobile device.</p>
+<p>Device with width equal or more than <code>768px</code> will be recognized as desktop device.</p>
+<h2 id="show-on-mobile">Show on mobile</h2>
+<p>Element with <code>.show-on-mobile</code> will only show on mobile:</p>
+<p class="show-on-mobile">
+  This part will only show on mobile
+</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>show-on-mobile<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  This part will only show on mobile
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+</code></pre>
+<h2 id="hide-on-mobile">Hide on mobile</h2>
+<p>Element with <code>.hide-on-mobile</code> will hide on mobile and show on desktop:</p>
+<p class="hide-on-mobile">
+  This part will hide on mobile
+</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>hide-on-mobile<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  This part will hide on mobile
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+</code></pre>
+
+      </div>
+    </div>
+  </body>
+</html>

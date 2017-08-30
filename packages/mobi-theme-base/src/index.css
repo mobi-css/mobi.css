@@ -1,0 +1,87 @@
+:root {
+    /* Colors */
+    --color-background: white;
+    --color-text: #333;
+    --color-text-muted: #777;
+    --color-border: #ddd;
+
+    --color-primary: hsl(210, 70%, 50%);
+    --color-danger: hsl(0, 65%, 60%);
+
+    --color-background-faded: color(var(--color-background) lightness(-5%));
+
+    /* Layout */
+    --max-width-container: 800px;
+    --width-breakpoint: 768px;
+
+    /* Spacing */
+    --size-base: 10px;
+
+    --width-gap: calc(var(--size-base) * 1.5);
+    --width-gap-double: calc(var(--width-gap) * 2);
+    --width-gap-half: calc(var(--width-gap) * 0.5);
+
+    --width-padding-input: calc(var(--size-base) * 0.5);
+
+    --width-border-radius: calc(var(--size-base) * 0.3);
+
+    --width-border: 1px;
+
+    --padding-code: 0.2em 0.3em;
+
+    /* Typography */
+    --font-size: calc(var(--size-base) * 1.6);
+
+    --font-size-h1: calc(var(--size-base) * 3.2);
+    --font-size-h2: calc(var(--size-base) * 2.6);
+    --font-size-h3: calc(var(--size-base) * 2.2);
+    --font-size-h4: calc(var(--size-base) * 2);
+    --font-size-h5: calc(var(--size-base) * 1.8);
+    --font-size-h6: calc(var(--size-base) * 1.6);
+
+    --font-size-pre: calc(var(--size-base) * 1.3);
+
+    --font-size-small: 85%;
+
+    --line-height: 1.5;
+    --line-height-input: 1.25;
+    --line-height-pre: 1.2;
+
+    --font-weight-bold: 600;
+
+    --font-family:
+        /* Safari for OS X and iOS (San Francisco) */
+        '-apple-system',
+        /* Chrome for OS X (San Francisco) */
+        'BlinkMacSystemFont',
+        /* Chinese font for OSX and iOS */
+        'Hiragino Sans GB',
+        /* Android */
+        'Roboto',
+        /* Older Android */
+        'Droid Sans',
+        /* Firefox OS [R.I.P.] */
+        'Fira Sans',
+        /* Windows */
+        'Segoe UI',
+        /* Chinese font for Windows */
+        'Microsoft Yahei', '微软雅黑',
+        /* Linux */
+        /* KDE */
+        'Oxygen',
+        'Ubuntu',
+        /* GNOME */
+        'Cantarell',
+        /* Basic web fallback */
+        'Arial', 'Helvetica', 'STHeiti', sans-serif,
+        /* Emoji */
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    --font-family-monospace:
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        monospace;
+}

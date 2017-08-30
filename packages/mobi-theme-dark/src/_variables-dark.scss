@@ -1,0 +1,19 @@
+//
+// Colors
+//
+
+// Common colors
+// Add !default so _custom.scss can override it
+$color-background: #444 !default;
+// Use rgba so it can nesting
+$color-background-over: rgba(255, 255, 255, 0.05) !default;
+$color-border: #555 !default;
+$color-text-muted: #777 !default;
+$color-text: #aaa !default;
+
+// hsl is easy to modify
+$color-text-primary: hsl(50, 100%, 50%) !default;
+$color-text-danger: hsl(0, 94%, 60%) !default;
+
+// `mark`
+$color-background-mark: #ff0 !default;

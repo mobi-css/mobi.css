@@ -1,0 +1,29 @@
+.table {
+  // Reset for nesting within parents with `background-color`.
+  background-color: $color-background;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  caption {
+    caption-side: bottom;
+    color: $color-text-muted;
+    font-size: $font-size-small;
+    padding: $width-padding-input;
+    text-align: left;
+  }
+
+  th,
+  td {
+    border: 0;
+    border-bottom: $width-border solid $color-border;
+    padding: $width-padding-input;
+    text-align: left;
+  }
+
+  th {
+    background-color: $color-background-faded;
+    font-weight: $font-weight-bold;
+  }
+}
