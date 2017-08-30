@@ -1,53 +1,35 @@
 {
   "name": "mobi-plugin-form",
-  "version": "1.0.0",
-  "description": "The form control styles.",
-  "main": "index.scss",
+  "version": "1.1.1",
+  "description": "The form plugin for Mobi.css",
+  "main": "src/index.css",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "test": "npm run lint",
-    "lint": "stylelint **/*.scss --syntax scss && eslint .",
-    "preversion": "npm test",
     "version": "npm run build && git add -A ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mobi-css/mobi-plugin-form.git"
-  },
+  "repository": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-form",
   "keywords": [
-    "mobi-css",
-    "mobi-plugin",
     "form",
+    "mobi-plugin",
+    "mobi-css",
     "css"
   ],
   "author": "xcatliu <xcatliu@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mobi-css/mobi-plugin-form/issues"
-  },
-  "homepage": "https://mobi-css.github.io/mobi-plugin-form/",
+  "homepage": "http://getmobicss.com/plugins/form/",
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
-    "debounce": "^1.0.0",
-    "ecstatic": "^2.1.0",
-    "eslint": "^3.4.0",
-    "eslint-config-airbnb-base": "^5.0.3",
-    "eslint-plugin-import": "^1.14.0",
+    "cssnano": "^4.0.0-rc.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.3",
     "gulp-insert": "^0.5.0",
-    "gulp-postcss": "^6.1.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "pagic": "^0.6.0",
-    "rimraf": "^2.5.4",
-    "run-sequence": "^1.2.2",
-    "stylelint": "^7.9.0",
-    "stylelint-config-standard": "^16.0.0"
+    "gulp-sourcemaps": "^2.6.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "rimraf": "^2.6.1"
   },
   "dependencies": {
-    "mobi-theme-base": "^1.0.0"
+    "mobi-theme-base": "^1.1.2"
   }
 }

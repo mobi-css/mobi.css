@@ -1,0 +1,4 @@
+.scroll-view {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}

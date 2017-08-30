@@ -1,22 +1,41 @@
-/*! mobi-plugin-table v1.0.0 https://mobi-css.github.io/mobi-plugin-table/ */
+/*! mobi-plugin-table v1.1.1 http://getmobicss.com/plugins/table/ */
+:root {
+    /* Colors */
+
+    /* Layout */
+
+    /* Spacing */
+
+    /* Typography */
+}
 .table {
-  background-color: white;
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%; }
-  .table caption {
-    caption-side: bottom;
-    color: #777;
-    font-size: 85%;
-    padding: 5px;
-    text-align: left; }
-  .table th,
-  .table td {
+    /* Reset for nesting within parents with `background-color`. */
+    background-color: white;
     border: 0;
-    border-bottom: 1px solid #ddd;
-    padding: 5px;
-    text-align: left; }
-  .table th {
-    background-color: #f2f2f2;
-    font-weight: 600; }
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    caption {
+        caption-side: bottom;
+        color: #777;
+        font-size: 85%;
+        padding: 5px;
+        text-align: left;
+    }
+
+    th,
+    td {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        text-align: left;
+    }
+
+    th {
+        background-color: rgb(242, 242, 242);
+        font-weight: 600;
+    }
+}
+
+/*# sourceMappingURL=mobi-plugin-table.css.map */

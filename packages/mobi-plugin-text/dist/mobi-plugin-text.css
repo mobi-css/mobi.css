@@ -1,26 +1,38 @@
-/*! mobi-plugin-text v1.0.0 https://mobi-css.github.io/mobi-plugin-text/ */
+/*! mobi-plugin-text v1.1.1 http://getmobicss.com/plugins/text */
+:root {
+    /* Colors */
+
+    /* Layout */
+
+    /* Spacing */
+
+    /* Typography */
+}
 .text-left {
-  text-align: left; }
-
+    text-align: left;
+}
 .text-center {
-  text-align: center; }
-
+    text-align: center;
+}
 .text-right {
-  text-align: right; }
-
+    text-align: right;
+}
 .text-muted {
-  color: #777; }
-
+    color: #777;
+}
 .text-primary {
-  color: #2680d9; }
-
+    color: hsl(210, 70%, 50%);
+}
 .text-danger {
-  color: #db5757; }
-
+    color: hsl(0, 65%, 60%);
+}
 a.text-muted,
 a.text-primary,
 a.text-danger {
-  text-decoration: underline; }
-
+    text-decoration: underline;
+}
 .text-small {
-  font-size: 85%; }
+    font-size: 85%;
+}
+
+/*# sourceMappingURL=mobi-plugin-text.css.map */

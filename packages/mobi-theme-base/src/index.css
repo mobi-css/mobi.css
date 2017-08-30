@@ -12,7 +12,9 @@
 
     /* Layout */
     --max-width-container: 800px;
-    --width-breakpoint: 768px;
+    --max-width-container-wider: 1200px;
+    @custom-media --mobile-viewport (max-width: 767px);
+    @custom-media --desktop-viewport (min-width: 768px);
 
     /* Spacing */
     --size-base: 10px;

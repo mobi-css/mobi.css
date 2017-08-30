@@ -1,8 +1,22 @@
-/*! mobi-plugin-show-hide-on-mobile v1.0.0 https://mobi-css.github.io/mobi-plugin-show-hide-on-mobile/ */
+/*! mobi-plugin-show-hide-on-mobile v1.1.1 http://getmobicss.com/plugins/show-hide-on-mobile/ */
+:root {
+    /* Colors */
+
+    /* Layout */
+
+    /* Spacing */
+
+    /* Typography */
+}
 @media (max-width: 767px) {
   .hide-on-mobile {
-    display: none !important; } }
-
+    display: none !important;
+  }
+}
 @media (min-width: 768px) {
   .show-on-mobile {
-    display: none !important; } }
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=mobi-plugin-show-hide-on-mobile.css.map */
