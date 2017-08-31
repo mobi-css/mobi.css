@@ -4,6 +4,9 @@
 		"test": "stylelint **/src/**/*.css",
 		"build": "lerna run build"
 	},
+    "repository": "https://github.com/mobi-css/mobi.css",
+    "author": "xcatliu <xcatliu@gmail.com>",
+    "license": "MIT",
 	"browserslist": [
 		"last 5 iOS versions",
 		"last 5 Android versions",
