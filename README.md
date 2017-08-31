@@ -39,7 +39,12 @@ npm run build
 npm test
 
 # Publish
-lerna publish <--repo-version>
+lerna publish --repo-version=<version> --skip-git --skip-npm
+npm run build
+git add :/
+git reset -- **/package.json
+git commit -m "Build v<version>"
+lerna publish --repo-version=<version>
 ```
 
 ## Community
