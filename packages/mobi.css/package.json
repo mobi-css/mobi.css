@@ -1,7 +1,7 @@
 {
     "name": "mobi.css",
     "version": "2.0.0-beta.3",
-    "description": "A lightweight, scalable, mobile-first css framework",
+    "description": "A lightweight, scalable, mobile-first CSS framework",
     "main": "src/mobi.css",
     "scripts": {
         "start": "gulp",

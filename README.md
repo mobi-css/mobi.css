@@ -8,7 +8,7 @@
 
 [![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
 
-> A lightweight, scalable, mobile-first css framework
+> A lightweight, scalable, mobile-first CSS framework
 
 ## Features
 
@@ -18,7 +18,7 @@ The default bundle of Mobi.css provides the basic styles to build clean and eleg
 
 ### Scalable
 
-Plugin system makes css scalable. You can import plugins to enhance Mobi.css, or use the plugin as a standalone css library. **It's even possible to use a plugin without Mobi.css**.
+Plugin system makes CSS scalable. You can import plugins to enhance Mobi.css, or use the plugin as a standalone CSS library. **It's even possible to use a plugin without Mobi.css**.
 
 ### Mobile-first
 

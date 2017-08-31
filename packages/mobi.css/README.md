@@ -1,5 +1,5 @@
 # Mobi.css
 
-> A lightweight, scalable, mobile-first css framework
+> A lightweight, scalable, mobile-first CSS framework
 
 http://getmobicss.com
