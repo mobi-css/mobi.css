@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-show-hide-on-mobile",
-    "version": "2.0.0-beta.3",
+    "version": "2.0.0-beta.4",
     "description": "The show-hide-on-mobile plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {

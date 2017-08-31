@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-top-gap",
-    "version": "2.0.0-beta.3",
+    "version": "2.0.0-beta.4",
     "description": "The top-gap plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
