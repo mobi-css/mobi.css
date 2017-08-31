@@ -1,4 +1,8 @@
 {
+	"scripts": {
+		"bootstrap": "lerna bootstrap --hoist",
+		"build": "lerna run build"
+	},
 	"browserslist": [
 		"last 5 iOS versions",
 		"last 5 Android versions",
@@ -14,9 +18,18 @@
 		"last 3 Opera versions"
 	],
 	"devDependencies": {
+		"cssnano": "^4.0.0-rc.0",
 		"eslint": "^4.5.0",
 		"eslint-config-alloy": "^1.0.0",
+		"gulp": "^3.9.1",
+		"gulp-insert": "^0.5.0",
+		"gulp-postcss": "^7.0.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sourcemaps": "^2.6.1",
 		"lerna": "^2.1.2",
+		"postcss-cssnext": "^3.0.2",
+		"postcss-import": "^10.0.0",
+		"rimraf": "^2.6.1",
 		"stylelint": "^8.0.0",
 		"stylelint-config-standard": "^17.0.0"
 	}

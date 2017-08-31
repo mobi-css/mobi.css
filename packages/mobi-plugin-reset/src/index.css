@@ -117,7 +117,7 @@ pre {
     padding: var(--width-gap);
 
     /* Override the code styles */
-    code {
+    & code {
         background-color: transparent;
         font-size: var(--font-size-pre);
         padding: 0;

@@ -6,7 +6,7 @@
     border-spacing: 0;
     width: 100%;
 
-    caption {
+    & caption {
         caption-side: bottom;
         color: var(--color-text-muted);
         font-size: var(--font-size-small);
@@ -14,15 +14,15 @@
         text-align: left;
     }
 
-    th,
-    td {
+    & th,
+    & td {
         border: 0;
         border-bottom: var(--width-border) solid var(--color-border);
         padding: var(--width-padding-input);
         text-align: left;
     }
 
-    th {
+    & th {
         background-color: var(--color-background-faded);
         font-weight: var(--font-weight-bold);
     }

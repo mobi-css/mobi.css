@@ -1,4 +1,4 @@
-/*! mobi-plugin-button v1.1.1 http://getmobicss.com/plugins/button/ */
+/*! mobi-plugin-button v2.0.0-beta.2 http://getmobicss.com/plugins/button/ */
 :root {
     /* Colors */
 
@@ -46,7 +46,8 @@
     font-size: 16px;
     line-height: 1.25;
     margin: 15px 0 0;
-    padding: 5px 2 * 5px;
+    padding: 5px * 2;
+    padding: 5px 5px;
     text-align: center
 }
 .btn:hover,
