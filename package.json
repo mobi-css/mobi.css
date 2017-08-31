@@ -1,6 +1,7 @@
 {
 	"scripts": {
 		"bootstrap": "lerna bootstrap --hoist",
+		"test": "stylelint **/src/**/*.css",
 		"build": "lerna run build"
 	},
 	"browserslist": [
