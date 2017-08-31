@@ -42,8 +42,8 @@ npm test
 lerna publish --repo-version=<version> --skip-git --skip-npm
 npm run build
 git add :/
-git reset -- **/package.json
-git commit -m "Build v<version>"
+git reset -- **/package.json lerna.json
+git commit -m "Build <version>"
 lerna publish --repo-version=<version>
 ```
 
