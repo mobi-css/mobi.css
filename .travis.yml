@@ -5,6 +5,7 @@ branches:
   only:
   - master
 install:
+- npm install
 - npm run bootstrap
 script:
 - npm test
