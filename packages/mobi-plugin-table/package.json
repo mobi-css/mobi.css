@@ -1,35 +1,24 @@
 {
-  "name": "mobi-plugin-table",
-  "version": "1.1.1",
-  "description": "The table plugin for Mobi.css",
-  "main": "src/index.css",
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "version": "npm run build && git add -A ."
-  },
-  "repository": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-table",
-  "keywords": [
-    "table",
-    "mobi-plugin",
-    "mobi-css",
-    "css"
-  ],
-  "author": "xcatliu <xcatliu@gmail.com>",
-  "license": "MIT",
-  "homepage": "http://getmobicss.com/plugins/table/",
-  "devDependencies": {
-    "cssnano": "^4.0.0-rc.0",
-    "gulp": "^3.9.1",
-    "gulp-insert": "^0.5.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.6.1",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
-    "rimraf": "^2.6.1"
-  },
-  "dependencies": {
-    "mobi-theme-base": "^1.1.2"
-  }
+    "name": "mobi-plugin-table",
+    "version": "2.0.0-beta.2",
+    "description": "The table plugin for Mobi.css",
+    "main": "src/index.css",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build",
+        "version": "npm run build && git add -A ."
+    },
+    "repository": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-table",
+    "keywords": [
+        "table",
+        "mobi-plugin",
+        "mobi-css",
+        "css"
+    ],
+    "author": "xcatliu <xcatliu@gmail.com>",
+    "license": "MIT",
+    "homepage": "http://getmobicss.com/plugins/table/",
+    "dependencies": {
+        "mobi-theme-base": "^2.0.0-beta.2"
+    }
 }
