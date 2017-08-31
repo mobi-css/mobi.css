@@ -1,38 +1,38 @@
 {
-	"scripts": {
-		"bootstrap": "lerna bootstrap --hoist",
-		"test": "stylelint **/src/**/*.css",
-		"build": "lerna run build"
-	},
+    "scripts": {
+        "bootstrap": "lerna bootstrap --hoist",
+        "test": "stylelint **/src/**/*.css",
+        "build": "lerna run build"
+    },
     "repository": "https://github.com/mobi-css/mobi.css",
     "author": "xcatliu <xcatliu@gmail.com>",
     "license": "MIT",
-	"browserslist": [
-		"last 5 iOS versions",
-		"last 5 Android versions",
-		"last 5 ChromeAndroid versions",
-		"last 5 UCAndroid versions",
-		"last 5 FirefoxAndroid versions",
-		"last 5 OperaMini versions",
-		"last 5 OperaMobile versions",
-		"last 5 Samsung versions",
-		"last 3 Chrome versions",
-		"last 3 Firefox versions",
-		"last 3 Edge versions",
-		"last 3 Opera versions"
-	],
-	"devDependencies": {
-		"cssnano": "^4.0.0-rc.0",
-		"gulp": "^3.9.1",
-		"gulp-insert": "^0.5.0",
-		"gulp-postcss": "^7.0.0",
-		"gulp-rename": "^1.2.2",
-		"gulp-sourcemaps": "^2.6.1",
-		"lerna": "^2.1.2",
-		"postcss-cssnext": "^3.0.2",
-		"postcss-import": "^10.0.0",
-		"rimraf": "^2.6.1",
-		"stylelint": "^8.0.0",
-		"stylelint-config-standard": "^17.0.0"
-	}
+    "browserslist": [
+        "last 5 iOS versions",
+        "last 5 Android versions",
+        "last 5 ChromeAndroid versions",
+        "last 5 UCAndroid versions",
+        "last 5 FirefoxAndroid versions",
+        "last 5 OperaMini versions",
+        "last 5 OperaMobile versions",
+        "last 5 Samsung versions",
+        "last 3 Chrome versions",
+        "last 3 Firefox versions",
+        "last 3 Edge versions",
+        "last 3 Opera versions"
+    ],
+    "devDependencies": {
+        "cssnano": "^4.0.0-rc.0",
+        "gulp": "^3.9.1",
+        "gulp-insert": "^0.5.0",
+        "gulp-postcss": "^7.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sourcemaps": "^2.6.1",
+        "lerna": "^2.1.2",
+        "postcss-cssnext": "^3.0.2",
+        "postcss-import": "^10.0.0",
+        "rimraf": "^2.6.1",
+        "stylelint": "^8.0.0",
+        "stylelint-config-standard": "^17.0.0"
+    }
 }
