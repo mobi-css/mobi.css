@@ -24,6 +24,24 @@ Plugin system makes CSS scalable. You can import plugins to enhance Mobi.css, or
 
 Mobi.css focus on the details and provides the best user experience, especially for content-rich webpage. It's designed for mobile, but also works awesome on desktop.
 
+## Development
+
+```shell
+# Installs dependencies
+npm install
+# Installs lerna globally
+npm install lerna -g
+# Installs all of dependencies
+lerna bootstrap
+
+# npm scripts
+npm run build
+npm test
+
+# Publish
+lerna publish <--repo-version>
+```
+
 ## Community
 
 Like Mobi.css? Please join the community to discuss new features, open an issue or create pull requests!
