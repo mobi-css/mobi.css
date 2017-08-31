@@ -3,6 +3,6 @@
   "packages": [
     "packages/*"
   ],
-  "version": "2.0.0-beta.2",
-  "npmClient": "tnpm"
+  "version": "2.0.0-beta.3",
+  "npmClient": "npm"
 }
