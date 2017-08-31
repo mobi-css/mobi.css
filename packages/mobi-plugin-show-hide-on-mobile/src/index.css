@@ -1,0 +1,11 @@
+@media (--mobile-viewport) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media (--desktop-viewport) {
+    .show-on-mobile {
+        display: none !important;
+    }
+}

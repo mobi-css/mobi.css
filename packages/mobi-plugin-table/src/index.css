@@ -1,0 +1,29 @@
+.table {
+    /* Reset for nesting within parents with `background-color`. */
+    background-color: var(--color-background);
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    & caption {
+        caption-side: bottom;
+        color: var(--color-text-muted);
+        font-size: var(--font-size-small);
+        padding: var(--width-padding-input);
+        text-align: left;
+    }
+
+    & th,
+    & td {
+        border: 0;
+        border-bottom: var(--width-border) solid var(--color-border);
+        padding: var(--width-padding-input);
+        text-align: left;
+    }
+
+    & th {
+        background-color: var(--color-background-faded);
+        font-weight: var(--font-weight-bold);
+    }
+}

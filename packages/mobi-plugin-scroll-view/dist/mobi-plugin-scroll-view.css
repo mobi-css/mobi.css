@@ -1,0 +1,7 @@
+/*! mobi-plugin-scroll-view v2.0.0-beta.4 http://getmobicss.com/plugins/scroll-view/ */
+.scroll-view {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*# sourceMappingURL=mobi-plugin-scroll-view.css.map */

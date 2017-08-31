@@ -1,0 +1,15 @@
+.container,
+.container-wider,
+.container-fluid {
+    overflow: hidden;
+    padding: 0 var(--width-gap) var(--width-gap);
+    flex-grow: 1;
+}
+
+.container {
+    max-width: var(--max-width-container);
+}
+
+.container-wider {
+    max-width: var(--max-width-container-wider);
+}

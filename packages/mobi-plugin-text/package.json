@@ -1,0 +1,24 @@
+{
+    "name": "mobi-plugin-text",
+    "version": "2.0.0-beta.4",
+    "description": "The text plugin for Mobi.css",
+    "main": "src/index.css",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build",
+        "version": "npm run build && git add -A ."
+    },
+    "repository": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-text",
+    "keywords": [
+        "text",
+        "mobi-plugin",
+        "mobi-css",
+        "css"
+    ],
+    "author": "xcatliu <xcatliu@gmail.com>",
+    "license": "MIT",
+    "homepage": "http://getmobicss.com/plugins/text",
+    "dependencies": {
+        "mobi-theme-base": "^2.0.0-beta.2"
+    }
+}

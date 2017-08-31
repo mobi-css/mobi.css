@@ -8,7 +8,7 @@
 
 [![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
 
-> A lightweight, scalable, mobile-first css framework
+> A lightweight, scalable, mobile-first CSS framework
 
 ## Features
 
@@ -18,11 +18,34 @@ The default bundle of Mobi.css provides the basic styles to build clean and eleg
 
 ### Scalable
 
-Plugin system makes css scalable. You can import plugins to enhance Mobi.css, or use the plugin as a standalone css library. **It's even possible to use a plugin without Mobi.css**.
+Plugin system makes CSS scalable. You can import plugins to enhance Mobi.css, or use the plugin as a standalone CSS library. **It's even possible to use a plugin without Mobi.css**.
 
 ### Mobile-first
 
 Mobi.css focus on the details and provides the best user experience, especially for content-rich webpage. It's designed for mobile, but also works awesome on desktop.
+
+## Development
+
+```shell
+# Installs dependencies
+npm install
+# Installs lerna globally
+npm install lerna -g
+# Installs all of dependencies
+lerna bootstrap
+
+# npm scripts
+npm run build
+npm test
+
+# Publish
+lerna publish --repo-version=<version> --skip-git --skip-npm
+npm run build
+git add :/
+git reset -- **/package.json lerna.json
+git commit -m "Build <version>"
+lerna publish --repo-version=<version>
+```
 
 ## Community
 

@@ -1,0 +1,300 @@
+/**
+ * Resets
+ *
+ * Global resets to common HTML elements.
+ * Doesn't depend on any third party libraries.
+ * Inspired by Normalise.css and bootstrap/_reboot.scss
+ * Doesn't reset form and table because it's hard to set styles back in third-party libraries
+ */
+
+
+
+/* `html` and `body` */
+
+/* Reset the box-sizing */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    /* `rem` based on the `font-size` of html */
+    font-size: var(--size-base);
+    /* Prevent adjustments of font size after orientation changes in IE and iOS. */
+    text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin: 0;
+}
+
+
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: var(--width-gap-double) 0 0;
+}
+
+p,
+blockquote,
+table,
+hr,
+dl,
+ul,
+ol,
+pre,
+address,
+figure {
+    margin: var(--width-gap) 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
+    -webkit-text-decoration-skip: objects;
+
+    &:active,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+b,
+strong,
+dt {
+    font-weight: var(--font-weight-bold);
+}
+
+code,
+kbd,
+samp {
+    background-color: var(--color-background-faded);
+    font-family: var(--font-family-monospace);
+    font-size: var(--font-size-small);
+    padding: var(--padding-code);
+}
+
+pre {
+    background-color: var(--color-background-faded);
+    font-family: var(--font-family-monospace);
+    font-size: var(--font-size-pre);
+    line-height: var(--line-height-pre);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--width-gap);
+
+    /* Override the code styles */
+    & code {
+        background-color: transparent;
+        font-size: var(--font-size-pre);
+        padding: 0;
+    }
+}
+
+blockquote {
+    border-left: var(--width-padding-input) solid var(--color-border);
+    color: var(--color-text-muted);
+    padding-left: var(--width-gap);
+}
+
+ul,
+ol {
+    padding-left: var(--width-gap-double);
+}
+
+dt,
+dd,
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: var(--width-border) solid var(--color-border);
+}
+
+small {
+    font-size: var(--font-size-small);
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub,
+sup {
+    font-size: var(--font-size-small);
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.2em;
+}
+
+sup {
+    top: -0.4em;
+}
+
+address,
+time {
+    font-style: normal;
+}
+
+mark {
+    background-color: yellow;
+    color: var(--color-text);
+    padding: 0 0.2em;
+}
+
+rt {
+    font-size: 60%;
+}
+
+abbr[title] {
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+
+
+/* Embedded Content */
+
+/* Add the correct display in iOS 4-7. */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+audio,
+video {
+    max-width: 100%;
+}
+
+figcaption {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-small);
+}
+
+
+
+/* Forms */
+
+/**
+ * iOS "clickable elements" fix for role="button"
+ *
+ * Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+ * for traditionally non-focusable elements with role="button"
+ * see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+[role="button"] {
+    cursor: pointer;
+}
+
+/* Avoid 300ms click delay on touch devices that support the `touch-action` CSS property. */
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button,
+/* Prevent a WebKit bug where (*) destroys native `audio` and `video` controls in Android 4. */
+html [type=button],
+[type=reset],
+[type=submit],
+::-webkit-file-upload-button {
+    /* (*) Correct the inability to style clickable types in iOS and Safari. */
+    appearance: button;
+}
+
+[type=search] {
+    /* Correct the odd appearance in Chrome and Safari. */
+    appearance: none;
+}
+
+/* Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+    font: inherit;
+}
+
+[hidden] {
+    display: none;
+}
+
+fieldset {
+    border: var(--width-border) solid var(--color-border);
+    margin: var(--width-gap) 0 0;
+    padding: 0 var(--width-gap) var(--width-gap);
+}
+
+legend {
+    padding: 0 0.2em;
+}
+
+optgroup {
+    color: var(--color-text-muted);
+    font-style: normal;
+    font-weight: normal;
+}
+
+option {
+    color: var(--color-text);
+}
+
+progress {
+    max-width: 100%;
+}
