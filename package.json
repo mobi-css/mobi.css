@@ -1,7 +1,8 @@
 {
     "scripts": {
         "bootstrap": "lerna bootstrap --hoist",
-        "test": "stylelint **/src/**/*.css",
+        "test": "npm run lint",
+        "lint": "stylelint **/src/**/*.css",
         "build": "lerna run build"
     },
     "repository": "https://github.com/mobi-css/mobi.css",

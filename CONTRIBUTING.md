@@ -35,7 +35,7 @@ First please install lerna globally.
 npm install --global lerna
 ```
 
-To publish a new version is a little complecated. We need to prepend the version metadata to each generated dist file before adding a git tag and publishing to npm.
+To publish a new version is a little complicated. We need to prepend the version metadata to each generated dist file before adding a git tag and publishing to npm.
 
 ```sh
 # Update all packages's version without execute any git or npm command
