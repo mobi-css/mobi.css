@@ -1,16 +1,9 @@
-/*! mobi-plugin-form v2.0.0-beta.4 http://getmobicss.com/plugins/form/ */
-:root {
-    /* Colors */
+/*! mobi-plugin-form v3.0.0-alpha.1 http://getmobicss.com/plugins/form/ */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
 .form {
-    margin: 0
+    margin: 0;
 }
+
 .form label {
     border: 1px solid transparent;
     cursor: pointer;
@@ -20,150 +13,115 @@
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
+.form [type=email],
+.form [type=number],
+.form [type=password],
+.form [type=search],
+.form [type=tel],
 .form [type=text],
-    .form [type=password],
-    .form [type=email],
-    .form [type=search],
-    .form [type=url],
-    .form [type=tel],
-    .form [type=number],
-    .form textarea,
-    .form select {
-    display: block;
-    line-height: 1.25;
-    margin: 15px 0 0;
-    width: 100%;
+.form [type=url],
+.form select,
+.form textarea {
+    -moz-appearance: none;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: white;
+    appearance: none;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 3px;
     color: #333;
-    font-family: '-apple-system',
-        
-        'BlinkMacSystemFont',
-        
-        'Hiragino Sans GB',
-        
-        'Roboto',
-        
-        'Droid Sans',
-        
-        'Fira Sans',
-        
-        'Segoe UI',
-        
-        'Microsoft Yahei', '微软雅黑',
-        
-        
-        'Oxygen',
-        'Ubuntu',
-        
-        'Cantarell',
-        
-        'Arial', 'Helvetica', 'STHeiti', sans-serif,
-        
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-size: 16px;
-    padding: 5px
+    line-height: 1.25;
+    margin: 15px 0 0;
+    padding: 5px;
+    width: 100%;
 }
-.form [type=text]:focus, .form [type=password]:focus, .form [type=email]:focus, .form [type=search]:focus, .form [type=url]:focus, .form [type=tel]:focus, .form [type=number]:focus, .form textarea:focus, .form select:focus {
-    border-color: hsl(210, 70%, 50%);
+
+.form [type=email]:focus,
+.form [type=number]:focus,
+.form [type=password]:focus,
+.form [type=search]:focus,
+.form [type=tel]:focus,
+.form [type=text]:focus,
+.form [type=url]:focus,
+.form select:focus,
+.form textarea:focus {
+    border-color: #267fd9;
     outline: 0;
 }
+
 @media (max-width: 767px) {
+    .form [type=date],
+    .form [type=datetime-local],
+    .form [type=month],
     .form [type=time],
-        .form [type=week],
-        .form [type=month],
-        .form [type=date],
-        .form [type=datetime-local] {
-        margin: 15px 0 0;
-    }
-}
-@media (max-width: 767px) {
-    .form [type=time],
-        .form [type=week],
-        .form [type=month],
-        .form [type=date],
-        .form [type=datetime-local] {
-        display: block;
-        line-height: 1.25;
-        margin: 15px 0 0;
-        width: 100%;
+    .form [type=week] {
+        -moz-appearance: none;
         -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-        background-color: white;
+        appearance: none;
+        background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 3px;
         color: #333;
-        font-family: '-apple-system',
-        
-        'BlinkMacSystemFont',
-        
-        'Hiragino Sans GB',
-        
-        'Roboto',
-        
-        'Droid Sans',
-        
-        'Fira Sans',
-        
-        'Segoe UI',
-        
-        'Microsoft Yahei', '微软雅黑',
-        
-        
-        'Oxygen',
-        'Ubuntu',
-        
-        'Cantarell',
-        
-        'Arial', 'Helvetica', 'STHeiti', sans-serif,
-        
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        display: block;
+        font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
         font-size: 16px;
-        padding: 5px
+        line-height: 1.25;
+        margin: 15px 0 0;
+        padding: 5px;
+        width: 100%;
     }
-    .form [type=time]:focus, .form [type=week]:focus, .form [type=month]:focus, .form [type=date]:focus, .form [type=datetime-local]:focus {
-        border-color: hsl(210, 70%, 50%);
+}
+
+@media (max-width: 767px) {
+    .form [type=date]:focus,
+    .form [type=datetime-local]:focus,
+    .form [type=month]:focus,
+    .form [type=time]:focus,
+    .form [type=week]:focus {
+        border-color: #267fd9;
         outline: 0;
     }
 }
+
 .form [type=checkbox],
-    .form [type=radio] {
+.form [type=radio] {
     cursor: pointer;
     margin: 0 5px 0 0;
 }
+
 .form select {
     cursor: pointer;
 }
+
 .form [type=file],
-    .form [type=range] {
-    display: block;
-    line-height: 1.25;
-    margin: 15px 0 0;
-    width: 100%;
-    border-top: 1px solid transparent;
+.form [type=range] {
     border-bottom: 1px solid transparent;
-    cursor: pointer;
+    border-top: 1px solid transparent;
+    line-height: 1.25;
     padding-bottom: 5px;
     padding-top: 5px;
+    width: 100%;
 }
+
 .form [type=color],
-    .form [type=image] {
+.form [type=file],
+.form [type=image],
+.form [type=range] {
     cursor: pointer;
     display: block;
     margin: 15px 0 0;
 }
+
 .form [disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
 }
-.form [readonly] {
-    background-color: rgb(242, 242, 242);
-}
 
+.form [readonly] {
+    background-color: #f2f2f2;
+}
 /*# sourceMappingURL=mobi-plugin-form.css.map */

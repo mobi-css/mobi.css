@@ -1,38 +1,36 @@
-/*! mobi-plugin-text v2.0.0-beta.4 http://getmobicss.com/plugins/text */
-:root {
-    /* Colors */
+/*! mobi-plugin-text v3.0.0-alpha.1 http://getmobicss.com/plugins/text */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
 .text-left {
     text-align: left;
 }
+
 .text-center {
     text-align: center;
 }
+
 .text-right {
     text-align: right;
 }
+
 .text-muted {
     color: #777;
 }
+
 .text-primary {
-    color: hsl(210, 70%, 50%);
+    color: #267fd9;
 }
+
 .text-danger {
-    color: hsl(0, 65%, 60%);
+    color: #db5757;
 }
+
+a.text-danger,
 a.text-muted,
-a.text-primary,
-a.text-danger {
+a.text-primary {
     text-decoration: underline;
 }
+
 .text-small {
     font-size: 85%;
 }
-
 /*# sourceMappingURL=mobi-plugin-text.css.map */

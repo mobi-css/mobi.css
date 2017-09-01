@@ -29,12 +29,16 @@ npm test
 
 ### Publish
 
-To publish a new version is a little complecated. We need to prepend the right version metadata to each generated dist file before adding a git tag and publishing to npm.
+First please install lerna globally.
 
 ```sh
-# First we need to install lerna globally
 npm install --global lerna
-# Next let's update all packages's version without execute any git or npm command
+```
+
+To publish a new version is a little complicated. We need to prepend the version metadata to each generated dist file before adding a git tag and publishing to npm.
+
+```sh
+# Update all packages's version without execute any git or npm command
 lerna publish --repo-version=<version> --skip-git --skip-npm
 # Next do a full build and commit files except package.json and lerna.json
 npm run build

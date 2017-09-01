@@ -1,27 +1,20 @@
-/*! mobi-plugin-container v2.0.0-beta.4 http://getmobicss.com/plugins/container/ */
-:root {
-    /* Colors */
+/*! mobi-plugin-container v3.0.0-alpha.1 http://getmobicss.com/plugins/container/ */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
 .container,
-.container-wider,
-.container-fluid {
-    overflow: hidden;
-    padding: 0 15px 15px;
+.container-fluid,
+.container-wider {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-            flex-grow: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 0 15px 15px;
 }
+
 .container {
     max-width: 800px;
 }
+
 .container-wider {
     max-width: 1200px;
 }
-
 /*# sourceMappingURL=mobi-plugin-container.css.map */

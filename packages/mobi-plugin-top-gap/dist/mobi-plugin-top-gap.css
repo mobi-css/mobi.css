@@ -1,21 +1,14 @@
-/*! mobi-plugin-top-gap v2.0.0-beta.4 http://getmobicss.com/plugins/top-gap */
-:root {
-    /* Colors */
+/*! mobi-plugin-top-gap v3.0.0-alpha.1 http://getmobicss.com/plugins/top-gap */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
 .top-gap-big {
     margin-top: 30px !important;
 }
+
 .top-gap {
     margin-top: 15px !important;
 }
+
 .top-gap-0 {
     margin-top: 0 !important;
 }
-
 /*# sourceMappingURL=mobi-plugin-top-gap.css.map */

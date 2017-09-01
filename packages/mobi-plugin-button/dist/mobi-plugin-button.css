@@ -1,96 +1,71 @@
-/*! mobi-plugin-button v2.0.0-beta.4 http://getmobicss.com/plugins/button/ */
-:root {
-    /* Colors */
+/*! mobi-plugin-button v3.0.0-alpha.1 http://getmobicss.com/plugins/button/ */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
 .btn {
+    -moz-appearance: none;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: white;
+    appearance: none;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 3px;
     color: #333;
     cursor: pointer;
     display: inline-block;
-    font-family: '-apple-system',
-        
-        'BlinkMacSystemFont',
-        
-        'Hiragino Sans GB',
-        
-        'Roboto',
-        
-        'Droid Sans',
-        
-        'Fira Sans',
-        
-        'Segoe UI',
-        
-        'Microsoft Yahei', '微软雅黑',
-        
-        
-        'Oxygen',
-        'Ubuntu',
-        
-        'Cantarell',
-        
-        'Arial', 'Helvetica', 'STHeiti', sans-serif,
-        
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-size: 16px;
     line-height: 1.25;
     margin: 15px 0 0;
-    padding: 5px * 2;
-    padding: 5px 5px;
-    text-align: center
+    padding: 5px;
+    text-align: center;
 }
-.btn:hover,
-    .btn:active {
-    background-color: rgb(242, 242, 242);
+
+.btn:active,
+.btn:hover {
+    background-color: #f2f2f2;
     text-decoration: none;
 }
+
 .btn[disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
 }
+
 .btn-primary {
-    background-color: hsl(210, 70%, 50%);
-    border-color: hsl(210, 70%, 50%);
-    color: white
+    background-color: #267fd9;
+    border-color: #267fd9;
+    color: #fff;
 }
-.btn-primary:hover,
-    .btn-primary:active {
-    background-color: rgb(34, 115, 195);
+
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: #2273c3;
 }
+
 .btn-primary[disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
 }
+
 .btn-danger {
-    background-color: hsl(0, 65%, 60%);
-    border-color: hsl(0, 65%, 60%);
-    color: white
+    background-color: #db5757;
+    border-color: #db5757;
+    color: #fff;
 }
-.btn-danger:hover,
-    .btn-danger:active {
-    background-color: rgb(215, 66, 66);
+
+.btn-danger:active,
+.btn-danger:hover {
+    background-color: #d74242;
 }
+
 .btn-danger[disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
 }
+
 .btn-block {
     display: block;
     width: 100%;
 }
-
 /*# sourceMappingURL=mobi-plugin-button.css.map */
