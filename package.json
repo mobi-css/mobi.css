@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "start": "npm run build",
         "bootstrap": "lerna bootstrap --hoist",
         "test": "npm run lint",
         "lint": "stylelint **/src/**/*.css",

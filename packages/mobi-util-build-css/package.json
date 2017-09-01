@@ -1,6 +1,6 @@
 {
     "name": "mobi-util-build-css",
-    "version": "3.0.0-alpha.1",
+    "version": "3.0.0-alpha.2",
     "description": "The build css util for Mobi.css",
     "main": "index.js",
     "scripts": {},
@@ -23,6 +23,7 @@
         "gulp-sourcemaps": "^2.6.1",
         "postcss-cssnext": "^3.0.2",
         "postcss-import": "^10.0.0",
+        "postcss-pxtorem": "^4.0.0",
         "rimraf": "^2.6.1",
         "stylefmt": "^5.0.0"
     }

@@ -43,8 +43,6 @@ lerna publish --repo-version=<version> --skip-git --skip-npm
 # Next do a full build and commit files except package.json and lerna.json
 npm run build
 git add :/
-git reset -- **/package.json lerna.json
-git commit -m "Build <version>"
 # The Final step is to publish add packages via lerna publish command
 lerna publish --repo-version=<version>
 ```

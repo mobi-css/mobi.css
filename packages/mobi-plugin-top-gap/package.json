@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-top-gap",
-    "version": "3.0.0-alpha.1",
+    "version": "3.0.0-alpha.2",
     "description": "The top-gap plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -23,6 +23,6 @@
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.0-alpha.1"
+        "mobi-util-build-css": "^3.0.0-alpha.2"
     }
 }
