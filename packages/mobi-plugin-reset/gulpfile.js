@@ -1,14 +1,7 @@
 const path = require('path');
 
 const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const atImport = require('postcss-import');
-const cssNext = require('postcss-cssnext');
-const cssnano = require('cssnano');
-const insert = require('gulp-insert');
-const sourcemaps = require('gulp-sourcemaps');
-const rename = require('gulp-rename');
-const rimraf = require('rimraf');
+const { clean, buildCss } = require('mobi-util-build-css');
 
 const pkg = require('./package.json');
 
@@ -26,35 +19,25 @@ gulp.task('default', ['build'], () => {
 gulp.task('build', ['clean:dist', 'build:css', 'build:css:min']);
 
 gulp.task('clean:dist', () => {
-    rimraf.sync(`${DIST_DIR}/*`);
+    clean(DIST_DIR);
 });
 
 gulp.task('build:css', (callback) => {
-    const plugins = [
-        atImport(),
-        cssNext()
-    ];
-    gulp.src(`${SRC_DIR}/${pkg.name}.css`)
-        .pipe(sourcemaps.init())
-        .pipe(insert.prepend(prependContent))
-        .pipe(postcss(plugins))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(DIST_DIR))
-        .on('end', callback);
+    buildCss({
+        src: `${SRC_DIR}/${pkg.name}.css`,
+        dist: `${DIST_DIR}/${pkg.name}.css`,
+        minify: false,
+        prependContent,
+        callback
+    });
 });
 
 gulp.task('build:css:min', (callback) => {
-    const plugins = [
-        atImport(),
-        cssNext(),
-        cssnano()
-    ];
-    gulp.src(`${SRC_DIR}/${pkg.name}.css`)
-        .pipe(sourcemaps.init())
-        .pipe(insert.prepend(prependContent))
-        .pipe(postcss(plugins))
-        .pipe(rename(`${pkg.name}.min.css`))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(DIST_DIR))
-        .on('end', callback);
+    buildCss({
+        src: `${SRC_DIR}/${pkg.name}.css`,
+        dist: `${DIST_DIR}/${pkg.name}.min.css`,
+        minify: true,
+        prependContent,
+        callback
+    });
 });

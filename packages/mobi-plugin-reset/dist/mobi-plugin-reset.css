@@ -1,72 +1,31 @@
 /*! mobi-plugin-reset v2.0.0-beta.4 http://getmobicss.com/plugins/reset/ */
-:root {
-    /* Colors */
 
-    /* Layout */
-
-    /* Spacing */
-
-    /* Typography */
-}
-/**
- * Resets
- *
- * Global resets to common HTML elements.
- * Doesn't depend on any third party libraries.
- * Inspired by Normalise.css and bootstrap/_reboot.scss
- * Doesn't reset form and table because it's hard to set styles back in third-party libraries
- */
-/* `html` and `body` */
-/* Reset the box-sizing */
 html {
     box-sizing: border-box;
 }
+
 *,
-*::before,
-*::after {
+:after,
+:before {
     box-sizing: inherit;
 }
+
 html {
-    /* `rem` based on the `font-size` of html */
-    font-size: 10px;
-    /* Prevent adjustments of font size after orientation changes in IE and iOS. */
+    -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-       -moz-text-size-adjust: 100%;
-            text-size-adjust: 100%;
+    font-size: 10px;
+    text-size-adjust: 100%;
 }
+
 body {
-    background-color: white;
+    background-color: #fff;
     color: #333;
-    font-family: '-apple-system',
-        
-        'BlinkMacSystemFont',
-        
-        'Hiragino Sans GB',
-        
-        'Roboto',
-        
-        'Droid Sans',
-        
-        'Fira Sans',
-        
-        'Segoe UI',
-        
-        'Microsoft Yahei', '微软雅黑',
-        
-        
-        'Oxygen',
-        'Ubuntu',
-        
-        'Cantarell',
-        
-        'Arial', 'Helvetica', 'STHeiti', sans-serif,
-        
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
 }
-/* Typography */
+
 h1,
 h2,
 h3,
@@ -75,18 +34,20 @@ h5,
 h6 {
     margin: 30px 0 0;
 }
-p,
-blockquote,
-table,
-hr,
-dl,
-ul,
-ol,
-pre,
+
 address,
-figure {
+blockquote,
+dl,
+figure,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
     margin: 15px 0 0;
 }
+
 h1,
 h2,
 h3,
@@ -95,151 +56,176 @@ h5,
 h6 {
     font-weight: 600;
 }
-h1 { font-size: 32px; }
-h2 { font-size: 26px; }
-h3 { font-size: 22px; }
-h4 { font-size: 20px; }
-h5 { font-size: 18px; }
-h6 { font-size: 16px; }
-a {
-    color: hsl(210, 70%, 50%);
-    text-decoration: none;
-    /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
-    -webkit-text-decoration-skip: objects
+
+h1 {
+    font-size: 32px;
 }
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    -webkit-text-decoration-skip: objects;
+    color: #267fd9;
+    text-decoration: none;
+}
+
 a:active,
-    a:hover {
+a:hover {
     text-decoration: underline;
 }
+
 b,
-strong,
-dt {
+dt,
+strong {
     font-weight: 600;
 }
+
 code,
 kbd,
 samp {
-    background-color: rgb(242, 242, 242);
-    font-family: 'Menlo',
-        'Monaco',
-        'Consolas',
-        'Liberation Mono',
-        'Courier New',
-        monospace;
     font-size: 85%;
     padding: 0.2em 0.3em;
 }
+
+code,
+kbd,
+pre,
+samp {
+    background-color: #f2f2f2;
+    font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}
+
 pre {
-    background-color: rgb(242, 242, 242);
-    font-family: 'Menlo',
-        'Monaco',
-        'Consolas',
-        'Liberation Mono',
-        'Courier New',
-        monospace;
-    font-size: 13px;
+    -webkit-overflow-scrolling: touch;
     line-height: 1.2;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 15px
-
-    /* Override the code styles */
+    padding: 15px;
 }
+
+pre,
+pre code {
+    font-size: 13px;
+}
+
 pre code {
     background-color: transparent;
-    font-size: 13px;
     padding: 0;
 }
+
 blockquote {
     border-left: 5px solid #ddd;
     color: #777;
     padding-left: 15px;
 }
-ul,
-ol {
+
+ol,
+ul {
     padding-left: 30px;
 }
-dt,
+
 dd,
+dt,
 ol ol,
-ul ul,
 ol ul,
-ul ol {
+ul ol,
+ul ul {
     margin: 0;
 }
+
 hr {
     border: 0;
     border-top: 1px solid #ddd;
 }
-small {
-    font-size: 85%;
-}
-/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+
+small,
 sub,
 sup {
     font-size: 85%;
+}
+
+sub,
+sup {
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
+
 sub {
-    bottom: -0.2em;
+    bottom: -.2em;
 }
+
 sup {
-    top: -0.4em;
+    top: -.4em;
 }
+
 address,
 time {
     font-style: normal;
 }
+
 mark {
-    background-color: yellow;
+    background-color: #ff0;
     color: #333;
     padding: 0 0.2em;
 }
+
 rt {
     font-size: 60%;
 }
+
 abbr[title] {
+    -webkit-text-decoration: underline dotted;
     border-bottom: 0;
     text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
+    text-decoration: underline dotted;
 }
-/* Embedded Content */
-/* Add the correct display in iOS 4-7. */
+
 audio:not([controls]) {
     display: none;
     height: 0;
 }
+
 img {
-    max-width: 100%;
     vertical-align: middle;
 }
+
 audio,
+img,
 video {
     max-width: 100%;
 }
+
 figcaption {
     color: #777;
     font-size: 85%;
 }
-/* Forms */
-/**
- * iOS "clickable elements" fix for role="button"
- *
- * Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
- * for traditionally non-focusable elements with role="button"
- * see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
- */
-[role="button"] {
+
+[role=button] {
     cursor: pointer;
 }
-/* Avoid 300ms click delay on touch devices that support the `touch-action` CSS property. */
+
+[role=button],
 a,
 area,
 button,
-[role="button"],
 input,
 label,
 select,
@@ -247,53 +233,58 @@ summary,
 textarea {
     touch-action: manipulation;
 }
+
 button,
 input,
 select,
 textarea {
     font: inherit;
 }
-button,
-/* Prevent a WebKit bug where (*) destroys native `audio` and `video` controls in Android 4. */
-html [type=button],
+
+::-webkit-file-upload-button,
 [type=reset],
 [type=submit],
-::-webkit-file-upload-button {
-    /* (*) Correct the inability to style clickable types in iOS and Safari. */
+button,
+html [type=button] {
     -webkit-appearance: button;
-            appearance: button;
+    appearance: button;
 }
+
 [type=search] {
-    /* Correct the odd appearance in Chrome and Safari. */
+    -moz-appearance: none;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
 }
-/* Change font properties to `inherit` in Safari. */
+
 ::-webkit-file-upload-button {
     font: inherit;
 }
+
 [hidden] {
     display: none;
 }
+
 fieldset {
     border: 1px solid #ddd;
     margin: 15px 0 0;
     padding: 0 15px 15px;
 }
+
 legend {
     padding: 0 0.2em;
 }
+
 optgroup {
     color: #777;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
+
 option {
     color: #333;
 }
+
 progress {
     max-width: 100%;
 }
-
 /*# sourceMappingURL=mobi-plugin-reset.css.map */

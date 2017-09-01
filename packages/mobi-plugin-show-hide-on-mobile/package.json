@@ -20,5 +20,9 @@
     "homepage": "http://getmobicss.com/plugins/show-hide-on-mobile/",
     "dependencies": {
         "mobi-theme-base": "^2.0.0-beta.2"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "mobi-util-build-css": "^2.0.0-beta.4"
     }
 }

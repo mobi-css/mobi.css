@@ -35,5 +35,9 @@
         "mobi-plugin-text": "^2.0.0-beta.4",
         "mobi-plugin-top-gap": "^2.0.0-beta.4",
         "mobi-theme-base": "^2.0.0-beta.2"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "mobi-util-build-css": "^2.0.0-beta.4"
     }
 }
