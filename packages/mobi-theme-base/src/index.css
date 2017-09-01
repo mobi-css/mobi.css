@@ -25,7 +25,7 @@
 
     --width-padding-input: calc(var(--size-base) * 0.5);
 
-    --width-border-radius: calc(var(--size-base) * 0.3);
+    --width-border-radius: 3px;
 
     --width-border: 1px;
 

@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-container",
-    "version": "3.0.0-alpha.2",
+    "version": "3.0.0-alpha.3",
     "description": "The container plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -19,7 +19,7 @@
     "license": "MIT",
     "homepage": "http://getmobicss.com/plugins/container/",
     "dependencies": {
-        "mobi-theme-base": "^3.0.0-alpha.1"
+        "mobi-theme-base": "^3.0.0-alpha.3"
     },
     "devDependencies": {
         "gulp": "^3.9.1",

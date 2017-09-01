@@ -23,10 +23,13 @@ html {
 }
 
 html {
-    /* `rem` based on the `font-size` of html */
-    font-size: var(--size-base);
     /* Prevent adjustments of font size after orientation changes in IE and iOS. */
     text-size-adjust: 100%;
+
+    font-size: var(--font-size);
+    @media (--desktop-viewport) {
+        font-size: calc(var(--size-base) * 1.8);
+    }
 }
 
 body {

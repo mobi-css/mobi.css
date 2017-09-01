@@ -1,4 +1,4 @@
-/*! mobi-plugin-flexbox v3.0.0-alpha.2 http://getmobicss.com/plugins/flexbox/ */
+/*! mobi-plugin-flexbox v3.0.0-alpha.3 http://getmobicss.com/plugins/flexbox/ */
 
 .flex-bottom,
 .flex-center,
@@ -72,8 +72,8 @@
 }
 
 .units-gap {
-    margin-left: --width-gap-half;
-    margin-right: --width-gap-half;
+    margin-left: -.46875rem;
+    margin-right: -.46875rem;
 }
 
 .units-gap > .unit,
@@ -90,8 +90,8 @@
 }
 
 .units-gap-big {
-    margin-left: --width-gap;
-    margin-right: --width-gap;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem;
 }
 
 .units-gap-big > .unit,

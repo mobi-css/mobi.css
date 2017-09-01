@@ -1,4 +1,4 @@
-/*! mobi.css v3.0.0-alpha.2 http://getmobicss.com */
+/*! mobi.css v3.0.0-alpha.3 http://getmobicss.com */
 
 html {
     box-sizing: border-box;
@@ -13,8 +13,14 @@ html {
 html {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-size: 10px;
+    font-size: 16px;
     text-size-adjust: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
 }
 
 body {
@@ -378,8 +384,8 @@ progress {
 }
 
 .units-gap {
-    margin-left: --width-gap-half;
-    margin-right: --width-gap-half;
+    margin-left: -.46875rem;
+    margin-right: -.46875rem;
 }
 
 .units-gap > .unit,
@@ -396,8 +402,8 @@ progress {
 }
 
 .units-gap-big {
-    margin-left: --width-gap;
-    margin-right: --width-gap;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem;
 }
 
 .units-gap-big > .unit,

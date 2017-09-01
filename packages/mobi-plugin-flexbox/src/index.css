@@ -46,8 +46,8 @@
 }
 
 .units-gap {
-    margin-left: var(- --width-gap-half);
-    margin-right: var(- --width-gap-half);
+    margin-left: calc(var(--width-gap-half) * -1);
+    margin-right: calc(var(--width-gap-half) * -1);
 }
 .units-gap > .unit,
 .units-gap > .unit-0,
@@ -63,8 +63,8 @@
 }
 
 .units-gap-big {
-    margin-left: var(- --width-gap);
-    margin-right: var(- --width-gap);
+    margin-left: calc(var(--width-gap) * -1);
+    margin-right: calc(var(--width-gap) * -1);
 }
 .units-gap-big > .unit,
 .units-gap-big > .unit-0,
