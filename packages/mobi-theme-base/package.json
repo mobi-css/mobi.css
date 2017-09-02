@@ -1,6 +1,6 @@
 {
     "name": "mobi-theme-base",
-    "version": "3.0.0-alpha.3",
+    "version": "3.0.0-alpha.4",
     "description": "The base theme for Mobi.css",
     "main": "src/index.css",
     "scripts": {},
@@ -13,8 +13,5 @@
     ],
     "author": "xcatliu <xcatliu@gmail.com>",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/mobi-css/mobi.css/issues"
-    },
-    "homepage": "http://getmobicss.com/themes/base"
+    "homepage": "http://getmobicss.com/docs/variables.html"
 }

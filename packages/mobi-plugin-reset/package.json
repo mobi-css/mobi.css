@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-reset",
-    "version": "3.0.0-alpha.3",
+    "version": "3.0.0-alpha.4",
     "description": "The reset plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -17,12 +17,12 @@
     ],
     "author": "xcatliu <xcatliu@gmail.com>",
     "license": "MIT",
-    "homepage": "http://getmobicss.com/plugins/reset/",
+    "homepage": "http://getmobicss.com/docs/reset.html",
     "dependencies": {
-        "mobi-theme-base": "^3.0.0-alpha.3"
+        "mobi-theme-base": "^3.0.0-alpha.4"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.0-alpha.2"
+        "mobi-util-build-css": "^3.0.0-alpha.4"
     }
 }
