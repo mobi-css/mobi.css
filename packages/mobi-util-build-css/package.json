@@ -1,6 +1,6 @@
 {
     "name": "mobi-util-build-css",
-    "version": "3.0.0-alpha.4",
+    "version": "3.0.0-beta.1",
     "description": "The build css util for Mobi.css",
     "main": "index.js",
     "scripts": {},
