@@ -1,4 +1,4 @@
-/*! mobi-plugin-flexbox v3.0.0-alpha.3 http://getmobicss.com/plugins/flexbox/ */
+/*! mobi-plugin-flexbox v3.0.0-beta.2 http://getmobicss.com/docs/flexbox.html */
 
 .flex-bottom,
 .flex-center,
@@ -72,8 +72,8 @@
 }
 
 .units-gap {
-    margin-left: -.46875rem;
-    margin-right: -.46875rem;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
 }
 
 .units-gap > .unit,
@@ -85,13 +85,13 @@
 .units-gap > .unit-1-on-mobile,
 .units-gap > .unit-2-3,
 .units-gap > .unit-3-4 {
-    padding-left: 0.46875rem;
-    padding-right: 0.46875rem;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
 }
 
 .units-gap-big {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .units-gap-big > .unit,
@@ -103,8 +103,8 @@
 .units-gap-big > .unit-1-on-mobile,
 .units-gap-big > .unit-2-3,
 .units-gap-big > .unit-3-4 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .unit {

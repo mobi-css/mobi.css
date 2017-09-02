@@ -10,7 +10,7 @@
     font-size: var(--font-size);
     line-height: var(--line-height-input);
     margin: var(--width-gap) 0 0;
-    padding: var(--width-padding-input) var(--width-padding-input * 2);
+    padding: var(--width-padding-input) calc(var(--width-padding-input) * 2);
     text-align: center;
 
     &:hover,

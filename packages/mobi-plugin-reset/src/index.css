@@ -27,9 +27,6 @@ html {
     text-size-adjust: 100%;
 
     font-size: var(--font-size);
-    @media (--desktop-viewport) {
-        font-size: calc(var(--size-base) * 1.8);
-    }
 }
 
 body {

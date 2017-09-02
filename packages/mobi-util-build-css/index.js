@@ -5,7 +5,6 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const atImport = require('postcss-import');
 const cssNext = require('postcss-cssnext');
-const pxtorem = require('postcss-pxtorem');
 const cssnano = require('cssnano');
 const stylefmt = require('stylefmt');
 const insert = require('gulp-insert');
@@ -26,15 +25,6 @@ function buildCss({
     const plugins = [
         atImport(),
         cssNext(),
-        pxtorem({
-            propList: [
-                'font', 'font-size', 'line-height', 'letter-spacing',
-                'margin*', 'padding*'
-            ],
-            selectorBlackList: [
-                /^html$/
-            ]
-        }),
         cssnano()
     ];
     if (!minify) {

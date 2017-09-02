@@ -1,4 +1,4 @@
-/*! mobi-plugin-form v3.0.0-alpha.3 http://getmobicss.com/plugins/form/ */
+/*! mobi-plugin-form v3.0.0-beta.2 http://getmobicss.com/docs/form.html */
 
 .form {
     margin: 0;
@@ -9,9 +9,9 @@
     cursor: pointer;
     display: block;
     line-height: 1.25;
-    margin-top: 0.9375rem;
-    padding-bottom: 0.3125rem;
-    padding-top: 0.3125rem;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .form [type=email],
@@ -31,11 +31,11 @@
     border-radius: 3px;
     color: #333;
     display: block;
-    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 16px;
     line-height: 1.25;
-    margin: 0.9375rem 0 0;
-    padding: 0.3125rem;
+    margin: 15px 0 0;
+    padding: 5px;
     width: 100%;
 }
 
@@ -66,11 +66,11 @@
         border-radius: 3px;
         color: #333;
         display: block;
-        font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Droid Sans,Fira Sans,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen,Ubuntu,Cantarell,Arial,Helvetica,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-        font-size: 1rem;
+        font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+        font-size: 16px;
         line-height: 1.25;
-        margin: 0.9375rem 0 0;
-        padding: 0.3125rem;
+        margin: 15px 0 0;
+        padding: 5px;
         width: 100%;
     }
 }
@@ -89,7 +89,7 @@
 .form [type=checkbox],
 .form [type=radio] {
     cursor: pointer;
-    margin: 0 0.3125rem 0 0;
+    margin: 0 5px 0 0;
 }
 
 .form select {
@@ -101,8 +101,8 @@
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
     line-height: 1.25;
-    padding-bottom: 0.3125rem;
-    padding-top: 0.3125rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
     width: 100%;
 }
 
@@ -112,7 +112,7 @@
 .form [type=range] {
     cursor: pointer;
     display: block;
-    margin: 0.9375rem 0 0;
+    margin: 15px 0 0;
 }
 
 .form [disabled] {

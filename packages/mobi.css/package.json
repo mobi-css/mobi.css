@@ -1,6 +1,6 @@
 {
     "name": "mobi.css",
-    "version": "3.0.0-beta.1",
+    "version": "3.0.0-beta.2",
     "description": "A lightweight, scalable, mobile-first CSS framework",
     "main": "src/mobi.css",
     "scripts": {
@@ -24,20 +24,20 @@
     "license": "MIT",
     "homepage": "http://getmobicss.com",
     "dependencies": {
-        "mobi-plugin-button": "^3.0.0-beta.1",
-        "mobi-plugin-container": "^3.0.0-beta.1",
-        "mobi-plugin-flexbox": "^3.0.0-beta.1",
-        "mobi-plugin-form": "^3.0.0-beta.1",
-        "mobi-plugin-reset": "^3.0.0-beta.1",
-        "mobi-plugin-scroll-view": "^3.0.0-beta.1",
-        "mobi-plugin-show-hide-on-mobile": "^3.0.0-beta.1",
-        "mobi-plugin-table": "^3.0.0-beta.1",
-        "mobi-plugin-text": "^3.0.0-beta.1",
-        "mobi-plugin-top-gap": "^3.0.0-beta.1",
-        "mobi-theme-base": "^3.0.0-beta.1"
+        "mobi-plugin-button": "^3.0.0-beta.2",
+        "mobi-plugin-container": "^3.0.0-beta.2",
+        "mobi-plugin-flexbox": "^3.0.0-beta.2",
+        "mobi-plugin-form": "^3.0.0-beta.2",
+        "mobi-plugin-reset": "^3.0.0-beta.2",
+        "mobi-plugin-scroll-view": "^3.0.0-beta.2",
+        "mobi-plugin-show-hide-on-mobile": "^3.0.0-beta.2",
+        "mobi-plugin-table": "^3.0.0-beta.2",
+        "mobi-plugin-text": "^3.0.0-beta.2",
+        "mobi-plugin-top-gap": "^3.0.0-beta.2",
+        "mobi-theme-base": "^3.0.0-beta.2"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.0-beta.1"
+        "mobi-util-build-css": "^3.0.0-beta.2"
     }
 }

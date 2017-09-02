@@ -1,4 +1,4 @@
-/*! mobi-plugin-container v3.0.0-alpha.3 http://getmobicss.com/plugins/container/ */
+/*! mobi-plugin-container v3.0.0-beta.2 http://getmobicss.com/docs/container.html */
 
 .container,
 .container-fluid,
@@ -7,7 +7,7 @@
     -webkit-flex-grow: 1;
     flex-grow: 1;
     overflow: hidden;
-    padding: 0 0.9375rem 0.9375rem;
+    padding: 0 15px 15px;
 }
 
 .container {
