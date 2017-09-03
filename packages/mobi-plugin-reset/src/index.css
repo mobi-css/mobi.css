@@ -27,10 +27,17 @@ html {
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
     margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: var(--font-family);
 }
 
 
@@ -97,14 +104,19 @@ code,
 kbd,
 samp {
     background-color: var(--color-background-faded);
-    font-family: var(--font-family-monospace);
     font-size: var(--font-size-small);
     padding: var(--padding-code);
 }
 
+code,
+kbd,
+samp,
+pre {
+    font-family: var(--font-family-monospace);
+}
+
 pre {
     background-color: var(--color-background-faded);
-    font-family: var(--font-family-monospace);
     font-size: var(--font-size-pre);
     line-height: var(--line-height-pre);
     overflow: auto;
@@ -237,13 +249,6 @@ select,
 summary,
 textarea {
     touch-action: manipulation;
-}
-
-button,
-input,
-select,
-textarea {
-    font: inherit;
 }
 
 button,

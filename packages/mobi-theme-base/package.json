@@ -1,17 +1,30 @@
 {
-    "name": "mobi-theme-base",
-    "version": "3.0.1",
-    "description": "The base theme for Mobi.css",
-    "main": "src/index.css",
-    "scripts": {},
-    "repository": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-theme-base",
-    "keywords": [
-        "mobi-theme-base",
-        "mobi-theme",
-        "mobi-css",
-        "css"
-    ],
-    "author": "xcatliu <xcatliu@gmail.com>",
-    "license": "MIT",
-    "homepage": "http://getmobicss.com/docs/variables.html"
+  "_id": "mobi-theme-base@3.0.1",
+  "_inBundle": true,
+  "_location": "/mobi.css/mobi-theme-base",
+  "_phantomChildren": {},
+  "_requiredBy": [
+    "/mobi.css"
+  ],
+  "author": {
+    "name": "xcatliu",
+    "email": "xcatliu@gmail.com"
+  },
+  "description": "The base theme for Mobi.css",
+  "homepage": "http://getmobicss.com/docs/variables.html",
+  "keywords": [
+    "mobi-theme-base",
+    "mobi-theme",
+    "mobi-css",
+    "css"
+  ],
+  "license": "MIT",
+  "main": "src/index.css",
+  "name": "mobi-theme-base",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-theme-base"
+  },
+  "scripts": {},
+  "version": "3.0.2"
 }

@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-form",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "description": "The form plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -19,7 +19,7 @@
     "license": "MIT",
     "homepage": "http://getmobicss.com/docs/form.html",
     "dependencies": {
-        "mobi-theme-base": "^3.0.1"
+        "mobi-theme-base": "^3.0.2"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
