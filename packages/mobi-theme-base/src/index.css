@@ -13,6 +13,8 @@
     /* Layout */
     --max-width-container: 800px;
     --max-width-container-wider: 1200px;
+
+    /* media query */
     @custom-media --mobile-viewport (max-width: 767px);
     @custom-media --desktop-viewport (min-width: 768px);
 
@@ -25,7 +27,7 @@
 
     --width-padding-input: calc(var(--size-base) * 0.5);
 
-    --width-border-radius: calc(var(--size-base) * 0.3);
+    --width-border-radius: calc(var(--size-base) * 0.5);
 
     --width-border: 1px;
 
@@ -60,30 +62,16 @@
         'Hiragino Sans GB',
         /* Android */
         'Roboto',
-        /* Older Android */
-        'Droid Sans',
-        /* Firefox OS [R.I.P.] */
-        'Fira Sans',
         /* Windows */
         'Segoe UI',
         /* Chinese font for Windows */
         'Microsoft Yahei', '微软雅黑',
         /* Linux */
-        /* KDE */
-        'Oxygen',
-        'Ubuntu',
-        /* GNOME */
-        'Cantarell',
+        'Oxygen-Sans', 'Ubuntu', 'Cantarell',
         /* Basic web fallback */
-        'Arial', 'Helvetica', 'STHeiti', sans-serif,
+        'Helvetica', 'Arial', 'STHeiti', sans-serif,
         /* Emoji */
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-    --font-family-monospace:
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        'Liberation Mono',
-        'Courier New',
-        monospace;
+    --font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 }

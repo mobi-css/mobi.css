@@ -40,11 +40,9 @@ To publish a new version is a little complicated. We need to prepend the version
 ```sh
 # Update all packages's version without execute any git or npm command
 lerna publish --repo-version=<version> --skip-git --skip-npm
-# Next do a full build and commit files except package.json and lerna.json
+# Next do a full build
 npm run build
 git add :/
-git reset -- **/package.json lerna.json
-git commit -m "Build <version>"
-# The Final step is to publish add packages via lerna publish command
+# The final step is to publish all packages via lerna publish command
 lerna publish --repo-version=<version>
 ```

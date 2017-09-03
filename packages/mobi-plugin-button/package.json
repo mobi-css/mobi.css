@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-button",
-    "version": "3.0.0-alpha.1",
+    "version": "3.0.0-beta.3",
     "description": "The button plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -17,12 +17,12 @@
     ],
     "author": "xcatliu <xcatliu@gmail.com>",
     "license": "MIT",
-    "homepage": "http://getmobicss.com/plugins/button/",
+    "homepage": "http://getmobicss.com/docs/button.html",
     "dependencies": {
-        "mobi-theme-base": "^3.0.0-alpha.1"
+        "mobi-theme-base": "^3.0.0-beta.3"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.0-alpha.1"
+        "mobi-util-build-css": "^3.0.0-beta.3"
     }
 }
