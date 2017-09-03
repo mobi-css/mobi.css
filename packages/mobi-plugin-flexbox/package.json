@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-flexbox",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "The flexbox plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -19,7 +19,7 @@
     "license": "MIT",
     "homepage": "http://getmobicss.com/docs/flexbox.html",
     "dependencies": {
-        "mobi-theme-base": "^3.0.0"
+        "mobi-theme-base": "^3.0.1"
     },
     "devDependencies": {
         "gulp": "^3.9.1",

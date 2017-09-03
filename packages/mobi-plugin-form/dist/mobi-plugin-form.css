@@ -1,4 +1,4 @@
-/*! mobi-plugin-form v3.0.0 http://getmobicss.com/docs/form.html */
+/*! mobi-plugin-form v3.0.1 http://getmobicss.com/docs/form.html */
 
 .form {
     margin: 0;
@@ -28,7 +28,7 @@
     appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 0.3125rem;
+    border-radius: 0.1875rem;
     color: #333;
     display: block;
     font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
@@ -63,7 +63,7 @@
         appearance: none;
         background-color: #fff;
         border: 1px solid #ddd;
-        border-radius: 0.3125rem;
+        border-radius: 0.1875rem;
         color: #333;
         display: block;
         font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;

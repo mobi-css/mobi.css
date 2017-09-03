@@ -1,4 +1,4 @@
-/*! mobi-plugin-button v3.0.0 http://getmobicss.com/docs/button.html */
+/*! mobi-plugin-button v3.0.1 http://getmobicss.com/docs/button.html */
 
 .btn {
     -moz-appearance: none;
@@ -6,7 +6,7 @@
     appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 0.3125rem;
+    border-radius: 0.1875rem;
     color: #333;
     cursor: pointer;
     display: inline-block;
