@@ -14,19 +14,14 @@
 /* Reset the box-sizing */
 html {
     box-sizing: border-box;
+    /* Prevent adjustments of font size after orientation changes in IE and iOS. */
+    text-size-adjust: 100%;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
-
-html {
-    /* Prevent adjustments of font size after orientation changes in IE and iOS. */
-    text-size-adjust: 100%;
-
-    font-size: var(--font-size);
 }
 
 body {

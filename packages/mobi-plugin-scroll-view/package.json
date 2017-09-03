@@ -1,6 +1,6 @@
 {
   "name": "mobi-plugin-scroll-view",
-  "version": "3.0.0-beta.2",
+  "version": "3.0.0-beta.3",
   "description": "The scroll-view plugin for Mobi.css",
   "main": "src/index.css",
   "scripts": {
@@ -20,6 +20,6 @@
   "homepage": "http://getmobicss.com/docs/scroll-view.html",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "mobi-util-build-css": "^3.0.0-beta.2"
+    "mobi-util-build-css": "^3.0.0-beta.3"
   }
 }

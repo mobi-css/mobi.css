@@ -1,7 +1,10 @@
-/*! mobi.css v3.0.0-beta.2 http://getmobicss.com */
+/*! mobi.css v3.0.0-beta.3 http://getmobicss.com */
 
 html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
+    text-size-adjust: 100%;
 }
 
 *,
@@ -10,21 +13,11 @@ html {
     box-sizing: inherit;
 }
 
-html {
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-body,
-html {
-    font-size: 16px;
-}
-
 body {
     background-color: #fff;
     color: #333;
     font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0;
 }
@@ -35,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 30px 0 0;
+    margin: 1.875rem 0 0;
 }
 
 address,
@@ -48,7 +41,7 @@ p,
 pre,
 table,
 ul {
-    margin: 15px 0 0;
+    margin: 0.9375rem 0 0;
 }
 
 h1,
@@ -61,27 +54,27 @@ h6 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h6 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a {
@@ -120,12 +113,12 @@ pre {
     -webkit-overflow-scrolling: touch;
     line-height: 1.2;
     overflow: auto;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 pre,
 pre code {
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 pre code {
@@ -136,12 +129,12 @@ pre code {
 blockquote {
     border-left: 5px solid #ddd;
     color: #777;
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 ol,
 ul {
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 dd,
@@ -269,8 +262,8 @@ html [type=button] {
 
 fieldset {
     border: 1px solid #ddd;
-    margin: 15px 0 0;
-    padding: 0 15px 15px;
+    margin: 0.9375rem 0 0;
+    padding: 0 0.9375rem 0.9375rem;
 }
 
 legend {
@@ -298,7 +291,7 @@ progress {
     -webkit-flex-grow: 1;
     flex-grow: 1;
     overflow: hidden;
-    padding: 0 15px 15px;
+    padding: 0 0.9375rem 0.9375rem;
 }
 
 .container {
@@ -381,8 +374,8 @@ progress {
 }
 
 .units-gap {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
+    margin-left: -.46875rem;
+    margin-right: -.46875rem;
 }
 
 .units-gap > .unit,
@@ -394,13 +387,13 @@ progress {
 .units-gap > .unit-1-on-mobile,
 .units-gap > .unit-2-3,
 .units-gap > .unit-3-4 {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 0.46875rem;
+    padding-right: 0.46875rem;
 }
 
 .units-gap-big {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem;
 }
 
 .units-gap-big > .unit,
@@ -412,8 +405,8 @@ progress {
 .units-gap-big > .unit-1-on-mobile,
 .units-gap-big > .unit-2-3,
 .units-gap-big > .unit-3-4 {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
 }
 
 .unit {
@@ -533,11 +526,11 @@ progress {
 }
 
 .top-gap-big {
-    margin-top: 30px !important;
+    margin-top: 1.875rem !important;
 }
 
 .top-gap {
-    margin-top: 15px !important;
+    margin-top: 0.9375rem !important;
 }
 
 .top-gap-0 {
@@ -573,7 +566,7 @@ progress {
 .table caption,
 .table td,
 .table th {
-    padding: 5px;
+    padding: 0.3125rem;
     text-align: left;
 }
 
@@ -594,15 +587,15 @@ progress {
     appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 0.3125rem;
     color: #333;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
-    margin: 15px 0 0;
-    padding: 5px 10px;
+    margin: 0.9375rem 0 0;
+    padding: 0.3125rem 0.625rem;
     text-align: center;
 }
 
@@ -666,9 +659,9 @@ progress {
     cursor: pointer;
     display: block;
     line-height: 1.25;
-    margin-top: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    margin-top: 0.9375rem;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
 }
 
 .form [type=email],
@@ -685,14 +678,14 @@ progress {
     appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 0.3125rem;
     color: #333;
     display: block;
     font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
-    margin: 15px 0 0;
-    padding: 5px;
+    margin: 0.9375rem 0 0;
+    padding: 0.3125rem;
     width: 100%;
 }
 
@@ -720,14 +713,14 @@ progress {
         appearance: none;
         background-color: #fff;
         border: 1px solid #ddd;
-        border-radius: 3px;
+        border-radius: 0.3125rem;
         color: #333;
         display: block;
         font-family: -apple-system,BlinkMacSystemFont,Hiragino Sans GB,Roboto,Segoe UI,Microsoft Yahei,微软雅黑,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,STHeiti,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.25;
-        margin: 15px 0 0;
-        padding: 5px;
+        margin: 0.9375rem 0 0;
+        padding: 0.3125rem;
         width: 100%;
     }
 }
@@ -746,7 +739,7 @@ progress {
 .form [type=checkbox],
 .form [type=radio] {
     cursor: pointer;
-    margin: 0 5px 0 0;
+    margin: 0 0.3125rem 0 0;
 }
 
 .form select {
@@ -758,8 +751,8 @@ progress {
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
     line-height: 1.25;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
     width: 100%;
 }
 
@@ -769,7 +762,7 @@ progress {
 .form [type=range] {
     cursor: pointer;
     display: block;
-    margin: 15px 0 0;
+    margin: 0.9375rem 0 0;
 }
 
 .form [disabled] {

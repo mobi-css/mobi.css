@@ -1,11 +1,11 @@
-/*! mobi-plugin-top-gap v3.0.0-beta.2 http://getmobicss.com/docs/top-gap.html */
+/*! mobi-plugin-top-gap v3.0.0-beta.3 http://getmobicss.com/docs/top-gap.html */
 
 .top-gap-big {
-    margin-top: 30px !important;
+    margin-top: 1.875rem !important;
 }
 
 .top-gap {
-    margin-top: 15px !important;
+    margin-top: 0.9375rem !important;
 }
 
 .top-gap-0 {
