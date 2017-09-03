@@ -4,7 +4,7 @@
 
 With the awesome [PostCSS](http://postcss.org/) and [cssnext](http://cssnext.io/), we can write code in the future's CSS syntax.
 
-Because Mobi.css is made of plugins, we use [lerna](https://github.com/lerna/lerna) to manage mulitple packages.
+Because Mobi.css is made of plugins, we use [Lerna](https://github.com/lerna/lerna) to manage mulitple packages.
 
 ### Setup
 

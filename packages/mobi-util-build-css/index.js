@@ -12,6 +12,22 @@ const insert = require('gulp-insert');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 
+const browserlist = [
+    'last 5 iOS versions',
+    'last 5 Android versions',
+    'last 5 ChromeAndroid versions',
+    'last 5 UCAndroid versions',
+    'last 5 FirefoxAndroid versions',
+    'last 5 OperaMini versions',
+    'last 5 OperaMobile versions',
+    'last 5 Samsung versions',
+
+    'last 3 Chrome versions',
+    'last 3 Firefox versions',
+    'last 3 Edge versions',
+    'last 3 Opera versions'
+];
+
 function clean(targetPath) {
     rimraf.sync(targetPath);
 }
@@ -19,13 +35,15 @@ function clean(targetPath) {
 function buildCss({
     src,
     dist,
-    minify = false,
-    prependContent = '',
+    compress = false,
+    prepend = '',
     callback = () => {}
 }) {
     const plugins = [
         atImport(),
-        cssNext(),
+        cssNext({
+            browsers: browserlist
+        }),
         pxtorem({
             propList: [
                 'font', 'font-size', 'line-height', 'letter-spacing',
@@ -34,7 +52,7 @@ function buildCss({
         }),
         cssnano()
     ];
-    if (!minify) {
+    if (!compress) {
         plugins.push(stylefmt());
     }
 
@@ -43,7 +61,7 @@ function buildCss({
 
     gulp.src(src)
         .pipe(sourcemaps.init())
-        .pipe(insert.prepend(prependContent))
+        .pipe(insert.prepend(prepend))
         .pipe(postcss(plugins))
         .pipe(rename(distBasename))
         .pipe(sourcemaps.write('./'))
