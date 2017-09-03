@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-reset",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "The reset plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {

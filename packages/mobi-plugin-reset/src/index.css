@@ -37,7 +37,7 @@ button,
 input,
 select,
 textarea {
-    font: var(--font-family);
+    font-family: var(--font-family);
 }
 
 
