@@ -35,24 +35,32 @@ function clean(targetPath) {
 function buildCss({
     src,
     dist,
-    compress = false,
-    prepend = '',
+    enableCompress = false,
+    enablePxtorem = false,
+    prependContent = '',
     callback = () => {}
 }) {
     const plugins = [
         atImport(),
         cssNext({
             browsers: browserlist
-        }),
-        pxtorem({
+        })
+    ];
+    
+    if (enablePxtorem) {
+        plugins.push(pxtorem({
             propList: [
                 'font', 'font-size', 'line-height', 'letter-spacing',
+                'width', 'max-width', 'min-width',
+                'height', 'max-height', 'min-height',
                 'margin*', 'padding*', 'border-radius'
             ]
-        }),
-        cssnano()
-    ];
-    if (!compress) {
+        }));
+    }
+
+    plugins.push(cssnano());
+    
+    if (!enableCompress) {
         plugins.push(stylefmt());
     }
 
@@ -61,7 +69,7 @@ function buildCss({
 
     gulp.src(src)
         .pipe(sourcemaps.init())
-        .pipe(insert.prepend(prepend))
+        .pipe(insert.prepend(prependContent))
         .pipe(postcss(plugins))
         .pipe(rename(distBasename))
         .pipe(sourcemaps.write('./'))

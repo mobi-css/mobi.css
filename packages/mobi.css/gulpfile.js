@@ -8,7 +8,7 @@ const pkg = require('./package.json');
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
 
-const prepend = `/*! ${pkg.name} v${pkg.version} ${pkg.homepage} */\n`;
+const prependContent = `/*! ${pkg.name} v${pkg.version} ${pkg.homepage} */\n`;
 
 gulp.task('default', ['build'], () => {
     gulp.watch([
@@ -26,7 +26,8 @@ gulp.task('build:css', (callback) => {
     buildCss({
         src: `${SRC_DIR}/mobi.css`,
         dist: `${DIST_DIR}/mobi.css`,
-        prepend,
+        enablePxtorem: true,
+        prependContent,
         callback
     });
 });
@@ -35,8 +36,9 @@ gulp.task('build:css:min', (callback) => {
     buildCss({
         src: `${SRC_DIR}/mobi.css`,
         dist: `${DIST_DIR}/mobi.min.css`,
-        compress: true,
-        prepend,
+        enableCompress: true,
+        enablePxtorem: true,
+        prependContent,
         callback
     });
 });
