@@ -1,4 +1,4 @@
-/*! mobi.css v3.0.3 http://getmobicss.com */
+/*! mobi.css v3.0.4 http://getmobicss.com */
 
 html {
     -moz-text-size-adjust: 100%;
@@ -296,11 +296,11 @@ progress {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 50rem;
 }
 
 .container-wider {
-    max-width: 1200px;
+    max-width: 75rem;
 }
 
 .flex-bottom,

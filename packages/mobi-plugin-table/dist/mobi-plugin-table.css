@@ -1,4 +1,4 @@
-/*! mobi-plugin-table v3.0.2 http://getmobicss.com/docs/table.html */
+/*! mobi-plugin-table v3.0.4 http://getmobicss.com/docs/table.html */
 
 .table {
     background-color: #fff;
@@ -17,7 +17,7 @@
 .table caption,
 .table td,
 .table th {
-    padding: 0.3125rem;
+    padding: 5px;
     text-align: left;
 }
 

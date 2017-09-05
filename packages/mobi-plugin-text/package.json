@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-text",
-    "version": "3.0.2",
+    "version": "3.0.4",
     "description": "The text plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -23,6 +23,6 @@
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.0"
+        "mobi-util-build-css": "^3.0.4"
     }
 }
