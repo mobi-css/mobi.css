@@ -1,6 +1,6 @@
 {
     "name": "mobi.css",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "A lightweight, scalable, mobile-first CSS framework",
     "main": "src/mobi.css",
     "scripts": {
@@ -28,7 +28,7 @@
         "mobi-plugin-container": "^3.1.0",
         "mobi-plugin-flexbox": "^3.1.0",
         "mobi-plugin-form": "^3.1.0",
-        "mobi-plugin-reset": "^3.1.0",
+        "mobi-plugin-reset": "^3.1.1",
         "mobi-plugin-scroll-view": "^3.1.0",
         "mobi-plugin-show-hide-on-mobile": "^3.1.0",
         "mobi-plugin-table": "^3.1.0",

@@ -1,4 +1,4 @@
-/*! mobi-plugin-reset v3.1.0 http://getmobicss.com/docs/reset.html */
+/*! mobi-plugin-reset v3.1.1 http://getmobicss.com/docs/reset.html */
 
 html {
     -moz-text-size-adjust: 100%;
@@ -208,6 +208,7 @@ audio:not([controls]) {
 }
 
 img {
+    border-style: none;
     vertical-align: middle;
 }
 

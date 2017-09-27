@@ -1,4 +1,4 @@
-/*! mobi.css v3.1.0 http://getmobicss.com */
+/*! mobi.css v3.1.1 http://getmobicss.com */
 
 html {
     -moz-text-size-adjust: 100%;
@@ -208,6 +208,7 @@ audio:not([controls]) {
 }
 
 img {
+    border-style: none;
     vertical-align: middle;
 }
 
