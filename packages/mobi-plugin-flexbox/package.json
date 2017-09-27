@@ -1,6 +1,6 @@
 {
     "name": "mobi-plugin-flexbox",
-    "version": "3.0.4",
+    "version": "3.1.0",
     "description": "The flexbox plugin for Mobi.css",
     "main": "src/index.css",
     "scripts": {
@@ -23,6 +23,6 @@
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "mobi-util-build-css": "^3.0.4"
+        "mobi-util-build-css": "^3.1.0"
     }
 }
