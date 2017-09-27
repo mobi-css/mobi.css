@@ -13,19 +13,20 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 
 const browserlist = [
-    'last 5 iOS versions',
-    'last 5 Android versions',
-    'last 5 ChromeAndroid versions',
-    'last 5 UCAndroid versions',
-    'last 5 FirefoxAndroid versions',
-    'last 5 OperaMini versions',
-    'last 5 OperaMobile versions',
-    'last 5 Samsung versions',
+    'iOS >= 8',
+    'Android >= 4',
+    'last 10 ChromeAndroid versions',
+    'last 10 UCAndroid versions',
+    'last 10 Samsung versions',
+    'last 10 FirefoxAndroid versions',
+    'last 10 OperaMini versions',
+    'last 10 OperaMobile versions',
 
-    'last 3 Chrome versions',
-    'last 3 Firefox versions',
-    'last 3 Edge versions',
-    'last 3 Opera versions'
+    'last 10 Chrome versions',
+    'last 10 Firefox versions',
+    'last 10 Edge versions',
+    'last 10 Opera versions',
+    'ie >= 10'
 ];
 
 function clean(targetPath) {
@@ -46,7 +47,7 @@ function buildCss({
             browsers: browserlist
         })
     ];
-    
+
     if (enablePxtorem) {
         plugins.push(pxtorem({
             propList: [
@@ -59,7 +60,7 @@ function buildCss({
     }
 
     plugins.push(cssnano());
-    
+
     if (!enableCompress) {
         plugins.push(stylefmt());
     }

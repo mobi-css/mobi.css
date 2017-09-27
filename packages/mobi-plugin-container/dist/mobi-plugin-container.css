@@ -3,6 +3,7 @@
 .container,
 .container-fluid,
 .container-wider {
+    -ms-flex-positive: 1;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     flex-grow: 1;
