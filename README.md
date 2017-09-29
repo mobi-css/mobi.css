@@ -6,7 +6,7 @@
 
 # Mobi.css
 
-[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css)
+[![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg)](https://www.npmjs.org/package/mobi.css) [![CDNJS version](https://img.shields.io/cdnjs/v/mobi.css.svg)](https://cdnjs.com/libraries/mobi.css)
 
 > A lightweight, scalable, mobile-first CSS framework
 
